@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — Hiクラテス株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>Hiクラテス株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-05-08</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">歯科電子カルテ特化の上場企業。FY2024上場来最高益（経常利益率27.8%）。高収益・安定型</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">不祥事・行政処分の報道なし。ESG開示は限定的だが大きな懸念なし</p>
+        </article>
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">重大懸念</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWorkで1.9〜3.4の低評価。トップダウン経営・休日少なめ・福利厚生薄いとの口コミ複数</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: Hiクラテス株式会社</h1>
+
+<blockquote>調査日: 2026-05-08</blockquote>
+
+<h2 class="accent-green" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 全国の歯科医院（クリニック）</li>
+<li><strong>提供価値</strong>: 受付・診療・会計・予約をワンストップで管理する歯科統合電子カルテ「Hi Dental Spirit」シリーズ、AI・音声入力カルテ、iPad/Webアプリ</li>
+<li><strong>収益モデル</strong>: ソフトウェア販売＋導入サポート＋保守サービス（ストック型＋フロー型ハイブリッド）。日立製作所製データベースソフト採用・特約店でもあり、関連機器販売収益あり</li>
+<li><strong>出典</strong>: 会社概要 – Hiクラテス<sup class="fnref"><a href="#src-1">[1]</a></sup> / Hiクラテス – Wikipedia<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 歯科電子カルテ市場の中堅プレイヤー。全国23拠点（東京・横浜など首都圏2拠点＋西日本21拠点）で緻密なサポート体制を構築</li>
+<li><strong>主要競合</strong>:</li>
+<li><strong>ノルダ（旧デンタルシステムズ POWER5G）</strong> — 市場シェア約35%でトップ</li>
+<li><strong>メディア株式会社</strong>（電子カルテシステムWith）</li>
+<li><strong>DENTIS</strong>（クラウド型）</li>
+<li><strong>オプテック</strong>（Opt.One3）</li>
+<li><strong>fine-SEED</strong></li>
+<li><strong>市場動向</strong>: 国内歯科医院の電子カルテ普及率は約50%。新規導入の40〜50%がクラウド型に移行中。Hiクラテスはオンプレミス中心のため、クラウドへの対応が課題</li>
+<li><strong>出典</strong>: 歯科電子カルテのシェア・市場動向【2026年最新】<sup class="fnref"><a href="#src-3">[3]</a></sup> / 歯科向け電子カルテ比較10選 – アスピック<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>FY2024（2024年9月期）実績</th><th>FY2025（2025年9月期）計画</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>約21.1億円</td><td>22.2億円（前期比+5.0%）</td><td>経常利益率から逆算</td></tr><tr><td>営業利益</td><td>情報なし</td><td>4.9億円（+15.1%）</td><td></td></tr><tr><td>経常利益</td><td>5.9億円（前期比+52.3%）</td><td>6.0億円（+2.1%）</td><td>上場来最高益</td></tr><tr><td>経常利益率</td><td><strong>27.8%</strong>（上場来最高）</td><td>—</td><td>異常に高い高収益体質</td></tr><tr><td>純利益</td><td>4.0億円（前期比+55.4%）</td><td>4.1億円（+2.0%）</td><td></td></tr><tr><td>純利益率</td><td>19.0%（上場来最高）</td><td>—</td><td></td></tr><tr><td>自己資本比率</td><td>情報なし</td><td>—</td><td>📋 面接で要確認</td></tr></tbody></table>
+
+<ul>
+<li><strong>上場</strong>: 東京証券取引所スタンダード市場（証券コード: 4172）</li>
+<li><strong>備考</strong>: FY2022・FY2023は2期連続減収減益。FY2024に急回復し上場来最高益を更新。AI・音声カルテの拡販と関西圏・首都圏開拓が奏功した模様</li>
+<li><strong>出典</strong>: 2024年9月期 上場来最高益更新 – PR TIMES<sup class="fnref"><a href="#src-5">[5]</a></sup> / 東和ハイシステム(4172) 決算 – 株探<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>AI・音声電子カルテの拡販</strong>: 2023年2月に日立製作所と共同開発したAI音声カルテシステムを歯科医院向けに展開</li>
+<li><strong>地理的拡大</strong>: 関西圏・首都圏でのシェア拡大が明示的な経営課題</li>
+<li><strong>ブランド統一</strong>: 2026年1月に商号を「東和ハイシステム」→「Hiクラテス」に変更し、製品ブランド（Hi Dental Spirit）と統一</li>
+<li><strong>人材確保</strong>: 有価証券報告書に「人材の確保」が課題として記載</li>
+<li><strong>出典</strong>: 岡山の東和ハイシステム、社名をHiクラテスに変更 25年1月 – 日経新聞<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li>主要な報道なし。行政処分・労基違反・不祥事に関するニュース・公式発表は確認されなかった</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li>情報なし。公式サイト・IR情報からESG報告書・サステナビリティレポートの存在は確認できなかった</li>
+<li><strong>出典</strong>: 検索クエリ `&quot;Hiクラテス株式会社&quot; ESG サステナビリティ` で有意な結果なし</li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li>「サポートなくして販売なし」を経営信条に、全国23拠点から歯科医院へのアフターサポートを提供。「行きます、やります」のきめ細かいサポート体制を強調</li>
+<li>顧客（歯科医院）からの公開クレーム・炎上報道は確認されなかった</li>
+<li><strong>出典</strong>: Hiクラテス公式サイト<sup class="fnref"><a href="#src-8">[8]</a></sup> / 検索クエリ `&quot;Hiクラテス株式会社&quot; 顧客評判 OR クレーム OR 炎上`</li>
+</ul>
+
+<hr>
+
+<h2 class="accent-red" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>OpenWork 総合スコア</strong>: 1.9〜3.4（複数のキャプチャ情報から。スコアばらつき大。平均は低い水準）</li>
+<li><strong>良い点</strong>:</li>
+<li>有給休暇は比較的取りやすい</li>
+<li>インセンティブ制度あり。コンスタントに成果を出せれば高年収（月収80万円という具体例も）</li>
+<li>入社後3ヶ月の合宿型研修（セミナーハウス）で製品・歯科知識・ITスキルを体系的に習得可能</li>
+<li>転勤・異動の希望はある程度考慮される（特に女性社員）</li>
+<li><strong>懸念点</strong>:</li>
+<li>社長のトップダウン経営。「社長の意向が全て、社員の意見は取り入れられない」との複数口コミ</li>
+<li>営業職は歯科医院の診療時間中は休日でも電話対応が求められ、実質的にオフタイムが取りにくい</li>
+<li>「残業常態化（夜10時まで）」との口コミあり</li>
+<li>「休日を増やすことが先決」との退職者コメント</li>
+<li>住宅手当なし、副業不可</li>
+<li><strong>出典</strong>: OpenWork – 東和ハイシステム社員クチコミ<sup class="fnref"><a href="#src-9">[9]</a></sup> / 就活会議 – Hiクラテス退職理由口コミ<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 自己資本比率・有利子負債の状況（財務健全性の確認）</li>
+<li>[ ] ESGへの取り組み方針の有無</li>
+<li>[ ] クラウド型電子カルテへの対応ロードマップ（オンプレミス中心の現状から）</li>
+<li>[ ] AI・音声カルテの販売実績・受注件数</li>
+<li>[ ] 残業の実態（職種・部署別）</li>
+<li>[ ] 副業禁止の範囲・理由</li>
+<li>[ ] 有給消化率の実態</li>
+<li>[ ] 離職率（有価証券報告書での公開有無）</li>
+<li>[ ] リモートワーク・フレックスの導入状況</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>会社概要 – Hiクラテス</td><td><a href="https://hi-crates.jp/company/info/" target="_blank" rel="noopener noreferrer">https://hi-crates.jp/company/info/</a></td><td>2026-05-08</td></tr><tr><td>2</td><td>Hiクラテス – Wikipedia</td><td><a href="https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9" target="_blank" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9</a></td><td>2026-05-08</td></tr><tr><td>3</td><td>2024年9月期 上場来最高益更新 – PR TIMES</td><td><a href="https://prtimes.jp/main/html/rd/p/000000004.000146803.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000004.000146803.html</a></td><td>2026-05-08</td></tr><tr><td>4</td><td>東和ハイシステム(4172) 決算 – 株探</td><td><a href="https://kabutan.jp/stock/?code=4172" target="_blank" rel="noopener noreferrer">https://kabutan.jp/stock/?code=4172</a></td><td>2026-05-08</td></tr><tr><td>5</td><td>歯科電子カルテのシェア・市場動向【2026年最新】</td><td><a href="https://shika-pro.jp/column/dental-electronic-medical-record-market-share" target="_blank" rel="noopener noreferrer">https://shika-pro.jp/column/dental-electronic-medical-record-market-share</a></td><td>2026-05-08</td></tr><tr><td>6</td><td>歯科向け電子カルテ比較10選 – アスピック</td><td><a href="https://www.aspicjapan.org/asu/article/17443" target="_blank" rel="noopener noreferrer">https://www.aspicjapan.org/asu/article/17443</a></td><td>2026-05-08</td></tr><tr><td>7</td><td>岡山の東和ハイシステム、社名をHiクラテスに変更 – 日経新聞</td><td><a href="https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/</a></td><td>2026-05-08</td></tr><tr><td>8</td><td>OpenWork – 東和ハイシステム社員クチコミ</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6</a></td><td>2026-05-08</td></tr><tr><td>9</td><td>就活会議 – Hiクラテス退職理由口コミ</td><td><a href="https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths</a></td><td>2026-05-08</td></tr><tr><td>10</td><td>Hiクラテス（旧:東和ハイシステム）福利厚生 – 転職会議</td><td><a href="https://jobtalk.jp/companies/31059/answers?question_codes=welfare" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/31059/answers?question_codes=welfare</a></td><td>2026-05-08</td></tr><tr><td>11</td><td>Hiクラテス株式会社 中途採用 – doda</td><td><a href="https://doda.jp/DodaFront/View/Company/j_id__10000952618/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10000952618/</a></td><td>2026-05-08</td></tr><tr><td>12</td><td>Hiクラテス株式会社 – リクルートエージェント</td><td><a href="https://www.r-agent.com/company/96568/" target="_blank" rel="noopener noreferrer">https://www.r-agent.com/company/96568/</a></td><td>2026-05-08</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">会社概要 – Hiクラテス</td><td class="src-url"><a href="https://hi-crates.jp/company/info/" target="_blank" rel="noopener noreferrer">https://hi-crates.jp/company/info/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Hiクラテス – Wikipedia</td><td class="src-url"><a href="https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9" target="_blank" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">歯科電子カルテのシェア・市場動向【2026年最新】</td><td class="src-url"><a href="https://shika-pro.jp/column/dental-electronic-medical-record-market-share" target="_blank" rel="noopener noreferrer">https://shika-pro.jp/column/dental-electronic-medical-record-market-share</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">歯科向け電子カルテ比較10選 – アスピック</td><td class="src-url"><a href="https://www.aspicjapan.org/asu/article/17443" target="_blank" rel="noopener noreferrer">https://www.aspicjapan.org/asu/article/17443</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">2024年9月期 上場来最高益更新 – PR TIMES</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000004.000146803.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000004.000146803.html</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">東和ハイシステム(4172) 決算 – 株探</td><td class="src-url"><a href="https://kabutan.jp/stock/finance?code=4172" target="_blank" rel="noopener noreferrer">https://kabutan.jp/stock/finance?code=4172</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">岡山の東和ハイシステム、社名をHiクラテスに変更 25年1月 – 日経新聞</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Hiクラテス公式サイト</td><td class="src-url"><a href="https://www.towa-hi-sys.co.jp/" target="_blank" rel="noopener noreferrer">https://www.towa-hi-sys.co.jp/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">OpenWork – 東和ハイシステム社員クチコミ</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">就活会議 – Hiクラテス退職理由口コミ</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: Hiクラテス株式会社</h1>
+
+<blockquote>調査日: 2026-05-08　対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-red">🔴</span></td><td>トップダウン経営が強く、社員の意見が通りにくいとの口コミ多数</td></tr><tr><td>職務・スキル</td><td>★☆☆</td><td><span class="badge badge-yellow">🟡</span></td><td>歯科IT専門知識を習得できるが、特化度が高く転用性は限定的</td></tr><tr><td>労働条件・環境</td><td>★★☆</td><td><span class="badge badge-red">🔴</span></td><td>福利厚生薄い・副業不可・営業は休日も電話対応。残業多いとの口コミ</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>経営信条</strong>: 「サポートなくして販売なし」「お客さまの笑顔、お客さまの満足が私たちの喜び」</li>
+<li><strong>ブランドメッセージ</strong>: 「顔の見える会社、心と心が触れ合う会社」を目指す</li>
+<li><strong>社名変更の背景</strong>: 2026年1月に「東和ハイシステム」→「Hiクラテス」へ変更。主力製品「Hi Dental Spirit」とのブランド統一が目的</li>
+<li><strong>出典</strong>: Hiクラテス公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup> / 日経新聞 社名変更記事<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 情報なし（規模から見て比較的フラットと推測されるが未確認）</li>
+<li><strong>スタイル</strong>: 強いトップダウン。複数の社員口コミで「代表者の意向が強く反映される」「現場の営業スタッフが代表者の一言で販売スタイルを変更させられる」「社員の意見は取り入れられない」という記述が複数確認された</li>
+<li><strong>出典</strong>: OpenWork – 東和ハイシステム社員クチコミ<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>給与・評価体系</strong>: 年功序列的な側面があるとの口コミ。「可視化された評価結果が乏しい」という指摘あり</li>
+<li><strong>インセンティブ</strong>: 営業職は完全出来高制のインセンティブあり。売上・契約数で評価。月収80万円という具体例（高成果者）の記述あり</li>
+<li>詳細な人事評価制度（ジョブ型等）の採用は確認できず</li>
+<li><strong>出典</strong>: 就活会議 – Hiクラテス口コミ<sup class="fnref"><a href="#src-4">[4]</a></sup> / doda 企業概要<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員数</strong>: 117名（2024年12月現在）</li>
+<li><strong>平均年齢</strong>: 情報なし（📋 面接で要確認）</li>
+<li><strong>離職率</strong>: 情報なし。ただし就活会議に退職理由口コミが13件（従業員規模から見て多め）。定着率について面接で確認推奨</li>
+<li><strong>出典</strong>: Hiクラテス – Wikipedia<sup class="fnref"><a href="#src-6">[6]</a></sup> / 就活会議 退職理由口コミ<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li><strong>主要職種（確認できたもの）</strong>: IT営業（歯科医院への新規提案・導入支援・アフターサポート）。法人営業で未経験歓迎の求人あり</li>
+<li><strong>業務特性</strong>: 受付・診療・会計・予約・画像管理など歯科医院の業務フロー全体を扱う統合システムのため、歯科業界知識も同時に習得が必要</li>
+<li><strong>チーム体制</strong>: 全国23拠点展開（首都圏2拠点・西日本21拠点）。各拠点での営業＋サポートが基本単位と推定</li>
+<li><strong>出典</strong>: リクルートエージェント – Hiクラテス求人<sup class="fnref"><a href="#src-8">[8]</a></sup> / doda 中途採用<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>データベース</strong>: 日立製作所製（日立の特約店として採用）</li>
+<li><strong>製品</strong>: Hi Dental Spirit XR-10i（統合電子カルテ）、AI・音声電子カルテシステム（2023年2月日立と共同開発）、iPadアプリ・Webアプリ</li>
+<li><strong>AI活用</strong>: AI音声入力によるカルテ自動記録。視診・歯周検査・問診システムなど</li>
+<li><strong>開発手法</strong>: 情報なし（📋 面接で要確認）</li>
+<li><strong>クラウド対応</strong>: 現状はオンプレミス中心。市場のクラウド移行トレンドへの対応状況は要確認</li>
+<li><strong>出典</strong>: Hiクラテス製品情報<sup class="fnref"><a href="#src-10">[10]</a></sup> / Hiクラテス – Wikipedia<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>入社研修</strong>: 入社後約3ヶ月間、社内の宿泊研修施設「セミナーハウス」にて合宿型研修を実施。製品知識・歯科知識・ITスキル・顧客コミュニケーション力を習得</li>
+<li><strong>OJT</strong>: 研修修了後（2ヶ月後との口コミあり）は即戦力扱いとなる</li>
+<li>体系的なスキルアッププログラム・資格支援の有無は情報なし（📋 面接で要確認）</li>
+<li><strong>出典</strong>: doda – Hiクラテス企業概要<sup class="fnref"><a href="#src-5">[5]</a></sup> / リクルートエージェント求人<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li>歯科IT専門の単一事業会社のため、キャリアパスは営業→マネジメントが基本と推定</li>
+<li>他業種・他業界への転用は製品特化度が高いため困難な可能性あり</li>
+<li>詳細なキャリアパス・ポジション設計の情報なし（📋 面接で要確認）</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 情報なし（📋 面接で要確認）</li>
+<li><strong>残業</strong>: 「夜10時まで働く」との口コミあり。特に営業職は歯科医院の診療時間中（平日・土曜昼）は実質待機状態</li>
+<li><strong>フレックス</strong>: 情報なし（確認できず）</li>
+<li><strong>出典</strong>: OpenWork クチコミ<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li>情報なし。歯科医院へのオンサイトサポートが事業の核のため、営業・サポート職でのフルリモートは困難と推定</li>
+<li>導入状況は📋 面接で要確認</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>社会保険</strong>: 記載あり（健康保険・厚生年金など）</li>
+<li><strong>住宅手当</strong>: なし（口コミで複数確認）</li>
+<li><strong>育休</strong>: 情報なし（📋 面接で要確認）</li>
+<li><strong>副業</strong>: 禁止（口コミで確認）</li>
+<li><strong>有給休暇</strong>: 取得しやすいとの口コミあり。ただし「休日を増やすことが先決」という退職者コメントも存在</li>
+<li><strong>インセンティブ</strong>: 営業職に出来高インセンティブあり</li>
+<li><strong>その他</strong>: 奨学金支援制度あり（一部求人で「最大3年」と記載）</li>
+<li><strong>出典</strong>: 転職会議 – 福利厚生口コミ<sup class="fnref"><a href="#src-12">[12]</a></sup> / リクルートエージェント求人<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>想定年収</strong>: 情報なし（求人票に非記載）。ただしインセンティブ次第で「コンスタントに売上があればかなりの年収が見込める」「月収80万円」（高成果者）という口コミあり</li>
+<li><strong>構成</strong>: 基本給＋完全出来高制インセンティブ（営業職）</li>
+<li><strong>賞与</strong>: 完全出来高制（固定賞与は情報なし）</li>
+<li><strong>出典</strong>: 就活会議 – Hiクラテス口コミ<sup class="fnref"><a href="#src-4">[4]</a></sup> / OpenWork クチコミ<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>現場社員が新しい施策や改善案を提案する際、どのようなプロセスで意思決定されますか？</td><td>トップダウン経営の実態と社員の発言権を確認する</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>平均勤続年数・離職率について教えていただけますか？</td><td>口コミで退職者が多い印象を受けたため、定着率を数値で確認する</td></tr><tr><td>3</td><td>職務・スキル</td><td>今回のポジションで3〜5年後のキャリアパスとして想定されているロールはどのようなものがありますか？</td><td>単一事業会社でのキャリア天井を確認する</td></tr><tr><td>4</td><td>職務・スキル</td><td>クラウド型電子カルテへの移行トレンドに対し、製品ロードマップではどのような対応を予定していますか？</td><td>技術的競争力と中長期の事業安定性を確認する</td></tr><tr><td>5</td><td>労働条件</td><td>営業職における平均的な残業時間と、休日の電話対応の実態を教えてください</td><td>口コミで休日連絡が多いとの記述があったため実態を確認する</td></tr><tr><td>6</td><td>労働条件</td><td>リモートワーク・テレワークの導入状況と、対象となる職種・割合を教えてください</td><td>働き方の柔軟性を確認する</td></tr><tr><td>7</td><td>労働条件</td><td>副業が禁止とのことですが、禁止の範囲（業務時間外の個人活動含む）を具体的に教えてください</td><td>副業禁止の範囲と理由を把握する</td></tr><tr><td>8</td><td>組織・カルチャー</td><td>2026年1月の社名変更（Hiクラテスへの改称）を機に、組織文化や制度面で変わったことはありますか？</td><td>変革の兆しがあるかを確認する</td></tr><tr><td>9</td><td>財務・経営</td><td>FY2022〜FY2023に2期連続で減収減益となりましたが、その要因と、FY2024での急回復（上場来最高益）の主因を教えてください</td><td>業績回復の持続性と再現性を確認する</td></tr><tr><td>10</td><td>職務・スキル</td><td>AI・音声電子カルテシステムの現在の導入医院数・受注件数を教えていただけますか？</td><td>成長ドライバーの実績を定量的に確認する</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>Hiクラテス公式サイト</td><td><a href="https://www.towa-hi-sys.co.jp/" target="_blank" rel="noopener noreferrer">https://www.towa-hi-sys.co.jp/</a></td><td>2026-05-08</td></tr><tr><td>2</td><td>Hiクラテス – Wikipedia</td><td><a href="https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9" target="_blank" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9</a></td><td>2026-05-08</td></tr><tr><td>3</td><td>社名変更 – 日経新聞</td><td><a href="https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/</a></td><td>2026-05-08</td></tr><tr><td>4</td><td>OpenWork – 東和ハイシステム社員クチコミ</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6</a></td><td>2026-05-08</td></tr><tr><td>5</td><td>就活会議 – Hiクラテス退職理由口コミ</td><td><a href="https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths</a></td><td>2026-05-08</td></tr><tr><td>6</td><td>転職会議 – 福利厚生口コミ</td><td><a href="https://jobtalk.jp/companies/31059/answers?question_codes=welfare" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/31059/answers?question_codes=welfare</a></td><td>2026-05-08</td></tr><tr><td>7</td><td>doda – Hiクラテス企業概要</td><td><a href="https://doda.jp/DodaFront/View/Company/j_id__10000952618/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10000952618/</a></td><td>2026-05-08</td></tr><tr><td>8</td><td>リクルートエージェント – 高松法人営業求人</td><td><a href="https://www.r-agent.com/viewjob/jk02ea281ba0bfe248/" target="_blank" rel="noopener noreferrer">https://www.r-agent.com/viewjob/jk02ea281ba0bfe248/</a></td><td>2026-05-08</td></tr><tr><td>9</td><td>Hiクラテス製品情報</td><td><a href="https://www.towa-hi-sys.co.jp/product" target="_blank" rel="noopener noreferrer">https://www.towa-hi-sys.co.jp/product</a></td><td>2026-05-08</td></tr><tr><td>10</td><td>歯科電子カルテシェア市場動向</td><td><a href="https://shika-pro.jp/column/dental-electronic-medical-record-market-share" target="_blank" rel="noopener noreferrer">https://shika-pro.jp/column/dental-electronic-medical-record-market-share</a></td><td>2026-05-08</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Hiクラテス公式サイト</td><td class="src-url"><a href="https://www.towa-hi-sys.co.jp/" target="_blank" rel="noopener noreferrer">https://www.towa-hi-sys.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">日経新聞 社名変更記事</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOCC2938K0Z20C25A9000000/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">OpenWork – 東和ハイシステム社員クチコミ</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000R9vf6</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">就活会議 – Hiクラテス口コミ</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/11808/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11808/word_mouths</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">doda 企業概要</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10000952618/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10000952618/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">Hiクラテス – Wikipedia</td><td class="src-url"><a href="https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9" target="_blank" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/Hi%E3%82%AF%E3%83%A9%E3%83%86%E3%82%B9</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">就活会議 退職理由口コミ</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11808/post_items/11/word_mouths</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">リクルートエージェント – Hiクラテス求人</td><td class="src-url"><a href="https://www.r-agent.com/viewjob/jk02ea281ba0bfe248/" target="_blank" rel="noopener noreferrer">https://www.r-agent.com/viewjob/jk02ea281ba0bfe248/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">doda 中途採用</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/CompanyJobs/j_id__10000952618/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/CompanyJobs/j_id__10000952618/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">Hiクラテス製品情報</td><td class="src-url"><a href="https://www.towa-hi-sys.co.jp/product" target="_blank" rel="noopener noreferrer">https://www.towa-hi-sys.co.jp/product</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">リクルートエージェント求人</td><td class="src-url"><a href="https://www.r-agent.com/company/96568/" target="_blank" rel="noopener noreferrer">https://www.r-agent.com/company/96568/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">転職会議 – 福利厚生口コミ</td><td class="src-url"><a href="https://jobtalk.jp/companies/31059/answers?question_codes=welfare" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/31059/answers?question_codes=welfare</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

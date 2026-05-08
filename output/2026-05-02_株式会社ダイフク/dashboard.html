@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社ダイフク</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社ダイフク</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-05-02</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">東証プライム上場・世界No.1マテハン専業メーカー。FY2025売上6,607億・営業利益率15.3%・自己資本比率59.9%と財務は極めて健全。2030年売上1兆円目標の成長軌道</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">本体の重大不祥事なし。2024年に子会社コンテック元役員が証券取引等監視委員会から課徴金勧告を受けた点は要注意。ESG対応は業界最高水準</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">エンカイシャ3.4点。平均年収918万円・離職率2.43%・有給取得率84%と製造業最高水準。「年功序列傾向」「部署差大の残業」は懸念</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社ダイフク</h1>
+
+<blockquote>調査日: 2026-05-02</blockquote>
+
+<h2 class="accent-green" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 製造業（自動車・半導体・電子機器・食品・医薬品等）、EC・物流会社、空港・航空会社など多業種</li>
+<li><strong>提供価値</strong>: 自動倉庫・コンベア・ピッキングシステム・半導体クリーンルーム搬送システムなどのマテリアルハンドリング（マテハン）システムをハード・ソフト一体で自社開発。コンサルティング〜設計〜製造〜据付〜保守まで一気通貫で提供</li>
+<li><strong>収益モデル</strong>: フロー型（システム納入・据付）＋ストック型（保守・メンテナンスサービス）のハイブリッド。メンテナンス収入は安定的なストック収益として機能</li>
+<li><strong>出典</strong>: ダイフク事業概要<sup class="fnref"><a href="#src-1">[1]</a></sup>、ダイフクWikipedia<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: マテリアルハンドリング業界で<strong>世界9年連続No.1</strong>（売上高ベース）。半導体クリーンルーム搬送でも世界トップ水準</li>
+<li><strong>主要競合</strong>: 豊田自動織機（国内）、村田機械（国内）、KION（ドイツ）、シェーファー・ホールディング（ドイツ）、デマティック（米・KIONグループ）</li>
+<li><strong>強み</strong>: マテハン機器・ソフトウェアの完全自社開発。コンサルから保守まで一気通貫。世界50カ国以上での実績・グローバルサポート体制</li>
+<li><strong>弱み</strong>: 大規模カスタム案件のため受注から売上計上まで時間がかかる。海外プロジェクト管理リスク（課題として公式認識）</li>
+<li><strong>出典</strong>: 現代ビジネス マテハン特集<sup class="fnref"><a href="#src-3">[3]</a></sup>、deallab シェア分析<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>FY2025（2025/12期）</th><th>FY2024（2024/12期・推定）</th><th>前期比</th></tr></thead><tbody><tr><td>売上高</td><td>6,607億円</td><td>約5,633億円</td><td>+17.3%</td></tr><tr><td>営業利益</td><td>1,008億円</td><td>—</td><td>—</td></tr><tr><td>営業利益率</td><td><strong>15.3%</strong></td><td>—</td><td>—</td></tr><tr><td>自己資本比率</td><td><strong>59.9%</strong></td><td>—</td><td>—</td></tr><tr><td>ROE</td><td><strong>19.4%</strong></td><td>—</td><td>—</td></tr><tr><td>当期純利益</td><td>781億円</td><td>—</td><td>+36.8%</td></tr></tbody></table>
+
+<ul>
+<li><strong>FY2026予想</strong>: 売上高7,000億円（+5.9%）・営業利益1,050億円（+4.2%）</li>
+<li><strong>上場区分</strong>: 東証プライム（証券コード: 6383）</li>
+<li><strong>財務健全性</strong>: 自己資本比率59.9%・ROE19.4%は製造業大手として極めて優秀。連続増収増益の軌道</li>
+<li><strong>出典</strong>: IRBank ダイフク<sup class="fnref"><a href="#src-5">[5]</a></sup>、Yahoo!ファイナンス<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>長期ビジョン「Driving Innovative Impact 2030」</strong>: 2030年目標：売上高1兆円・営業利益率15%・ROE17%</li>
+<li><strong>2027年中期経営計画</strong>: 売上高8,000億円・営業利益率15%。戦略投資枠800億円設定</li>
+<li><strong>3つの重点施策</strong>:</li>
+</ul>
+  1. AIやロボティクスへの経営資源投入による先端技術・新規事業開発の加速
+  2. 米国・インドなど重点市場での生産能力増強によるグローバル成長
+  3. 海外プロジェクト管理高度化による利益体質の強化
+<ul>
+<li><strong>再エネ転換</strong>: 2024年11月、国内全拠点を再生可能エネルギー由来電力に切り替え完了</li>
+<li><strong>出典</strong>: 中期経営計画<sup class="fnref"><a href="#src-7">[7]</a></sup>、ダイフクレポート2025<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>本体への重大な行政処分: 確認されず</strong></li>
+<li><strong><span class="badge badge-yellow">⚠️</span> 要注意事項（2024年2月）</strong>: 子会社コンテック（産業用PC製造）の元役員が金融商品取引法違反を認定され、証券取引等監視委員会より課徴金納付命令の勧告を受けた。本体への直接処分ではないが、グループガバナンスの課題として留意が必要</li>
+<li><strong>内部通報</strong>: 2024年12月期の内部通報件数12件（労務4件・職場環境2件・不正行為6件）。通報制度は機能している</li>
+<li><strong>コンプライアンス</strong>: コンプライアンス委員会を設置。取引先行動規範、輸出管理規程等を整備</li>
+<li><strong>出典</strong>: コンテック課徴金勧告 プレスリリース<sup class="fnref"><a href="#src-9">[9]</a></sup>、コンプライアンスページ<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li><strong>CO2削減目標</strong>: 2030年にスコープ1・2で60%削減（パリ協定1.5℃目標水準）。SBTiから認定取得（2023年11月）</li>
+<li><strong>再エネ</strong>: 2024年11月、国内全拠点の電力を再エネ由来に切り替え完了。中国・韓国・米国でも導入計画中</li>
+<li><strong>サステナビリティレポート</strong>: 毎年発行（「ダイフクレポート2025」）。ESGデータも公開</li>
+<li><strong>人権</strong>: 人権方針・サプライヤー行動規範を整備。TCFD提言に沿った情報開示実施</li>
+<li><strong>出典</strong>: 気候変動ページ<sup class="fnref"><a href="#src-11">[11]</a></sup>、ESGデータ<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li><strong>世界9年連続No.1</strong>: マテハン業界での市場評価は最高水準</li>
+<li><strong>大手顧客との長期取引</strong>: Amazonなど大手EC・物流企業、国内外の大手半導体メーカー、国内外空港との実績多数</li>
+<li><strong>直接的なクレーム・炎上</strong>: 公開情報では確認されず</li>
+<li><strong>出典</strong>: ダイフク強み<sup class="fnref"><a href="#src-13">[13]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-green" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>エンカイシャの評判</strong>: <strong>3.4 / 5.0</strong>（正社員106名回答）</li>
+<li><strong>OpenWork</strong>: 口コミ多数あり（詳細スコアはアクセス不可だが検索結果から2.5〜4.5点の分布）</li>
+<li><strong>転職会議</strong>: 539件の口コミ掲載</li>
+<li><strong>良い点（口コミ）</strong>:</li>
+<li>平均年収918万円（有価証券報告書基準、平均年齢41.6歳）</li>
+<li>離職率2.43%（2024年度）・有給取得率84%と業界最高水準</li>
+<li>月平均残業約20時間（過去8年間で30%削減）</li>
+<li>「いい人が多く風通しが良い」「やる気があれば評価される」</li>
+<li>充実した福利厚生（独身寮・社宅・在宅勤務週2回・育休）</li>
+<li>中途採用比率60%（2024年度）でキャリア採用が活発</li>
+<li><strong>懸念点（口コミ）</strong>:</li>
+<li><span class="badge badge-yellow">⚠️</span> 「昇給は役職がつかないと基本給は上がらない」— 年功序列傾向</li>
+<li><span class="badge badge-yellow">⚠️</span> 部署によって残業時間に大きなばらつき（月30〜40時間の報告あり）</li>
+<li>「伝統的で保守的な企業文化」</li>
+<li>「権限委譲が進まない」「20代を過ぎると待遇が停滞」との指摘</li>
+<li>転勤（国内・海外）の可能性あり</li>
+<li><strong>出典</strong>: エンカイシャの評判<sup class="fnref"><a href="#src-14">[14]</a></sup>、転職会議<sup class="fnref"><a href="#src-15">[15]</a></sup>、OpenWork<sup class="fnref"><a href="#src-16">[16]</a></sup>、talentsquare評判記事<sup class="fnref"><a href="#src-17">[17]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 希望配属先の部署・チームの実際の月平均残業時間（部署差が大きいため）</li>
+<li>[ ] フレックスタイム制の対象部署と利用頻度</li>
+<li>[ ] 在宅勤務（週2回）の実際の運用状況（職種・部署による差）</li>
+<li>[ ] 副業・兼業の可否</li>
+<li>[ ] 転勤（国内・海外）の頻度・条件</li>
+<li>[ ] 給与テーブルと昇給の具体的な仕組み（役職がつく前の昇給幅）</li>
+<li>[ ] 中途入社後のキャリアパスの具体的な事例</li>
+<li>[ ] 担当する業務・プロジェクトの具体的な内容</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>ダイフク公式サイト</td><td><a href="https://www.daifuku.com/jp/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/</a></td><td>2026-05-02</td></tr><tr><td>2</td><td>ダイフク 事業概要</td><td><a href="https://www.daifuku.com/jp/company/business/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/business/</a></td><td>2026-05-02</td></tr><tr><td>3</td><td>ダイフク IR情報</td><td><a href="https://www.daifuku.com/jp/ir/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/</a></td><td>2026-05-02</td></tr><tr><td>4</td><td>ダイフク 長期ビジョン・中計</td><td><a href="https://www.daifuku.com/jp/ir/policy/plan/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/policy/plan/</a></td><td>2026-05-02</td></tr><tr><td>5</td><td>IRBank ダイフク</td><td><a href="https://irbank.net/E01551" target="_blank" rel="noopener noreferrer">https://irbank.net/E01551</a></td><td>2026-05-02</td></tr><tr><td>6</td><td>ダイフク コンテック課徴金勧告</td><td><a href="https://www.daifuku.com/jp/company/news/2024/0216_01/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/news/2024/0216_01/</a></td><td>2026-05-02</td></tr><tr><td>7</td><td>ダイフク ESG</td><td><a href="https://www.daifuku.com/jp/sustainability/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/</a></td><td>2026-05-02</td></tr><tr><td>8</td><td>ダイフク 気候変動</td><td><a href="https://www.daifuku.com/jp/sustainability/environment/climate-change/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/environment/climate-change/</a></td><td>2026-05-02</td></tr><tr><td>9</td><td>エンカイシャの評判</td><td><a href="https://en-hyouban.com/company/00006796014/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00006796014/</a></td><td>2026-05-02</td></tr><tr><td>10</td><td>OpenWork ダイフク</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000FrLe" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000FrLe</a></td><td>2026-05-02</td></tr><tr><td>11</td><td>転職会議 ダイフク</td><td><a href="https://jobtalk.jp/companies/2105/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/2105/answers</a></td><td>2026-05-02</td></tr><tr><td>12</td><td>talentsquare 評判記事</td><td><a href="https://talentsquare.co.jp/career/daifuku-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-review/</a></td><td>2026-05-02</td></tr><tr><td>13</td><td>deallab マテハン シェア</td><td><a href="https://deallab.info/material-handling/" target="_blank" rel="noopener noreferrer">https://deallab.info/material-handling/</a></td><td>2026-05-02</td></tr><tr><td>14</td><td>ダイフク 福利厚生</td><td><a href="https://www.daifuku.com/jp/employment/recruit/welfare.html" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/employment/recruit/welfare.html</a></td><td>2026-05-02</td></tr><tr><td>15</td><td>ダイフク キャリア採用</td><td><a href="https://www.daifuku.com/jp/career/recruit/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/career/recruit/</a></td><td>2026-05-02</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">ダイフク事業概要</td><td class="src-url"><a href="https://www.daifuku.com/jp/company/business/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/business/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">ダイフクWikipedia</td><td class="src-url"><a href="https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%95%E3%82%AF" target="_blank" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/%E3%83%80%E3%82%A4%E3%83%95%E3%82%AF</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">現代ビジネス マテハン特集</td><td class="src-url"><a href="https://gendai.media/articles/-/116937" target="_blank" rel="noopener noreferrer">https://gendai.media/articles/-/116937</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">deallab シェア分析</td><td class="src-url"><a href="https://deallab.info/material-handling/" target="_blank" rel="noopener noreferrer">https://deallab.info/material-handling/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">IRBank ダイフク</td><td class="src-url"><a href="https://irbank.net/E01551" target="_blank" rel="noopener noreferrer">https://irbank.net/E01551</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">Yahoo!ファイナンス</td><td class="src-url"><a href="https://finance.yahoo.co.jp/quote/6383.T/financials" target="_blank" rel="noopener noreferrer">https://finance.yahoo.co.jp/quote/6383.T/financials</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">中期経営計画</td><td class="src-url"><a href="https://www.daifuku.com/jp/ir/policy/plan/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/policy/plan/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">ダイフクレポート2025</td><td class="src-url"><a href="https://www.daifuku.com/jp/ir/assets/25_full_j.pdf" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/assets/25_full_j.pdf</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">コンテック課徴金勧告 プレスリリース</td><td class="src-url"><a href="https://www.daifuku.com/jp/company/news/2024/0216_01/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/news/2024/0216_01/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">コンプライアンスページ</td><td class="src-url"><a href="https://www.daifuku.com/jp/sustainability/governance/compliance/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/governance/compliance/</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">気候変動ページ</td><td class="src-url"><a href="https://www.daifuku.com/jp/sustainability/environment/climate-change/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/environment/climate-change/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">ESGデータ</td><td class="src-url"><a href="https://www.daifuku.com/jp/sustainability/esg-data/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/esg-data/</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">ダイフク強み</td><td class="src-url"><a href="https://www.daifuku.com/jp/company/strength/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/strength/</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">エンカイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/00006796014/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00006796014/</a></td></tr><tr id="src-15"><td class="src-num">[15]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/2105/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/2105/answers</a></td></tr><tr id="src-16"><td class="src-num">[16]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0910000000FrLe" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000FrLe</a></td></tr><tr id="src-17"><td class="src-num">[17]</td><td class="src-title">talentsquare評判記事</td><td class="src-url"><a href="https://talentsquare.co.jp/career/daifuku-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-review/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社ダイフク</h1>
+
+<blockquote>調査日: 2026-05-02　対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>「モノを動かし、心を動かす。」理念のもと風通しの良さと多様性推進を評価。伝統的・年功序列傾向はあるが離職率2.43%が組織の健全さを証明</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>マテハン世界No.1企業での設計・開発・保守経験は市場価値が高い。AI・ロボティクス投資強化で技術的成長機会も拡大</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>年収918万円・残業月20時間・有給取得率84%・在宅週2回・年間休日125日と製造業大手トップ水準。部署による残業差は要確認</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>経営理念</strong>: 「モノを動かし、心を動かす。」（2021年10月改定）</li>
+<li><strong>社是</strong>: 「日新」— 「今日の『われ』は昨日の『われ』にあらず、明日の『われ』は今日の『われ』にとどまるべからず」という継続的変革の精神</li>
+<li><strong>長期ビジョン</strong>: 「Driving Innovative Impact 2030」— 経済価値と社会価値の両立を目指す</li>
+<li><strong>経営方針の3本柱</strong>: ①人と環境への配慮・人権尊重、②革新的技術でスマート・ロジスティクスを実現、③多様性を尊重する自由闊達な企業風土での変革推進</li>
+<li><strong>出典</strong>: 理念体系<sup class="fnref"><a href="#src-1">[1]</a></sup>、DAIFUKU Square 理念解説<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 事業部制＋機能組織のマトリクス型。国内・海外の複数セグメントに分かれた大規模組織（連結1.14万名）</li>
+<li><strong>スタイル</strong>: 大企業型のトップダウン傾向。ただし「自由闊達な企業風土」「やる気があれば評価される」との口コミから、現場のボトムアップ提案も一定機能</li>
+<li><strong>意思決定の速さ</strong>: 大企業のため意思決定は遅めとの口コミもあり（権限委譲が進まない傾向）</li>
+<li><strong>出典</strong>: エンカイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>評価サイクル</strong>: 年3回（期初・期中・期末）の上司との目標対話。2023年度に新制度を開始</li>
+<li><strong>評価項目</strong>: 行動評価・役割評価・成果評価の3軸</li>
+<li><strong>昇給</strong>: 年1回（4月）。ただし口コミによれば「昇給は役職がつかないと基本給が上がらない」傾向</li>
+<li><strong>キャリアプラン提出</strong>: 年1回、上司・人事部へキャリア希望を提出できる制度あり</li>
+<li><strong>懸念</strong>: 年功序列的な運営が残っており、20代後半以降に待遇が停滞するとの指摘複数</li>
+<li><strong>出典</strong>: 人材育成ページ<sup class="fnref"><a href="#src-4">[4]</a></sup>、エンカイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>単体従業員数</strong>: 3,858名（2025年）</li>
+<li><strong>連結従業員数</strong>: 約1.14万名（グループ全体）</li>
+<li><strong>平均年齢</strong>: 41.6歳（FY2025有価証券報告書）</li>
+<li><strong>平均勤続年数</strong>: 公開情報から長期勤続者多数と推定（離職率2.43%）</li>
+<li><strong>離職率</strong>: <strong>2.43%</strong>（2024年度）— 製造業大手として極めて低水準</li>
+<li><strong>中途採用比率</strong>: 60%（2024年度）— キャリア採用が積極的</li>
+<li><strong>出典</strong>: talentsquare 評判記事<sup class="fnref"><a href="#src-5">[5]</a></sup>、ダイフク IRBank<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li><strong>主要業務領域</strong>（キャリア採用求人より）:</li>
+<li><strong>ソフトウェア開発</strong>: 倉庫管理システム（WMS）・搬送制御システムの設計・開発</li>
+<li><strong>制御設計</strong>: PLCプログラミング・機械制御システムの設計</li>
+<li><strong>フィールドエンジニア</strong>: 国内外顧客先でのシステム据付・立ち上げ・保守</li>
+<li><strong>システム開発</strong>: ネットワーク・インフラ・社内DX推進</li>
+<li><strong>機械設計</strong>: コンベア・自動倉庫等の機械設計</li>
+<li><strong>営業・プロジェクトマネジメント</strong>: 顧客折衝〜システム提案〜納品まで一気通貫</li>
+<li><strong>プロジェクト規模</strong>: 数億〜数百億円規模の大型案件。国内外の大手メーカー・物流会社・空港が顧客</li>
+<li><strong>出典</strong>: ダイフク キャリア採用<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>ソフトウェア</strong>: 倉庫管理システム（WMS）、制御・搬送システム。詳細な言語・FWは非公開</li>
+<li><strong>制御技術</strong>: PLC（シーケンサ）プログラミング、産業用ネットワーク（PROFINET等）</li>
+<li><strong>インフラ</strong>: サーバー・ネットワーク管理（社内DX・クラウド化推進中）</li>
+<li><strong>AI・ロボティクス</strong>: 2027年中計でAI・ロボティクスへの戦略投資を明記。AI活用による物流最適化が技術開発の重点領域</li>
+<li><strong>開発手法</strong>: 大規模プロジェクト主体のため、プロジェクト管理・品質管理プロセスが重要</li>
+<li><strong>出典</strong>: ダイフク ソリューション<sup class="fnref"><a href="#src-8">[8]</a></sup>、中期経営計画<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>階層別研修</strong>: 新入社員研修〜管理職研修まで体系的に整備。入社2・3年目研修、中堅社員研修、新任係長研修等</li>
+<li><strong>選抜型研修</strong>: リーダー養成研修（次世代幹部候補育成）</li>
+<li><strong>グローバル研修</strong>: 海外赴任前研修・英語研修</li>
+<li><strong>中途採用者向け研修</strong>: 入社時に「キャリア採用研修」を実施（経営理念・会社基本ルールの共有）</li>
+<li><strong>カフェテリアプラン</strong>: スキルアップ費用もメニューに含まれ、自律的な学習をサポート</li>
+<li><strong>通信教育</strong>: 自己啓発支援として通信教育プログラムあり（公式記載）</li>
+<li><strong>出典</strong>: 人材育成ページ<sup class="fnref"><a href="#src-4">[4]</a></sup>、キャリア採用ページ<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li><strong>職種別の専門性深化</strong>: エンジニア職・営業職・スタッフ職それぞれのキャリアラダーあり</li>
+<li><strong>グローバル展開</strong>: 世界50カ国以上での事業があり、海外経験を積む機会が豊富</li>
+<li><strong>社内公募・キャリアプラン</strong>: 年1回のキャリアプラン提出。ジョブリターン制度（退職者の再雇用）も整備</li>
+<li><strong>中途採用者の実態</strong>: 中途採用比率60%と高く、異業種からの転職者も多い。ただし昇進は年功序列傾向が残る</li>
+<li><strong>出典</strong>: ダイフク採用FAQ<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 7時間45分（8:30〜17:00。営業系は9:00〜17:30）</li>
+<li><strong>フレックスタイム制</strong>: 一部部署に導入あり（詳細は部署・職種により異なる）</li>
+<li><strong>残業</strong>: 月平均<strong>約20時間</strong>（公式・有報レベル）。ただし口コミでは部署差が大きく、月30〜40時間の報告も。「残業が多いのでプライベート時間はあまりなかった」との口コミも存在</li>
+<li><strong>残業代</strong>: 全額支給（公式）</li>
+<li><strong>出典</strong>: ダイフク キャリア採用<sup class="fnref"><a href="#src-7">[7]</a></sup>、talentsquare評判<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong>在宅勤務制度</strong>: <strong>週2回まで利用可能</strong>（公式採用サイト記載）</li>
+<li><strong>介護目的の在宅</strong>: 最長1年間の在宅勤務制度あり（介護支援）</li>
+<li><strong>実態</strong>: 口コミや公開情報から制度が実際に機能していることを確認。ただし職種（フィールドエンジニア等）によっては適用困難</li>
+<li><strong>出典</strong>: ダイフク 福利厚生<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>休日</strong>: 完全週休2日制（土日）・祝日・夏季・冬季休暇。<strong>年間休日125日</strong>（2023年度）</li>
+<li><strong>有給休暇</strong>: 最大20日付与・翌年繰越可・最大60日積立可。<strong>有給取得率84%</strong>（2024年度）</li>
+<li><strong>住まい支援</strong>: 独身寮（月1万円寮費）・社宅（東京・大阪は月2万円補助）・借家補助・住宅ローン補助</li>
+<li><strong>転勤時</strong>: みなし社宅制度（8年間会社が8割負担・段階的に変動）</li>
+<li><strong>育児</strong>: 育児休業（子が1歳まで、最長2歳）・短時間勤務（小学校卒業まで・6時間に短縮）・看護等休暇</li>
+<li><strong>介護</strong>: 介護休業（最大1年）・介護休暇（年5〜10日）・介護支援の在宅勤務（最長1年）</li>
+<li><strong>カフェテリアプラン</strong>: 育児・介護・スキルアップ・奨学金返済等から選択可能</li>
+<li><strong>WELBOX</strong>: 全国施設優待利用（映画・旅行・スポーツ等）</li>
+<li><strong>保養所</strong>: 箱根・戸隠・滋賀</li>
+<li><strong>退職金制度</strong>: あり</li>
+<li><strong>社員持ち株会</strong>: あり</li>
+<li><strong>健康支援</strong>: 産業医・保健師による面談、マッサージルーム完備</li>
+<li><strong>副業</strong>: 公開情報からは記載なし。面接で要確認</li>
+<li><strong>出典</strong>: ダイフク 福利厚生<sup class="fnref"><a href="#src-11">[11]</a></sup>、エンカイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>平均年収</strong>: <strong>918万円</strong>（FY2025有価証券報告書。平均年齢41.6歳）</li>
+<li><strong>年収レンジ（口コミ）</strong>: 450〜650万円帯（職種・経歴で変動）。弁理士のような専門資格なしの一般職レンジ</li>
+<li><strong>月給</strong>: 24〜37万円（口コミ）</li>
+<li><strong>賞与</strong>: 年2回（7月・12月）。年間112〜180万円との口コミ</li>
+<li><strong>昇給</strong>: 年1回（4月）。役職昇格時に大きく上昇するが、昇格前は緩やかとの口コミ</li>
+<li><strong>出典</strong>: talentsquare 年収記事<sup class="fnref"><a href="#src-12">[12]</a></sup>、エンカイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>労働条件</td><td>配属予定部署の月平均残業時間と、繁忙期の状況を教えていただけますか？</td><td>部署差が大きいことが口コミで指摘されており、具体的な実態を把握するため</td></tr><tr><td>2</td><td>労働条件</td><td>在宅勤務（週2回）の実際の運用状況を教えてください。職種によって利用できない場合はありますか？</td><td>フィールドエンジニア等は在宅困難と想定され、配属先の状況を確認するため</td></tr><tr><td>3</td><td>評価制度</td><td>中途入社の場合、入社後どのようなキャリアパスをたどった方が多いですか？昇格の目安を教えてください</td><td>年功序列傾向があり、中途での昇進・昇給がどの程度現実的かを確認するため</td></tr><tr><td>4</td><td>組織・カルチャー</td><td>中途採用で入社された方が多いと伺っていますが、新卒入社者とのカルチャーの違いや溶け込みやすさについて教えてください</td><td>中途採用60%という環境でのオンボーディングの実態を確認するため</td></tr><tr><td>5</td><td>職務・スキル</td><td>担当する業務（プロジェクト）の規模感・期間・チーム構成の典型例を教えていただけますか？</td><td>大型案件が多い中での自分の役割と業務負荷を具体的に把握するため</td></tr><tr><td>6</td><td>労働条件</td><td>副業・兼業は可能でしょうか？</td><td>公開情報に記載がなく、副業制度の有無を確認するため</td></tr><tr><td>7</td><td>労働条件</td><td>転勤（国内・海外）の頻度と、転勤が発生する条件を教えてください</td><td>グローバル展開の大企業のため転勤リスクを事前に把握するため</td></tr><tr><td>8</td><td>職務・スキル</td><td>AI・ロボティクス投資強化の中で、私が配属される職種はどのように関わる予定でしょうか？</td><td>中計で掲げるAI投資と実際の業務の連動性を確認し、成長機会を評価するため</td></tr><tr><td>9</td><td>組織・カルチャー</td><td>フレックスタイム制は配属部署で利用できますか？コアタイムがある場合は時間帯を教えてください</td><td>一部部署のみ導入との情報があり、実際の勤務時間の柔軟性を確認するため</td></tr><tr><td>10</td><td>評価制度</td><td>新評価制度（2023年導入）において、中途採用者はどのように評価基準が設定されますか？</td><td>新制度での処遇決定プロセスと、中途での入社等級設定の透明性を確認するため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>ダイフク 理念体系</td><td><a href="https://www.daifuku.com/jp/company/philosophy/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/philosophy/</a></td><td>2026-05-02</td></tr><tr><td>2</td><td>ダイフク 長期ビジョン・中計</td><td><a href="https://www.daifuku.com/jp/ir/policy/plan/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/policy/plan/</a></td><td>2026-05-02</td></tr><tr><td>3</td><td>ダイフク 人材育成</td><td><a href="https://www.daifuku.com/jp/sustainability/society/human-resources/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/society/human-resources/</a></td><td>2026-05-02</td></tr><tr><td>4</td><td>ダイフク 福利厚生</td><td><a href="https://www.daifuku.com/jp/employment/recruit/welfare.html" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/employment/recruit/welfare.html</a></td><td>2026-05-02</td></tr><tr><td>5</td><td>ダイフク キャリア採用</td><td><a href="https://www.daifuku.com/jp/career/recruit/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/career/recruit/</a></td><td>2026-05-02</td></tr><tr><td>6</td><td>ダイフク ESG</td><td><a href="https://www.daifuku.com/jp/sustainability/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/</a></td><td>2026-05-02</td></tr><tr><td>7</td><td>エンカイシャの評判 口コミ</td><td><a href="https://en-hyouban.com/company/00006796014/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00006796014/kuchikomi/</a></td><td>2026-05-02</td></tr><tr><td>8</td><td>OpenWork ダイフク</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000FrLe" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000FrLe</a></td><td>2026-05-02</td></tr><tr><td>9</td><td>転職会議 ダイフク</td><td><a href="https://jobtalk.jp/companies/2105/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/2105/answers</a></td><td>2026-05-02</td></tr><tr><td>10</td><td>talentsquare 年収記事</td><td><a href="https://talentsquare.co.jp/career/daifuku-salary/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-salary/</a></td><td>2026-05-02</td></tr><tr><td>11</td><td>talentsquare 評判記事</td><td><a href="https://talentsquare.co.jp/career/daifuku-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-review/</a></td><td>2026-05-02</td></tr><tr><td>12</td><td>IRBank ダイフク</td><td><a href="https://irbank.net/E01551" target="_blank" rel="noopener noreferrer">https://irbank.net/E01551</a></td><td>2026-05-02</td></tr><tr><td>13</td><td>コンテック課徴金勧告</td><td><a href="https://www.daifuku.com/jp/company/news/2024/0216_01/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/news/2024/0216_01/</a></td><td>2026-05-02</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">理念体系</td><td class="src-url"><a href="https://www.daifuku.com/jp/company/philosophy/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/company/philosophy/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">DAIFUKU Square 理念解説</td><td class="src-url"><a href="https://www.daifuku.com/jp/daifuku-square/corporate-vision/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/daifuku-square/corporate-vision/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">エンカイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/00006796014/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00006796014/kuchikomi/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">人材育成ページ</td><td class="src-url"><a href="https://www.daifuku.com/jp/sustainability/society/human-resources/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/sustainability/society/human-resources/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">talentsquare 評判記事</td><td class="src-url"><a href="https://talentsquare.co.jp/career/daifuku-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-review/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">ダイフク IRBank</td><td class="src-url"><a href="https://irbank.net/E01551" target="_blank" rel="noopener noreferrer">https://irbank.net/E01551</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">ダイフク キャリア採用</td><td class="src-url"><a href="https://www.daifuku.com/jp/career/recruit/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/career/recruit/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">ダイフク ソリューション</td><td class="src-url"><a href="https://www.daifuku.com/jp/solution/intralogistics/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/solution/intralogistics/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">中期経営計画</td><td class="src-url"><a href="https://www.daifuku.com/jp/ir/policy/plan/" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/ir/policy/plan/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">ダイフク採用FAQ</td><td class="src-url"><a href="https://www.daifuku.com/jp/employment/recruit/faq.html" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/employment/recruit/faq.html</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">ダイフク 福利厚生</td><td class="src-url"><a href="https://www.daifuku.com/jp/employment/recruit/welfare.html" target="_blank" rel="noopener noreferrer">https://www.daifuku.com/jp/employment/recruit/welfare.html</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">talentsquare 年収記事</td><td class="src-url"><a href="https://talentsquare.co.jp/career/daifuku-salary/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/daifuku-salary/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

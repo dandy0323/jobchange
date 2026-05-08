@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社千里眼</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社千里眼</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-15</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-sonnet-4-6</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2011年創業で全国63店舗以上に拡大した実績あり。占い市場は約1.5兆円規模で景気後退耐性もある。ただし非上場で財務情報は完全非公開であり、経営実態の客観的検証が困難。</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">公的な不祥事・行政処分の報道は確認できず。ただし元社員口コミに「サービス残業・低賃金」の指摘があり（2015年管理職）、労務コンプライアンスの現状を面接で確認する必要がある。</p>
+        </article>
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">懸念点が多数</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">Indeed報酬1.5/5・定着昇進1.0/5、転職会議総合2.75/5と複数プラットフォームで低評価。交通費なし・健康診断なし・高離職率（1〜3か月）が複数口コミで一致して指摘されている。</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="questions"
+        >💬 面接質問 (8)</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社千里眼</h1>
+
+<blockquote>調査日: 2026-04-15</blockquote>
+
+<h2 id="総合スクリーニング結果">■ 総合スクリーニング結果</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>事業・経済基盤</td><td><span class="badge badge-yellow">🟡</span></td><td>2011年創業・全国63店舗以上に拡大した成長企業。¥1.5兆市場で景気後退期に需要増の特性あり。ただし非上場で財務情報非公開、競合比較データも乏しい</td></tr><tr><td>社会的リスク</td><td><span class="badge badge-yellow">🟡</span></td><td>公的な不祥事・行政処分の報道は確認できず。ただし元社員口コミに「サービス残業」「低賃金」の記述があり、労働環境の実態は面接で確認が必要</td></tr><tr><td>社員評価</td><td><span class="badge badge-red">🔴</span></td><td>Indeed報酬1.5/5・定着・昇進1.0/5と業界最低水準。転職会議2.75/5。短期離職（1〜3か月）が常態化、交通費なし・健康診断なし等の福利厚生の薄さが複数口コミで指摘</td></tr></tbody></table>
+
+<blockquote>判定基準: <span class="badge badge-green">🟢</span> 懸念なし / <span class="badge badge-yellow">🟡</span> 要確認事項あり / <span class="badge badge-red">🔴</span> 重大な懸念あり</blockquote>
+
+<hr>
+
+<h2 id="1-事業-経済基盤-継続性の確認">1. 事業・経済基盤（継続性の確認）</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>誰に</strong>: 占いによる相談・鑑定を求める一般消費者（B2C）</li>
+<li><strong>何を</strong>: 対面・電話・メールによる占い鑑定サービス（タロット、手相、四柱推命等）</li>
+<li><strong>どのように</strong>: 直営店舗の運営＋フランチャイズ展開のハイブリッド型。本部が集客・マーケティング・予約管理を担い、各店舗の占い師が鑑定を提供。直営店では売上を占い師と50/50で分配するコミッション制。フランチャイズ加盟では加盟金・ロイヤルティが収益源</li>
+<li><strong>規模感</strong>: 公式サイト月間約40万アクセス、直営店月間約1万人来客（2017年アントレ掲載情報） [1]</li>
+<li><strong>出典</strong>: 株式会社千里眼フランチャイズ情報｜アントレ<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場シェアと競合">1-2. 市場シェアと競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 占いサービス業界（市場規模約1.5兆円とも）において、直営＋FCで全国63店舗以上を展開する最大手クラスの実店舗チェーン。2011年の大阪難波1店舗から約10年で全国展開を実現</li>
+<li><strong>主要競合</strong>:</li>
+<li>個人経営の占い師・小規模占いサロン — 価格柔軟性あり、ブランド力は低い</li>
+<li>電話占い・オンライン占いサービス — 利便性が高いが対面の安心感はない</li>
+<li><strong>対象企業の強み</strong>: 全国規模のブランド認知度、予約管理システム、占い師の採用・教育基盤、景気後退期に需要増加するカウンターサイクリカルな特性</li>
+<li><strong>対象企業の弱み</strong>: 非上場のため財務情報が不透明、フランチャイズ展開に伴う品質管理リスク、占い師の高離職率、業界全体の信頼性・規制リスク</li>
+<li><strong>出典</strong>: 株式会社千里眼フランチャイズ情報｜アントレ<sup class="fnref"><a href="#src-1">[1]</a></sup> [1] / 転職会議 口コミ<sup class="fnref"><a href="#src-2">[2]</a></sup> [2]</li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>直近期</th><th>前期</th><th>前々期</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>非公開</td><td>非公開</td><td>非公開</td><td>非上場・開示なし</td></tr><tr><td>営業利益率</td><td>非公開</td><td>非公開</td><td>非公開</td><td>非上場・開示なし</td></tr><tr><td>自己資本比率</td><td>非公開</td><td>非公開</td><td>非公開</td><td>非上場・開示なし</td></tr><tr><td>従業員数</td><td>約27〜32名（本社直雇用）</td><td>—</td><td>—</td><td>占い師含む在籍者は900〜1,500名超</td></tr></tbody></table>
+
+<ul>
+<li><strong>上場/非上場</strong>: 非上場</li>
+<li><strong>SalesNowスコア</strong>: B評価 [3]</li>
+<li><strong>出典</strong>: SalesNow DB<sup class="fnref"><a href="#src-3">[3]</a></sup> [3]</li>
+<li><span class="badge badge-yellow">⚠️</span> 非上場のため財務情報は非公開。面接時に「売上規模・成長率・資金繰り状況」について質問推奨</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>店舗拡大の軌跡</strong>: 2011年大阪難波1店舗 → 2021年時点で全国63店舗、占い師900名超。プレスリリースで「事業拡大のため本社移転」を公表 [4]</li>
+<li><strong>地方展開</strong>: 福岡・仙達・札幌など占い店舗が少ない地方都市への出店を積極推進 [1]</li>
+<li><strong>海外展開</strong>: 社員口コミに「国際展開のパートナーシップを構築中」との記述あり（詳細は未確認） [5]</li>
+<li><strong>フランチャイズ</strong>: FC加盟募集を継続的に実施。オーナーに占いスキル不要で運営可能なモデルを訴求 [1]</li>
+<li><strong>採用活動</strong>: 2025年初頭時点でリクナビNEXT等で14件の求人掲載を確認 [3]</li>
+<li><strong>出典</strong>: バリュープレス プレスリリース 2021年3月<sup class="fnref"><a href="#src-4">[4]</a></sup> [4]</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>過去10年の主な事案</strong>: 主要な報道・行政処分なし。「株式会社千里眼 不祥事/行政処分/労基」の検索では同社に直接関連する結果は確認できず [6]</li>
+<li><strong>留意事項</strong>: 元社員口コミに「サービス残業あり」「低賃金」の記述があり（2015年当時の管理職レビュー）、過去に労働環境の問題が内部的に存在した可能性がある。公式な行政処分等は確認されていない [2]</li>
+<li><strong>出典</strong>: 検索クエリ「&quot;株式会社千里眼&quot; 不祥事 OR 行政処分 OR 労基」（2026-04-15実施）[6]</li>
+</ul>
+
+<h3 id="5-2-サステナビリティ-ESG">5-2. サステナビリティ・ESG</h3>
+<ul>
+<li><strong>取り組み概要</strong>: 鑑定料収入の一部を発展途上国支援に充当。バングラデシュへの学校用トイレ・井戸の設置等を実施。「店舗あたり毎月1名分の途上国子供支援」を実施 [7]</li>
+<li><strong>報告書・開示</strong>: 非上場のため正式なESGレポートは非公開</li>
+<li><strong>職場環境</strong>: 2021年移転後の新オフィスは「自然な色調と照明」を採用し、女性が多い職場に配慮したオープンデザインを導入 [4]</li>
+<li><strong>出典</strong>: バリュープレス プレスリリース 2021年3月<sup class="fnref"><a href="#src-4">[4]</a></sup> [4]</li>
+</ul>
+
+<h3 id="5-3-顧客からの評判">5-3. 顧客からの評判</h3>
+<ul>
+<li><strong>商品・サービスの評価</strong>: 月間来客数約1万人（直営店）、月間サイトアクセス約40万件という数値は一定の顧客支持を示す [1]</li>
+<li><strong>SNS等での反応傾向</strong>: Facebook公式アカウントあり。詳細な定量評価は今回の調査範囲では把握できず</li>
+</ul>
+
+<hr>
+
+<p>#### 社員評価</p>
+
+<p><strong>【良い点】</strong>
+<ul>
+<li>「人の悩みは尽きない。不景気になればなるほど占い需要が増す」と事業の安定性を評価する声あり [5]</li>
+<li>エン カイシャの評判での総合評価 <strong>3.5/5</strong>（5件）と及第点 [5]</li>
+<li>転職会議より「有給休暇消化率100%」との記載あり（月間残業10時間程度） [2]</li>
+<li>時短正社員制度（4時間勤務）があり、フリーランスとの兼業希望者には柔軟な働き方が可能との口コミあり [8]</li>
+<li>国際展開パートナーシップへの取り組みを評価する声もある [5]</li>
+</ul></p>
+
+<p><strong>【懸念点】</strong>
+<ul>
+<li>Indeed報酬・待遇スコア <strong>1.5/5</strong>、定着・昇進スコア <strong>1.0/5</strong> と非常に低い [8]</li>
+<li>転職会議の総合評価 <strong>2.75/5</strong>（4件） [2]</li>
+<li>短期離職（入社後1〜3か月での退職）が常態化しているとの記述が複数 [8]</li>
+<li>「交通費一切なし」（2025年3月口コミ、占い師・大阪勤務） [8]</li>
+<li>健康診断が時短社員には提供されないとの指摘 [8]</li>
+<li>福利厚生はベネフィットステーション加入のみで薄い [8]</li>
+<li>「給料は経営者の裁量で決まる」「家族経営的な構造が賃金格差を生んでいる」との口コミ [2]</li>
+<li>インフレ・最低賃金上昇への対応が遅く、人材流出リスクが懸念されている [5]</li>
+<li>元管理職（2015年当時）の口コミに「利益が出ているのにサービス残業が横行していた」との指摘 [2]</li>
+</ul></p>
+
+<p><strong>出典</strong>:
+<ul>
+<li>エン カイシャの評判（千里眼）口コミ一覧<sup class="fnref"><a href="#src-5">[5]</a></sup> [5]</li>
+<li>転職会議 株式会社千里眼 口コミ<sup class="fnref"><a href="#src-2">[2]</a></sup> [2]</li>
+<li>Indeed 株式会社千里眼 社員クチコミ・評判<sup class="fnref"><a href="#src-6">[6]</a></sup> [8]</li>
+</ul></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] <strong>直近の売上規模・成長率</strong>: 非上場で財務情報が一切非公開。事業継続性の判断に必要</li>
+<li>[ ] <strong>採用職種（本社スタッフ）の具体的な給与水準・昇給制度</strong>: 口コミに「裁量的で不透明」との記述があり正確な報酬体系を確認する必要がある</li>
+<li>[ ] <strong>労働条件の現在の実態（残業・交通費）</strong>: 2015年の「サービス残業」口コミは古い情報。現在の労務管理体制を確認する必要がある</li>
+<li>[ ] <strong>健康診断・社会保険等の福利厚生の全容</strong>: 「時短社員には健康診断なし」との口コミがあり、雇用形態別の待遇を明確化すべき</li>
+<li>[ ] <strong>海外展開の具体的な計画</strong>: 口コミに「国際展開パートナーシップ」への言及があるが詳細不明</li>
+<li>[ ] <strong>フランチャイズ本部機能（ロイヤルティ・加盟店数）の現状</strong>: 直営・FC比率と本部収益構造を理解するために確認が望ましい</li>
+<li>[ ] <strong>経営陣・代表者の情報</strong>: 詳細な経営体制が不明。家族経営的な構造の口コミとも照らして確認推奨</li>
+<li>[ ] <strong>離職率の公式データ</strong>: 口コミに短期離職が多い旨の記述あり。実際のデータを確認すべき</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>株式会社千里眼フランチャイズ・独立開業情報｜アントレ</td><td><a href="https://entrenet.jp/dplan/0002026/" target="_blank" rel="noopener noreferrer">https://entrenet.jp/dplan/0002026/</a></td><td>2026-04-15</td></tr><tr><td>2</td><td>千里眼の評判/社風/社員の口コミ（全3件）【転職会議】</td><td><a href="https://jobtalk.jp/companies/6095774/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/6095774/answers</a></td><td>2026-04-15</td></tr><tr><td>3</td><td>株式会社千里眼｜SalesNow DB</td><td><a href="https://salesnow.jp/db/companies/jcbm0mju97h4nkxc" target="_blank" rel="noopener noreferrer">https://salesnow.jp/db/companies/jcbm0mju97h4nkxc</a></td><td>2026-04-15</td></tr><tr><td>4</td><td>【占いの館千里眼】事業拡大のため2021年3月8日本社オフィスを移転（プレスリリース）</td><td><a href="https://www.value-press.com/pressrelease/265907" target="_blank" rel="noopener noreferrer">https://www.value-press.com/pressrelease/265907</a></td><td>2026-04-15</td></tr><tr><td>5</td><td>千里眼の口コミ一覧 - エン カイシャの評判</td><td><a href="https://en-hyouban.com/company/10201860094/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10201860094/kuchikomi/</a></td><td>2026-04-15</td></tr><tr><td>6</td><td>検索クエリ「&quot;株式会社千里眼&quot; 不祥事 OR 行政処分 OR 労基」</td><td>—</td><td>2026-04-15</td></tr><tr><td>7</td><td>千里眼ホールディングスの評判・口コミ｜エンゲージ会社の評判</td><td><a href="https://en-hyouban.com/company/10201051187/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10201051187/</a></td><td>2026-04-15</td></tr><tr><td>8</td><td>株式会社千里眼の社員クチコミ・評判｜Indeed</td><td><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%83%E9%87%8C%E7%9C%BC/reviews" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%83%E9%87%8C%E7%9C%BC/reviews</a></td><td>2026-04-15</td></tr><tr><td>9</td><td>千里眼 「社員クチコミ」 就職・転職の採用企業リサーチ OpenWork</td><td><a href="https://www.openwork.jp/company.php?m_id=a0CIh000002FEj6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0CIh000002FEj6</a></td><td>2026-04-15</td></tr><tr><td>10</td><td>株式会社千里眼の会社情報と与信管理｜NIKKEI COMPASS</td><td><a href="https://www.nikkei.com/compass/company/bfVJgrVWkYxztBHtg2AFrL" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/compass/company/bfVJgrVWkYxztBHtg2AFrL</a></td><td>2026-04-15</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">株式会社千里眼フランチャイズ情報｜アントレ</td><td class="src-url"><a href="https://entrenet.jp/dplan/0002026/" target="_blank" rel="noopener noreferrer">https://entrenet.jp/dplan/0002026/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">転職会議 口コミ</td><td class="src-url"><a href="https://jobtalk.jp/companies/6095774/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/6095774/answers</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">SalesNow DB</td><td class="src-url"><a href="https://salesnow.jp/db/companies/jcbm0mju97h4nkxc" target="_blank" rel="noopener noreferrer">https://salesnow.jp/db/companies/jcbm0mju97h4nkxc</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">バリュープレス プレスリリース 2021年3月</td><td class="src-url"><a href="https://www.value-press.com/pressrelease/265907" target="_blank" rel="noopener noreferrer">https://www.value-press.com/pressrelease/265907</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">エン カイシャの評判（千里眼）口コミ一覧</td><td class="src-url"><a href="https://en-hyouban.com/company/10201860094/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10201860094/kuchikomi/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">Indeed 株式会社千里眼 社員クチコミ・評判</td><td class="src-url"><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%83%E9%87%8C%E7%9C%BC/reviews" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E5%8D%83%E9%87%8C%E7%9C%BC/reviews</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-questions"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <section class="interview-questions"><p class="q-intro">面接で聞きたい質問を 8 件整理しました。カテゴリでの絞り込み・ワンクリックコピーに対応しています。</p><div class="q-filter-bar" role="tablist"><button type="button" class="q-filter-chip active" data-filter="__all__">すべて</button><button type="button" class="q-filter-chip" data-filter="財務・経営">財務・経営</button><button type="button" class="q-filter-chip" data-filter="報酬・待遇">報酬・待遇</button><button type="button" class="q-filter-chip" data-filter="労働環境">労働環境</button><button type="button" class="q-filter-chip" data-filter="キャリア・定着">キャリア・定着</button><button type="button" class="q-filter-chip" data-filter="事業戦略">事業戦略</button><button type="button" class="q-filter-chip" data-filter="組織・ガバナンス">組織・ガバナンス</button><button type="button" class="q-filter-chip" data-filter="福利厚生">福利厚生</button></div><div class="q-card-list"><article class="q-card" data-category="財務・経営"><div class="q-card-head"><span class="q-num">Q1</span><span class="q-category-badge">財務・経営</span><button type="button" class="q-copy-btn" data-copy="非上場のため外部からは財務情報が確認できませんでした。直近の売上規模や成長率、収益性について教えていただけますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">非上場のため外部からは財務情報が確認できませんでした。直近の売上規模や成長率、収益性について教えていただけますか？</p><p class="q-rationale">💡 事業継続性の判断に不可欠だが、一切の財務情報が非公開のため面接で直接確認が必要</p></article><article class="q-card" data-category="報酬・待遇"><div class="q-card-head"><span class="q-num">Q2</span><span class="q-category-badge">報酬・待遇</span><button type="button" class="q-copy-btn" data-copy="本社スタッフの給与レンジと昇給の仕組みについて教えてください。口コミで「経営者の裁量で決まる」との記述を見たのですが、実際の評価基準はどのようになっていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">本社スタッフの給与レンジと昇給の仕組みについて教えてください。口コミで「経営者の裁量で決まる」との記述を見たのですが、実際の評価基準はどのようになっていますか？</p><p class="q-rationale">💡 Indeed報酬スコア1.5/5と非常に低く、賃金決定の透明性に懸念あり</p></article><article class="q-card" data-category="労働環境"><div class="q-card-head"><span class="q-num">Q3</span><span class="q-category-badge">労働環境</span><button type="button" class="q-copy-btn" data-copy="残業の実態と交通費の支給体制について教えてください。また、健康診断は全雇用形態で提供されていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">残業の実態と交通費の支給体制について教えてください。また、健康診断は全雇用形態で提供されていますか？</p><p class="q-rationale">💡 交通費なし・健康診断なし・サービス残業の口コミが複数あり、現状の確認が必要</p></article><article class="q-card" data-category="キャリア・定着"><div class="q-card-head"><span class="q-num">Q4</span><span class="q-category-badge">キャリア・定着</span><button type="button" class="q-copy-btn" data-copy="本社スタッフの平均勤続年数と離職率を教えていただけますか。また、キャリアアップのパスはどのように設計されていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">本社スタッフの平均勤続年数と離職率を教えていただけますか。また、キャリアアップのパスはどのように設計されていますか？</p><p class="q-rationale">💡 Indeed定着・昇進スコア1.0/5と最低水準。短期離職が常態化しているとの口コミと照合が必要</p></article><article class="q-card" data-category="事業戦略"><div class="q-card-head"><span class="q-num">Q5</span><span class="q-category-badge">事業戦略</span><button type="button" class="q-copy-btn" data-copy="直営店とフランチャイズ店の現在の比率と、今後の展開方針を教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">直営店とフランチャイズ店の現在の比率と、今後の展開方針を教えてください。</p><p class="q-rationale">💡 収益構造の理解に必要。直営比率によって本部の収益安定性が大きく変わる</p></article><article class="q-card" data-category="事業戦略"><div class="q-card-head"><span class="q-num">Q6</span><span class="q-category-badge">事業戦略</span><button type="button" class="q-copy-btn" data-copy="海外展開のパートナーシップについて口コミで触れられていました。具体的にどのような取り組みを進めていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">海外展開のパートナーシップについて口コミで触れられていました。具体的にどのような取り組みを進めていますか？</p><p class="q-rationale">💡 海外展開は未確認項目。事業の成長ポテンシャルと関連する重要事項</p></article><article class="q-card" data-category="組織・ガバナンス"><div class="q-card-head"><span class="q-num">Q7</span><span class="q-category-badge">組織・ガバナンス</span><button type="button" class="q-copy-btn" data-copy="経営体制と意思決定の仕組みを教えてください。オーナー家族が中心の経営体制との口コミを見ましたが、現在はどのような組織構造ですか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">経営体制と意思決定の仕組みを教えてください。オーナー家族が中心の経営体制との口コミを見ましたが、現在はどのような組織構造ですか？</p><p class="q-rationale">💡 「家族経営的な構造が賃金格差を生む」との口コミあり。ガバナンス体制の確認が必要</p></article><article class="q-card" data-category="福利厚生"><div class="q-card-head"><span class="q-num">Q8</span><span class="q-category-badge">福利厚生</span><button type="button" class="q-copy-btn" data-copy="ベネフィットステーション以外の福利厚生や社内制度（育児支援、資格取得支援等）があれば教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">ベネフィットステーション以外の福利厚生や社内制度（育児支援、資格取得支援等）があれば教えてください。</p><p class="q-rationale">💡 福利厚生が薄いとの口コミが複数。詳細な福利厚生の全容を把握するため</p></article></div></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

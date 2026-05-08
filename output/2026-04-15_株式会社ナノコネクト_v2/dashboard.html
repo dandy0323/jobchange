@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社ナノコネクト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社ナノコネクト</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-15</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-sonnet-4-6</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">売上約28億円・直取引主義の独自ポジションで成長中だが、利益剰余金▲2.7億円の累積損失が残存。非上場で詳細財務非公開のため、面接での直接確認が必要。</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">主要な不祥事・行政処分・労基違反の報道は確認できず。OpenWork法令順守意識スコアは3.8点（5点満点）で業界平均以上。</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork総合3.43（業界上位4%、36件）。風通しの良さ4.0と人間関係は高評価だが、待遇面の満足度2.7・人材の長期育成2.6が全項目最低。「給与水準の低さ」と「SES配属ガチャ」への不満が多数の口コミで散見される。</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="questions"
+        >💬 面接質問 (18)</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社ナノコネクト</h1>
+
+<blockquote>調査日: 2026-04-15</blockquote>
+
+<h2 id="総合スクリーニング結果">■ 総合スクリーニング結果</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>事業・経済基盤</td><td><span class="badge badge-yellow">🟡</span></td><td>売上約28億円・直取引主義の独自ポジションだが、累積損失（▲2.7億円）が残存。成長中だが財務基盤の厚みに要注意</td></tr><tr><td>社会的リスク</td><td><span class="badge badge-green">🟢</span></td><td>主要な不祥事・行政処分・労基違反の報道なし。法令順守意識スコアはOpenWorkで3.8点</td></tr><tr><td>社員評価</td><td><span class="badge badge-yellow">🟡</span></td><td>OpenWork総合3.43（業界上位4%）。風通しの良さ4.0と高評価の一方、待遇面2.7・長期育成2.6が全項目最低。給与不満と配属ガチャへの懸念が多数</td></tr></tbody></table>
+
+<blockquote>判定基準: <span class="badge badge-green">🟢</span> 懸念なし / <span class="badge badge-yellow">🟡</span> 要確認事項あり / <span class="badge badge-red">🔴</span> 重大な懸念あり</blockquote>
+
+<hr>
+
+<h2 id="1-事業-経済基盤-継続性の確認">1. 事業・経済基盤（継続性の確認）</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>誰に</strong>: 大手企業・中堅企業（自動車・金融・教育・エンタメなど多業種）</li>
+<li><strong>何を</strong>: AI活用ソリューション、ゲーミフィケーションプラットフォーム、業務系/スマホアプリ/組込み開発、DX推進コンサル</li>
+<li><strong>どのように</strong>: 超上流（構想・企画）から開発・運用保守まで一括受託。<strong>直取引主義</strong>（多重下請け排除）でリピーター獲得型のフロー＋ストック混合型</li>
+<li><strong>主要サービス</strong>:</li>
+<li>`LinKa` — 自社開発AI接客ツール（業務自動化・チャットボット）</li>
+<li>`Sky Walker` — ゲーミフィケーションプラットフォーム</li>
+<li>オートモーティブテクノロジー（車載・組込みシステム）</li>
+<li><strong>出典</strong>: 会社概要 | ナノコネ<sup class="fnref"><a href="#src-1">[1]</a></sup> / 転職サイトGreen<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場シェアと競合">1-2. 市場シェアと競合</h3>
+
+<ul>
+<li><strong>業界内ポジション</strong>: SIer・ソフト開発（神戸拠点）。ゲーミフィケーション領域で国内トップクラスと自社標榜。AI・DX・ゲーミフィケーション複合領域での差別化</li>
+<li><strong>主要競合</strong>:</li>
+<li>同規模SIer各社（神戸・大阪・東京） — 価格競争力はあるが自社IP（LinKa/Sky Walker）を持たない点で劣後</li>
+<li>ゲーミフィケーション特化ベンダー — 規模・知名度ではナノコネクトより大きい場合もあり</li>
+<li><strong>対象企業の強み</strong>: 直取引主義で顧客との関係が深い、独自IP保有、神戸拠点で優秀な理系人材採用</li>
+<li><strong>対象企業の弱み</strong>: 中堅規模で大手案件獲得に限界、ブランド認知度が低い、財務基盤の薄さ</li>
+<li><strong>出典</strong>: BaseConnect<sup class="fnref"><a href="#src-3">[3]</a></sup> / GeNEE スマホアプリ開発会社比較<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>直近期（第16期/2022年1月期）</th><th>前期</th><th>前々期</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>約28.7億円（参考値）</td><td>非公開</td><td>非公開</td><td>データサイト集計値</td></tr><tr><td>純利益</td><td>1億1,006万円</td><td>非公開</td><td>非公開</td><td>黒字転換</td></tr><tr><td>利益剰余金</td><td>▲2億6,804万円</td><td>非公開</td><td>非公開</td><td>累積損失あり</td></tr><tr><td>総資産</td><td>15億531万円</td><td>非公開</td><td>非公開</td><td></td></tr><tr><td>自己資本比率</td><td>非公開</td><td>—</td><td>—</td><td></td></tr></tbody></table>
+
+<ul>
+<li><strong>上場/非上場</strong>: <strong>非上場</strong>（資金調達総額約6.6億円）</li>
+<li><strong>資本金</strong>: 1億円（資本準備金含む合計2億円）</li>
+<li><strong>出典</strong>: 官報決算データベース 第16期<sup class="fnref"><a href="#src-5">[5]</a></sup> / バフェット・コード<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+<li><span class="badge badge-yellow">⚠️</span> 非上場のため財務情報は限定的。純利益は黒字だが利益剰余金がマイナスで累積損失が残存。<strong>面接時に直近の業績推移と黒字継続状況について質問推奨</strong></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>中期経営計画</strong>: 非公開（公式サイトにIR・中期経営計画ページなし）</li>
+<li><strong>注力投資領域</strong>:</li>
+<li>AI接客ツール「LinKa」の拡大展開</li>
+<li>DX推進・自動化ソリューションの深化</li>
+<li>東京事業所（丸の内）の強化による首都圏大手顧客開拓</li>
+<li>採用強化（190名→300名規模へ拡大傾向）</li>
+<li><strong>出典</strong>: マイナビ2027<sup class="fnref"><a href="#src-7">[7]</a></sup> / PR TIMES<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<ul>
+<li><strong>過去10年の主な事案</strong>: <strong>主要な報道なし</strong></li>
+<li>「不祥事 OR 行政処分 OR 労基」の検索でヒットなし</li>
+<li>OpenWork「法令順守意識」スコアは <strong>3.8点</strong>（5点満点）で業界平均以上</li>
+<li>ただし「裁量労働制による基本給の実質削減」という社員の指摘あり（違法ではないが待遇面のグレーゾーン）</li>
+<li><strong>出典</strong>: OpenWork<sup class="fnref"><a href="#src-9">[9]</a></sup> / Web検索（2026-04-15時点で関連情報なし）</li>
+</ul>
+
+<h3 id="5-2-サステナビリティ-ESG">5-2. サステナビリティ・ESG</h3>
+
+<ul>
+<li><strong>取り組み概要</strong>:</li>
+<li>専用ESGページ・報告書は未確認</li>
+<li>「<strong>お昼寝制度</strong>」（毎日13時に全社消灯・業務として15分の昼寝）はメディアで話題に</li>
+<li>フルリモート可能・フレックスタイム制・年間休日125日などの柔軟な働き方</li>
+<li>女性管理職の登用、育休・産休取得の促進</li>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-10">[10]</a></sup> / マイナビ2027<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客からの評判">5-3. 顧客からの評判</h3>
+
+<ul>
+<li><strong>商品・サービスの評価</strong>: 直取引主義と超上流からの一括受託がリピーター率向上につながっているとされる（自社公称）。ゲーミフィケーション・AI分野の独自技術は複数メディアで取り上げられている。スマホアプリ開発会社の推薦リストに掲載実績あり</li>
+<li><strong>SNS等での反応傾向</strong>: 直接的な顧客レビューや炎上情報は確認できず。IT転職関連サイトでは「やばい？」という検索意図への分析記事が存在（主に待遇面の低さに起因）</li>
+<li><strong>出典</strong>: GeNEE 比較記事<sup class="fnref"><a href="#src-4">[4]</a></sup> / IT転職800<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<p>#### 社員評価</p>
+
+<p>各口コミプラットフォームの総合スコア: OpenWork <strong>3.43</strong> / 5.0（業界上位4%、36件）、エン カイシャの評判 <strong>3.4</strong>（12件）、転職会議 <strong>3.33</strong>（73件）、就活会議 <strong>3.3</strong>（86件）</p>
+
+<p><strong>【良い点】</strong></p>
+
+<ul>
+<li>「<strong>風通しが非常に良く、役職問わず意見を言いやすい</strong>」— OpenWork 風通しの良さ <strong>4.0点</strong>（業界トップクラス）[7]</li>
+<li>「技術力の高いメンバーが多く、特にフロントエンド・AI領域でスキルアップできる」[2]</li>
+<li>「フルリモートOK・フレックス制でワークライフバランスが取りやすい」[12]</li>
+<li>「お昼寝制度・独自の福利厚生が充実しており、リフレッシュできる」[11]</li>
+<li>「女性管理職も多く、産休・育休を取得しやすい職場環境」[11]</li>
+<li>「成長・将来性への期待が高い」— 就活会議 成長・将来性 <strong>4.1点</strong> [13]</li>
+<li>「直取引案件が多く、大手顧客との直接折衝経験を積める」[2]</li>
+</ul>
+
+<p>出典: [2] Green<sup class="fnref"><a href="#src-2">[2]</a></sup> / [7] OpenWork<sup class="fnref"><a href="#src-9">[9]</a></sup> / [11] エン カイシャの評判<sup class="fnref"><a href="#src-12">[12]</a></sup> / [12] 転職会議<sup class="fnref"><a href="#src-13">[13]</a></sup> / [13] 就活会議<sup class="fnref"><a href="#src-14">[14]</a></sup></p>
+
+<p><strong>【懸念点】</strong></p>
+
+<ul>
+<li>「<strong>給与水準が低く、常駐先からの受取額との乖離が大きい</strong>」— OpenWork 待遇面の満足度 <strong>2.7点</strong>（全項目最低） [7]</li>
+<li>「<strong>中間層（シニア・リード）が育ちにくく、キャリアパスが不透明</strong>」— 人材の長期育成 <strong>2.6点</strong>（全項目最低） [8]</li>
+<li>「SES配属ガチャ：常駐先によって技術・環境が大きく左右される」[12]</li>
+<li>「入社後ギャップが大きく、採用説明と実態が異なると感じた」— 就活会議 入社後ギャップ <strong>2.7点</strong> [13]</li>
+<li>「裁量労働制の運用で基本給が実質削減されているように感じる」[14]</li>
+<li>「Zoomカメラ常時オン要件への不満がある」[14]</li>
+</ul>
+
+<p>出典: [7] OpenWork<sup class="fnref"><a href="#src-9">[9]</a></sup> / [8] OpenWork分析<sup class="fnref"><a href="#src-15">[15]</a></sup> / [12] 転職会議<sup class="fnref"><a href="#src-13">[13]</a></sup> / [13] 就活会議<sup class="fnref"><a href="#src-14">[14]</a></sup> / [14] IT転職800<sup class="fnref"><a href="#src-11">[11]</a></sup></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] <strong>直近の財務状況（2023年以降）</strong>: 最新の決算データが非公開のため、黒字継続の有無・累積損失の解消進捗が不明。「直近期の売上・営業利益の推移はどのようになっていますか？」と質問推奨</li>
+<li>[ ] <strong>SES配属の割合・比率</strong>: 自社開発案件とSES（客先常駐）案件の比率が不明。配属先の決定プロセスや希望反映の可否を確認</li>
+<li>[ ] <strong>裁量労働制の実態</strong>: 適用範囲・みなし時間・実態的な労働時間の管理方法を確認</li>
+<li>[ ] <strong>キャリアパスの具体例</strong>: シニアエンジニア・PM等へのキャリアアップの実例を確認（長期育成スコア最低のため重要）</li>
+<li>[ ] <strong>中期経営計画・成長戦略</strong>: 今後3〜5年の注力事業・採用方針を直接確認</li>
+<li>[ ] <strong>LinKa・Sky Walkerの収益貢献度</strong>: 受託vs.プロダクトの売上比率を確認</li>
+<li>[ ] <strong>退職率・離職率</strong>: 「入社後ギャップが大きい」という口コミが多いため、平均在籍年数・離職率を確認</li>
+<li>[ ] <strong>東京事業所の規模・位置づけ</strong>: 神戸本社との業務分担・キャリア機会の違いを確認</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>会社概要 \</td><td>ナノコネ</td><td><a href="https://www.nanoconnect.co.jp/about/corporation/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/corporation/</a></td><td>2026-04-15</td></tr><tr><td>2</td><td>株式会社ナノコネクト - 転職サイトGreen</td><td><a href="https://www.green-japan.com/company/4716" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716</a></td><td>2026-04-15</td></tr><tr><td>3</td><td>株式会社ナノコネクト - STARTUP DB</td><td><a href="https://startup-db.com/companies/O24mpqBUy3LZnx3a" target="_blank" rel="noopener noreferrer">https://startup-db.com/companies/O24mpqBUy3LZnx3a</a></td><td>2026-04-15</td></tr><tr><td>4</td><td>第16期決算公告 \</td><td>官報決算データベース</td><td><a href="https://catr.jp/settlements/07fe7/247406" target="_blank" rel="noopener noreferrer">https://catr.jp/settlements/07fe7/247406</a></td><td>2026-04-15</td></tr><tr><td>5</td><td>株式会社ナノコネクト - バフェット・コード</td><td><a href="https://www.buffett-code.com/company/9i5djxp5b5/" target="_blank" rel="noopener noreferrer">https://www.buffett-code.com/company/9i5djxp5b5/</a></td><td>2026-04-15</td></tr><tr><td>6</td><td>株式会社ナノコネクトの会社情報 - NIKKEI COMPASS</td><td><a href="https://www.nikkei.com/compass/company/xfjWzaDtUzMm5xSEsvjn2t" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/compass/company/xfjWzaDtUzMm5xSEsvjn2t</a></td><td>2026-04-15</td></tr><tr><td>7</td><td>ナノコネクト 社員クチコミ - OpenWork</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000iusgV" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000iusgV</a></td><td>2026-04-15</td></tr><tr><td>8</td><td>ナノコネクト OpenWork データ推移</td><td><a href="https://www.openwork.jp/a0C1000000iusgV/analysis/" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/a0C1000000iusgV/analysis/</a></td><td>2026-04-15</td></tr><tr><td>9</td><td>ナノコネクト 退職検討理由 - OpenWork</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=8" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=8</a></td><td>2026-04-15</td></tr><tr><td>10</td><td>ナノコネクトの評判・口コミ - エン カイシャの評判</td><td><a href="https://en-hyouban.com/company/10100600767/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/</a></td><td>2026-04-15</td></tr><tr><td>11</td><td>エン カイシャの評判 口コミ一覧</td><td><a href="https://en-hyouban.com/company/10100600767/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/kuchikomi/</a></td><td>2026-04-15</td></tr><tr><td>12</td><td>ナノコネクトの転職・採用情報 - 転職会議</td><td><a href="https://jobtalk.jp/companies/7662" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662</a></td><td>2026-04-15</td></tr><tr><td>13</td><td>ナノコネクトの評判・口コミ（全86件）- 就活会議</td><td><a href="https://syukatsu-kaigi.jp/companies/129511/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/129511/word_mouths</a></td><td>2026-04-15</td></tr><tr><td>14</td><td>【転職向け】ナノコネクトは本当に「やばい」のか - IT転職800</td><td><a href="https://it-jobnavi.com/nanoconnect-yabai/" target="_blank" rel="noopener noreferrer">https://it-jobnavi.com/nanoconnect-yabai/</a></td><td>2026-04-15</td></tr><tr><td>15</td><td>(株)ナノコネクトの新卒採用 - マイナビ2027</td><td><a href="https://job.mynavi.jp/27/pc/search/corp78681/outline.html" target="_blank" rel="noopener noreferrer">https://job.mynavi.jp/27/pc/search/corp78681/outline.html</a></td><td>2026-04-15</td></tr><tr><td>16</td><td>株式会社ナノコネクトのプレスリリース - PR TIMES</td><td><a href="https://prtimes.jp/main/html/searchrlp/company_id/32293" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/searchrlp/company_id/32293</a></td><td>2026-04-15</td></tr><tr><td>17</td><td>株式会社ナノコネクト - BaseConnect</td><td><a href="https://baseconnect.in/companies/56c647e6-49de-4557-bdd5-875d67d0fddf" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/56c647e6-49de-4557-bdd5-875d67d0fddf</a></td><td>2026-04-15</td></tr><tr><td>18</td><td>スマホアプリ開発会社比較 - GeNEE</td><td><a href="https://genee.jp/contents/recommended-app-development-companies/" target="_blank" rel="noopener noreferrer">https://genee.jp/contents/recommended-app-development-companies/</a></td><td>2026-04-15</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">会社概要 | ナノコネ</td><td class="src-url"><a href="https://www.nanoconnect.co.jp/about/corporation/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/corporation/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">転職サイトGreen</td><td class="src-url"><a href="https://www.green-japan.com/company/4716" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">BaseConnect</td><td class="src-url"><a href="https://baseconnect.in/companies/56c647e6-49de-4557-bdd5-875d67d0fddf" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/56c647e6-49de-4557-bdd5-875d67d0fddf</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">GeNEE スマホアプリ開発会社比較</td><td class="src-url"><a href="https://genee.jp/contents/recommended-app-development-companies/" target="_blank" rel="noopener noreferrer">https://genee.jp/contents/recommended-app-development-companies/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">官報決算データベース 第16期</td><td class="src-url"><a href="https://catr.jp/settlements/07fe7/247406" target="_blank" rel="noopener noreferrer">https://catr.jp/settlements/07fe7/247406</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">バフェット・コード</td><td class="src-url"><a href="https://www.buffett-code.com/company/9i5djxp5b5/" target="_blank" rel="noopener noreferrer">https://www.buffett-code.com/company/9i5djxp5b5/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">マイナビ2027</td><td class="src-url"><a href="https://job.mynavi.jp/27/pc/search/corp78681/outline.html" target="_blank" rel="noopener noreferrer">https://job.mynavi.jp/27/pc/search/corp78681/outline.html</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">PR TIMES</td><td class="src-url"><a href="https://prtimes.jp/main/html/searchrlp/company_id/32293" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/searchrlp/company_id/32293</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000iusgV" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000iusgV</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">エン カイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/10100600767/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">IT転職800</td><td class="src-url"><a href="https://it-jobnavi.com/nanoconnect-yabai/" target="_blank" rel="noopener noreferrer">https://it-jobnavi.com/nanoconnect-yabai/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">エン カイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/10100600767/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/kuchikomi/</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/7662" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">就活会議</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/129511/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/129511/word_mouths</a></td></tr><tr id="src-15"><td class="src-num">[15]</td><td class="src-title">OpenWork分析</td><td class="src-url"><a href="https://www.openwork.jp/a0C1000000iusgV/analysis/" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/a0C1000000iusgV/analysis/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社ナノコネクト</h1>
+
+<blockquote>調査日: 2026-04-15</blockquote>
+<blockquote>対象職種: 未指定（エンジニア職を中心に調査）</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★★</td><td><span class="badge badge-yellow">🟡</span></td><td>企業理念・ミッションが明確で風通しの良さは4.0点。一方「社長の好き嫌いによる人事評価」の口コミや若手の離職があり、公開情報と実態の乖離に注意</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>AI/ゲーミフィケーション/組込みと幅広い技術領域。自社プロダクト（LinKa等）を持ち超上流から一括受託で経験が積める。研修・資格支援も整備済み</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-yellow">🟡</span></td><td>フレックス・フルリモート可・年休125日と制度面は充実。ただし基本給の低さ・退職金制度なし・副業不可の口コミあり・案件によって残業格差が大きい</td></tr></tbody></table>
+
+<blockquote>確認度: ★☆☆ 情報不足 / ★★☆ 部分的に確認 / ★★★ 十分に確認</blockquote>
+<blockquote>判定: <span class="badge badge-green">🟢</span> 良好 / <span class="badge badge-yellow">🟡</span> 要確認 / <span class="badge badge-red">🔴</span> 懸念あり / <span class="badge badge-gray">⚪</span> 判定不能（情報不足）</blockquote>
+
+<hr>
+
+<h2 id="2-組織-カルチャー-相性の確認">2. 組織・カルチャー（相性の確認）</h2>
+
+<h3 id="2-1-企業理念-ミッション-ビジョン-バリュー">2-1. 企業理念（ミッション・ビジョン・バリュー）</h3>
+
+<ul>
+<li><strong>ミッション（公式）</strong>:</li>
+</ul>
+  &gt; <em>&quot;驚きを あなたのもとへ&quot;</em>
+  「驚き」は相手の期待を上回って初めて生まれるものとし、常に成長し一歩先を歩むことを求める理念。
+
+<ul>
+<li><strong>ビジョン（公式）</strong>:</li>
+</ul>
+  1. <em>&quot;小さなつながりである、目の前の「あなた」を大事にする&quot;</em>
+  2. <em>&quot;多くの人にすごい！と言わせる「驚き」を与えていきたい&quot;</em>
+<ul>
+<li>社名の語源: <strong>nano（10億分の1）＋ connection（つながり）</strong> = 小さなつながりを大切にする</li>
+</ul>
+
+<ul>
+<li><strong>コアバリュー（4つ）</strong>:</li>
+</ul>
+  1. <strong>価値創造への献身</strong> — 相手の期待を上回る成果を生み出す姿勢
+  2. <strong>競争力の強化</strong> — 個人の専門性を継続的に磨き社会に活かす
+  3. <strong>課題解決思考</strong> — 不可能とされた問題に知恵を絞り続ける実行力
+  4. <strong>自己責任の原則</strong> — 結果は過去の選択に由来すると認識し自己成長を追求
+
+<ul>
+<li><strong>現場への浸透度</strong>: 採用ページ・求人票でも理念を前面に出しており、選考でも重視される。OpenWorkの「社員の士気」スコアは3.2点と中程度で、理念への共感度は社員によって差あり。</li>
+</ul>
+
+<ul>
+<li><strong>出典</strong>: 経営理念 | ナノコネ<sup class="fnref"><a href="#src-1">[1]</a></sup> / OpenWork<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: フラット志向。「自律的意思決定ができて成果を出せる組織をつくる」を組織戦略として掲げる</li>
+<li><strong>意思決定の傾向</strong>: 社員が改善案・業務効率化案を提案できる文化。「個人のわがままではなく、客観的に組織の向上につながる案」が条件。通った提案は評価され、ポジション・所得向上に直結</li>
+<li><strong>人間関係の方針</strong>: 「社員は『友達』ではなく『同僚』という適切な距離感をキープ」と明示（プロフェッショナルな関係性を重視）</li>
+<li><strong>懸念点</strong>: 「社長の好き嫌いで人事評価が変わる傾向がある」との口コミが複数あり、トップダウンの側面も</li>
+<li><strong>出典</strong>: Green 企業情報<sup class="fnref"><a href="#src-3">[3]</a></sup> / 転職会議<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li><strong>評価体系</strong>: 成果主義（年功序列ではない）。OpenWork 実力主義スコア <strong>3.5点</strong></li>
+<li><strong>昇給</strong>: 年2回（同一役職内で半年に1度）</li>
+<li><strong>昇進機会</strong>: 年4回（業界平均より多い）</li>
+<li><strong>昇進基準</strong>: 技術力に加え「遅刻しない等の社会人として最低限の行動」も必須条件</li>
+<li><strong>否定的口コミ</strong>: 「社長の好き嫌いで人事評価が変わる」「評価基準が不透明」— OpenWork 人事評価の適正感スコア <strong>3.2点</strong></li>
+<li><strong>出典</strong>: OpenWork 年収・給与制度<sup class="fnref"><a href="#src-5">[5]</a></sup> / 転職会議<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-4-組織の人的構成">2-4. 組織の人的構成</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>データ</th></tr></thead><tbody><tr><td>従業員数</td><td>190名（役員・内定者含む、2026年2月1日時点）</td></tr><tr><td>平均年齢</td><td><strong>30.5歳</strong>（Green掲載）/ OpenWork回答者平均 <strong>32歳</strong></td></tr><tr><td>男性育休取得率</td><td><strong>36〜42.9%</strong></td></tr><tr><td>女性育休取得率</td><td><strong>87.5〜100%</strong></td></tr><tr><td>離職率</td><td>非公開（若手の離職の多さを示す口コミが複数存在）</td></tr></tbody></table>
+
+<ul>
+<li><strong>主な退職理由（口コミ）</strong>: 給与水準への不満 / 常駐案件での帰属意識欠如 / 配属ガチャ / 経営者の人事評価への不信感</li>
+<li><strong>出典</strong>: Green 企業情報<sup class="fnref"><a href="#src-3">[3]</a></sup> / 就活会議 退職理由<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル-キャリア形成の確認">3. 職務・スキル（キャリア形成の確認）</h2>
+
+<h3 id="3-1-具体的な業務範囲">3-1. 具体的な業務範囲</h3>
+
+<ul>
+<li><strong>担当フェーズ</strong>: ビジネスモデル構築の「超上流工程」（構想・企画）から設計・開発・運用保守まで一括受託が強み</li>
+<li><strong>業務の特徴</strong>: 直取引主義のため、エンジニアが顧客と直接折衝する機会が多い。サブリーダー以上になると顧客折衝が増加</li>
+<li><strong>開発領域</strong>: Webシステム・業務システム / スマホアプリ（Android / iOS）/ 組込みシステム（ECU・ナビゲーション等）/ クラウドシステム / AI・機械学習・ディープラーニング / IoT研究</li>
+<li><strong>出典</strong>: エンジニア募集 | ナノコネ<sup class="fnref"><a href="#src-7">[7]</a></sup> / Green エンジニア求人<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック-使用ツール">3-2. 技術スタック・使用ツール</h3>
+
+<ul>
+<li><strong>言語</strong>: PHP、JavaScript、Java、C#、VB、Kotlin（Android）、Swift（iOS）、SQL系</li>
+</ul>
+
+<ul>
+<li><strong>自社プロダクト</strong>:</li>
+</ul>
+<table class="data-table"><thead><tr><th>プロダクト</th><th>概要</th></tr></thead><tbody><tr><td><strong>LinKa</strong></td><td>対話型AI接客ツール、1,000超の導入実績</td></tr><tr><td><strong>Sky Walker</strong></td><td>ゲーミフィケーションパッケージ</td></tr><tr><td><strong>Seren（旧DME）</strong></td><td>ビッグデータマイニングエンジン</td></tr></tbody></table>
+
+<ul>
+<li><strong>インフラ・クラウド</strong>: 具体的なサービス名は公開情報では確認できず</li>
+<li><strong>AI活用状況</strong>: LinKaを中心に実用レベルのAI開発実績あり。AI・IoT研究チームが全社員公募で活動中</li>
+<li><strong>スキル評価基準</strong>: ETSS（組込みスキル標準）、CMMI、PMBOKを活用</li>
+<li><strong>出典</strong>: エンジニア募集 | ナノコネ<sup class="fnref"><a href="#src-7">[7]</a></sup> / 様々な取り組み | ナノコネ<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修体制">3-3. 教育・研修体制</h3>
+
+<table class="data-table"><thead><tr><th>制度</th><th>詳細</th></tr></thead><tbody><tr><td><strong>新入社員研修</strong></td><td>3ヶ月間（基本能力は2ヶ月で習得するカリキュラム）</td></tr><tr><td>メンター制度</td><td>あり</td></tr><tr><td>キャリアコンサルティング面談</td><td>半期ごと実施</td></tr><tr><td>キャリア形成支援制度</td><td>専用計画書でキャリアアップ/チェンジを設計・定期更新</td></tr><tr><td>研究開発制度</td><td>各部署に特別予算を割り当て次世代技術（AI・IoT等）を研究</td></tr><tr><td><strong>書籍購入費支援</strong></td><td>あり</td></tr><tr><td><strong>資格奨励金</strong></td><td>あり</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: 様々な取り組み | ナノコネ<sup class="fnref"><a href="#src-9">[9]</a></sup> / マイナビ2027<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li><strong>マネジメントパス</strong>: プレイヤー → サブリーダー（顧客折衝増加）→ リーダー → PM</li>
+<li><strong>スペシャリストパス</strong>: 技術専門性を極めるルートも存在</li>
+<li><strong>自社サービス企画制度</strong>: 社員が自らサービスを提案・企画できる機会あり</li>
+<li><strong>昇進機会</strong>: 年4回（業界標準より多い）</li>
+<li><strong>懸念点</strong>: OpenWork「人材の長期育成」スコア <strong>2.6点</strong>（全項目最低）。シニア・中間層が少なく、キャリアパスが実態として機能しているか不透明との声あり</li>
+<li><strong>出典</strong>: Green 企業情報<sup class="fnref"><a href="#src-3">[3]</a></sup> / OpenWork データ推移<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境-生活の質の確認">4. 労働条件・環境（生活の質の確認）</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>詳細</th></tr></thead><tbody><tr><td>所定労働時間</td><td>1日8時間</td></tr><tr><td>勤務体制</td><td>フレックスタイム制（出社時間帯 7:00〜11:00、コアタイム 11:00〜14:00）</td></tr><tr><td>年間休日</td><td>125日（完全週休2日制）</td></tr><tr><td>月平均残業時間</td><td><strong>17.3〜23.1時間</strong>（各口コミサイト集計値）</td></tr></tbody></table>
+
+<ul>
+<li><strong>裁量労働制</strong>: 社内勤務者は適用。「1日1.25時間分の残業代が確実に支給される」との口コミあり</li>
+<li><strong>懸念点</strong>: 「月間160時間超の残業があった」（退職済み男性SE、2024年10月）の極端な事例も。案件・部署によって残業格差あり</li>
+<li><strong>出典</strong>: 転職会議 残業口コミ<sup class="fnref"><a href="#src-12">[12]</a></sup> / OpenWork ワークライフバランス<sup class="fnref"><a href="#src-13">[13]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li><strong>制度の有無</strong>: あり。「常駐勤務なし」を中途採用求人に明記</li>
+<li><strong>実態</strong>: 神戸本社勤務 または 自宅テレワークを選択可能。ローテーション出社・ハイブリッドも自由選択。テレワーク手当あり</li>
+<li><strong>短時間勤務</strong>: 育児等の事由で4時間・6時間・通常勤務から選択可</li>
+<li><strong>懸念点</strong>: 「テレワーク時にZoomで常時監視される状況」（退職済み女性開発職、2022年5月）— 現状は変更されている可能性あり、面接で確認推奨</li>
+<li><strong>出典</strong>: エンジニア募集 | ナノコネ<sup class="fnref"><a href="#src-7">[7]</a></sup> / エン カイシャ 働き方<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<table class="data-table"><thead><tr><th>制度</th><th>詳細</th></tr></thead><tbody><tr><td>社会保険</td><td>完備</td></tr><tr><td>交通費</td><td>全額支給</td></tr><tr><td>住宅手当・テレワーク手当</td><td>あり</td></tr><tr><td>家族手当</td><td>子ども1〜2人目：5,000円/人/月、3人目以降：3,000円/人/月</td></tr><tr><td>資格奨励金・書籍購入費支援</td><td>あり</td></tr><tr><td>産休・育休</td><td>女性100%、男性36〜42.9%</td></tr><tr><td>お昼寝制度</td><td>毎日13時に全社消灯・業務時間内15分仮眠</td></tr><tr><td>社内カフェスペース</td><td>神戸朝日ビルディング23F・360度パノラマビュー</td></tr><tr><td><strong>退職金制度</strong></td><td><strong>なし</strong>（複数口コミで確認）</td></tr><tr><td><strong>副業</strong></td><td><strong>原則不可</strong>（口コミ情報。公式未確認、要確認）</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: Green エンジニア求人<sup class="fnref"><a href="#src-8">[8]</a></sup> / エン カイシャ 福利厚生<sup class="fnref"><a href="#src-15">[15]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>詳細</th></tr></thead><tbody><tr><td>年収レンジ（中途求人）</td><td>457万〜800万円</td></tr><tr><td>口コミ平均年収</td><td>437〜452万円</td></tr><tr><td>エンジニア・SE 平均年収</td><td>458〜474万円</td></tr><tr><td>昇給</td><td>年2回</td></tr><tr><td>賞与</td><td>年2回、前年実績3.5ヶ月分</td></tr><tr><td>入社初年度賞与</td><td><strong>なし</strong>（複数口コミで確認）</td></tr></tbody></table>
+
+<ul>
+<li><strong>給与構成の特徴</strong>: 「基本給が低く手当・賞与で補う構造」との指摘が複数。基本給が低いため残業代・賞与の計算基礎も低くなるという批判あり</li>
+<li><strong>出典</strong>: OpenWork 年収・給与制度<sup class="fnref"><a href="#src-5">[5]</a></sup> / エン カイシャ 年収<sup class="fnref"><a href="#src-16">[16]</a></sup> / doda<sup class="fnref"><a href="#src-17">[17]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<h3 id="質問候補リスト">質問候補リスト</h3>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くべきか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>評価制度の具体的なプロセスを教えてください。特に、客先常駐案件に配属されているエンジニアの評価はどのように行われますか？</td><td>「社長の好き嫌いによる評価」という口コミがあり、評価の透明性・公平性を確認したい</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>平均在籍年数と直近の離職率を教えてください。若手が定着しやすい環境づくりにどのような取り組みをしていますか？</td><td>若手の離職率が高いという複数の口コミがあるため</td></tr><tr><td>3</td><td>職務・スキル</td><td>自社開発案件とSES案件の現在の比率と、配属先の決定プロセスを教えてください。希望するキャリアの意向はどの程度反映されますか？</td><td>配属ガチャへの不満が口コミに頻出するため</td></tr><tr><td>4</td><td>職務・スキル</td><td>AI・IoT研究チームへの参加条件や、LinKa/SkyWalkerの自社プロダクト開発に関わる機会について教えてください</td><td>自社プロダクト開発への関与度がキャリア形成に大きく影響するため</td></tr><tr><td>5</td><td>職務・スキル</td><td>外部カンファレンスへの参加支援制度はありますか？エンジニアが社外で発表・登壇する文化はありますか？</td><td>公開情報では確認できず。技術成長・市場価値維持に直結</td></tr><tr><td>6</td><td>労働条件</td><td>テレワーク時のコミュニケーションツールと管理方法について教えてください。常時接続が求められる運用ルールはありますか？</td><td>2022年時点で「Zoom常時監視」の口コミがあり、現在の実態を確認したい</td></tr><tr><td>7</td><td>労働条件</td><td>副業・兼業の可否と、可能な場合の条件を教えてください</td><td>口コミでは「不可」の情報があるが公式未確認のため</td></tr><tr><td>8</td><td>労働条件</td><td>退職金制度の有無と、退職金に代わる老後・長期的な資産形成支援（確定拠出年金等）はありますか？</td><td>複数の口コミで「退職金制度なし」が確認されており、長期就業を検討するうえで重要</td></tr><tr><td>9</td><td>労働条件</td><td>案件によって残業時間に差があるようですが、過重労働を防ぐための仕組みを教えてください</td><td>月平均17〜23時間と標準的だが、月160時間超の極端な事例が口コミにあるため</td></tr><tr><td>10</td><td>全般</td><td>入社後、想定と違ったと感じる社員が出やすい点があれば、正直に教えてください</td><td>就活会議の「入社後ギャップ」スコアが2.7点と低く、採用ブランディングと実態の乖離が懸念されるため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>経営理念 \</td><td>ナノコネ</td><td><a href="https://www.nanoconnect.co.jp/about/philosophy/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/philosophy/</a></td><td>2026-04-15</td></tr><tr><td>2</td><td>会社概要 \</td><td>ナノコネ</td><td><a href="https://www.nanoconnect.co.jp/about/corporation/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/corporation/</a></td><td>2026-04-15</td></tr><tr><td>3</td><td>中途採用 エンジニア募集 \</td><td>ナノコネ</td><td><a href="https://www.nanoconnect.co.jp/recruit-career/engineer/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/recruit-career/engineer/</a></td><td>2026-04-15</td></tr><tr><td>4</td><td>様々な取り組み \</td><td>ナノコネ</td><td><a href="https://www.nanoconnect.co.jp/about/action/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/action/</a></td><td>2026-04-15</td></tr><tr><td>5</td><td>株式会社ナノコネクト 中途採用/求人 - Green</td><td><a href="https://www.green-japan.com/company/4716" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716</a></td><td>2026-04-15</td></tr><tr><td>6</td><td>Green エンジニア求人詳細</td><td><a href="https://www.green-japan.com/company/4716/job/168471" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716/job/168471</a></td><td>2026-04-15</td></tr><tr><td>7</td><td>ナノコネクト 社員クチコミ - OpenWork</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000iusgV" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000iusgV</a></td><td>2026-04-15</td></tr><tr><td>8</td><td>OpenWork 年収・給与制度</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=2" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=2</a></td><td>2026-04-15</td></tr><tr><td>9</td><td>OpenWork ワークライフバランス</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=6</a></td><td>2026-04-15</td></tr><tr><td>10</td><td>OpenWork データ推移</td><td><a href="https://www.openwork.jp/a0C1000000iusgV/analysis/" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/a0C1000000iusgV/analysis/</a></td><td>2026-04-15</td></tr><tr><td>11</td><td>ナノコネクトの評判・口コミ - エン カイシャの評判</td><td><a href="https://en-hyouban.com/company/10100600767/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/</a></td><td>2026-04-15</td></tr><tr><td>12</td><td>エン カイシャ 福利厚生・オフィス環境</td><td><a href="https://en-hyouban.com/company/10100600767/17/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/17/</a></td><td>2026-04-15</td></tr><tr><td>13</td><td>エン カイシャ 働き方</td><td><a href="https://en-hyouban.com/company/10100600767/18/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/18/</a></td><td>2026-04-15</td></tr><tr><td>14</td><td>エン カイシャ 年収・給与</td><td><a href="https://en-hyouban.com/company/10100600767/salary/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/salary/</a></td><td>2026-04-15</td></tr><tr><td>15</td><td>ナノコネクトの転職・採用情報 - 転職会議</td><td><a href="https://jobtalk.jp/companies/7662" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662</a></td><td>2026-04-15</td></tr><tr><td>16</td><td>転職会議 残業口コミ</td><td><a href="https://jobtalk.jp/companies/7662/answers?topic=%E6%AE%8B%E6%A5%AD" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662/answers?topic=%E6%AE%8B%E6%A5%AD</a></td><td>2026-04-15</td></tr><tr><td>17</td><td>就活会議 退職理由口コミ</td><td><a href="https://syukatsu-kaigi.jp/companies/129511/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/129511/post_items/11/word_mouths</a></td><td>2026-04-15</td></tr><tr><td>18</td><td>(株)ナノコネクトの新卒採用 - マイナビ2027</td><td><a href="https://job.mynavi.jp/27/pc/search/corp78681/outline.html" target="_blank" rel="noopener noreferrer">https://job.mynavi.jp/27/pc/search/corp78681/outline.html</a></td><td>2026-04-15</td></tr><tr><td>19</td><td>株式会社ナノコネクトのプレスリリース - PR TIMES</td><td><a href="https://prtimes.jp/main/html/searchrlp/company_id/32293" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/searchrlp/company_id/32293</a></td><td>2026-04-15</td></tr><tr><td>20</td><td>ナノコネクト 年収・給与 - doda</td><td><a href="https://doda.jp/DodaFront/View/CompanyIncome/j_id__10100600767/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/CompanyIncome/j_id__10100600767/</a></td><td>2026-04-15</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">経営理念 | ナノコネ</td><td class="src-url"><a href="https://www.nanoconnect.co.jp/about/philosophy/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/philosophy/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000iusgV" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000iusgV</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">Green 企業情報</td><td class="src-url"><a href="https://www.green-japan.com/company/4716" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/7662" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">OpenWork 年収・給与制度</td><td class="src-url"><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=2" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=2</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">就活会議 退職理由</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/129511/post_items/11/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/129511/post_items/11/word_mouths</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">エンジニア募集 | ナノコネ</td><td class="src-url"><a href="https://www.nanoconnect.co.jp/recruit-career/engineer/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/recruit-career/engineer/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Green エンジニア求人</td><td class="src-url"><a href="https://www.green-japan.com/company/4716/job/168471" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/4716/job/168471</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">様々な取り組み | ナノコネ</td><td class="src-url"><a href="https://www.nanoconnect.co.jp/about/action/" target="_blank" rel="noopener noreferrer">https://www.nanoconnect.co.jp/about/action/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">マイナビ2027</td><td class="src-url"><a href="https://job.mynavi.jp/27/pc/search/corp78681/outline.html" target="_blank" rel="noopener noreferrer">https://job.mynavi.jp/27/pc/search/corp78681/outline.html</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">OpenWork データ推移</td><td class="src-url"><a href="https://www.openwork.jp/a0C1000000iusgV/analysis/" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/a0C1000000iusgV/analysis/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">転職会議 残業口コミ</td><td class="src-url"><a href="https://jobtalk.jp/companies/7662/answers?topic=%E6%AE%8B%E6%A5%AD" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/7662/answers?topic=%E6%AE%8B%E6%A5%AD</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">OpenWork ワークライフバランス</td><td class="src-url"><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=6" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&amp;q_no=6</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">エン カイシャ 働き方</td><td class="src-url"><a href="https://en-hyouban.com/company/10100600767/18/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/18/</a></td></tr><tr id="src-15"><td class="src-num">[15]</td><td class="src-title">エン カイシャ 福利厚生</td><td class="src-url"><a href="https://en-hyouban.com/company/10100600767/17/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/17/</a></td></tr><tr id="src-16"><td class="src-num">[16]</td><td class="src-title">エン カイシャ 年収</td><td class="src-url"><a href="https://en-hyouban.com/company/10100600767/salary/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10100600767/salary/</a></td></tr><tr id="src-17"><td class="src-num">[17]</td><td class="src-title">doda</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/CompanyIncome/j_id__10100600767/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/CompanyIncome/j_id__10100600767/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-questions"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <section class="interview-questions"><p class="q-intro">面接で聞きたい質問を 18 件整理しました。カテゴリでの絞り込み・ワンクリックコピーに対応しています。</p><div class="q-filter-bar" role="tablist"><button type="button" class="q-filter-chip active" data-filter="__all__">すべて</button><button type="button" class="q-filter-chip" data-filter="財務・経営">財務・経営</button><button type="button" class="q-filter-chip" data-filter="配属・業務形態">配属・業務形態</button><button type="button" class="q-filter-chip" data-filter="待遇・評価">待遇・評価</button><button type="button" class="q-filter-chip" data-filter="キャリア・育成">キャリア・育成</button><button type="button" class="q-filter-chip" data-filter="成長戦略">成長戦略</button><button type="button" class="q-filter-chip" data-filter="組織・定着率">組織・定着率</button><button type="button" class="q-filter-chip" data-filter="拠点・働き方">拠点・働き方</button><button type="button" class="q-filter-chip" data-filter="財務・投資">財務・投資</button><button type="button" class="q-filter-chip" data-filter="組織・カルチャー">組織・カルチャー</button><button type="button" class="q-filter-chip" data-filter="職務・スキル">職務・スキル</button><button type="button" class="q-filter-chip" data-filter="労働条件">労働条件</button><button type="button" class="q-filter-chip" data-filter="全般">全般</button></div><div class="q-card-list"><article class="q-card" data-category="財務・経営"><div class="q-card-head"><span class="q-num">Q1</span><span class="q-category-badge">財務・経営</span><button type="button" class="q-copy-btn" data-copy="直近期（2023年以降）の売上・営業利益の推移と、利益剰余金のマイナス解消の見通しについて教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">直近期（2023年以降）の売上・営業利益の推移と、利益剰余金のマイナス解消の見通しについて教えてください。</p><p class="q-rationale">💡 公開情報は第16期（2022年1月期）が最新で累積損失が残存。非上場のため内部情報を直接確認する必要がある。</p></article><article class="q-card" data-category="配属・業務形態"><div class="q-card-head"><span class="q-num">Q2</span><span class="q-category-badge">配属・業務形態</span><button type="button" class="q-copy-btn" data-copy="自社開発案件とSES（客先常駐）案件の現在の比率、および配属先の決定プロセスと社員の希望をどの程度考慮できるか教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">自社開発案件とSES（客先常駐）案件の現在の比率、および配属先の決定プロセスと社員の希望をどの程度考慮できるか教えてください。</p><p class="q-rationale">💡 口コミで「配属ガチャ」への不満が多く、入社後ギャップの主要因となっているため。</p></article><article class="q-card" data-category="待遇・評価"><div class="q-card-head"><span class="q-num">Q3</span><span class="q-category-badge">待遇・評価</span><button type="button" class="q-copy-btn" data-copy="裁量労働制の適用範囲・みなし労働時間と、実態的な労働時間の管理方法について教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">裁量労働制の適用範囲・みなし労働時間と、実態的な労働時間の管理方法について教えてください。</p><p class="q-rationale">💡 「裁量労働制による実質的な基本給削減」の指摘が複数あり、待遇面満足度スコアが最低（2.7点）のため。</p></article><article class="q-card" data-category="キャリア・育成"><div class="q-card-head"><span class="q-num">Q4</span><span class="q-category-badge">キャリア・育成</span><button type="button" class="q-copy-btn" data-copy="入社後5〜10年でのキャリアパスの具体的な事例と、シニアエンジニア・PMへの昇格実績について教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">入社後5〜10年でのキャリアパスの具体的な事例と、シニアエンジニア・PMへの昇格実績について教えてください。</p><p class="q-rationale">💡 長期育成スコアが2.6点（全項目最低）で、中間層が育ちにくいという口コミが多数あるため。</p></article><article class="q-card" data-category="成長戦略"><div class="q-card-head"><span class="q-num">Q5</span><span class="q-category-badge">成長戦略</span><button type="button" class="q-copy-btn" data-copy="今後3〜5年の中期的な成長戦略と、LinKa・Sky Walkerなど自社プロダクトが売上全体に占める比率について教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">今後3〜5年の中期的な成長戦略と、LinKa・Sky Walkerなど自社プロダクトが売上全体に占める比率について教えてください。</p><p class="q-rationale">💡 公式IRページが存在せず成長計画が不明。受託とプロダクトの比率が事業安定性の判断に重要。</p></article><article class="q-card" data-category="組織・定着率"><div class="q-card-head"><span class="q-num">Q6</span><span class="q-category-badge">組織・定着率</span><button type="button" class="q-copy-btn" data-copy="直近の平均在籍年数と離職率、および「入社後ギャップが大きい」という声への対策として取り組んでいることを教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">直近の平均在籍年数と離職率、および「入社後ギャップが大きい」という声への対策として取り組んでいることを教えてください。</p><p class="q-rationale">💡 就活会議で入社後ギャップスコアが2.7点と低く、採用説明と実態の乖離が懸念される。</p></article><article class="q-card" data-category="拠点・働き方"><div class="q-card-head"><span class="q-num">Q7</span><span class="q-category-badge">拠点・働き方</span><button type="button" class="q-copy-btn" data-copy="神戸本社と東京事業所の業務分担・キャリア機会の違い、および今後の東京拠点の拡大方針について教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">神戸本社と東京事業所の業務分担・キャリア機会の違い、および今後の東京拠点の拡大方針について教えてください。</p><p class="q-rationale">💡 東京拠点の規模・役割が不明で、首都圏在住者の配属・キャリアに直接影響する。</p></article><article class="q-card" data-category="財務・投資"><div class="q-card-head"><span class="q-num">Q8</span><span class="q-category-badge">財務・投資</span><button type="button" class="q-copy-btn" data-copy="神戸朝日ビルディング23Fの新オフィス移転など設備投資の背景と、資金調達（累計約6.6億円）の活用方針について教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">神戸朝日ビルディング23Fの新オフィス移転など設備投資の背景と、資金調達（累計約6.6億円）の活用方針について教えてください。</p><p class="q-rationale">💡 口コミで「高額な新オフィス投資への疑問」という退職検討理由が挙がっており、投資判断の透明性を確認したい。</p></article><article class="q-card" data-category="組織・カルチャー"><div class="q-card-head"><span class="q-num">Q9</span><span class="q-category-badge">組織・カルチャー</span><button type="button" class="q-copy-btn" data-copy="評価制度の具体的なプロセスを教えてください。特に、客先常駐案件に配属されているエンジニアの評価はどのように行われますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">評価制度の具体的なプロセスを教えてください。特に、客先常駐案件に配属されているエンジニアの評価はどのように行われますか？</p><p class="q-rationale">💡 「社長の好き嫌いによる評価」という口コミが複数あり、評価の透明性・公平性を確認したい。OpenWork人事評価の適正感スコアが3.2点と低め。</p></article><article class="q-card" data-category="組織・カルチャー"><div class="q-card-head"><span class="q-num">Q10</span><span class="q-category-badge">組織・カルチャー</span><button type="button" class="q-copy-btn" data-copy="平均在籍年数と直近の離職率を教えてください。若手社員が定着しやすい環境づくりに、現在どのような取り組みをされていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">平均在籍年数と直近の離職率を教えてください。若手社員が定着しやすい環境づくりに、現在どのような取り組みをされていますか？</p><p class="q-rationale">💡 就活会議・転職会議の口コミで若手の早期離職が多数報告されており、定着率の実態を確認したい。</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q11</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="自社開発案件とSES（客先常駐）案件の現在の比率を教えてください。配属先の決定プロセスと、社員のキャリア希望はどの程度反映されますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">自社開発案件とSES（客先常駐）案件の現在の比率を教えてください。配属先の決定プロセスと、社員のキャリア希望はどの程度反映されますか？</p><p class="q-rationale">💡 「配属ガチャ」への不満が口コミに頻出し、入社後ギャップの主要因となっているため。</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q12</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="AI・IoT研究チームへの参加条件や、LinKa・SkyWalkerなど自社プロダクトの開発に携わる機会についてどのような形で得られますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">AI・IoT研究チームへの参加条件や、LinKa・SkyWalkerなど自社プロダクトの開発に携わる機会についてどのような形で得られますか？</p><p class="q-rationale">💡 自社プロダクト開発への関与度がエンジニアとしてのキャリア形成に大きく影響するため。</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q13</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="外部カンファレンス（技術系イベント）への参加支援制度はありますか？エンジニアが社外で発表・登壇する文化はありますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">外部カンファレンス（技術系イベント）への参加支援制度はありますか？エンジニアが社外で発表・登壇する文化はありますか？</p><p class="q-rationale">💡 書籍購入・資格取得支援は確認できたが、社外学習支援の有無が公開情報では確認できないため。</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q14</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="テレワーク時のコミュニケーションツールと管理方法を教えてください。Zoomなどの常時接続が求められる運用ルールは現在ありますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">テレワーク時のコミュニケーションツールと管理方法を教えてください。Zoomなどの常時接続が求められる運用ルールは現在ありますか？</p><p class="q-rationale">💡 2022年時点で「Zoom常時監視」の口コミがあり、現在の実態を確認したい。リモートワークの働きやすさに直結する。</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q15</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="副業・兼業の可否と、可能な場合の条件（届出制など）を教えてください" title="質問をコピー">📋 コピー</button></div><p class="q-text">副業・兼業の可否と、可能な場合の条件（届出制など）を教えてください</p><p class="q-rationale">💡 在籍者の口コミでは「不可」との情報があるが、公式サイトに記載がなく確認が必要。エンジニアの市場価値維持や副収入の観点で重要。</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q16</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="退職金制度の有無と、長期的な資産形成支援（確定拠出年金・iDeCoのマッチング拠出等）はありますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">退職金制度の有無と、長期的な資産形成支援（確定拠出年金・iDeCoのマッチング拠出等）はありますか？</p><p class="q-rationale">💡 複数の口コミで「退職金制度なし」が確認されており、長期就業を検討するうえで老後設計への影響を把握したい。</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q17</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="案件によって残業時間に大きな差があるようですが、月あたりの上限規定と、過重労働を防ぐための具体的な仕組みを教えてください" title="質問をコピー">📋 コピー</button></div><p class="q-text">案件によって残業時間に大きな差があるようですが、月あたりの上限規定と、過重労働を防ぐための具体的な仕組みを教えてください</p><p class="q-rationale">💡 月平均17〜23時間と標準的だが、月160時間超の極端な事例が口コミにあり、最悪ケースのリスクを確認したい。</p></article><article class="q-card" data-category="全般"><div class="q-card-head"><span class="q-num">Q18</span><span class="q-category-badge">全般</span><button type="button" class="q-copy-btn" data-copy="入社後に「思っていたのと違った」と感じる社員が出やすい点があれば、正直に教えてください。その入社後ギャップを減らすためにどのような工夫をされていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">入社後に「思っていたのと違った」と感じる社員が出やすい点があれば、正直に教えてください。その入社後ギャップを減らすためにどのような工夫をされていますか？</p><p class="q-rationale">💡 就活会議の「入社後ギャップ」スコアが2.7点（5点中）と低く、採用ブランディングと実態の乖離が懸念される。</p></article></div></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+{
+  "company": "株式会社ナノコネクト",
+  "surveyed_at": "2026-04-15",
+  "model": "claude-sonnet-4-6",
+  "screening": [
+    {
+      "axis": "事業・経済基盤",
+      "badge": "🟡",
+      "level_label": "要確認",
+      "summary": "売上約28億円・直取引主義の独自ポジションで成長中だが、利益剰余金▲2.7億円の累積損失が残存。非上場で詳細財務非公開のため、面接での直接確認が必要。"
+    },
+    {
+      "axis": "社会的リスク",
+      "badge": "🟢",
+      "level_label": "懸念なし",
+      "summary": "主要な不祥事・行政処分・労基違反の報道は確認できず。OpenWork法令順守意識スコアは3.8点（5点満点）で業界平均以上。"
+    },
+    {
+      "axis": "社員評価",
+      "badge": "🟡",
+      "level_label": "要確認",
+      "summary": "OpenWork総合3.43（業界上位4%、36件）。風通しの良さ4.0と人間関係は高評価だが、待遇面の満足度2.7・人材の長期育成2.6が全項目最低。「給与水準の低さ」と「SES配属ガチャ」への不満が多数の口コミで散見される。"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "会社概要 | ナノコネ",
+      "url": "https://www.nanoconnect.co.jp/about/corporation/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 2,
+      "title": "株式会社ナノコネクト - 転職サイトGreen",
+      "url": "https://www.green-japan.com/company/4716",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 3,
+      "title": "株式会社ナノコネクト - STARTUP DB",
+      "url": "https://startup-db.com/companies/O24mpqBUy3LZnx3a",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 4,
+      "title": "株式会社ナノコネクト 第16期決算公告 | 官報決算データベース",
+      "url": "https://catr.jp/settlements/07fe7/247406",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 5,
+      "title": "株式会社ナノコネクト - バフェット・コード",
+      "url": "https://www.buffett-code.com/company/9i5djxp5b5/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 6,
+      "title": "株式会社ナノコネクトの会社情報 - NIKKEI COMPASS",
+      "url": "https://www.nikkei.com/compass/company/xfjWzaDtUzMm5xSEsvjn2t",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 7,
+      "title": "ナノコネクト 社員クチコミ - OpenWork",
+      "url": "https://www.openwork.jp/company.php?m_id=a0C1000000iusgV",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 8,
+      "title": "ナノコネクト OpenWork データ推移",
+      "url": "https://www.openwork.jp/a0C1000000iusgV/analysis/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 9,
+      "title": "ナノコネクト 退職検討理由 - OpenWork",
+      "url": "https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&q_no=8",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 10,
+      "title": "ナノコネクトの評判・口コミ - エン カイシャの評判",
+      "url": "https://en-hyouban.com/company/10100600767/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 11,
+      "title": "エン カイシャの評判 口コミ一覧",
+      "url": "https://en-hyouban.com/company/10100600767/kuchikomi/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 12,
+      "title": "ナノコネクトの転職・採用情報 - 転職会議",
+      "url": "https://jobtalk.jp/companies/7662",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 13,
+      "title": "ナノコネクトの評判・口コミ（全86件）- 就活会議",
+      "url": "https://syukatsu-kaigi.jp/companies/129511/word_mouths",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 14,
+      "title": "【転職向け】ナノコネクトは本当に「やばい」のか - IT転職800",
+      "url": "https://it-jobnavi.com/nanoconnect-yabai/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 15,
+      "title": "(株)ナノコネクトの新卒採用 - マイナビ2027",
+      "url": "https://job.mynavi.jp/27/pc/search/corp78681/outline.html",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 16,
+      "title": "株式会社ナノコネクトのプレスリリース - PR TIMES",
+      "url": "https://prtimes.jp/main/html/searchrlp/company_id/32293",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 17,
+      "title": "株式会社ナノコネクト - BaseConnect",
+      "url": "https://baseconnect.in/companies/56c647e6-49de-4557-bdd5-875d67d0fddf",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 18,
+      "title": "スマホアプリ開発会社比較 - GeNEE",
+      "url": "https://genee.jp/contents/recommended-app-development-companies/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 1,
+      "title": "経営理念 | ナノコネ",
+      "url": "https://www.nanoconnect.co.jp/about/philosophy/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 3,
+      "title": "中途採用 エンジニア募集 | ナノコネ",
+      "url": "https://www.nanoconnect.co.jp/recruit-career/engineer/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 4,
+      "title": "様々な取り組み | ナノコネ",
+      "url": "https://www.nanoconnect.co.jp/about/action/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 6,
+      "title": "Green エンジニア求人詳細",
+      "url": "https://www.green-japan.com/company/4716/job/168471",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 8,
+      "title": "OpenWork 年収・給与制度",
+      "url": "https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&q_no=2",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 9,
+      "title": "OpenWork ワークライフバランス",
+      "url": "https://www.openwork.jp/company_answer.php?m_id=a0C1000000iusgV&q_no=6",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 12,
+      "title": "エン カイシャ 福利厚生・オフィス環境",
+      "url": "https://en-hyouban.com/company/10100600767/17/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 13,
+      "title": "エン カイシャ 働き方",
+      "url": "https://en-hyouban.com/company/10100600767/18/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 14,
+      "title": "エン カイシャ 年収・給与",
+      "url": "https://en-hyouban.com/company/10100600767/salary/",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 16,
+      "title": "転職会議 残業口コミ",
+      "url": "https://jobtalk.jp/companies/7662/answers?topic=%E6%AE%8B%E6%A5%AD",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 17,
+      "title": "就活会議 退職理由口コミ",
+      "url": "https://syukatsu-kaigi.jp/companies/129511/post_items/11/word_mouths",
+      "fetched_at": "2026-04-15"
+    },
+    {
+      "id": 20,
+      "title": "ナノコネクト 年収・給与 - doda",
+      "url": "https://doda.jp/DodaFront/View/CompanyIncome/j_id__10100600767/",
+      "fetched_at": "2026-04-15"
+    }
+  ],
+  "interview_questions": [
+    {
+      "category": "財務・経営",
+      "question": "直近期（2023年以降）の売上・営業利益の推移と、利益剰余金のマイナス解消の見通しについて教えてください。",
+      "rationale": "公開情報は第16期（2022年1月期）が最新で累積損失が残存。非上場のため内部情報を直接確認する必要がある。"
+    },
+    {
+      "category": "配属・業務形態",
+      "question": "自社開発案件とSES（客先常駐）案件の現在の比率、および配属先の決定プロセスと社員の希望をどの程度考慮できるか教えてください。",
+      "rationale": "口コミで「配属ガチャ」への不満が多く、入社後ギャップの主要因となっているため。"
+    },
+    {
+      "category": "待遇・評価",
+      "question": "裁量労働制の適用範囲・みなし労働時間と、実態的な労働時間の管理方法について教えてください。",
+      "rationale": "「裁量労働制による実質的な基本給削減」の指摘が複数あり、待遇面満足度スコアが最低（2.7点）のため。"
+    },
+    {
+      "category": "キャリア・育成",
+      "question": "入社後5〜10年でのキャリアパスの具体的な事例と、シニアエンジニア・PMへの昇格実績について教えてください。",
+      "rationale": "長期育成スコアが2.6点（全項目最低）で、中間層が育ちにくいという口コミが多数あるため。"
+    },
+    {
+      "category": "成長戦略",
+      "question": "今後3〜5年の中期的な成長戦略と、LinKa・Sky Walkerなど自社プロダクトが売上全体に占める比率について教えてください。",
+      "rationale": "公式IRページが存在せず成長計画が不明。受託とプロダクトの比率が事業安定性の判断に重要。"
+    },
+    {
+      "category": "組織・定着率",
+      "question": "直近の平均在籍年数と離職率、および「入社後ギャップが大きい」という声への対策として取り組んでいることを教えてください。",
+      "rationale": "就活会議で入社後ギャップスコアが2.7点と低く、採用説明と実態の乖離が懸念される。"
+    },
+    {
+      "category": "拠点・働き方",
+      "question": "神戸本社と東京事業所の業務分担・キャリア機会の違い、および今後の東京拠点の拡大方針について教えてください。",
+      "rationale": "東京拠点の規模・役割が不明で、首都圏在住者の配属・キャリアに直接影響する。"
+    },
+    {
+      "category": "財務・投資",
+      "question": "神戸朝日ビルディング23Fの新オフィス移転など設備投資の背景と、資金調達（累計約6.6億円）の活用方針について教えてください。",
+      "rationale": "口コミで「高額な新オフィス投資への疑問」という退職検討理由が挙がっており、投資判断の透明性を確認したい。"
+    },
+    {
+      "category": "組織・カルチャー",
+      "question": "評価制度の具体的なプロセスを教えてください。特に、客先常駐案件に配属されているエンジニアの評価はどのように行われますか？",
+      "rationale": "「社長の好き嫌いによる評価」という口コミが複数あり、評価の透明性・公平性を確認したい。OpenWork人事評価の適正感スコアが3.2点と低め。"
+    },
+    {
+      "category": "組織・カルチャー",
+      "question": "平均在籍年数と直近の離職率を教えてください。若手社員が定着しやすい環境づくりに、現在どのような取り組みをされていますか？",
+      "rationale": "就活会議・転職会議の口コミで若手の早期離職が多数報告されており、定着率の実態を確認したい。"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "自社開発案件とSES（客先常駐）案件の現在の比率を教えてください。配属先の決定プロセスと、社員のキャリア希望はどの程度反映されますか？",
+      "rationale": "「配属ガチャ」への不満が口コミに頻出し、入社後ギャップの主要因となっているため。"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "AI・IoT研究チームへの参加条件や、LinKa・SkyWalkerなど自社プロダクトの開発に携わる機会についてどのような形で得られますか？",
+      "rationale": "自社プロダクト開発への関与度がエンジニアとしてのキャリア形成に大きく影響するため。"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "外部カンファレンス（技術系イベント）への参加支援制度はありますか？エンジニアが社外で発表・登壇する文化はありますか？",
+      "rationale": "書籍購入・資格取得支援は確認できたが、社外学習支援の有無が公開情報では確認できないため。"
+    },
+    {
+      "category": "労働条件",
+      "question": "テレワーク時のコミュニケーションツールと管理方法を教えてください。Zoomなどの常時接続が求められる運用ルールは現在ありますか？",
+      "rationale": "2022年時点で「Zoom常時監視」の口コミがあり、現在の実態を確認したい。リモートワークの働きやすさに直結する。"
+    },
+    {
+      "category": "労働条件",
+      "question": "副業・兼業の可否と、可能な場合の条件（届出制など）を教えてください",
+      "rationale": "在籍者の口コミでは「不可」との情報があるが、公式サイトに記載がなく確認が必要。エンジニアの市場価値維持や副収入の観点で重要。"
+    },
+    {
+      "category": "労働条件",
+      "question": "退職金制度の有無と、長期的な資産形成支援（確定拠出年金・iDeCoのマッチング拠出等）はありますか？",
+      "rationale": "複数の口コミで「退職金制度なし」が確認されており、長期就業を検討するうえで老後設計への影響を把握したい。"
+    },
+    {
+      "category": "労働条件",
+      "question": "案件によって残業時間に大きな差があるようですが、月あたりの上限規定と、過重労働を防ぐための具体的な仕組みを教えてください",
+      "rationale": "月平均17〜23時間と標準的だが、月160時間超の極端な事例が口コミにあり、最悪ケースのリスクを確認したい。"
+    },
+    {
+      "category": "全般",
+      "question": "入社後に「思っていたのと違った」と感じる社員が出やすい点があれば、正直に教えてください。その入社後ギャップを減らすためにどのような工夫をされていますか？",
+      "rationale": "就活会議の「入社後ギャップ」スコアが2.7点（5点中）と低く、採用ブランディングと実態の乖離が懸念される。"
+    }
+  ],
+  "additional_notes": []
+}

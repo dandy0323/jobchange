@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企業調査ダッシュボード</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface2: #334155;
+    --border: #475569;
+    --text: #f1f5f9;
+    --text2: #94a3b8;
+    --accent: #38bdf8;
+    --accent2: #818cf8;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: .5rem;
+  }
+  .hero p { color: var(--text2); font-size: .95rem; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: min(640px, 92vw);
+    padding: 2rem;
+    margin: 1rem auto;
+  }
+
+  label { display: block; font-weight: 600; margin-bottom: .4rem; font-size: .9rem; }
+  .field { margin-bottom: 1.2rem; }
+  input[type="text"], select {
+    width: 100%;
+    padding: .65rem .8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .2s;
+  }
+  input:focus, select:focus { border-color: var(--accent); }
+
+  /* ドロップゾーン */
+  .dropzone {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 2rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+    position: relative;
+  }
+  .dropzone.over {
+    border-color: var(--accent);
+    background: rgba(56,189,248,.06);
+  }
+  .dropzone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .dropzone-icon { font-size: 2.5rem; margin-bottom: .6rem; }
+  .dropzone-text { color: var(--text2); font-size: .9rem; }
+  .dropzone-text em { color: var(--accent); font-style: normal; }
+
+  .file-list { margin-top: .8rem; }
+  .file-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .4rem .6rem;
+    background: var(--surface2);
+    border-radius: 6px;
+    margin-bottom: .3rem;
+    font-size: .85rem;
+  }
+  .file-item .remove {
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--red);
+    font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 0 .3rem;
+  }
+  .file-ext {
+    background: var(--accent);
+    color: #000;
+    padding: .1rem .4rem;
+    border-radius: 4px;
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .options-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .options-row label {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-weight: 400;
+    font-size: .85rem;
+    color: var(--text2);
+    cursor: pointer;
+  }
+  .options-row input[type="checkbox"] {
+    accent-color: var(--accent);
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: .75rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity .2s;
+    margin-top: .5rem;
+  }
+  .btn-primary:hover { opacity: .9; }
+  .btn-primary:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+  }
+
+  /* 最近の調査 */
+  .recent-card { margin-top: .5rem; }
+  .recent-card h2 {
+    font-size: 1rem;
+    color: var(--text2);
+    margin-bottom: .8rem;
+  }
+  .recent-list { list-style: none; }
+  .recent-list li {
+    border-bottom: 1px solid var(--surface2);
+    padding: .6rem 0;
+  }
+  .recent-list li:last-child { border-bottom: none; }
+  .recent-list a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .recent-list a:hover { text-decoration: underline; }
+  .recent-list .date {
+    color: var(--text2);
+    font-size: .8rem;
+    margin-left: .5rem;
+  }
+
+  footer {
+    margin-top: auto;
+    padding: 2rem;
+    color: var(--text2);
+    font-size: .8rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>企業調査ダッシュボード</h1>
+  <p>企業名と求人票を入力するだけで、AI による総合調査レポートを自動生成します</p>
+</div>
+
+<form id="researchForm" class="card" action="/jobs" method="post" enctype="multipart/form-data">
+  <div class="field">
+    <label for="company">企業名 <span style="color:var(--red)">*</span></label>
+    <input type="text" id="company" name="company" placeholder="例: 株式会社スペースシャワーネットワーク" required autocomplete="off">
+  </div>
+
+  <div class="field">
+    <label>求人票（任意）</label>
+    <div class="dropzone" id="dropzone">
+      <input type="file" name="files" id="fileInput" multiple
+             accept=".pdf,.png,.jpg,.jpeg,.heic,.txt,.md">
+      <div class="dropzone-icon">📄</div>
+      <div class="dropzone-text">
+        ファイルをドラッグ&ドロップ<br>
+        または <em>クリックして選択</em>
+      </div>
+    </div>
+    <div class="file-list" id="fileList"></div>
+    <div style="color:var(--text2); font-size:.75rem; margin-top:.3rem;">
+      対応形式: PDF, HEIC, PNG, JPG, テキスト
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="model">モデル</label>
+    <select id="model" name="model">
+      <option value="sonnet" selected>Claude Sonnet（推奨・コスト効率）</option>
+      <option value="opus">Claude Opus（高品質・高コスト）</option>
+      <option value="haiku">Claude Haiku（高速・低コスト）</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <div class="options-row">
+      <label><input type="checkbox" name="skip_detail" value="true"> 詳細調査をスキップ</label>
+      <label><input type="checkbox" name="skip_job_fit" value="true"> 求人票チェックをスキップ</label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn-primary" id="submitBtn">🔍 調査を開始</button>
+</form>
+
+{% if recent %}
+<div class="card recent-card">
+  <h2>📋 最近の調査</h2>
+  <ul class="recent-list">
+    {% for r in recent %}
+    <li>
+      <a href="{{ r.url }}">{{ r.display }}</a>
+      <span class="date">{{ r.date }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<footer>
+  company-research &mdash; Claude Agent SDK で構築
+</footer>
+
+<script>
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+const form = document.getElementById('researchForm');
+const submitBtn = document.getElementById('submitBtn');
+
+// DataTransfer でファイルリストを管理
+let selectedFiles = new DataTransfer();
+
+function renderFileList() {
+  fileList.innerHTML = '';
+  for (let i = 0; i < selectedFiles.files.length; i++) {
+    const f = selectedFiles.files[i];
+    const ext = f.name.split('.').pop().toUpperCase();
+    const div = document.createElement('div');
+    div.className = 'file-item';
+    div.innerHTML = `<span class="file-ext">${ext}</span> ${f.name}
+      <button type="button" class="remove" data-idx="${i}">&times;</button>`;
+    fileList.appendChild(div);
+  }
+  fileInput.files = selectedFiles.files;
+}
+
+fileInput.addEventListener('change', (e) => {
+  for (const f of e.target.files) {
+    selectedFiles.items.add(f);
+  }
+  renderFileList();
+});
+
+fileList.addEventListener('click', (e) => {
+  if (e.target.classList.contains('remove')) {
+    const idx = parseInt(e.target.dataset.idx);
+    selectedFiles.items.remove(idx);
+    renderFileList();
+  }
+});
+
+['dragenter', 'dragover'].forEach(ev =>
+  dropzone.addEventListener(ev, (e) => { e.preventDefault(); dropzone.classList.add('over'); })
+);
+['dragleave', 'drop'].forEach(ev =>
+  dropzone.addEventListener(ev, (e) => { e.preventDefault(); dropzone.classList.remove('over'); })
+);
+dropzone.addEventListener('drop', (e) => {
+  for (const f of e.dataTransfer.files) {
+    selectedFiles.items.add(f);
+  }
+  renderFileList();
+});
+
+// フォーム送信 → fetch → 進捗ページへリダイレクト
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  submitBtn.disabled = true;
+  submitBtn.textContent = '⏳ ジョブを作成中...';
+
+  const fd = new FormData(form);
+  try {
+    const res = await fetch('/jobs', { method: 'POST', body: fd });
+    if (!res.ok) {
+      const err = await res.json();
+      alert('エラー: ' + (err.detail || res.statusText));
+      submitBtn.disabled = false;
+      submitBtn.textContent = '🔍 調査を開始';
+      return;
+    }
+    const data = await res.json();
+    window.location.href = data.stream_url;
+  } catch (err) {
+    alert('通信エラー: ' + err.message);
+    submitBtn.disabled = false;
+    submitBtn.textContent = '🔍 調査を開始';
+  }
+});
+</script>
+</body>
+</html>

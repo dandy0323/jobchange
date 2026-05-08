@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社Y Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社Y Agency</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-27</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">美容クリニック特化の広告代理店。成長市場に乗るが従業員15名・資本金300万円の小規模未上場。財務非公開</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">行政処分・法令違反の報道なし。ただし「入社前後のギャップ大」「ブラック」との口コミが複数あり要注意</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">エンカイシャ3.7点。挑戦環境は評価されるが、残業月30〜40h・リモート不可・福利厚生整備途上が懸念</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社Y Agency</h1>
+
+<blockquote>調査日: 2026-04-27</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 美容クリニックを中心とした集客課題を持つ企業</li>
+<li><strong>提供価値</strong>: マスメディア（TVCM・雑誌・新聞・屋外広告）＋Web（リスティング・バナー・SEO）＋SNS（X・meta・LINE等）を一気通貫で運用する「集客の何でも屋」。クライアントの売上前年比200%以上・来院者数過去最多の実績あり</li>
+<li><strong>収益モデル</strong>: フロー型（広告運用代行・企画立案・制作費の都度課金と推定）。未上場のため詳細は非公開</li>
+<li><strong>出典</strong>: Y Agency公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup>、doda企業概要<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>市場環境</strong>: 日本の美容医療市場は約5,000億円規模で継続成長。2025〜2026年も美容クリニック新規開業が増加傾向で広告需要は拡大</li>
+<li><strong>業界内ポジション</strong>: 美容クリニック特化の中小規模専業代理店。大手総合代理店より費用対効果が高い点が差別化軸</li>
+<li><strong>主要競合</strong>: 美容業界特化広告代理店（StockSun・ADrim等）、大手総合広告代理店の美容部門</li>
+<li><strong>強み</strong>: 特定業界への深い知見・実績、小回りの利く施策実行力</li>
+<li><strong>弱み</strong>: 顧客業種の集中リスク（美容クリニック依存）、規模が小さく組織基盤が脆弱</li>
+<li><strong>出典</strong>: StockSun 美容業界広告代理店比較<sup class="fnref"><a href="#src-4">[4]</a></sup>、美容医療市場規模<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>状況</th></tr></thead><tbody><tr><td>売上高</td><td>3億〜10億円規模（推定。未上場のため非公開）</td></tr><tr><td>資本金</td><td>300万円</td></tr><tr><td>従業員数</td><td>15名</td></tr><tr><td>上場区分</td><td>未上場</td></tr></tbody></table>
+
+<ul>
+<li><strong>設立</strong>: 2011年11月（マンションの一室からスタート、2016年に梅田一等地へ移転）</li>
+<li><strong>注意</strong>: 未上場のため詳細財務は非公開。売上規模はBaseConnect等の推定値</li>
+<li><strong>出典</strong>: BaseConnect<sup class="fnref"><a href="#src-6">[6]</a></sup>、マイナビ転職 会社概要<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>美容クリニック集客の深化</strong>: 既存の美容クリニック特化ポジションを強化し、マーケティング支援の一気通貫化を推進</li>
+<li><strong>業務効率化・データ活用</strong>: 企業の集客課題だけでなく業務効率化・データ活用テーマへの展開を志向（Wantedly記載）</li>
+<li><strong>採用強化</strong>: マーケター・企画職を継続採用中。平均年齢27歳の若い組織で規模拡大を図る</li>
+<li><strong>注</strong>: 公式中期経営計画の開示なし</li>
+<li><strong>出典</strong>: Y Agency採用ページ<sup class="fnref"><a href="#src-8">[8]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>行政処分・重大不祥事の報道なし</strong>: 公開情報から行政処分・法令違反は確認されなかった</li>
+<li><strong><span class="badge badge-yellow">⚠️</span> 要注意</strong>: 複数の口コミサイトで「入社前の情報と実態のギャップが大きい」「ブラック企業と評価する」との記載あり。定時後も在席が求められるとの声が複数確認された</li>
+<li><strong>出典</strong>: エンカイシャの評判<sup class="fnref"><a href="#src-9">[9]</a></sup>、カンパニー通信<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li><strong>公開情報なし</strong>: ESG方針・サステナビリティレポートの公開は確認できず</li>
+<li><strong>社会貢献スコア</strong>: OpenWork・エン系サイトに「仕事を通じた社会貢献スコア3.5」との記載あり（数値の信頼性は限定的）</li>
+<li><strong>出典</strong>: エン採用ページ<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li><strong>実績</strong>: 顧客の売上前年比200%以上、過去最多来院者数を達成したクライアント事例を公式サイトに掲載</li>
+<li><strong>美容クリニック特化の信頼</strong>: 業界特化ゆえの顧客ニーズへの深い理解が評価されていると推察</li>
+<li><strong>直接的な顧客クレームは確認されず</strong></li>
+<li><strong>出典</strong>: Y Agency公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>エンカイシャの評判</strong>: <strong>3.7点</strong>（7人の正社員回答）</li>
+<li><strong>転職会議</strong>: 口コミ12件掲載。残業月約10時間との記載あり（実態と乖離している可能性）</li>
+<li><strong>良い点</strong>:</li>
+<li>新しいことに挑戦できる。コアメンバーになれるチャンスあり</li>
+<li>自分の意見が通りやすく、会社と一緒に成長している感覚</li>
+<li>成果を出せば働き方の自由度が上がる</li>
+<li>平均年齢27歳の若い組織。意思決定が速い</li>
+<li><strong>懸念点</strong>:</li>
+<li>「ブラック企業」と評価する声あり。入社前後のギャップが大きいとの指摘が複数</li>
+<li>残業は繁忙期月30〜40時間、通常期でも月10〜20時間</li>
+<li>仕事が早く終わっても定時後20時まで在席が求められるとの口コミ</li>
+<li>リモートワーク・時短・副業は基本不可</li>
+<li>役職が上がると休みが取りにくい</li>
+<li>福利厚生が整備途上（住宅手当なし等）</li>
+<li><strong>出典</strong>: OpenWork Y Agency<sup class="fnref"><a href="#src-12">[12]</a></sup>、エンカイシャの評判<sup class="fnref"><a href="#src-9">[9]</a></sup>、転職会議<sup class="fnref"><a href="#src-13">[13]</a></sup>、カンパニー通信<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 実際の月平均残業時間（部署・時期別の実態）</li>
+<li>[ ] リモートワーク・在宅勤務の可否（口コミでは「基本不可」）</li>
+<li>[ ] 副業の可否</li>
+<li>[ ] 在席ルール（定時後も在社が求められるか）</li>
+<li>[ ] 評価制度の具体的な内容（年2回評価の基準・昇給幅）</li>
+<li>[ ] 賞与の有無・支給実績</li>
+<li>[ ] 現在の離職率・平均勤続年数</li>
+<li>[ ] 美容クリニック以外の業種クライアントの比率</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>Y Agency公式サイト</td><td><a href="https://y-agency.co.jp/" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/</a></td><td>2026-04-27</td></tr><tr><td>2</td><td>Y Agency会社概要ページ</td><td><a href="https://y-agency.co.jp/company" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/company</a></td><td>2026-04-27</td></tr><tr><td>3</td><td>Y Agency採用ページ</td><td><a href="https://y-agency.co.jp/recruit" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/recruit</a></td><td>2026-04-27</td></tr><tr><td>4</td><td>Wantedly Y Agency</td><td><a href="https://sg.wantedly.com/companies/company_7974771" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/company_7974771</a></td><td>2026-04-27</td></tr><tr><td>5</td><td>doda企業概要</td><td><a href="https://doda.jp/DodaFront/View/Company/j_id__10147167467/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10147167467/</a></td><td>2026-04-27</td></tr><tr><td>6</td><td>マイナビ転職 会社概要</td><td><a href="https://tenshoku.mynavi.jp/company/438566/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/438566/</a></td><td>2026-04-27</td></tr><tr><td>7</td><td>BaseConnect</td><td><a href="https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b</a></td><td>2026-04-27</td></tr><tr><td>8</td><td>OpenWork Y Agency</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0</a></td><td>2026-04-27</td></tr><tr><td>9</td><td>エンカイシャの評判</td><td><a href="https://en-hyouban.com/company/10105960224/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/</a></td><td>2026-04-27</td></tr><tr><td>10</td><td>転職会議 Y Agency</td><td><a href="https://jobtalk.jp/companies/8059530" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/8059530</a></td><td>2026-04-27</td></tr><tr><td>11</td><td>カンパニー通信 Y Agency</td><td><a href="https://company-tsushin.com/report/36637" target="_blank" rel="noopener noreferrer">https://company-tsushin.com/report/36637</a></td><td>2026-04-27</td></tr><tr><td>12</td><td>エン転職 求人（マーケター）</td><td><a href="https://employment.en-japan.com/desc_1413167" target="_blank" rel="noopener noreferrer">https://employment.en-japan.com/desc_1413167</a></td><td>2026-04-27</td></tr><tr><td>13</td><td>StockSun 美容業界広告代理店</td><td><a href="https://stock-sun.com/column/beauty-advertising-agency/" target="_blank" rel="noopener noreferrer">https://stock-sun.com/column/beauty-advertising-agency/</a></td><td>2026-04-27</td></tr><tr><td>14</td><td>美容医療市場規模 エムステージ</td><td><a href="https://shoukei.mplat.jp/news/column-0141/" target="_blank" rel="noopener noreferrer">https://shoukei.mplat.jp/news/column-0141/</a></td><td>2026-04-27</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Y Agency公式サイト</td><td class="src-url"><a href="https://y-agency.co.jp/" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Wantedly</td><td class="src-url"><a href="https://sg.wantedly.com/companies/company_7974771" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/company_7974771</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">doda企業概要</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10147167467/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10147167467/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">StockSun 美容業界広告代理店比較</td><td class="src-url"><a href="https://stock-sun.com/column/beauty-advertising-agency/" target="_blank" rel="noopener noreferrer">https://stock-sun.com/column/beauty-advertising-agency/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">美容医療市場規模</td><td class="src-url"><a href="https://shoukei.mplat.jp/news/column-0141/" target="_blank" rel="noopener noreferrer">https://shoukei.mplat.jp/news/column-0141/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">BaseConnect</td><td class="src-url"><a href="https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">マイナビ転職 会社概要</td><td class="src-url"><a href="https://tenshoku.mynavi.jp/company/438566/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/438566/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Y Agency採用ページ</td><td class="src-url"><a href="https://y-agency.co.jp/recruit" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/recruit</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">エンカイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/10105960224/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">カンパニー通信</td><td class="src-url"><a href="https://company-tsushin.com/report/36637" target="_blank" rel="noopener noreferrer">https://company-tsushin.com/report/36637</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">エン採用ページ</td><td class="src-url"><a href="https://en-gage.net/y-agency_saiyo/" target="_blank" rel="noopener noreferrer">https://en-gage.net/y-agency_saiyo/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">OpenWork Y Agency</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/8059530" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/8059530</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社Y Agency</h1>
+
+<blockquote>調査日: 2026-04-27  対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>挑戦・成長文化は評価されるが、在席強制・ブラック評価口コミあり。風土の実態は面接での直接確認が必要</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>マス〜Web〜SNS一気通貫の広告実務を美容業界特化で習得できる。0から企画立案に携われる点は成長機会として高評価</td></tr><tr><td>労働条件・環境</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>月給30万円〜・完全週休2日は明示。ただしリモート不可・残業30〜40h・福利厚生未整備が懸念。在席文化の口コミ要確認</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>ミッション（公式）</strong>: 「クライアントの集客数を最大化させる」。成果が見込める施策は全て実行する「集客の何でも屋」</li>
+<li><strong>代表</strong>: 山田裕美子（2011年創業。マンション一室から梅田一等地オフィスへ成長）</li>
+<li><strong>社風キーワード</strong>: 成長志向・挑戦推奨・自主性重視。「自分の成長が会社の成長に繋がっていると実感できる」との社員コメントあり</li>
+<li><strong>出典</strong>: Y Agency公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>、エンカイシャの評判<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 15名の小規模組織。代表主導のフラットな体制と推定</li>
+<li><strong>スタイル</strong>: 変化のスピードが速く、自主性・提案力を重視。「受け身の姿勢だと周りに追いていかれる」との口コミあり</li>
+<li><strong>ネガティブ側面</strong>: 「ルールが決まりすぎていない」は裏返せば制度の未整備でもある。口コミでは「在席強制」「帰りにくい文化」との指摘</li>
+<li><strong>出典</strong>: エンカイシャの評判<sup class="fnref"><a href="#src-2">[2]</a></sup>、カンパニー通信<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>評価頻度</strong>: 年2回（求人票記載）</li>
+<li><strong>詳細</strong>: 評価基準・昇給幅・賞与連動の詳細は公開情報からは確認できず。面接での確認推奨</li>
+<li><strong>成果主義的要素</strong>: 「成果を出せば働き方の自由度が上がる」との口コミあり</li>
+<li><strong>出典</strong>: エン転職 求人票<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員数</strong>: 15名</li>
+<li><strong>平均年齢</strong>: 27歳（マイナビ転職掲載情報より）</li>
+<li><strong>離職率</strong>: 公開情報なし。「ブラック」評価口コミ・退職検討理由の掲載があることから離職率はやや高い可能性あり</li>
+<li><strong>出典</strong>: マイナビ転職 会社概要<sup class="fnref"><a href="#src-5">[5]</a></sup>、OpenWork 退職検討理由<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム-マーケター職">3-1. 業務範囲・チーム（マーケター職）</h3>
+<ul>
+<li><strong>メイン業務</strong>: 美容クリニックの集客課題に対して①市場調査・反響分析 ②集客戦略・企画立案 ③広告・Webコンテンツ制作・運用 ④SNSマーケティングを一気通貫で担当</li>
+<li><strong>広告媒体の幅</strong>: TVCM・雑誌・新聞・屋外広告（マス）＋リスティング・バナー・SEO（Web）＋X・meta・LINE等（SNS）＋音声広告・デジタルサイネージ</li>
+<li><strong>特徴</strong>: 「1から企画に携われる」点を採用で強調。少人数ゆえに幅広い実務経験が積める</li>
+<li><strong>出典</strong>: Y Agency マーケター求人ページ<sup class="fnref"><a href="#src-7">[7]</a></sup>、エン転職 求人票<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>広告運用</strong>: Google広告・Meta広告・LINE広告等のデジタル広告プラットフォーム（推定）</li>
+<li><strong>コンテンツ制作</strong>: 広告クリエイティブ・Webコンテンツ（詳細ツールは不明）</li>
+<li><strong>分析</strong>: 反響分析・市場調査（ツール詳細は不明）</li>
+<li><strong>AI活用</strong>: 公開情報からは具体的なAI活用の記載なし</li>
+<li><strong>出典</strong>: Y Agency公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 体系的な研修制度の記載は確認できず</li>
+<li><strong>OJT主体</strong>: 15名規模の小組織のためOJT中心と推定</li>
+<li><strong>採用対象</strong>: 学歴不問・第二新卒・経験者歓迎（未経験からのマーケター育成を志向）</li>
+<li><strong>出典</strong>: エン転職 求人票<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li><strong>社内</strong>: 小規模組織のため、成果次第で早期にチームリーダー・マネージャーへの昇格可能性あり</li>
+<li><strong>市場価値</strong>: マス〜デジタル統合広告の実務経験は転職市場でも評価されやすい（特に美容・医療クリニック業界への転職に有利）</li>
+<li><strong>注意</strong>: 役職が上がると休みが取りにくいとの口コミあり</li>
+<li><strong>出典</strong>: エンカイシャ 成長・働きがい<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定</strong>: 9:00〜18:00（求人票記載）</li>
+<li><strong>残業</strong>: 月10〜20時間（通常期）・月30〜40時間（繁忙期）との口コミ</li>
+<li><strong>懸念</strong>: 「仕事が早く終わっていても20時まで在席が求められる」との口コミ複数あり。実態の確認が必要</li>
+<li><strong>フレックス</strong>: 不明（公開情報なし）</li>
+<li><strong>出典</strong>: エンカイシャの評判 口コミ<sup class="fnref"><a href="#src-9">[9]</a></sup>、エン転職 求人票<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong>実態</strong>: 「リモートワーク・時短勤務・副業等は基本的に不可」との口コミあり</li>
+<li><strong>公式記載</strong>: 採用ページには特段の記載なし</li>
+<li><strong>出典</strong>: エンカイシャ 働き方口コミ<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>住宅補助</strong>: なし（口コミ情報）</li>
+<li><strong>有給・休日</strong>: 完全週休2日制（求人票記載）</li>
+<li><strong>副業</strong>: 基本不可（口コミ情報）</li>
+<li><strong>育休</strong>: 公開情報なし（面接要確認）</li>
+<li><strong>整備状況</strong>: 「成長途中のため福利厚生が完璧に揃っているわけではない」との口コミあり</li>
+<li><strong>出典</strong>: エンカイシャの評判<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>月給</strong>: 30万円〜（求人票記載。学歴不問・経験者歓迎の正社員）</li>
+<li><strong>年収換算（概算）</strong>: 月給30万×12＝360万円〜（賞与・残業手当による変動あり）</li>
+<li><strong>賞与</strong>: 有無・支給実績は公開情報から確認できず（面接要確認）</li>
+<li><strong>昇給</strong>: 年2回評価に連動（詳細は非公開）</li>
+<li><strong>出典</strong>: エン転職 求人票<sup class="fnref"><a href="#src-4">[4]</a></sup>、マイナビ転職<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>労働条件</td><td>実際の月平均残業時間を教えてください。繁忙期と閑散期の差はどの程度ですか？</td><td>口コミに繁忙期30〜40時間の記載があり実態確認が必要</td></tr><tr><td>2</td><td>労働条件</td><td>定時後の在席については、どのような考え方をされていますか？</td><td>「仕事が終わっても帰れない」との口コミ複数あり、最重要確認事項</td></tr><tr><td>3</td><td>労働条件</td><td>リモートワーク・在宅勤務は現在どの程度利用できますか？</td><td>口コミで「基本不可」とされているが現状を直接確認</td></tr><tr><td>4</td><td>評価・給与</td><td>評価制度の具体的な基準と、昇給・賞与の仕組みを教えてください</td><td>年2回評価とあるが基準・昇給幅が不明</td></tr><tr><td>5</td><td>組織・カルチャー</td><td>入社後にギャップを感じたという声を口コミで見かけました。実際のところ、入社前後で感じるギャップはどのような点でしょうか？</td><td>複数の口コミで「ギャップが大きい」「ブラック」評価があるため直接確認</td></tr><tr><td>6</td><td>組織・カルチャー</td><td>現在の離職率や平均勤続年数を教えていただけますか？</td><td>小規模組織での退職口コミが目立つため定着率を確認</td></tr><tr><td>7</td><td>職務・スキル</td><td>入社後、最初の3〜6ヶ月でどのような業務を担当するか具体的に教えてください</td><td>未経験・第二新卒歓迎だが立ち上がり支援体制を確認</td></tr><tr><td>8</td><td>事業戦略</td><td>美容クリニック以外の業種への展開は検討されていますか？</td><td>顧客集中リスクへの対応方針を確認するため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>Y Agency公式サイト</td><td><a href="https://y-agency.co.jp/" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/</a></td><td>2026-04-27</td></tr><tr><td>2</td><td>Y Agency採用ページ</td><td><a href="https://y-agency.co.jp/recruit" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/recruit</a></td><td>2026-04-27</td></tr><tr><td>3</td><td>Y Agency マーケター求人</td><td><a href="https://y-agency.co.jp/recruit/job_information/marketer" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/recruit/job_information/marketer</a></td><td>2026-04-27</td></tr><tr><td>4</td><td>Wantedly Y Agency</td><td><a href="https://sg.wantedly.com/companies/company_7974771" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/company_7974771</a></td><td>2026-04-27</td></tr><tr><td>5</td><td>エン転職 求人票（マーケター）</td><td><a href="https://employment.en-japan.com/desc_1413167" target="_blank" rel="noopener noreferrer">https://employment.en-japan.com/desc_1413167</a></td><td>2026-04-27</td></tr><tr><td>6</td><td>マイナビ転職 会社概要</td><td><a href="https://tenshoku.mynavi.jp/company/438566/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/438566/</a></td><td>2026-04-27</td></tr><tr><td>7</td><td>OpenWork Y Agency</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000vAYE0</a></td><td>2026-04-27</td></tr><tr><td>8</td><td>OpenWork 退職検討理由</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000vAYE0&amp;q_no=8" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000vAYE0&amp;q_no=8</a></td><td>2026-04-27</td></tr><tr><td>9</td><td>エンカイシャの評判</td><td><a href="https://en-hyouban.com/company/10105960224/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/</a></td><td>2026-04-27</td></tr><tr><td>10</td><td>エンカイシャ 働き方口コミ</td><td><a href="https://en-hyouban.com/company/10105960224/kuchikomi/11416000/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/kuchikomi/11416000/</a></td><td>2026-04-27</td></tr><tr><td>11</td><td>エンカイシャ 成長・働きがい</td><td><a href="https://en-hyouban.com/company/10105960224/21/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/21/</a></td><td>2026-04-27</td></tr><tr><td>12</td><td>転職会議 Y Agency</td><td><a href="https://jobtalk.jp/companies/8059530" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/8059530</a></td><td>2026-04-27</td></tr><tr><td>13</td><td>カンパニー通信 Y Agency</td><td><a href="https://company-tsushin.com/report/36637" target="_blank" rel="noopener noreferrer">https://company-tsushin.com/report/36637</a></td><td>2026-04-27</td></tr><tr><td>14</td><td>BaseConnect</td><td><a href="https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b</a></td><td>2026-04-27</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Y Agency公式サイト</td><td class="src-url"><a href="https://y-agency.co.jp/" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">エンカイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/10105960224/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">カンパニー通信</td><td class="src-url"><a href="https://company-tsushin.com/report/36637" target="_blank" rel="noopener noreferrer">https://company-tsushin.com/report/36637</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">エン転職 求人票</td><td class="src-url"><a href="https://employment.en-japan.com/desc_1413167" target="_blank" rel="noopener noreferrer">https://employment.en-japan.com/desc_1413167</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">マイナビ転職 会社概要</td><td class="src-url"><a href="https://tenshoku.mynavi.jp/company/438566/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/438566/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">OpenWork 退職検討理由</td><td class="src-url"><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000vAYE0&amp;q_no=8" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000vAYE0&amp;q_no=8</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">Y Agency マーケター求人ページ</td><td class="src-url"><a href="https://y-agency.co.jp/recruit/job_information/marketer" target="_blank" rel="noopener noreferrer">https://y-agency.co.jp/recruit/job_information/marketer</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">エンカイシャ 成長・働きがい</td><td class="src-url"><a href="https://en-hyouban.com/company/10105960224/21/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/21/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">エンカイシャの評判 口コミ</td><td class="src-url"><a href="https://en-hyouban.com/company/10105960224/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/kuchikomi/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">エンカイシャ 働き方口コミ</td><td class="src-url"><a href="https://en-hyouban.com/company/10105960224/kuchikomi/11416000/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105960224/kuchikomi/11416000/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

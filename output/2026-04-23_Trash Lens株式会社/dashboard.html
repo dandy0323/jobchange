@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — Trash Lens株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>Trash Lens株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-23</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">重大懸念</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2023年7月設立・サービス開始2024年4月のごく初期スタートアップ。収益化・財務情報は非公開。事業継続リスクが高い段階</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">不祥事・行政処分の報道なし。東京都サーキュラーエコノミー事業採択など公的認知あり</p>
+        </article>
+        <article class="hero-card hero-gray">
+          <div class="hero-card-top">
+            <span class="hero-badge">⚪</span>
+            <span class="hero-level">情報なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">設立2年未満・極小チームのため口コミ情報なし。待遇・労働条件は面接で直接確認必須</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: Trash Lens株式会社</h1>
+
+<blockquote>調査日: 2026-04-23</blockquote>
+
+<h2 class="accent-red" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: BtoC（一般ユーザー）＋ BtoB（リユース店・企業）＋ BtoG（自治体）の三層構造</li>
+<li><strong>提供価値</strong>: スマホで撮影→AI がゴミの種別を5秒で判定→自治体別の分別方法・リユース店・処分法を案内。35言語対応・450以上の自治体をカバー</li>
+<li><strong>収益モデル（推定）</strong>: リユース店への集客課金（BtoB）、自治体向け有償サービス（BtoG）。現時点では公開情報から詳細な収益構造は確認できず。アプリ自体は無料</li>
+<li><strong>出典</strong>: Trash Lens公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>、PRTimes サービス開始リリース<sup class="fnref"><a href="#src-2">[2]</a></sup>、リサイクル通信 記事<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: AIゴミ分別×リユース誘導アプリとして国内先駆的。CleanTech・サーキュラーエコノミー領域の新興プレイヤー</li>
+<li><strong>市場背景</strong>: 日本の廃棄物処理費用は年間約2兆円規模。自治体ごとに異なる分別ルール（約1,741自治体）が課題。リユース市場は拡大傾向</li>
+<li><strong>想定競合</strong>: 自治体公式ゴミ分別アプリ（多数）、メルカリ等フリマアプリ（リユース側）。直接競合するAI画像認識×分別サービスは現時点では少ない</li>
+<li><strong>出典</strong>: Initial.inc Trash Lens<sup class="fnref"><a href="#src-4">[4]</a></sup>、ベンチャー.jp インタビュー<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>状況</th></tr></thead><tbody><tr><td>売上高</td><td>非公開（設立2年未満・未上場）</td></tr><tr><td>資金調達</td><td>公開情報からは具体的な調達額・投資家名は確認できず</td></tr><tr><td>財務基盤</td><td>シード〜アーリーステージと推定</td></tr></tbody></table>
+
+<ul>
+<li><strong>設立</strong>: 2023年7月（代表 山本虎太郎氏が大学在学中に設立、当時21歳）</li>
+<li><strong>アプリリリース</strong>: 2024年4月10日（iOS・Android）</li>
+<li><strong>補足</strong>: 東京都「サーキュラーエコノミーの実現に向けた社会実装化事業」採択（公的支援あり）</li>
+<li><strong>出典</strong>: 東京都創業NET インタビュー<sup class="fnref"><a href="#src-6">[6]</a></sup>、PRTimes 自治体拡大リリース<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>自治体拡大</strong>: リリース当初の東京23区・政令指定都市から、現在450以上の自治体へ対応範囲を拡大（LLMを使った自治体公開情報の自動取得システムを開発）</li>
+<li><strong>多言語展開</strong>: 35言語対応により、外国人向けゴミ分別課題へ対応</li>
+<li><strong>企業連携</strong>: リユース・アップサイクル企業との提携拡大。企業向けタブレット設置（オフィス・社員食堂）などBtoB展開を検討</li>
+<li><strong>サーキュラーエコノミー推進</strong>: 東京都事業採択により、衣類の修繕・リユース促進の仕組みを構築予定</li>
+<li><strong>出典</strong>: Life Hugger 35言語対応記事<sup class="fnref"><a href="#src-8">[8]</a></sup>、PRTimes サーキュラーエコノミー採択<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>主要な報道なし</strong>: Trash Lens株式会社に関する行政処分・法令違反・不祥事の公開報道は確認されなかった</li>
+<li><strong>注</strong>: 設立2年未満のため、そもそも報道蓄積が少ない点に留意</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li><strong>ミッションがそのままESG</strong>: 廃棄物削減・リユース促進・サーキュラーエコノミーの実現がビジネスの核</li>
+<li><strong>東京都公的プログラム採択</strong>: 「サーキュラーエコノミーの実現に向けた社会実装化事業」に選定</li>
+<li><strong>100BANCH参加</strong>: パナソニックが運営するイノベーション拠点での活動実績あり</li>
+<li><strong>出典</strong>: PRTimes 採択リリース<sup class="fnref"><a href="#src-7">[7]</a></sup>、100BANCH Trash Lens<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li><strong>アプリストア</strong>: iOS・Android両対応でリリース済み。詳細レビュースコアは公開情報から確認できず</li>
+<li><strong>メディア露出</strong>: リクルート公式ブログ・ベンチャー.jp・リサイクル通信等に取り上げられ、サービスへの注目度は高い</li>
+<li><strong>出典</strong>: Recruit ブログ<sup class="fnref"><a href="#src-10">[10]</a></sup>、Google Play<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-gray" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>OpenWork / 転職会議 / エンカイシャ</strong>: 設立2年未満・極小チームのため、口コミ情報なし</li>
+<li><strong>チーム規模</strong>: 代表（山本虎太郎、2001年生まれ）＋インターン数名程度と推定。正社員採用の実績・規模は公開情報から不明</li>
+<li><strong>良い点（推定）</strong>: SDGs・サーキュラーエコノミーに直結するミッション、創業期メンバーとして事業を0から作る経験</li>
+<li><strong>懸念点</strong>: 資金調達状況・収益化の進捗が不透明。極小チームのため制度的な労働環境は整備途上と推測。給与水準も確認できず</li>
+<li><strong>出典</strong>: Initial.inc<sup class="fnref"><a href="#src-4">[4]</a></sup>、東京都創業NET<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 直近の資金調達状況・ランウェイ（何ヶ月分の資金があるか）</li>
+<li>[ ] 現在の正社員数・チーム構成（エンジニア/ビジネス職の比率）</li>
+<li>[ ] 収益化の現状（月次売上・有料顧客数）</li>
+<li>[ ] 給与水準・報酬体系（ストックオプション含む）</li>
+<li>[ ] リモートワーク・出社方針</li>
+<li>[ ] 社会保険・福利厚生の整備状況</li>
+<li>[ ] 次の資金調達の計画・時期</li>
+<li>[ ] 創業メンバー以外の採用実績（中途入社者の在籍状況）</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>Trash Lens公式サイト</td><td><a href="https://trashlens.com/" target="_blank" rel="noopener noreferrer">https://trashlens.com/</a></td><td>2026-04-23</td></tr><tr><td>2</td><td>PRTimes サービス開始リリース</td><td><a href="https://prtimes.jp/main/html/rd/p/000000001.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000001.000139952.html</a></td><td>2026-04-23</td></tr><tr><td>3</td><td>PRTimes 自治体拡大リリース</td><td><a href="https://prtimes.jp/main/html/rd/p/000000003.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000003.000139952.html</a></td><td>2026-04-23</td></tr><tr><td>4</td><td>PRTimes サーキュラーエコノミー採択</td><td><a href="https://prtimes.jp/main/html/rd/p/000000007.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000007.000139952.html</a></td><td>2026-04-23</td></tr><tr><td>5</td><td>リサイクル通信 アプリ紹介</td><td><a href="https://www.recycle-tsushin.com/news/detail_9550.php" target="_blank" rel="noopener noreferrer">https://www.recycle-tsushin.com/news/detail_9550.php</a></td><td>2026-04-23</td></tr><tr><td>6</td><td>東京都創業NET インタビュー</td><td><a href="https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html" target="_blank" rel="noopener noreferrer">https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html</a></td><td>2026-04-23</td></tr><tr><td>7</td><td>ベンチャー.jp 代表インタビュー</td><td><a href="https://venture.jp/news/2024/08/20/10430/" target="_blank" rel="noopener noreferrer">https://venture.jp/news/2024/08/20/10430/</a></td><td>2026-04-23</td></tr><tr><td>8</td><td>Recruit ブログ 代表インタビュー</td><td><a href="https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html" target="_blank" rel="noopener noreferrer">https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html</a></td><td>2026-04-23</td></tr><tr><td>9</td><td>Initial.inc Trash Lens</td><td><a href="https://initial.inc/companies/A-VUBYK" target="_blank" rel="noopener noreferrer">https://initial.inc/companies/A-VUBYK</a></td><td>2026-04-23</td></tr><tr><td>10</td><td>100BANCH Trash Lens</td><td><a href="https://100banch.com/projects/trash-lens" target="_blank" rel="noopener noreferrer">https://100banch.com/projects/trash-lens</a></td><td>2026-04-23</td></tr><tr><td>11</td><td>Life Hugger 35言語対応</td><td><a href="https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/" target="_blank" rel="noopener noreferrer">https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/</a></td><td>2026-04-23</td></tr><tr><td>12</td><td>Google Play Trash Lens</td><td><a href="https://play.google.com/store/apps/details?id=jp.co.trashlens.android&amp;hl=en_US" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=jp.co.trashlens.android&amp;hl=en_US</a></td><td>2026-04-23</td></tr><tr><td>13</td><td>自治体向けサービスページ</td><td><a href="https://trashlens.com/municipality" target="_blank" rel="noopener noreferrer">https://trashlens.com/municipality</a></td><td>2026-04-23</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Trash Lens公式サイト</td><td class="src-url"><a href="https://trashlens.com/" target="_blank" rel="noopener noreferrer">https://trashlens.com/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">PRTimes サービス開始リリース</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000001.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000001.000139952.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">リサイクル通信 記事</td><td class="src-url"><a href="https://www.recycle-tsushin.com/news/detail_9550.php" target="_blank" rel="noopener noreferrer">https://www.recycle-tsushin.com/news/detail_9550.php</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Initial.inc Trash Lens</td><td class="src-url"><a href="https://initial.inc/companies/A-VUBYK" target="_blank" rel="noopener noreferrer">https://initial.inc/companies/A-VUBYK</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">ベンチャー.jp インタビュー</td><td class="src-url"><a href="https://venture.jp/news/2024/08/20/10430/" target="_blank" rel="noopener noreferrer">https://venture.jp/news/2024/08/20/10430/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">東京都創業NET インタビュー</td><td class="src-url"><a href="https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html" target="_blank" rel="noopener noreferrer">https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">PRTimes 自治体拡大リリース</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000007.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000007.000139952.html</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Life Hugger 35言語対応記事</td><td class="src-url"><a href="https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/" target="_blank" rel="noopener noreferrer">https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">100BANCH Trash Lens</td><td class="src-url"><a href="https://100banch.com/projects/trash-lens" target="_blank" rel="noopener noreferrer">https://100banch.com/projects/trash-lens</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">Recruit ブログ</td><td class="src-url"><a href="https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html" target="_blank" rel="noopener noreferrer">https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">Google Play</td><td class="src-url"><a href="https://play.google.com/store/apps/details?id=jp.co.trashlens.android&amp;hl=en_US" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=jp.co.trashlens.android&amp;hl=en_US</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: Trash Lens株式会社</h1>
+
+<blockquote>調査日: 2026-04-23  対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★☆☆</td><td><span class="badge badge-yellow">🟡</span></td><td>ミッション明確・代表が若く行動力ある。ただし極小チームで制度整備は途上と推定</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>Flutter・AI画像認識・LLM活用と最先端技術スタック。0→1フェーズの実務経験を積める</td></tr><tr><td>労働条件・環境</td><td>★☆☆</td><td><span class="badge badge-gray">⚪</span></td><td>設立2年未満のため給与・福利厚生・残業実態の公開情報なし。面接で直接確認必須</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>ミッション</strong>: 「捨てたいをきっかけに価値を最大化する」—不要なモノをゴミにせず、最も価値ある形で活用できる社会を目指す</li>
+<li><strong>ビジョン</strong>: 「資源活用が当たり前の社会の実現」。誰もが無意識に環境配慮行動を取れるプラットフォームの構築</li>
+<li><strong>背景</strong>: 代表・山本虎太郎氏が高校時代にゴミの分別ミスを経験したことが原点。環境スタートアップPiricaで3年間インターン後に創業</li>
+<li><strong>出典</strong>: 東京都創業NET インタビュー<sup class="fnref"><a href="#src-1">[1]</a></sup>、ベンチャー.jp<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 極小チーム（代表＋数名）。フラットな創業期組織と推定</li>
+<li><strong>スタイル</strong>: 創業者主導のボトムアップ的意思決定。代表が自らエンジニアとして開発に参加</li>
+<li><strong>外部コミュニティ</strong>: 100BANCH（パナソニック）、東京スタートアップゲートウェイ（TSG）等に参加し、外部メンターのフィードバックを事業に反映</li>
+<li><strong>出典</strong>: 100BANCH<sup class="fnref"><a href="#src-3">[3]</a></sup>、Recruit ブログ<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 設立2年未満の極小チームのため、評価制度・人事制度の公開情報は確認できず</li>
+<li><strong>推定</strong>: 創業期特有のOKRまたは目標共有型の非公式管理と推定。面接で確認必須</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員数</strong>: 公開情報なし。代表（山本虎太郎）＋エンジニア1名（小川泰紀、2000年生まれ）の記載あり。インターン数名含めても10名未満と推定</li>
+<li><strong>代表プロフィール</strong>: 山本虎太郎、2001年東京都生まれ。Flutter専門のフロントエンドエンジニア。環境スタートアップPiricaに3年間インターン後、2023年7月に大学在学中に創業</li>
+<li><strong>平均年齢</strong>: 20代前半が中心と推定</li>
+<li><strong>出典</strong>: Recruit ブログ<sup class="fnref"><a href="#src-4">[4]</a></sup>、Initial.inc<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li><strong>コアプロダクト</strong>: AIゴミ分別アプリ「Trash Lens」（iOS/Android）の開発・運用・グロース</li>
+<li><strong>自治体向けB2G事業</strong>: LLMを活用した自治体ゴミ情報自動収集システムの開発・450以上の自治体との連携</li>
+<li><strong>BtoB事業開発</strong>: リユース店・企業との提携交渉・機能開発（リユース集客ツール）</li>
+<li><strong>新機能開発</strong>: 多言語対応（35言語）、企業向けタブレット展開、衣類リユース促進機能</li>
+<li><strong>出典</strong>: リサイクル通信<sup class="fnref"><a href="#src-6">[6]</a></sup>、PRTimes 自治体拡大<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>モバイル</strong>: Flutter（iOS/Android クロスプラットフォーム）</li>
+<li><strong>AI/ML</strong>: 画像認識AI（259種類の不用品判別）、LLM（自治体公開情報の自動取得・解析）</li>
+<li><strong>インフラ</strong>: 詳細不明（クラウドベースと推定）</li>
+<li><strong>開発手法</strong>: 小規模スタートアップ型（アジャイル的な高速イテレーションと推定）</li>
+<li><strong>特記</strong>: 代表自身がFlutter専門エンジニアであり、技術的意思決定が速い環境</li>
+<li><strong>出典</strong>: Recruit ブログ<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 極小チームのため体系的な研修制度は未整備と推定</li>
+<li><strong>OJT主体</strong>: 創業期特有の実践型学習環境。自律的に動ける人材向け</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li><strong>創業期参画の醍醐味</strong>: 事業の0→1フェーズでプロダクト・事業戦略の両方に携われる可能性あり</li>
+<li><strong>スタートアップキャリア</strong>: 将来的なIPO・M&amp;A出口でのアップサイドを狙う形。ストックオプション有無は面接で確認</li>
+<li><strong>リスク</strong>: 事業が軌道に乗らない場合の事業撤退・雇用リスクあり</li>
+<li><strong>出典</strong>: 推定（公開情報なし）</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定・残業</strong>: 公開情報なし。スタートアップ創業期として、業務量・残業実態は個人差が大きいと推定</li>
+<li><strong>フレックス</strong>: 不明（面接要確認）</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 本社は東京都新宿区西新宿。リモート可否・出社頻度は不明</li>
+<li><strong>推定</strong>: 小規模スタートアップはリモートフレンドリーな場合が多いが、確認必須</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 社会保険・雇用保険等の法定福利は整備済みと推定されるが、その他の福利厚生は不明</li>
+<li><strong>育休</strong>: 不明（面接要確認）</li>
+<li><strong>副業</strong>: 不明（面接要確認）</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>公開情報なし</strong>: 設立2年未満のため有価証券報告書なし。口コミ情報も存在しない</li>
+<li><strong>推定</strong>: シード〜アーリーステージのスタートアップとして、市場水準より低い給与＋ストックオプション付与の可能性。面接で詳細確認必須</li>
+<li><strong>出典</strong>: 情報なし</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>事業・財務</td><td>現在の資金調達状況とランウェイ（資金の残り期間）を教えていただけますか？</td><td>雇用継続可能性を判断するための最重要確認事項</td></tr><tr><td>2</td><td>事業・財務</td><td>現在の月次売上・主な収益源はどのようなものでしょうか？</td><td>ビジネスモデルが収益化段階かを確認するため</td></tr><tr><td>3</td><td>職務・スキル</td><td>入社した場合、具体的にどのような業務を担当することになりますか？</td><td>極小チームで職務範囲が曖昧な可能性があるため</td></tr><tr><td>4</td><td>職務・スキル</td><td>現在の技術スタックと今後採用予定の技術について教えてください</td><td>Flutter以外の技術環境・バックエンド構成を把握するため</td></tr><tr><td>5</td><td>組織・カルチャー</td><td>現在の正社員数・チーム構成を教えていただけますか？</td><td>組織の実態把握。創業メンバーのみか否かを確認</td></tr><tr><td>6</td><td>労働条件</td><td>給与水準・ストックオプションの有無を教えてください</td><td>初期スタートアップの場合、SOが重要な報酬要素になるため</td></tr><tr><td>7</td><td>労働条件</td><td>リモートワーク・出社方針を教えてください</td><td>働き方の実態確認</td></tr><tr><td>8</td><td>事業戦略</td><td>次の資金調達のタイミングと、その後の事業展開について教えてください</td><td>ミッションへの共感と同時に、事業の持続可能性を確認するため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>Trash Lens公式サイト</td><td><a href="https://trashlens.com/" target="_blank" rel="noopener noreferrer">https://trashlens.com/</a></td><td>2026-04-23</td></tr><tr><td>2</td><td>東京都創業NET インタビュー</td><td><a href="https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html" target="_blank" rel="noopener noreferrer">https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html</a></td><td>2026-04-23</td></tr><tr><td>3</td><td>ベンチャー.jp 代表インタビュー</td><td><a href="https://venture.jp/news/2024/08/20/10430/" target="_blank" rel="noopener noreferrer">https://venture.jp/news/2024/08/20/10430/</a></td><td>2026-04-23</td></tr><tr><td>4</td><td>Recruit ブログ 代表インタビュー</td><td><a href="https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html" target="_blank" rel="noopener noreferrer">https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html</a></td><td>2026-04-23</td></tr><tr><td>5</td><td>PRTimes サービス開始リリース</td><td><a href="https://prtimes.jp/main/html/rd/p/000000001.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000001.000139952.html</a></td><td>2026-04-23</td></tr><tr><td>6</td><td>PRTimes サーキュラーエコノミー採択</td><td><a href="https://prtimes.jp/main/html/rd/p/000000007.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000007.000139952.html</a></td><td>2026-04-23</td></tr><tr><td>7</td><td>リサイクル通信 アプリ紹介</td><td><a href="https://www.recycle-tsushin.com/news/detail_9550.php" target="_blank" rel="noopener noreferrer">https://www.recycle-tsushin.com/news/detail_9550.php</a></td><td>2026-04-23</td></tr><tr><td>8</td><td>Initial.inc Trash Lens</td><td><a href="https://initial.inc/companies/A-VUBYK" target="_blank" rel="noopener noreferrer">https://initial.inc/companies/A-VUBYK</a></td><td>2026-04-23</td></tr><tr><td>9</td><td>100BANCH Trash Lens</td><td><a href="https://100banch.com/projects/trash-lens" target="_blank" rel="noopener noreferrer">https://100banch.com/projects/trash-lens</a></td><td>2026-04-23</td></tr><tr><td>10</td><td>Life Hugger 35言語対応</td><td><a href="https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/" target="_blank" rel="noopener noreferrer">https://lifehugger.jp/news/trash-lens-multilingual-support-for-sustainable-disposal/</a></td><td>2026-04-23</td></tr><tr><td>11</td><td>自治体向けサービスページ</td><td><a href="https://trashlens.com/municipality" target="_blank" rel="noopener noreferrer">https://trashlens.com/municipality</a></td><td>2026-04-23</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">東京都創業NET インタビュー</td><td class="src-url"><a href="https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html" target="_blank" rel="noopener noreferrer">https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/interview/2401_01.html</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">ベンチャー.jp</td><td class="src-url"><a href="https://venture.jp/news/2024/08/20/10430/" target="_blank" rel="noopener noreferrer">https://venture.jp/news/2024/08/20/10430/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">100BANCH</td><td class="src-url"><a href="https://100banch.com/projects/trash-lens" target="_blank" rel="noopener noreferrer">https://100banch.com/projects/trash-lens</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Recruit ブログ</td><td class="src-url"><a href="https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html" target="_blank" rel="noopener noreferrer">https://www.recruit.co.jp/blog/guesttalk/20240920_5194.html</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">Initial.inc</td><td class="src-url"><a href="https://initial.inc/companies/A-VUBYK" target="_blank" rel="noopener noreferrer">https://initial.inc/companies/A-VUBYK</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">リサイクル通信</td><td class="src-url"><a href="https://www.recycle-tsushin.com/news/detail_9550.php" target="_blank" rel="noopener noreferrer">https://www.recycle-tsushin.com/news/detail_9550.php</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">PRTimes 自治体拡大</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000003.000139952.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000003.000139952.html</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

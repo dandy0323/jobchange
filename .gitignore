@@ -1,0 +1,32 @@
+# 機密情報
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# 一時ファイル・誤配置ファイル
+C:Users*/
+*.tmp
+*.log
+
+# 仮想環境（プロジェクト外にあるため不要）
+company-research-venv/
+
+# アップロードファイル（個人データ含む可能性）
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

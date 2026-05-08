@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社ウィズテクノロジー</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社ウィズテクノロジー</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-27</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2005年創業・20年超の受託開発＋SES実績。ただし従業員25名・資本金1,500万円の小規模未上場で財務詳細は非公開</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">行政処分・不祥事の報道なし。テレワーク推進企業として厚労省ポータルに掲載</p>
+        </article>
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">重大懸念</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">平均年収318万円（業界最低水準）、月残業40h・申請なし休日出勤5日、月一退職者との口コミが重大懸念</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社ウィズテクノロジー</h1>
+
+<blockquote>調査日: 2026-04-27</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 中小〜中堅企業（大阪・東京圏。IT内製化できない企業向け）</li>
+<li><strong>提供価値</strong>: Webシステム・業務システム・スマホアプリ（iOS/Android）の受託開発、SES、IT研修・IT顧問サービスを「企画〜制作〜運用保守」まで一気通貫で提供</li>
+<li><strong>収益モデル</strong>: フロー型（受託開発プロジェクト課金）＋ストック型（SES人月・運用保守・顧問契約）のハイブリッド</li>
+<li><strong>出典</strong>: ウィズテクノロジー公式サービスページ<sup class="fnref"><a href="#src-1">[1]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 大阪・東京拠点の中小規模受託SIer。エンジニア経営層主導の「技術者の会社」として差別化</li>
+<li><strong>主要競合</strong>: 同規模の中小SIer・ソフトハウス（大阪圏多数）。フリーランスエンジニア、クラウドソーシング型開発会社</li>
+<li><strong>強み</strong>: 20年超の実績・長年取引顧客あり、幅広い技術対応力（Web/アプリ/インフラ）、IT研修・顧問など付加価値サービス</li>
+<li><strong>弱み</strong>: 25名規模の小組織、大規模プロジェクト受注力の限界、ブランド力の低さ</li>
+<li><strong>出典</strong>: システム幹事 実績と評判<sup class="fnref"><a href="#src-3">[3]</a></sup>、MEBIC<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>状況</th></tr></thead><tbody><tr><td>売上高</td><td>非公開（未上場）</td></tr><tr><td>資本金</td><td>1,500万円</td></tr><tr><td>従業員数</td><td>25名</td></tr><tr><td>設立</td><td>2005年3月（創業21年）</td></tr></tbody></table>
+
+<ul>
+<li><strong>上場区分</strong>: 未上場。財務詳細は公開されていない</li>
+<li><strong>安定性の根拠</strong>: 20年以上継続・長年取引顧客が存在する点は一定の安定性を示す</li>
+<li><strong>出典</strong>: ウィズテクノロジー会社情報<sup class="fnref"><a href="#src-5">[5]</a></sup>、BaseConnect<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>IT研修・顧問サービス</strong>: 受託開発・SES以外の収益源として、IT人材不在企業へのIT教育・顧問サービスを展開</li>
+<li><strong>テレワーク推進</strong>: 厚生労働省テレワーク総合ポータルサイトに事例掲載。出社+テレワーク併用体制を整備</li>
+<li><strong>年4回キャリア面談</strong>: スピード感ある意思決定で働き方と仕事内容を常にアップデートする体制</li>
+<li><strong>中期経営計画の公開なし</strong></li>
+<li><strong>出典</strong>: 厚労省テレワークポータル<sup class="fnref"><a href="#src-7">[7]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>主要な報道なし</strong>: 行政処分・法令違反・不祥事の公開報道は確認されなかった</li>
+<li><strong>ただし</strong>: 月残業40時間・申請なし休日出勤5日/月という口コミが事実であれば、労働基準法上の問題になり得る（未確認）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li><strong>テレワーク推進</strong>: 厚生労働省テレワーク総合ポータルに掲載。柔軟な働き方を推進</li>
+<li><strong>ESG方針・サステナビリティレポートの公開なし</strong></li>
+<li><strong>出典</strong>: 厚労省テレワークポータル<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li><strong>実績公開</strong>: 公式サイトに開発実績を掲載（位置情報ゲームアプリ・美容系カタログアプリ等）</li>
+<li><strong>長期取引顧客の存在</strong>: 「長年取引している顧客が存在する」との記載あり（20年超の継続的な顧客関係）</li>
+<li><strong>直接的な顧客クレームは確認されず</strong></li>
+<li><strong>出典</strong>: 実績ページ<sup class="fnref"><a href="#src-8">[8]</a></sup>、システム幹事<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-red" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>平均年収</strong>: <strong>318万円</strong>（キャリコネ掲載情報。業界平均を大幅に下回る水準）</li>
+<li><strong>OpenWork</strong>: 口コミ掲載あり（スコアは直接アクセス不可）</li>
+<li><strong>転職会議</strong>: 口コミ掲載あり</li>
+<li><strong>就活会議</strong>: 口コミ10件掲載</li>
+<li><strong>良い点（口コミ）</strong>:</li>
+<li>穏やかな人が多く人間関係は良好</li>
+<li>私服通勤・自由度の高い社風</li>
+<li>経営層がエンジニア出身で現場の大変さを理解している</li>
+<li>家族参加イベントあり</li>
+<li><strong>懸念点（口コミ）</strong>:</li>
+<li><span class="badge badge-yellow">⚠️</span> <strong>平均年収318万円</strong>（サンプル限定的ながら業界最低水準クラス）</li>
+<li><span class="badge badge-yellow">⚠️</span> <strong>月平均残業40時間・申請しない休日出勤月5日</strong>（実態として不払い労働の可能性）</li>
+<li><span class="badge badge-yellow">⚠️</span> <strong>「辞める人がかなり多く、月一で人が減っている」</strong> — 高離職率の口コミ複数</li>
+<li><span class="badge badge-yellow">⚠️</span> 繁忙期（月末）は12時間労働・休憩取れないとの具体的記述</li>
+<li><span class="badge badge-yellow">⚠️</span> 「給与に見込み残業が含まれるため残業で年収が増えない」</li>
+<li><strong>口コミの矛盾</strong>: 「定時に帰れることが多い」「在宅勤務・時短対応」の記載もあり、部署・プロジェクト・時期によるばらつきが大きい可能性</li>
+<li><strong>出典</strong>: OpenWork ウィズテクノロジー<sup class="fnref"><a href="#src-9">[9]</a></sup>、転職会議<sup class="fnref"><a href="#src-10">[10]</a></sup>、就活会議 口コミ<sup class="fnref"><a href="#src-11">[11]</a></sup>、キャリコネ<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 実際の月平均残業時間と残業代の支払い方式（見込み残業時間数と超過分の支払い有無）</li>
+<li>[ ] 申請なし休日出勤の実態（義務か任意か）</li>
+<li>[ ] 現在の離職率・平均勤続年数</li>
+<li>[ ] テレワーク・在宅勤務の実際の利用頻度（部署・プロジェクトによる差）</li>
+<li>[ ] 現在の平均年収（給与テーブルの開示）</li>
+<li>[ ] 賞与の有無・支給実績</li>
+<li>[ ] SES派遣と自社開発の比率（客先常駐か社内勤務か）</li>
+<li>[ ] フレックスタイム制の有無</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>ウィズテクノロジー公式サイト</td><td><a href="https://www.whizz-tech.co.jp/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/</a></td><td>2026-04-27</td></tr><tr><td>2</td><td>ウィズテクノロジー 会社情報</td><td><a href="https://www.whizz-tech.co.jp/company-profile/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/company-profile/</a></td><td>2026-04-27</td></tr><tr><td>3</td><td>ウィズテクノロジー サービスページ</td><td><a href="https://www.whizz-tech.co.jp/service/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/</a></td><td>2026-04-27</td></tr><tr><td>4</td><td>ウィズテクノロジー 実績ページ</td><td><a href="https://www.whizz-tech.co.jp/works/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/works/</a></td><td>2026-04-27</td></tr><tr><td>5</td><td>Wantedly</td><td><a href="https://sg.wantedly.com/companies/WhizzTechnology" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/WhizzTechnology</a></td><td>2026-04-27</td></tr><tr><td>6</td><td>システム幹事 実績と評判</td><td><a href="https://system-kanji.com/services/10176" target="_blank" rel="noopener noreferrer">https://system-kanji.com/services/10176</a></td><td>2026-04-27</td></tr><tr><td>7</td><td>MEBIC</td><td><a href="https://www.mebic.com/cluster/whizz-technology.html" target="_blank" rel="noopener noreferrer">https://www.mebic.com/cluster/whizz-technology.html</a></td><td>2026-04-27</td></tr><tr><td>8</td><td>厚労省テレワークポータル</td><td><a href="https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/" target="_blank" rel="noopener noreferrer">https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/</a></td><td>2026-04-27</td></tr><tr><td>9</td><td>OpenWork ウィズテクノロジー</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C10000017pOIh" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C10000017pOIh</a></td><td>2026-04-27</td></tr><tr><td>10</td><td>転職会議 ウィズテクノロジー</td><td><a href="https://jobtalk.jp/companies/76592" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/76592</a></td><td>2026-04-27</td></tr><tr><td>11</td><td>就活会議 口コミ</td><td><a href="https://syukatsu-kaigi.jp/companies/46564/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/46564/word_mouths</a></td><td>2026-04-27</td></tr><tr><td>12</td><td>キャリコネ 評判</td><td><a href="https://careerconnection.jp/review/705455/" target="_blank" rel="noopener noreferrer">https://careerconnection.jp/review/705455/</a></td><td>2026-04-27</td></tr><tr><td>13</td><td>IT研修サービス</td><td><a href="https://www.whizz-tech.co.jp/service/it-lecture/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/it-lecture/</a></td><td>2026-04-27</td></tr><tr><td>14</td><td>リクナビ2026 採用情報</td><td><a href="https://job.rikunabi.com/2026/company/r904482092/" target="_blank" rel="noopener noreferrer">https://job.rikunabi.com/2026/company/r904482092/</a></td><td>2026-04-27</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">ウィズテクノロジー公式サービスページ</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/service/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Wantedly</td><td class="src-url"><a href="https://sg.wantedly.com/companies/WhizzTechnology" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/WhizzTechnology</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">システム幹事 実績と評判</td><td class="src-url"><a href="https://system-kanji.com/services/10176" target="_blank" rel="noopener noreferrer">https://system-kanji.com/services/10176</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">MEBIC</td><td class="src-url"><a href="https://www.mebic.com/cluster/whizz-technology.html" target="_blank" rel="noopener noreferrer">https://www.mebic.com/cluster/whizz-technology.html</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">ウィズテクノロジー会社情報</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/company-profile/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/company-profile/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">BaseConnect</td><td class="src-url"><a href="https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">厚労省テレワークポータル</td><td class="src-url"><a href="https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/" target="_blank" rel="noopener noreferrer">https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">実績ページ</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/works/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/works/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">OpenWork ウィズテクノロジー</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C10000017pOIh" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C10000017pOIh</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/76592" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/76592</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">就活会議 口コミ</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/46564/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/46564/word_mouths</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">キャリコネ</td><td class="src-url"><a href="https://careerconnection.jp/review/705455/" target="_blank" rel="noopener noreferrer">https://careerconnection.jp/review/705455/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社ウィズテクノロジー</h1>
+
+<blockquote>調査日: 2026-04-27　対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>エンジニア経営・穏やかな人間関係は評価。ただし高離職率口コミが組織基盤への懸念を生む</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>Web/アプリ/インフラ/IT研修まで幅広い技術対応力。SES比率・客先常駐度合いは要確認</td></tr><tr><td>労働条件・環境</td><td>★★☆</td><td><span class="badge badge-red">🔴</span></td><td>平均年収318万・月残業40h・申請なし休日出勤5日・見込み残業込み給与が重大懸念</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>ミッション</strong>: 「テクノロジーで人と社会を幸せに」</li>
+<li><strong>ビジョン</strong>: 「社員がいきいきと働き、お客さまや社会の困りごとを解決するIT企業を目指す」</li>
+<li><strong>経営スタンス</strong>: 代表・役員がエンジニア出身。「技術者の会社」を明示的に標榜</li>
+<li><strong>出典</strong>: ウィズテクノロジー公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 25名の小規模フラット組織。代表が現場技術を理解している点が特徴</li>
+<li><strong>スタイル</strong>: トップダウン寄りと推察されるが、小規模ゆえ意思決定は速い</li>
+<li><strong>社風</strong>: 「穏やかな人が多い」「私服通勤」「自由度の高い社風」との口コミ複数</li>
+<li><strong>家族参加イベント</strong>: 社員の家族を招くイベントを実施。コミュニティ色が強い</li>
+<li><strong>出典</strong>: 就活会議 口コミ<sup class="fnref"><a href="#src-3">[3]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>キャリア面談</strong>: 年4回実施。「スピード感ある意思決定で働き方と仕事内容を常にアップデート」と公式記載</li>
+<li><strong>評価基準</strong>: 詳細な評価制度・給与テーブルの公開情報なし</li>
+<li><strong>懸念</strong>: 見込み残業込み給与（残業しても年収が増えない）との口コミがあり、評価制度の透明性に疑問</li>
+<li><strong>出典</strong>: Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup>、就活会議 口コミ<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員数</strong>: 25名（正社員）</li>
+<li><strong>平均年齢</strong>: 公開情報なし</li>
+<li><strong>離職率</strong>: 非公開。ただし「月一で人が減っている」「辞める人がかなり多い」との口コミが複数存在し、高離職率の可能性が高い</li>
+<li><strong>出典</strong>: ウィズテクノロジー会社情報<sup class="fnref"><a href="#src-4">[4]</a></sup>、就活会議 口コミ<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li><strong>主要業務</strong>: Webシステム・業務システム・スマホアプリ（iOS/Android）の受託開発、SES（エンジニア派遣）、IT研修・IT顧問サービス</li>
+<li><strong>開発フロー</strong>: 「企画〜制作〜運用保守」を一気通貫で担当（上流〜保守まで携われる）</li>
+<li><strong>SES比率</strong>: 公開情報から確認できず。客先常駐か社内勤務かは面接で要確認</li>
+<li><strong>出典</strong>: ウィズテクノロジー サービスページ<sup class="fnref"><a href="#src-5">[5]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>Web/バックエンド</strong>: PHP、Java、Python等（公式実績から推定）</li>
+<li><strong>フロントエンド</strong>: HTML/CSS/JavaScript、各種フレームワーク</li>
+<li><strong>スマホアプリ</strong>: iOS（Swift/Objective-C）、Android（Kotlin/Java）</li>
+<li><strong>インフラ</strong>: サーバ構築・運用保守を担当（AWSや国内クラウドと推定）</li>
+<li><strong>その他</strong>: 位置情報ゲームアプリ・美容系カタログアプリ等の実績あり</li>
+<li><strong>AI/最新技術の活用</strong>: 公開情報から具体的な言及なし</li>
+<li><strong>出典</strong>: 実績ページ<sup class="fnref"><a href="#src-6">[6]</a></sup>、サービスページ<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>IT研修サービス</strong>: 外部企業向けにIT研修・IT顧問を提供している（自社の強みとして位置付け）</li>
+<li><strong>社内向け研修</strong>: 制度の詳細は公開情報なし。エンジニア経営層が現場の大変さを理解しているとの口コミ</li>
+<li><strong>資格支援</strong>: 公開情報なし。面接で要確認</li>
+<li><strong>出典</strong>: IT研修サービスページ<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li><strong>年4回のキャリア面談</strong>: 定期的に希望を反映できる仕組みあり</li>
+<li><strong>上流〜保守まで</strong>: 受託一気通貫の経験が積める環境</li>
+<li><strong>管理職への道</strong>: 25名規模のため管理職ポストは限定的と推測</li>
+<li><strong>出典</strong>: Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 公開情報からは標準的な8時間制と推定</li>
+<li><strong>残業</strong>: 口コミ上は月平均40時間。繁忙期（月末）は12時間労働・休憩取れないとの具体的記述あり</li>
+<li><strong>休日出勤</strong>: 申請なし休日出勤が月5日との口コミ（実質不払い労働の可能性）</li>
+<li><strong>給与方式</strong>: 見込み残業込み（残業しても年収が増えにくい構造との口コミ）</li>
+<li><strong>矛盾点</strong>: 「定時に帰れることが多い」との口コミも存在。部署・プロジェクト・時期によるばらつきが大きい可能性</li>
+<li><strong>出典</strong>: 就活会議 口コミ<sup class="fnref"><a href="#src-3">[3]</a></sup>、キャリコネ<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong>テレワーク推進企業</strong>: 厚生労働省テレワーク総合ポータルサイトに事例掲載</li>
+<li><strong>実態</strong>: 出社＋テレワーク併用（ハイブリッド）と公式発信。ただし「在宅・時短対応」との口コミと、業務による差異あり</li>
+<li><strong>頻度</strong>: 週何日テレワーク可能か等の詳細は確認できず。面接で要確認</li>
+<li><strong>出典</strong>: 厚労省テレワークポータル<sup class="fnref"><a href="#src-9">[9]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>社会保険</strong>: 記載なし（中小企業として一般的な社会保険加入と推定）</li>
+<li><strong>有給休暇</strong>: 詳細不明</li>
+<li><strong>育休・産休</strong>: 公開情報なし</li>
+<li><strong>副業</strong>: 公開情報なし。面接で要確認</li>
+<li><strong>家族参加イベント</strong>: 実施実績あり（社内コミュニティ施策）</li>
+<li><strong>出典</strong>: Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup>、リクナビ2026<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>平均年収</strong>: <strong>318万円</strong>（キャリコネ掲載。業界平均を大幅に下回る水準）</li>
+<li><strong>給与構成</strong>: 見込み残業込み（超過分の追加支払いがない可能性）</li>
+<li><strong>賞与</strong>: 有無・支給実績とも公開情報なし</li>
+<li><strong>昇給</strong>: 詳細不明。年4回のキャリア面談で反映と記載あるが基準は不明</li>
+<li><strong>出典</strong>: キャリコネ<sup class="fnref"><a href="#src-8">[8]</a></sup>、Wantedly<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>労働条件</td><td>月平均の残業時間と、残業代の支払い方式（見込み残業の時間数・超過分の精算有無）を教えていただけますか？</td><td>口コミで月40h残業・見込み残業込みとの記述があり、実態を確認する必要がある</td></tr><tr><td>2</td><td>労働条件</td><td>休日出勤は発生しますか？発生した場合の代休・振替・手当の制度はどうなっていますか？</td><td>申請なし休日出勤5日/月との口コミがあり、不払い労働の有無を確認するため</td></tr><tr><td>3</td><td>組織・カルチャー</td><td>現在の従業員の平均勤続年数と、直近1年間の離職率を教えていただけますか？</td><td>月一退職者との口コミが複数あり、組織安定性を確認するため</td></tr><tr><td>4</td><td>職務・スキル</td><td>自社開発とSES（客先常駐）の比率はどの程度ですか？配属先によって異なりますか？</td><td>SES比率・働く場所の実態が不明で、キャリア形成に直結するため</td></tr><tr><td>5</td><td>労働条件</td><td>テレワーク・在宅勤務は実際にどの程度の頻度で利用できますか？部署やプロジェクトで差はありますか？</td><td>厚労省掲載のテレワーク推進と口コミの実態に差があるかを確認するため</td></tr><tr><td>6</td><td>労働条件</td><td>賞与の有無と、直近の支給実績を教えていただけますか？</td><td>平均年収318万円という水準の詳細構成を確認するため</td></tr><tr><td>7</td><td>評価制度</td><td>年4回のキャリア面談での評価はどのような基準で行われますか？昇給の仕組みを教えてください</td><td>評価制度の透明性と給与改善の可能性を確認するため</td></tr><tr><td>8</td><td>職務・スキル</td><td>エンジニアとして、技術習得・資格取得に対するサポート制度はありますか？</td><td>成長環境の有無と自己投資に対する会社姿勢を確認するため</td></tr><tr><td>9</td><td>労働条件</td><td>副業・兼業の可否について教えてください</td><td>給与水準が低い場合の補完手段として、また会社の透明性確認のため</td></tr><tr><td>10</td><td>組織・カルチャー</td><td>入社後に配属されるチームの規模と、具体的にどのようなプロジェクトに関わることになりますか？</td><td>実際の業務環境と成長機会を具体的に把握するため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>ウィズテクノロジー公式サイト</td><td><a href="https://www.whizz-tech.co.jp/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/</a></td><td>2026-04-27</td></tr><tr><td>2</td><td>ウィズテクノロジー 会社情報</td><td><a href="https://www.whizz-tech.co.jp/company-profile/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/company-profile/</a></td><td>2026-04-27</td></tr><tr><td>3</td><td>ウィズテクノロジー サービスページ</td><td><a href="https://www.whizz-tech.co.jp/service/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/</a></td><td>2026-04-27</td></tr><tr><td>4</td><td>ウィズテクノロジー 実績ページ</td><td><a href="https://www.whizz-tech.co.jp/works/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/works/</a></td><td>2026-04-27</td></tr><tr><td>5</td><td>IT研修サービスページ</td><td><a href="https://www.whizz-tech.co.jp/service/it-lecture/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/it-lecture/</a></td><td>2026-04-27</td></tr><tr><td>6</td><td>Wantedly</td><td><a href="https://sg.wantedly.com/companies/WhizzTechnology" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/WhizzTechnology</a></td><td>2026-04-27</td></tr><tr><td>7</td><td>システム幹事 実績と評判</td><td><a href="https://system-kanji.com/services/10176" target="_blank" rel="noopener noreferrer">https://system-kanji.com/services/10176</a></td><td>2026-04-27</td></tr><tr><td>8</td><td>MEBIC</td><td><a href="https://www.mebic.com/cluster/whizz-technology.html" target="_blank" rel="noopener noreferrer">https://www.mebic.com/cluster/whizz-technology.html</a></td><td>2026-04-27</td></tr><tr><td>9</td><td>厚労省テレワークポータル</td><td><a href="https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/" target="_blank" rel="noopener noreferrer">https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/</a></td><td>2026-04-27</td></tr><tr><td>10</td><td>OpenWork ウィズテクノロジー</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C10000017pOIh" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C10000017pOIh</a></td><td>2026-04-27</td></tr><tr><td>11</td><td>転職会議 ウィズテクノロジー</td><td><a href="https://jobtalk.jp/companies/76592" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/76592</a></td><td>2026-04-27</td></tr><tr><td>12</td><td>就活会議 口コミ</td><td><a href="https://syukatsu-kaigi.jp/companies/46564/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/46564/word_mouths</a></td><td>2026-04-27</td></tr><tr><td>13</td><td>キャリコネ 評判</td><td><a href="https://careerconnection.jp/review/705455/" target="_blank" rel="noopener noreferrer">https://careerconnection.jp/review/705455/</a></td><td>2026-04-27</td></tr><tr><td>14</td><td>リクナビ2026 採用情報</td><td><a href="https://job.rikunabi.com/2026/company/r904482092/" target="_blank" rel="noopener noreferrer">https://job.rikunabi.com/2026/company/r904482092/</a></td><td>2026-04-27</td></tr><tr><td>15</td><td>BaseConnect</td><td><a href="https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/60d4f0aa-e098-43dc-877b-87c841dd987b</a></td><td>2026-04-27</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">ウィズテクノロジー公式サイト</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Wantedly</td><td class="src-url"><a href="https://sg.wantedly.com/companies/WhizzTechnology" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/WhizzTechnology</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">就活会議 口コミ</td><td class="src-url"><a href="https://syukatsu-kaigi.jp/companies/46564/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/46564/word_mouths</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">ウィズテクノロジー会社情報</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/company-profile/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/company-profile/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">ウィズテクノロジー サービスページ</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/service/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">実績ページ</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/works/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/works/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">IT研修サービスページ</td><td class="src-url"><a href="https://www.whizz-tech.co.jp/service/it-lecture/" target="_blank" rel="noopener noreferrer">https://www.whizz-tech.co.jp/service/it-lecture/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">キャリコネ</td><td class="src-url"><a href="https://careerconnection.jp/review/705455/" target="_blank" rel="noopener noreferrer">https://careerconnection.jp/review/705455/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">厚労省テレワークポータル</td><td class="src-url"><a href="https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/" target="_blank" rel="noopener noreferrer">https://telework.mhlw.go.jp/example/company/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%82%A6%E3%82%A3%E3%82%BA%E3%83%86%E3%82%AF%E3%83%8E%E3%83%AD%E3%82%B8%E3%83%BC/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">リクナビ2026</td><td class="src-url"><a href="https://job.rikunabi.com/2026/company/r904482092/" target="_blank" rel="noopener noreferrer">https://job.rikunabi.com/2026/company/r904482092/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

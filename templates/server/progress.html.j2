@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>調査中 — {{ job.company }}</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface2: #334155;
+    --border: #475569;
+    --text: #f1f5f9;
+    --text2: #94a3b8;
+    --accent: #38bdf8;
+    --accent2: #818cf8;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .progress-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    width: min(680px, 95vw);
+    padding: 2rem;
+  }
+  .progress-card h1 {
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+  }
+  .company-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .3rem .8rem;
+    border-radius: 20px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .status-badge.running {
+    background: rgba(56,189,248,.15);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+  .status-badge.succeeded {
+    background: rgba(16,185,129,.15);
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
+  .status-badge.failed {
+    background: rgba(239,68,68,.15);
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+  .status-badge.queued {
+    background: rgba(245,158,11,.15);
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+  }
+
+  /* スピナー */
+  .spinner {
+    display: inline-block;
+    width: 16px; height: 16px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ログ */
+  .log-container {
+    background: #0b1120;
+    border: 1px solid var(--surface2);
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: "Cascadia Code", "JetBrains Mono", "Consolas", monospace;
+    font-size: .8rem;
+    line-height: 1.6;
+    color: var(--text2);
+  }
+  .log-container .log-line { white-space: pre-wrap; word-break: break-all; }
+  .log-container .log-line.latest { color: var(--text); }
+
+  /* 完了時ボタン */
+  .btn-dashboard {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: .7rem 1.5rem;
+    background: linear-gradient(135deg, var(--green), #059669);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity .2s;
+  }
+  .btn-dashboard:hover { opacity: .9; }
+
+  .btn-back {
+    display: inline-block;
+    margin-top: .8rem;
+    color: var(--text2);
+    font-size: .85rem;
+    text-decoration: none;
+  }
+  .btn-back:hover { color: var(--text); }
+
+  .error-box {
+    background: rgba(239,68,68,.1);
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: var(--red);
+    font-size: .9rem;
+    white-space: pre-wrap;
+  }
+
+  .elapsed {
+    color: var(--text2);
+    font-size: .8rem;
+    margin-top: .5rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-card">
+  <h1>企業調査</h1>
+  <div class="company-name" id="companyName">{{ job.company }}</div>
+
+  <div id="statusBadge" class="status-badge {{ job.status }}">
+    {% if job.status == 'running' or job.status == 'queued' %}
+    <span class="spinner"></span>
+    {% endif %}
+    <span id="statusText">
+      {% if job.status == 'queued' %}待機中…
+      {% elif job.status == 'running' %}調査実行中…
+      {% elif job.status == 'succeeded' %}完了
+      {% elif job.status == 'failed' %}エラー
+      {% endif %}
+    </span>
+  </div>
+
+  <div class="elapsed" id="elapsed"></div>
+
+  <div class="log-container" id="logContainer">
+    <div class="log-line" style="color:var(--text2)">ログの取得を開始しています…</div>
+  </div>
+
+  <div id="resultArea" style="display:none;">
+    <a href="#" id="dashboardLink" class="btn-dashboard">📊 ダッシュボードを表示</a>
+  </div>
+  <div id="errorArea" style="display:none;">
+    <div class="error-box" id="errorText"></div>
+  </div>
+
+  <a href="/" class="btn-back">← 新しい調査を開始</a>
+</div>
+
+<script>
+const JOB_ID = "{{ job.job_id }}";
+const logContainer = document.getElementById('logContainer');
+const statusBadge = document.getElementById('statusBadge');
+const statusText = document.getElementById('statusText');
+const resultArea = document.getElementById('resultArea');
+const dashboardLink = document.getElementById('dashboardLink');
+const errorArea = document.getElementById('errorArea');
+const errorText = document.getElementById('errorText');
+const elapsedEl = document.getElementById('elapsed');
+
+let since = 0;
+let startTime = Date.now();
+let polling = true;
+let lastRenderedCount = 0;
+
+function updateElapsed() {
+  const sec = Math.floor((Date.now() - startTime) / 1000);
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  elapsedEl.textContent = `経過時間: ${m}分${s.toString().padStart(2,'0')}秒`;
+}
+
+async function pollLogs() {
+  if (!polling) return;
+  try {
+    const res = await fetch(`/jobs/${JOB_ID}/logs?since=${since}`);
+    if (!res.ok) return;
+    const data = await res.json();
+
+    if (data.logs.length > 0) {
+      if (lastRenderedCount === 0) logContainer.innerHTML = '';
+      for (const line of data.logs) {
+        const div = document.createElement('div');
+        div.className = 'log-line';
+        div.textContent = line;
+        logContainer.appendChild(div);
+        lastRenderedCount++;
+      }
+      // 最新行をハイライト
+      const allLines = logContainer.querySelectorAll('.log-line');
+      allLines.forEach((el, i) => {
+        el.classList.toggle('latest', i >= allLines.length - 3);
+      });
+      logContainer.scrollTop = logContainer.scrollHeight;
+      since = data.next_since;
+    }
+
+    // ステータス更新
+    if (data.status === 'succeeded' || data.status === 'failed') {
+      polling = false;
+      statusBadge.className = 'status-badge ' + data.status;
+      statusBadge.innerHTML = '';
+
+      if (data.status === 'succeeded') {
+        statusText.textContent = '✅ 完了';
+        statusBadge.appendChild(statusText);
+        // ダッシュボードURLを取得
+        const statusRes = await fetch(`/jobs/${JOB_ID}/status`);
+        const statusData = await statusRes.json();
+        if (statusData.dashboard_url) {
+          dashboardLink.href = statusData.dashboard_url;
+          resultArea.style.display = 'block';
+        }
+      } else {
+        statusText.textContent = '❌ エラー';
+        statusBadge.appendChild(statusText);
+        const statusRes = await fetch(`/jobs/${JOB_ID}/status`);
+        const statusData = await statusRes.json();
+        errorText.textContent = statusData.error || 'Unknown error';
+        errorArea.style.display = 'block';
+      }
+      return;
+    }
+
+    if (data.status === 'running' && statusBadge.className.includes('queued')) {
+      statusBadge.className = 'status-badge running';
+      statusBadge.innerHTML = '<span class="spinner"></span>';
+      const span = document.createElement('span');
+      span.id = 'statusText';
+      span.textContent = '調査実行中…';
+      statusBadge.appendChild(span);
+    }
+
+  } catch (e) { /* ignore network errors during polling */ }
+}
+
+// ポーリング
+setInterval(pollLogs, 2000);
+setInterval(updateElapsed, 1000);
+pollLogs();
+updateElapsed();
+</script>
+</body>
+</html>

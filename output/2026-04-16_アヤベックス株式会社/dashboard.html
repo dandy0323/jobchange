@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — アヤベックス株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>アヤベックス株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-18</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">インバウンドDMCとして成長市場に参入しているが、2023年買収時点で営業赤字(△1,600万円)・債務超過(△1.38億円)。東証上場のアドベンチャー（6030）の子会社化により財務的下支えはあるが、単体業績の回復状況は非公開で要確認。</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">過去10年で不祥事・行政処分・労基法違反に関する報道は確認されず。京都府知事登録旅行業者（第2-680号）として適正に事業継続。</p>
+        </article>
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">懸念点が多数</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork総合スコア1.9/5.0（元社員・3〜5年勤務）と業界平均を大幅に下回る。入社前後のギャップ・職場環境への不満を指摘する口コミが複数確認されており、離職率や労働負荷に懸念あり。</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="questions"
+        >💬 面接質問 (17)</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: アヤベックス株式会社</h1>
+
+<blockquote>調査日: 2026-04-16</blockquote>
+
+<h2 id="総合スクリーニング結果">■ 総合スクリーニング結果</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>事業・経済基盤</td><td><span class="badge badge-yellow">🟡</span></td><td>インバウンド DMC として成長領域に参入しているが、買収前は営業赤字・債務超過。2023年10月に上場会社アドベンチャー（6030）の子会社化で財務的支援は改善。</td></tr><tr><td>社会的リスク</td><td><span class="badge badge-green">🟢</span></td><td>主要な不祥事・行政処分・労基違反の報道なし。旅行業登録も適正に維持。</td></tr><tr><td>社員評価</td><td><span class="badge badge-red">🔴</span></td><td>OpenWork スコア 1.9（5点満点）。入社前後のギャップを指摘する口コミが複数あり、労働環境に懸念。</td></tr></tbody></table>
+
+<blockquote>判定基準: <span class="badge badge-green">🟢</span> 懸念なし / <span class="badge badge-yellow">🟡</span> 要確認事項あり / <span class="badge badge-red">🔴</span> 重大な懸念あり</blockquote>
+
+<hr>
+
+<h2 id="1-事業-経済基盤-継続性の確認">1. 事業・経済基盤（継続性の確認）</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>誰に</strong>: 外国人インバウンド旅行者・海外旅行会社・国内企業（修学旅行等）</li>
+<li><strong>何を</strong>: 国内旅行の手配・ランドオペレーター（DMC）サービス、インバウンド向けプロモーション、観光 PR 動画制作</li>
+<li><strong>どのように</strong>:</li>
+<li><strong>フロー型</strong> — ツアーごとの手配・取次収益（交通・宿泊・アクティビティ等の仕入れ差益）</li>
+<li><strong>一部プロジェクト型</strong> — 動画制作・プロモーション案件受注</li>
+<li>「ツアー企画 → 動画制作 → オンライン配信 → コンテンツ販売」のワンストップ展開が特徴</li>
+<li><strong>出典</strong>: 会社概要 | アヤベックス株式会社<sup class="fnref"><a href="#src-1">[1]</a></sup>、京都企業紹介 | 京都府<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場シェアと競合">1-2. 市場シェアと競合</h3>
+
+<ul>
+<li><strong>業界内ポジション</strong>: インバウンド DMC は中小専門事業者が乱立するニッチ市場。同社は京都・綾部を拠点とし、地方・農村型体験に特化した小規模事業者。</li>
+<li><strong>主要競合</strong>:</li>
+<li>JTB・近畿日本ツーリスト等大手旅行会社のランドオペレーション部門 — 規模・ブランド力で優位</li>
+<li>H.I.S. インバウンド部門 — オンライン集客力に強み</li>
+<li>地域 DMO（各地観光局系） — 補助金・公的連携で優位</li>
+<li><strong>対象企業の強み</strong>: 地域密着・クラフト観光・農村体験等の「本物の日本」体験に特化。親会社アドベンチャーのオンライン予約インフラとの連携。</li>
+<li><strong>対象企業の弱み</strong>: 従業員 19 名程度の超小規模。独自集客力が限定的で、買収前は赤字・債務超過。</li>
+<li><strong>出典</strong>: 京都府 | アヤベックス紹介<sup class="fnref"><a href="#src-2">[2]</a></sup>、doda 企業概要<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>直近期（2023年3月期推定）</th><th>前期</th><th>前々期</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>約 1.06 億円</td><td>非公開</td><td>非公開</td><td>M&amp;A 開示より</td></tr><tr><td>営業利益（損失）</td><td>△0.16 億円（赤字）</td><td>非公開</td><td>非公開</td><td>同上</td></tr><tr><td>純資産</td><td>△1.38 億円（<strong>債務超過</strong>）</td><td>非公開</td><td>非公開</td><td>同上</td></tr><tr><td>自己資本比率</td><td>マイナス（債務超過）</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>
+
+<ul>
+<li><strong>上場 / 非上場</strong>: 非上場（2023年10月よりアドベンチャー株式会社＜東証6030＞の連結子会社）</li>
+<li><strong>買収価格</strong>: 約 5.06 億円（2023年10月27日付）</li>
+<li><strong>出典</strong>: [日経 M&amp;A 開示 2023-10-26][6]、[M&amp;Aニュース – nihon-ma.co.jp][7]</li>
+<li><span class="badge badge-yellow">⚠️</span> <strong>非上場（子会社）のため単体財務は非公開</strong>。面接時に足元の収益改善状況・親会社からの支援状況を要確認。</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>買収後の戦略</strong>: アドベンチャーのオンライン旅行予約・集客ノウハウとアヤベックスのランドオペレーション力を組み合わせ、インバウンド需要の回復・拡大を取り込む方針。</li>
+<li><strong>注力投資領域</strong>: 地方インバウンド体験、動画コンテンツによる海外プロモーション、京都・関西圏外への地域開拓</li>
+<li><strong>中期経営計画</strong>: 公開情報なし（非上場子会社のため非公開）</li>
+<li><strong>出典</strong>: [M&amp;Aベストパートナーズ][8]、[initial.inc – アヤベックス][4]</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<ul>
+<li><strong>過去10年の主な事案</strong>: 主要な報道なし。行政処分・労基法違反・コンプライアンス問題に関するニュース記事は発見されず。</li>
+<li><strong>旅行業登録</strong>: 京都府知事登録旅行業者 第2-680号（適正維持を確認）</li>
+<li><strong>出典</strong>: 各種ニュース検索・gBizINFO 調査（該当情報なし）</li>
+</ul>
+
+<h3 id="5-2-サステナビリティ-ESG">5-2. サステナビリティ・ESG</h3>
+
+<ul>
+<li><strong>取り組み概要</strong>: 公式 HP 等で正式な ESG レポートや CSR 方針の公開は確認できず。ただし事業目的として「地域活性化・文化交流を通じた世界平和への貢献」を掲げており、地域密着型観光振興・移住促進ツアーを実施。</li>
+<li><strong>コロナ禍対応</strong>: 社員がワクチン接種センター運営支援に参加し、ホスピタリティスキルを社会還元した実績あり。</li>
+<li><strong>出典</strong>: アヤベックス公式 HP<sup class="fnref"><a href="#src-4">[4]</a></sup>、[京都府企業紹介][2]</li>
+</ul>
+
+<h3 id="5-3-顧客からの評判">5-3. 顧客からの評判</h3>
+
+<ul>
+<li><strong>商品・サービスの評価</strong>: 京都クラフト観光体験（陶器・石工・繊維工芸等）のプログラム開発に関与。地方移住促進ツアー「PLUS NA TABI」（綾部市）も展開。公式 Instagram（@ayabexjapan）でコンテンツ発信あり。</li>
+<li><strong>SNS 等での反応傾向</strong>: 参加者の直接レビューや Google 口コミの定量情報は公開情報からは限定的。</li>
+</ul>
+
+<p>#### 社員評価</p>
+
+<p><strong>【良い点】</strong>
+<ul>
+<li>住宅手当（独身者向け）など一部の福利厚生が手厚いとの口コミあり（エン カイシャの評判）</li>
+<li>コロナ禍においても昇進・スキルアップの機会があったとの評価（旅行業全般の知識・インバウンド業務スキルが身につく）</li>
+<li>「世界と日本をつなぐ」使命感・ミッション志向の社風を評価する声</li>
+</ul></p>
+
+<p><strong>【懸念点】</strong>
+<ul>
+<li><strong>OpenWork 総合スコア: 1.9 / 5.0</strong>（元社員・運営系・3〜5年勤務）。業界平均を大幅に下回る水準</li>
+<li>「入社前のイメージと実際の職場環境に大きなギャップがある」という口コミが複数確認</li>
+<li>小規模組織（19名）のため業務範囲が広く、一人当たり負荷が高い可能性あり</li>
+<li>Indeed・Yahoo しごとカタログにも投稿はあるが、詳細スコアはログイン要</li>
+</ul></p>
+
+<p><strong>出典</strong>:
+<ul>
+<li>OpenWork – アヤベックス クチコミ<sup class="fnref"><a href="#src-5">[5]</a></sup> \[9\]</li>
+<li>エン カイシャの評判 – アヤベックス<sup class="fnref"><a href="#src-6">[6]</a></sup> \[10\]</li>
+<li>Indeed – アヤベックス株式会社<sup class="fnref"><a href="#src-7">[7]</a></sup> \[11\]</li>
+<li>Yahoo! しごとカタログ – アヤベックス<sup class="fnref"><a href="#src-8">[8]</a></sup> \[12\]</li>
+</ul></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] <strong>足元の業績・収益改善状況</strong>: 買収時（2023年）は営業赤字・債務超過。現在の売上・利益水準と改善計画を確認する必要あり。</li>
+<li>[ ] <strong>親会社アドベンチャーとの具体的な連携内容</strong>: 資金支援、集客チャネル共有、組織統合の進捗状況を確認。</li>
+<li>[ ] <strong>現在の従業員数・離職率</strong>: OpenWork スコアが低く離職率が懸念される。過去2〜3年の社員数推移と採用計画を確認。</li>
+<li>[ ] <strong>残業時間・有給取得率の実態</strong>: 公開情報では確認できず。小規模組織のため一人当たり負荷が高い可能性あり。</li>
+<li>[ ] <strong>中期経営計画・目標売上規模</strong>: 非公開のため、面接で将来ビジョン・規模目標を確認すること。</li>
+<li>[ ] <strong>正社員と契約社員の構成比</strong>: 旅行業は契約社員比率が高い場合があるため、雇用形態の詳細を確認。</li>
+<li>[ ] <strong>コロナ後のインバウンド需要回復への具体的成果</strong>: 業績が実際に回復しているかどうかを確認。</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>会社概要 \</td><td>アヤベックス株式会社</td><td><a href="https://ayabex.com/company/" target="_blank" rel="noopener noreferrer">https://ayabex.com/company/</a></td><td>2026-04-16</td></tr><tr><td>2</td><td>京都企業紹介 – アヤベックス \</td><td>京都府</td><td><a href="https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html" target="_blank" rel="noopener noreferrer">https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html</a></td><td>2026-04-16</td></tr><tr><td>3</td><td>アヤベックス株式会社 \</td><td>gBizINFO</td><td><a href="https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5130001051561" target="_blank" rel="noopener noreferrer">https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5130001051561</a></td><td>2026-04-16</td></tr><tr><td>4</td><td>アヤベックス株式会社 – initial.inc</td><td><a href="https://initial.inc/investors/V13708" target="_blank" rel="noopener noreferrer">https://initial.inc/investors/V13708</a></td><td>2026-04-16</td></tr><tr><td>5</td><td>アヤベックス株式会社 \</td><td>NIKKEI COMPASS</td><td><a href="https://www.nikkei.com/compass/company/4sjRFp87UeQfjaCCLEMoNY" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/compass/company/4sjRFp87UeQfjaCCLEMoNY</a></td><td>2026-04-16</td></tr><tr><td>6</td><td>アドベンチャー – アヤベックス M&amp;A 開示（日経）</td><td><a href="https://www.nikkei.com/nkd/disclosure/tdnr/20231027572692/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/nkd/disclosure/tdnr/20231027572692/</a></td><td>2026-04-16</td></tr><tr><td>7</td><td>アドベンチャーがアヤベックスを子会社化</td><td><a href="https://www.nihon-ma.co.jp/news/20231027_6030-16/" target="_blank" rel="noopener noreferrer">https://www.nihon-ma.co.jp/news/20231027_6030-16/</a></td><td>2026-04-16</td></tr><tr><td>8</td><td>M&amp;Aニュース 9600 – M&amp;Aベストパートナーズ</td><td><a href="https://mabp.co.jp/manews/9600/" target="_blank" rel="noopener noreferrer">https://mabp.co.jp/manews/9600/</a></td><td>2026-04-16</td></tr><tr><td>9</td><td>アヤベックス口コミ \</td><td>OpenWork</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h</a></td><td>2026-04-16</td></tr><tr><td>10</td><td>アヤベックス口コミ \</td><td>エン カイシャの評判</td><td><a href="https://en-hyouban.com/company/10200772917/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10200772917/kuchikomi/</a></td><td>2026-04-16</td></tr><tr><td>11</td><td>アヤベックス株式会社 \</td><td>Indeed Japan</td><td><a href="https://jp.indeed.com/cmp/..." target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/...</a></td><td>2026-04-16</td></tr><tr><td>12</td><td>アヤベックス口コミ \</td><td>Yahoo! しごとカタログ</td><td><a href="https://jobcatalog.yahoo.co.jp/company/1500370441/review/" target="_blank" rel="noopener noreferrer">https://jobcatalog.yahoo.co.jp/company/1500370441/review/</a></td><td>2026-04-16</td></tr><tr><td>13</td><td>アヤベックス株式会社 転職情報 \</td><td>doda</td><td><a href="https://doda.jp/DodaFront/View/Company/j_id__10136253622/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10136253622/</a></td><td>2026-04-16</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">会社概要 | アヤベックス株式会社</td><td class="src-url"><a href="https://ayabex.com/company/" target="_blank" rel="noopener noreferrer">https://ayabex.com/company/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">京都企業紹介 | 京都府</td><td class="src-url"><a href="https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html" target="_blank" rel="noopener noreferrer">https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">doda 企業概要</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10136253622/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10136253622/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">アヤベックス公式 HP</td><td class="src-url"><a href="https://ayabex.com/" target="_blank" rel="noopener noreferrer">https://ayabex.com/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">OpenWork – アヤベックス クチコミ</td><td class="src-url"><a href="https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">エン カイシャの評判 – アヤベックス</td><td class="src-url"><a href="https://en-hyouban.com/company/10200772917/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10200772917/kuchikomi/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">Indeed – アヤベックス株式会社</td><td class="src-url"><a href="https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Yahoo! しごとカタログ – アヤベックス</td><td class="src-url"><a href="https://jobcatalog.yahoo.co.jp/company/1500370441/review/" target="_blank" rel="noopener noreferrer">https://jobcatalog.yahoo.co.jp/company/1500370441/review/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: アヤベックス株式会社</h1>
+
+<blockquote>調査日: 2026-04-16</blockquote>
+<blockquote>対象職種: 未指定（インバウンド旅行手配・企画職を中心に調査）</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>多国籍・多様性重視の環境は魅力的。女性管理職も複数在籍。ただし OpenWork 2.89・1.9 と評価が低く「入社前後のギャップ」を指摘する口コミが懸念。</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>DMC/ランドオペレーター業務は範囲が明確で英語必須。約50ヶ国のエージェントと取引する実践的な国際業務。キャリアパスの公開情報は限定的。</td></tr><tr><td>労働条件・環境</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>月給22〜29万円（入社時）は旅行業界標準。残業月20時間以内・在宅勤務・フレックス導入済みは評価できる。年収上限500万円は業界内では可。</td></tr></tbody></table>
+
+<blockquote>確認度: ★☆☆ 情報不足 / ★★☆ 部分的に確認 / ★★★ 十分に確認</blockquote>
+<blockquote>判定: <span class="badge badge-green">🟢</span> 良好 / <span class="badge badge-yellow">🟡</span> 要確認 / <span class="badge badge-red">🔴</span> 懸念あり / <span class="badge badge-gray">⚪</span> 判定不能（情報不足）</blockquote>
+
+<hr>
+
+<h2 id="2-組織-カルチャー-相性の確認">2. 組織・カルチャー（相性の確認）</h2>
+
+<h3 id="2-1-企業理念-ミッション-ビジョン-バリュー">2-1. 企業理念（ミッション・ビジョン・バリュー）</h3>
+
+<ul>
+<li><strong>公式の理念（ミッション）</strong>: 「本物の日本（&quot;Real Japan&quot;）を世界に届ける」。日本の地方・農村の原風景を拠点に、文化交流を通じた「世界平和への貢献」を掲げる。英語スローガン: <em>&quot;To be a bridge to the world, delivering the &#x27;real Japan&#x27;&quot;</em></li>
+<li><strong>現場への浸透度</strong>: 採用ページ・プロモーション素材の表現に一貫性あり。コロナ禍にも地域貢献（ワクチン接種センター支援）を実施しており、ミッション志向の社風は一定程度体現されている。ただし体系的な MVV の公開文書は確認できず。</li>
+<li><strong>出典</strong>: 会社概要 | アヤベックス<sup class="fnref"><a href="#src-1">[1]</a></sup>、京都府企業紹介<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 従業員 約19〜24名の超小規模。京都（本社）・大阪・東京の3拠点体制。</li>
+<li><strong>意思決定の傾向</strong>: 公開情報からの判断材料は乏しいが、小規模組織の性質上、経営陣への距離は近くトップダウン傾向が強い可能性あり。チャット・オンラインミーティングで拠点横断コミュニケーションは活発との記載あり。</li>
+<li><strong>多様性</strong>: 十数ヶ国籍のスタッフが在籍。「なんでもチャレンジしてみよう」という挑戦歓迎のカルチャーが語られている。</li>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup>、doda 企業概要<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li><strong>評価体系</strong>: 公開情報なし。小規模企業のため体系的なジョブ型制度よりも属人的評価の可能性が高い。</li>
+<li><strong>昇進基準</strong>: 具体的な公開情報なし。「コロナ禍でも昇進機会あり」との口コミあり。女性管理職（マネージャー）複数在籍確認済み。</li>
+<li><strong>昇給</strong>: 年1回 / <strong>賞与</strong>: 制度あり（回数・基準の詳細は非公開）</li>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-4-組織の人的構成">2-4. 組織の人的構成</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>従業員数</td><td>約 19〜24名（正社員22・パート2）</td><td>情報源により若干差異</td></tr><tr><td>平均年齢</td><td>非公開</td><td></td></tr><tr><td>離職率</td><td>非公開</td><td>OpenWork スコア低く要注意</td></tr><tr><td>女性比率</td><td>女性管理職複数在籍、女性活躍の雰囲気とのコメントあり</td><td></td></tr><tr><td>国籍構成</td><td>十数ヶ国籍のスタッフが在籍</td><td>インバウンド業態を反映</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: doda 企業概要<sup class="fnref"><a href="#src-4">[4]</a></sup>、エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル-キャリア形成の確認">3. 職務・スキル（キャリア形成の確認）</h2>
+
+<h3 id="3-1-具体的な業務範囲">3-1. 具体的な業務範囲</h3>
+
+<ul>
+<li><strong>担当フェーズ</strong>:</li>
+<li><strong>ランドオペレーター（DMC）業務</strong>: 訪日外国人向けツアーの企画立案 → 手配実務（交通・宿泊・ガイド・飲食・観光地） → 現地案内・フォロー</li>
+<li><strong>インバウンドプロモーション</strong>: 海外旅行代理店への日本旅行商品の提案・営業</li>
+<li><strong>映像制作サポート</strong>: インバウンド向け PR 動画の企画・制作補助</li>
+<li><strong>取引規模</strong>: 約50ヶ国のエージェントと取引、年間約10,000名の訪日外国人を受け入れ</li>
+<li><strong>チーム構成</strong>: 3拠点の少人数チーム。業務の性質上、一人が幅広い工程を担当する「ゼネラリスト型」と推測。</li>
+<li><strong>出典</strong>: 会社概要 | アヤベックス<sup class="fnref"><a href="#src-1">[1]</a></sup>、京都府企業紹介<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック-使用ツール">3-2. 技術スタック・使用ツール</h3>
+
+<ul>
+<li><strong>言語・フレームワーク</strong>: 非該当（IT 企業ではない）</li>
+<li><strong>業務ツール</strong>: クラウドシステム導入（在宅勤務・育休中の情報共有用途）。具体的なツール名は非公開。</li>
+<li><strong>語学要件</strong>:</li>
+<li><strong>英語</strong>: 必須（海外エージェントとの交渉・調整が中核業務）</li>
+<li><strong>中国語・韓国語</strong>: 歓迎（求人情報より）</li>
+<li><strong>AI 活用状況</strong>: 公開情報なし</li>
+<li><strong>出典</strong>: Indeed 求人票<sup class="fnref"><a href="#src-5">[5]</a></sup>、キャリアクロス<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修体制">3-3. 教育・研修体制</h3>
+
+<ul>
+<li><strong>研修制度</strong>: 公開情報では詳細なし。口コミより「旅行業務全般のスキルを習得できる」との評価あり。</li>
+<li><strong>コロナ禍対応</strong>: オンラインツアー・ウェビナー等の新サービス展開を通じたスキルアップ機会があったとの社員コメントあり。</li>
+<li><strong>自己研鑽支援</strong>: 書籍購入補助・資格取得支援（旅行業務取扱管理者など）については公開情報なし → 要確認。</li>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li><strong>社内キャリアの選択肢</strong>: 公開情報なし。女性マネージャー複数在籍から管理職への道は存在する。マネジメントコース vs スペシャリストコースの分岐は不明。</li>
+<li><strong>親会社アドベンチャーへの異動可能性</strong>: 非公開 → 面接で確認推奨。</li>
+<li><strong>外部市場でのスキル価値</strong>: ランドオペレーター経験・英語実務・インバウンド企画スキルは、訪日旅行市場拡大の中で転職市場での需要は高い。</li>
+<li><strong>出典</strong>: doda 企業概要<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境-生活の質の確認">4. 労働条件・環境（生活の質の確認）</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>所定労働時間</td><td>1日 8時間</td><td>標準的</td></tr><tr><td>平均残業時間</td><td>月 20 時間以内（求人票記載）</td><td>繁閑差あり・ハイシーズンは要確認</td></tr><tr><td>フレックス制度</td><td>あり（3パターンの勤務時間制度）</td><td>詳細は非公開</td></tr><tr><td>年間休日</td><td>120 日以上</td><td>土日祝日休み</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: Indeed 求人票<sup class="fnref"><a href="#src-5">[5]</a></sup>、エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li><strong>制度の有無</strong>: あり。就業規則を見直し在宅勤務制度を正式に整備済み。</li>
+<li><strong>実態</strong>: クラウドシステムを導入し育休中・在宅勤務時の情報共有体制を構築。「子どもの急病など予期しない状況への対応が可能」との社員コメントあり。</li>
+<li><strong>頻度・条件</strong>: 詳細は非公開。週何日か・業務による制限の有無は面接で確認が必要。</li>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<table class="data-table"><thead><tr><th>制度</th><th>内容</th></tr></thead><tbody><tr><td>住宅手当</td><td>独身者向けに「かなり大きな額の補助金」（詳細金額は非公開）</td></tr><tr><td>交通費</td><td>支給</td></tr><tr><td>社会保険</td><td>完備（健康・厚生年金・雇用・労災）</td></tr><tr><td>育児休業</td><td>制度整備済み（女性復帰支援に取り組む旨の記載あり）</td></tr><tr><td>副業</td><td>公開情報なし（要確認）</td></tr><tr><td>賞与・昇給</td><td>年1回昇給・賞与制度あり</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup>、Indeed 求人票<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>職種</th><th>月給レンジ</th><th>備考</th></tr></thead><tbody><tr><td>インバウンド旅行手配（入社時）</td><td>22.0 万〜29.0 万円</td><td>正社員・契約社員</td></tr><tr><td>インバウンド企画・提案（上位）</td><td>24.5 万〜40.5 万円</td><td></td></tr><tr><td>旅行スタッフ平均（Indeed データ）</td><td>約 31.7 万円/月</td><td>全国同職種比 +34%</td></tr><tr><td>年収レンジ（エン カイシャ）</td><td>252 万〜500 万円</td><td></td></tr></tbody></table>
+
+<ul>
+<li><strong>給与構成</strong>: 基本給＋賞与＋昇給。固定残業代の有無は求人票に明記なし → 要確認。</li>
+<li><strong>評価</strong>: 旅行業界水準では標準〜やや高め。日本全業種平均（約32〜34万円）と比較すると入社時は低め。</li>
+<li><strong>出典</strong>: Indeed 求人票・給与データ<sup class="fnref"><a href="#src-7">[7]</a></sup>、エン カイシャの評判<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<h3 id="質問候補リスト">質問候補リスト</h3>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くべきか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>「口コミサイトで&quot;入社前後のギャップ&quot;を指摘する声があると拝見しましたが、具体的にどのような点で改善に取り組まれていますか」</td><td>最大の懸念点を率直に確認し、組織の誠実さも見極める</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>「直近2〜3年の社員数の推移と、平均在籍年数を教えていただけますか」</td><td>OpenWork スコアが低く離職率が懸念</td></tr><tr><td>3</td><td>組織・カルチャー</td><td>「アドベンチャーグループとの統合後、組織の意思決定やミッションに変化はありましたか」</td><td>子会社化が現場にどう影響しているかを把握するため</td></tr><tr><td>4</td><td>職務・スキル</td><td>「ランドオペレーター業務で一人が担当する工程の範囲と、繁忙期のツアー対応件数の目安を教えてください」</td><td>小規模組織での一人当たり業務負荷を把握するため</td></tr><tr><td>5</td><td>職務・スキル</td><td>「英語以外に中国語・韓国語は実務上どの程度必要ですか。入社後に習得支援はありますか」</td><td>スキルマッチングと成長機会の確認</td></tr><tr><td>6</td><td>職務・スキル</td><td>「入社後のキャリアパスとして、マネジメント志向とスペシャリスト志向はそれぞれどのようなルートがありますか」</td><td>公開情報ではキャリアラダーが不明のため</td></tr><tr><td>7</td><td>職務・スキル</td><td>「旅行業務取扱管理者等の資格取得支援や、外部研修・書籍購入補助の制度はありますか」</td><td>自己投資支援の有無が長期的成長に影響するため</td></tr><tr><td>8</td><td>労働条件</td><td>「月20時間以内とある残業について、インバウンドのハイシーズン（春・秋）の実態はいかがですか」</td><td>繁忙期の最大負荷を把握するため</td></tr><tr><td>9</td><td>労働条件</td><td>「在宅勤務は週何日程度が標準ですか。手配業務は対面対応が必要な場面もあると思いますが、どう使い分けていますか」</td><td>制度と実態のギャップを確認するため</td></tr><tr><td>10</td><td>労働条件</td><td>「固定残業代の有無と、副業・兼業に関するポリシーを教えてください」</td><td>給与の実質水準と働き方の自由度を把握するため</td></tr></tbody></table>
+
+<blockquote>💡 ヒント: 「○○と調査で把握しましたが、実態はいかがですか？」の形で質問すると、</blockquote>
+<blockquote>事前研究の深さを示しながら率直な情報を引き出せます。</blockquote>
+
+<hr>
+
+<h2 id="求人票との整合性チェック">求人票との整合性チェック</h2>
+
+<p>（Indeed 掲載情報と調査結果で比較）</p>
+
+<table class="data-table"><thead><tr><th>求人票の記載（Indeed）</th><th>調査結果</th><th>整合性</th><th>備考</th></tr></thead><tbody><tr><td>残業月20時間以内</td><td>口コミでの記載なし</td><td><span class="badge badge-gray">❓</span></td><td>繁閑差あり・ハイシーズン実態は面接で確認が必要</td></tr><tr><td>年間休日120日以上</td><td>旅行業界の中では標準的</td><td><span class="badge badge-green">✅</span></td><td>問題なし</td></tr><tr><td>在宅勤務制度あり</td><td>口コミでも言及あり</td><td><span class="badge badge-green">✅</span></td><td>制度は整備されている</td></tr><tr><td>住宅補助あり</td><td>口コミで独身向けに手厚いとの評価</td><td><span class="badge badge-green">✅</span></td><td>実際の金額は要確認</td></tr><tr><td>英語必須</td><td>約50ヶ国エージェントと取引の業務実態と一致</td><td><span class="badge badge-green">✅</span></td><td>実務で日常的に英語使用</td></tr><tr><td>月給22〜29万円</td><td>エン カイシャ年収252〜500万円と概ね整合</td><td><span class="badge badge-green">✅</span></td><td>入社時は低め・上位職では改善</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>会社概要 \</td><td>アヤベックス株式会社</td><td><a href="https://ayabex.com/company/" target="_blank" rel="noopener noreferrer">https://ayabex.com/company/</a></td><td>2026-04-16</td></tr><tr><td>2</td><td>アヤベックス \</td><td>京都府企業紹介</td><td><a href="https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html" target="_blank" rel="noopener noreferrer">https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html</a></td><td>2026-04-16</td></tr><tr><td>3</td><td>アヤベックス 口コミ \</td><td>エン カイシャの評判</td><td><a href="https://en-hyouban.com/company/10200772917/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10200772917/kuchikomi/</a></td><td>2026-04-16</td></tr><tr><td>4</td><td>アヤベックス クチコミ \</td><td>OpenWork</td><td><a href="https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h</a></td><td>2026-04-16</td></tr><tr><td>5</td><td>アヤベックス キャリア情報 \</td><td>Indeed</td><td><a href="https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE</a></td><td>2026-04-16</td></tr><tr><td>6</td><td>インバウンド旅行手配 求人票 \</td><td>Indeed</td><td><a href="https://jp.indeed.com/viewjob?jk=47e603e2aa14ae93" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/viewjob?jk=47e603e2aa14ae93</a></td><td>2026-04-16</td></tr><tr><td>7</td><td>アヤベックス株式会社 転職情報 \</td><td>doda</td><td><a href="https://doda.jp/DodaFront/View/Company/j_id__10136253622/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10136253622/</a></td><td>2026-04-16</td></tr><tr><td>8</td><td>アヤベックス \</td><td>キャリアクロス</td><td><a href="https://www.careercross.com/company/detail-567906" target="_blank" rel="noopener noreferrer">https://www.careercross.com/company/detail-567906</a></td><td>2026-04-16</td></tr><tr><td>9</td><td>アドベンチャーがアヤベックスを子会社化</td><td><a href="https://www.nihon-ma.co.jp/news/20231027_6030-16/" target="_blank" rel="noopener noreferrer">https://www.nihon-ma.co.jp/news/20231027_6030-16/</a></td><td>2026-04-16</td></tr><tr><td>10</td><td>アドベンチャー M&amp;A 開示（日経）</td><td><a href="https://www.nikkei.com/nkd/disclosure/tdnr/20231027572692/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/nkd/disclosure/tdnr/20231027572692/</a></td><td>2026-04-16</td></tr><tr><td>11</td><td>アヤベックス – initial.inc</td><td><a href="https://initial.inc/investors/V13708" target="_blank" rel="noopener noreferrer">https://initial.inc/investors/V13708</a></td><td>2026-04-16</td></tr><tr><td>12</td><td>ランドオペレーターになるには？\</td><td>旅行業界コラム</td><td><a href="https://www.tir.ac.jp/contents/industry/column/land_operator/" target="_blank" rel="noopener noreferrer">https://www.tir.ac.jp/contents/industry/column/land_operator/</a></td><td>2026-04-16</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">会社概要 | アヤベックス</td><td class="src-url"><a href="https://ayabex.com/company/" target="_blank" rel="noopener noreferrer">https://ayabex.com/company/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">京都府企業紹介</td><td class="src-url"><a href="https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html" target="_blank" rel="noopener noreferrer">https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">エン カイシャの評判</td><td class="src-url"><a href="https://en-hyouban.com/company/10200772917/kuchikomi/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10200772917/kuchikomi/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">doda 企業概要</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10136253622/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10136253622/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">Indeed 求人票</td><td class="src-url"><a href="https://jp.indeed.com/viewjob?jk=47e603e2aa14ae93" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/viewjob?jk=47e603e2aa14ae93</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">キャリアクロス</td><td class="src-url"><a href="https://www.careercross.com/company/detail-567906" target="_blank" rel="noopener noreferrer">https://www.careercross.com/company/detail-567906</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">Indeed 求人票・給与データ</td><td class="src-url"><a href="https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-questions"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <section class="interview-questions"><p class="q-intro">面接で聞きたい質問を 17 件整理しました。カテゴリでの絞り込み・ワンクリックコピーに対応しています。</p><div class="q-filter-bar" role="tablist"><button type="button" class="q-filter-chip active" data-filter="__all__">すべて</button><button type="button" class="q-filter-chip" data-filter="財務・業績">財務・業績</button><button type="button" class="q-filter-chip" data-filter="親会社連携">親会社連携</button><button type="button" class="q-filter-chip" data-filter="労働環境">労働環境</button><button type="button" class="q-filter-chip" data-filter="離職率・定着">離職率・定着</button><button type="button" class="q-filter-chip" data-filter="成長戦略">成長戦略</button><button type="button" class="q-filter-chip" data-filter="雇用条件">雇用条件</button><button type="button" class="q-filter-chip" data-filter="インバウンド市場">インバウンド市場</button><button type="button" class="q-filter-chip" data-filter="組織・カルチャー">組織・カルチャー</button><button type="button" class="q-filter-chip" data-filter="職務・スキル">職務・スキル</button><button type="button" class="q-filter-chip" data-filter="労働条件">労働条件</button></div><div class="q-card-list"><article class="q-card" data-category="財務・業績"><div class="q-card-head"><span class="q-num">Q1</span><span class="q-category-badge">財務・業績</span><button type="button" class="q-copy-btn" data-copy="2023年の子会社化以降、売上・利益の改善状況はいかがでしょうか。現在の業績トレンドについて教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">2023年の子会社化以降、売上・利益の改善状況はいかがでしょうか。現在の業績トレンドについて教えてください。</p><p class="q-rationale">💡 買収時点で営業赤字・債務超過だったため、現在の回復状況を確認する必要がある。</p></article><article class="q-card" data-category="親会社連携"><div class="q-card-head"><span class="q-num">Q2</span><span class="q-category-badge">親会社連携</span><button type="button" class="q-copy-btn" data-copy="アドベンチャーグループとの具体的な連携（集客チャネル、システム、資金面等）はどのように進んでいますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">アドベンチャーグループとの具体的な連携（集客チャネル、システム、資金面等）はどのように進んでいますか？</p><p class="q-rationale">💡 子会社化の戦略的意義と実態を把握し、事業の安定性を評価するため。</p></article><article class="q-card" data-category="労働環境"><div class="q-card-head"><span class="q-num">Q3</span><span class="q-category-badge">労働環境</span><button type="button" class="q-copy-btn" data-copy="実際の残業時間の平均と、有給休暇の取得率について教えていただけますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">実際の残業時間の平均と、有給休暇の取得率について教えていただけますか？</p><p class="q-rationale">💡 OpenWorkスコアが1.9と低く、小規模組織での業務負荷集中が懸念されるため。</p></article><article class="q-card" data-category="離職率・定着"><div class="q-card-head"><span class="q-num">Q4</span><span class="q-category-badge">離職率・定着</span><button type="button" class="q-copy-btn" data-copy="直近3年間の社員の定着率や、離職の主な理由についてお聞きできますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">直近3年間の社員の定着率や、離職の主な理由についてお聞きできますか？</p><p class="q-rationale">💡 口コミに「入社前後のギャップ」が指摘されており、離職傾向を確認する必要がある。</p></article><article class="q-card" data-category="成長戦略"><div class="q-card-head"><span class="q-num">Q5</span><span class="q-category-badge">成長戦略</span><button type="button" class="q-copy-btn" data-copy="今後3〜5年の中期的な事業規模・従業員数の目標はどのようにお考えですか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">今後3〜5年の中期的な事業規模・従業員数の目標はどのようにお考えですか？</p><p class="q-rationale">💡 中期経営計画が非公開のため、ビジョンの明確さと成長可能性を確認するため。</p></article><article class="q-card" data-category="雇用条件"><div class="q-card-head"><span class="q-num">Q6</span><span class="q-category-badge">雇用条件</span><button type="button" class="q-copy-btn" data-copy="正社員・契約社員・業務委託の比率と、それぞれの主な担当業務を教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">正社員・契約社員・業務委託の比率と、それぞれの主な担当業務を教えてください。</p><p class="q-rationale">💡 旅行業界では非正規比率が高い場合があり、雇用の安定性を確認するため。</p></article><article class="q-card" data-category="インバウンド市場"><div class="q-card-head"><span class="q-num">Q7</span><span class="q-category-badge">インバウンド市場</span><button type="button" class="q-copy-btn" data-copy="コロナ後のインバウンド需要回復に対し、具体的にどのような新規顧客・新規市場の開拓に取り組んでいますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">コロナ後のインバウンド需要回復に対し、具体的にどのような新規顧客・新規市場の開拓に取り組んでいますか？</p><p class="q-rationale">💡 ポストコロナの業績回復の実態と今後の競争力を評価するため。</p></article><article class="q-card" data-category="組織・カルチャー"><div class="q-card-head"><span class="q-num">Q8</span><span class="q-category-badge">組織・カルチャー</span><button type="button" class="q-copy-btn" data-copy="口コミサイトで「入社前後のギャップがある」という声を拝見しましたが、具体的にどのような点で改善に取り組まれていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">口コミサイトで「入社前後のギャップがある」という声を拝見しましたが、具体的にどのような点で改善に取り組まれていますか？</p><p class="q-rationale">💡 最大の懸念点であるOpenWorkスコアの低さと「ギャップ」指摘を率直に確認し、組織の誠実さと改善姿勢を見極めるため</p></article><article class="q-card" data-category="組織・カルチャー"><div class="q-card-head"><span class="q-num">Q9</span><span class="q-category-badge">組織・カルチャー</span><button type="button" class="q-copy-btn" data-copy="直近2〜3年の社員数の推移と、平均在籍年数を教えていただけますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">直近2〜3年の社員数の推移と、平均在籍年数を教えていただけますか？</p><p class="q-rationale">💡 OpenWorkスコアが低く離職率が懸念されるため、定着率を数字で確認したい</p></article><article class="q-card" data-category="組織・カルチャー"><div class="q-card-head"><span class="q-num">Q10</span><span class="q-category-badge">組織・カルチャー</span><button type="button" class="q-copy-btn" data-copy="アドベンチャーグループの子会社になってから、組織の意思決定プロセスや現場の働き方に変化はありましたか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">アドベンチャーグループの子会社になってから、組織の意思決定プロセスや現場の働き方に変化はありましたか？</p><p class="q-rationale">💡 子会社化が現場にどう影響しているかを把握し、独立性と管理体制のバランスを確認するため</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q11</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="ランドオペレーター業務で一人が担当する工程の範囲と、繁忙期における対応件数の目安を教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">ランドオペレーター業務で一人が担当する工程の範囲と、繁忙期における対応件数の目安を教えてください。</p><p class="q-rationale">💡 約20名という小規模組織での一人当たり業務負荷と属人化リスクを把握するため</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q12</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="英語に加えて中国語・韓国語は実務上どの程度必要ですか。入社後の語学研修や支援制度はありますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">英語に加えて中国語・韓国語は実務上どの程度必要ですか。入社後の語学研修や支援制度はありますか？</p><p class="q-rationale">💡 スキルマッチングの確認と、入社後の語学成長支援の有無を把握するため</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q13</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="入社後のキャリアパスとして、マネジメント志向とスペシャリスト志向のルートはそれぞれどのように設けられていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">入社後のキャリアパスとして、マネジメント志向とスペシャリスト志向のルートはそれぞれどのように設けられていますか？</p><p class="q-rationale">💡 公開情報ではキャリアラダーが不明のため、中長期的な成長イメージを確認するため</p></article><article class="q-card" data-category="職務・スキル"><div class="q-card-head"><span class="q-num">Q14</span><span class="q-category-badge">職務・スキル</span><button type="button" class="q-copy-btn" data-copy="旅行業務取扱管理者等の資格取得支援や、外部研修・書籍購入補助の制度はありますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">旅行業務取扱管理者等の資格取得支援や、外部研修・書籍購入補助の制度はありますか？</p><p class="q-rationale">💡 自己投資支援の有無が長期的なスキル形成と会社への信頼感に影響するため</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q15</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="求人票に月20時間以内とありますが、インバウンドのハイシーズン（春・秋）における残業の実態はいかがですか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">求人票に月20時間以内とありますが、インバウンドのハイシーズン（春・秋）における残業の実態はいかがですか？</p><p class="q-rationale">💡 求人票の残業時間は平均値の場合があり、最大値とピーク時の負荷を把握したい</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q16</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="在宅勤務は週何日程度が標準ですか。ツアー手配など対面・電話対応が必要な業務との使い分けはどうされていますか？" title="質問をコピー">📋 コピー</button></div><p class="q-text">在宅勤務は週何日程度が標準ですか。ツアー手配など対面・電話対応が必要な業務との使い分けはどうされていますか？</p><p class="q-rationale">💡 制度の存在と実際の活用頻度・制約条件のギャップを確認するため</p></article><article class="q-card" data-category="労働条件"><div class="q-card-head"><span class="q-num">Q17</span><span class="q-category-badge">労働条件</span><button type="button" class="q-copy-btn" data-copy="給与の固定残業代の有無と、副業・兼業に関するポリシーを教えてください。" title="質問をコピー">📋 コピー</button></div><p class="q-text">給与の固定残業代の有無と、副業・兼業に関するポリシーを教えてください。</p><p class="q-rationale">💡 給与の実質水準の把握と、将来的な複業・スキルアップ活動の自由度を確認するため</p></article></div></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

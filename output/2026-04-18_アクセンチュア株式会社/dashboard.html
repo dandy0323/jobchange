@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — アクセンチュア株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>アクセンチュア株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-04-18</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">FY2025売上697億ドル（前年比+7%）、世界No.1コンサル。AI戦略30億ドル投資で成長継続</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">2022年違法残業で書類送検（罰金で決着）、2025年9月デジタル庁指名停止（4ヶ月）。改善途上</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork 4.26（高評価）。Project PRIDEで残業半減・離職率一桁化を達成。ただし部門差あり</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: アクセンチュア株式会社</h1>
+
+<blockquote>調査日: 2026-04-18</blockquote>
+
+<h2 class="accent-green" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: Fortune Global 500上位100社の89社を含むグローバル企業・公的機関</li>
+<li><strong>提供価値</strong>: 経営戦略立案からIT導入・運用保守・BPOまで一気通貫</li>
+<li><strong>収益モデル</strong>: コンサルティング収益332億ドル（51%）＋マネージド・サービス収益317億ドル（49%）のハイブリッド型</li>
+<li><strong>出典</strong>: アクセンチュア企業分析 | note<sup class="fnref"><a href="#src-1">[1]</a></sup>、Strainer<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 世界コンサルティング市場シェア1位（2022年）、50か国以上に拠点</li>
+<li><strong>主要競合</strong>: デロイト（2位）、PwC（3位）、EY、KPMG、アビームコンサルティング</li>
+<li><strong>強み</strong>: IT×戦略の一気通貫、スピードと技術力、73万人の圧倒的人材規模</li>
+<li><strong>弱み</strong>: 大規模組織ゆえのプロジェクト・部署間ばらつき</li>
+<li><strong>出典</strong>: コンサルティング業界シェア分析 | deallab<sup class="fnref"><a href="#src-3">[3]</a></sup>、ダイヤモンド・オンライン<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+<table class="data-table"><thead><tr><th>指標</th><th>FY2025</th><th>FY2024</th><th>FY2023</th></tr></thead><tbody><tr><td>売上高</td><td>697億ドル</td><td>649億ドル</td><td>637億ドル</td></tr><tr><td>前年比成長率</td><td>+7%</td><td>+2%</td><td>+8%</td></tr><tr><td>営業利益率</td><td>非公開（米上場企業として公開）</td><td>-</td><td>-</td></tr><tr><td>自己資本比率</td><td>非公開（日本法人は非上場）</td><td>-</td><td>-</td></tr></tbody></table>
+
+<ul>
+<li><strong>上場区分</strong>: 米NYSE上場（ACN）。日本法人は非上場のため日本の有価証券報告書なし</li>
+<li><strong>出典</strong>: Yahoo!ファイナンス<sup class="fnref"><a href="#src-5">[5]</a></sup>、グラフ分析 gurafu.net<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>生成AI・自律型AI中心の事業変革</strong>: 戦略投資30億ドル、AI専門人材を8万人へ増員計画</li>
+<li><strong>M&amp;A</strong>: 年間約46社規模の買収を継続（技術・人材獲得目的）</li>
+<li><strong>組織改革（2025年9月）</strong>: 全サービスを「リインベンション サービス」に統合、グローバル経営陣を刷新</li>
+<li><strong>出典</strong>: アクセンチュアAI戦略 | KOTORA JOURNAL<sup class="fnref"><a href="#src-7">[7]</a></sup>、アクセンチュアプレスリリース<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li><strong>違法残業（2022年3月）</strong>: 東京労働局が東京支社を書類送検。社員1人に月143時間の違法時間外労働をさせた疑い。略式起訴・罰金納付で決着</li>
+<li><strong>デジタル庁指名停止（2025年9月）</strong>: 承認なく業務を他社へ無断再委託。指名停止期間4ヶ月（2025/9/26〜2026/1/25）</li>
+<li><strong>出典</strong>: 日本経済新聞<sup class="fnref"><a href="#src-9">[9]</a></sup>、日経XTECH<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li><strong>基本方針</strong>: 「Every business must be a sustainable business」、UN SDGs 8目標に特注</li>
+<li><strong>環境目標</strong>: 2025年までにオフィス電力100%再生可能エネルギー、ネットゼロ排出目指す</li>
+<li><strong>社会貢献</strong>: Accenture Development Partnership (ADP)でNGO・公的機関を支援</li>
+<li><strong>出典</strong>: アクセンチュアSDGs公式ページ<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li><strong>Fortune 500上位100社の89社が顧客</strong>: 高い信頼度の裏付け</li>
+<li><strong>直接的なクレーム情報は限定的</strong>: 公開情報からは大規模な顧客クレームは確認されず</li>
+<li><strong>出典</strong>: TalentSquare評判記事<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-green" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>OpenWork総合スコア</strong>: <strong>4.26</strong>（高水準）</li>
+<li><strong>エン カイシャ評価</strong>: 3.9点（1,141人の正社員回答）</li>
+<li><strong>良い点</strong>: リモートワーク推進・個人事情尊重の文化、ダイバーシティへの取り組み、キャリア成長機会の豊富さ、「Think Straight Talk Straight」の率直な社風</li>
+<li><strong>懸念点</strong>: 成果主義が厳しく給与に見合った努力が必要、プロジェクト・部署によるばらつき、マネージャー層への負担集中</li>
+<li><strong>残業改善</strong>: Project PRIDEにより月平均29〜30時間（業界平均38時間より大幅改善）</li>
+<li><strong>離職率</strong>: 一桁（改革前の二桁台から半減）</li>
+<li><strong>出典</strong>: OpenWork<sup class="fnref"><a href="#src-13">[13]</a></sup>、ワンキャリア転職 離職率<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 関西オフィス（大阪）での週5日出社方針の実態（2025年6月以降の出社義務）</li>
+<li>[ ] IT未経験入社後の具体的なオンボーディングスケジュール</li>
+<li>[ ] アナリスト職でのプロジェクトアサイン方法（希望は通るか）</li>
+<li>[ ] 関西オフィスの規模・チーム構成（東京との差異）</li>
+<li>[ ] 試用期間6ヶ月の評価基準と延長・不通過の実績</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>アクセンチュア企業分析</td><td><a href="https://note.com/kabuya66/n/naea2ffa19f2f" target="_blank" rel="noopener noreferrer">https://note.com/kabuya66/n/naea2ffa19f2f</a></td><td>2026-04-18</td></tr><tr><td>2</td><td>Strainer企業情報</td><td><a href="https://strainer.jp/companies/3555" target="_blank" rel="noopener noreferrer">https://strainer.jp/companies/3555</a></td><td>2026-04-18</td></tr><tr><td>3</td><td>コンサルティング業界シェア分析</td><td><a href="https://deallab.info/consulting/" target="_blank" rel="noopener noreferrer">https://deallab.info/consulting/</a></td><td>2026-04-18</td></tr><tr><td>4</td><td>ダイヤモンド・オンライン競合記事</td><td><a href="https://diamond.jp/articles/-/316652" target="_blank" rel="noopener noreferrer">https://diamond.jp/articles/-/316652</a></td><td>2026-04-18</td></tr><tr><td>5</td><td>Yahoo!ファイナンス ACN</td><td><a href="https://finance.yahoo.co.jp/quote/ACN/performance" target="_blank" rel="noopener noreferrer">https://finance.yahoo.co.jp/quote/ACN/performance</a></td><td>2026-04-18</td></tr><tr><td>6</td><td>アクセンチュアAI戦略 KOTORA</td><td><a href="https://www.kotora.jp/c/65834/" target="_blank" rel="noopener noreferrer">https://www.kotora.jp/c/65834/</a></td><td>2026-04-18</td></tr><tr><td>7</td><td>違法残業書類送検 日経</td><td><a href="https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/</a></td><td>2026-04-18</td></tr><tr><td>8</td><td>デジタル庁指名停止 日経XTECH</td><td><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/</a></td><td>2026-04-18</td></tr><tr><td>9</td><td>アクセンチュアSDGs公式</td><td><a href="https://www.accenture.com/jp-ja/about/corporate-citizenship/sdgs" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/about/corporate-citizenship/sdgs</a></td><td>2026-04-18</td></tr><tr><td>10</td><td>OpenWork社員クチコミ</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000G33n" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000G33n</a></td><td>2026-04-18</td></tr><tr><td>11</td><td>ワンキャリア 離職率記事</td><td><a href="https://plus.onecareer.jp/articles/1224" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1224</a></td><td>2026-04-18</td></tr><tr><td>12</td><td>TalentSquare 評判</td><td><a href="https://talentsquare.co.jp/career/accenture-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/accenture-review/</a></td><td>2026-04-18</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">アクセンチュア企業分析 | note</td><td class="src-url"><a href="https://note.com/kabuya66/n/naea2ffa19f2f" target="_blank" rel="noopener noreferrer">https://note.com/kabuya66/n/naea2ffa19f2f</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Strainer</td><td class="src-url"><a href="https://strainer.jp/companies/3555" target="_blank" rel="noopener noreferrer">https://strainer.jp/companies/3555</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">コンサルティング業界シェア分析 | deallab</td><td class="src-url"><a href="https://deallab.info/consulting/" target="_blank" rel="noopener noreferrer">https://deallab.info/consulting/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">ダイヤモンド・オンライン</td><td class="src-url"><a href="https://diamond.jp/articles/-/316652" target="_blank" rel="noopener noreferrer">https://diamond.jp/articles/-/316652</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">Yahoo!ファイナンス</td><td class="src-url"><a href="https://finance.yahoo.co.jp/quote/ACN/performance" target="_blank" rel="noopener noreferrer">https://finance.yahoo.co.jp/quote/ACN/performance</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">グラフ分析 gurafu.net</td><td class="src-url"><a href="https://gurafu.net/jpn/accenture" target="_blank" rel="noopener noreferrer">https://gurafu.net/jpn/accenture</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">アクセンチュアAI戦略 | KOTORA JOURNAL</td><td class="src-url"><a href="https://www.kotora.jp/c/65834/" target="_blank" rel="noopener noreferrer">https://www.kotora.jp/c/65834/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">アクセンチュアプレスリリース</td><td class="src-url"><a href="https://newsroom.accenture.jp/jp/news/2025/release-20250624" target="_blank" rel="noopener noreferrer">https://newsroom.accenture.jp/jp/news/2025/release-20250624</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">日本経済新聞</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">日経XTECH</td><td class="src-url"><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">アクセンチュアSDGs公式ページ</td><td class="src-url"><a href="https://www.accenture.com/jp-ja/about/corporate-citizenship/sdgs" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/about/corporate-citizenship/sdgs</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">TalentSquare評判記事</td><td class="src-url"><a href="https://talentsquare.co.jp/career/accenture-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/accenture-review/</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0910000000G33n" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000G33n</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">ワンキャリア転職 離職率</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/1224" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1224</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: アクセンチュア株式会社</h1>
+
+<blockquote>調査日: 2026-04-18  対象職種: ITトランスフォーメーション&amp;オプティマイゼーション</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>率直な社風・個人尊重・ダイバーシティ推進。成果主義が厳しい側面は承知の上で入社を</td></tr><tr><td>職務・スキル</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>AI・クラウド・SRE領域の最前線。24,000超の研修と年間$1B+投資でスキル育成は業界最高水準</td></tr><tr><td>労働条件・環境</td><td><span class="badge badge-yellow">🟡</span></td><td><span class="badge badge-yellow">🟡</span></td><td>月残業30h・退職金・充実福利厚生は魅力。ただし2025年6月から原則週5日出社へ転換が重大変更</td></tr></tbody></table>
+
+<blockquote>確認度: ★☆☆ 情報不足 / ★★☆ 部分的に確認 / ★★★ 十分に確認</blockquote>
+<blockquote>判定: <span class="badge badge-green">🟢</span> 良好 / <span class="badge badge-yellow">🟡</span> 要確認 / <span class="badge badge-red">🔴</span> 懸念あり / <span class="badge badge-gray">⚪</span> 情報なし</blockquote>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>パーパス</strong>: 「テクノロジーと人間の創意工夫で、まだ見ぬ未来を実現すること」</li>
+<li><strong>コアバリュー（6つ）</strong>: 個人の尊重 / ベスト・ピープル / インテグリティ / ワン・グローバル・ネットワーク / スチュワードシップ / クライアント価値の創造</li>
+<li><strong>スローガン</strong>: 「Think Straight, Talk Straight」— 1年目も10年目も、上下なく率直に意見を言い合う</li>
+<li><strong>出典</strong>: アクセンチュア会社概要<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: グローバルマトリクス型（地域×事業部の複合体制）。日本国内は約28,000人</li>
+<li><strong>スタイル</strong>: 「Careers Marketplace」で部門横断の異動が可能。個人の希望が比較的通りやすい</li>
+<li><strong>意思決定</strong>: プロジェクト単位での分散型。クライアント先での意思決定スピードが求められる</li>
+<li><strong>出典</strong>: ワンキャリア転職 社風記事<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>体系</strong>: ジョブ型・成果主義。年功序列ではなくプロジェクト成果・スキル向上・顧客満足度で評価</li>
+<li><strong>サイクル</strong>: 年1回の評価で昇給・昇格決定（OKR型パフォーマンスマネジメント）</li>
+<li><strong>昇格基準（ロールパス）</strong>: アナリスト → コンサルタント（最短2年）→ マネジャー（2〜3年）→ シニアマネジャー → パートナー</li>
+<li><strong>出典</strong>: TalentSquare 役職体系<sup class="fnref"><a href="#src-3">[3]</a></sup>、ワンキャリア 役職解説<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>グローバル従業員数</strong>: 73万3千人</li>
+<li><strong>日本国内</strong>: 約28,000人（2025年9月1日時点）</li>
+<li><strong>平均年齢</strong>: 29.4〜33歳（情報源による差異あり）</li>
+<li><strong>離職率</strong>: 一桁%（Project PRIDE導入後に改革前の約半分へ）。平均勤続年数4.8年</li>
+<li><strong>出典</strong>: PORT CAREER 激務記事<sup class="fnref"><a href="#src-5">[5]</a></sup>、ACNOLD 離職率解説<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム-本求人ポジション">3-1. 業務範囲・チーム（本求人ポジション）</h3>
+<ul>
+<li><strong>2ポジションのいずれかに配属</strong>:</li>
+<li>①アプリケーションマネージドサービスコンサルタント: 基幹システム・業務アプリ・インフラ・サービスデスク等の改善提案・開発/構築・運用保守・PM</li>
+<li>②インフラマネージドサービスコンサルタント: オンプレ・クラウド・NW・ミドルウェア・セキュリティ等のSRE。自動化・AI活用による品質向上と効率化が主軸</li>
+<li><strong>特徴</strong>: オフショア（海外）メンバーとの協働あり。グローバル人材として活躍の場</li>
+<li><strong>フェーズ</strong>: 運用保守から上流設計・構築まで関与。「単なる保守」ではなくトランスフォーメーション支援</li>
+<li><strong>出典</strong>: 求人票（リクナビNEXT）</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>クラウド</strong>: AWS（IaCスクリプト・ベースライン設計）、Azure、Google Cloud。SaaS/PaaS活用が前提</li>
+<li><strong>AI/自動化</strong>: GenAI（AI Refinery™）、Google Gemini Enterprise、自律型AIエージェント</li>
+<li><strong>インフラ技術</strong>: SRE、オンプレミス、ネットワーク、セキュリティ</li>
+<li><strong>開発手法</strong>: アジャイル＋AIチャットボット活用のプロジェクト管理</li>
+<li><strong>出典</strong>: アクセンチュア GenAIサービス<sup class="fnref"><a href="#src-7">[7]</a></sup>、note Accenture Tech<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>規模</strong>: 毎年10億ドル以上を継続学習に投資、年間4,000万時間以上のトレーニング提供</li>
+<li><strong>コンテンツ</strong>: 24,000超のオンライントレーニング（求人票記載）。Microsoft/Azure/AWS/SAP/Salesforce等の資格取得支援</li>
+<li><strong>入社後</strong>: 6ヶ月間の研修・OJT（試用期間と同期）でアナリストとしてスタート</li>
+<li><strong>受賞歴</strong>: Brandon Hall Group 人材マネジメント優秀賞7年連続、Chief Learning Officer誌Learning Elite Award最高賞9年連続</li>
+<li><strong>出典</strong>: アクセンチュア採用研修ページ<sup class="fnref"><a href="#src-9">[9]</a></sup>、PRESIDENT Online<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li><strong>社内キャリア</strong>: マネジメント（マネジャー→シニアマネジャー→パートナー）or スペシャリスト（技術専門職）の2軸</li>
+<li><strong>社内異動</strong>: Careers Marketplace経由で部門・国境を越えた異動が申請可能</li>
+<li><strong>外部評価</strong>: IT×コンサルの複合スキルが身につき、転職市場での評価が高い</li>
+<li><strong>出典</strong>: ワンキャリア 役職体系記事<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 1日8時間（フレックスタイム制）、標準9:00〜18:00</li>
+<li><strong>平均残業時間</strong>: 月29〜30時間（業界平均38時間より約9時間短い）</li>
+<li><strong>繁忙時</strong>: プロジェクト配属状況によっては月80時間超えるケースも</li>
+<li><strong>取り組み</strong>: Project PRIDE（18時以降の会議原則禁止、有給100%消化推進）</li>
+<li><strong>出典</strong>: ワンキャリア 残業記事<sup class="fnref"><a href="#src-11">[11]</a></sup>、エン カイシャ<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong><span class="badge badge-yellow">⚠️</span> 2025年6月から方針転換</strong>: <strong>原則週5日出社</strong>（クライアントオフィスまたは自社オフィス）</li>
+<li><strong>例外</strong>: 育児・介護等の特別事情があっても最大週2日まで在宅可</li>
+<li><strong>過去</strong>: コロナ禍はほぼフルリモート、「ロケーション フレキシビリティ制度」で居住地自由化も実施</li>
+<li><strong><span class="badge badge-yellow">⚠️</span> 求人票との乖離</strong>: 求人票にリモート可能との明示はないが、週5日出社の記載もない。入社後に常駐を求められる可能性が高い</li>
+<li><strong>出典</strong>: 日経XTECH フル出社要求記事<sup class="fnref"><a href="#src-13">[13]</a></sup>、citruth.co.jp リモート実態<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>住宅手当</strong>: 月額3万円（全員一律）</li>
+<li><strong>育児</strong>: 育児休業（年収約60%補償）、ベビーシッター補助（初期費用100%・利用費50%上限2万円/月）、育児コンシェルジェ</li>
+<li><strong>カフェテリアプラン</strong>: 毎年ポイント付与→自己啓発・ウェルネス・育児介護・旅行費等に充当</li>
+<li><strong>退職金</strong>: あり（求人票記載）</li>
+<li><strong>その他</strong>: 各種法人会員・契約施設・ホテル利用、100種類近い福利厚生制度</li>
+<li><strong>副業</strong>: 公式情報なし（要確認）</li>
+<li><strong>出典</strong>: ワンキャリア 福利厚生記事<sup class="fnref"><a href="#src-15">[15]</a></sup>、転職picks Big4比較<sup class="fnref"><a href="#src-16">[16]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>本求人記載</strong>: 年俸480万〜600万円（基本給のみ、固定残業代なし）</li>
+<li><strong>実態・市場水準</strong>:</li>
+<li>アナリスト: 480〜750万円</li>
+<li>コンサルタント: 800〜1,200万円（平均942万円）</li>
+<li>マネジャー: 1,100〜1,700万円（平均1,191万円）</li>
+<li>会社全体の平均年収: 918万円（中央値760万円）</li>
+<li><strong>給与構成</strong>: 基本給＋賞与（年1回）＋諸手当（通勤・残業・住宅等）</li>
+<li><strong>アナリスト・コンサルタントは残業代全額支給</strong>、マネジャー以上は裁量労働制</li>
+<li><strong>出典</strong>: TalentSquare 年収記事<sup class="fnref"><a href="#src-3">[3]</a></sup>、よりそい転職<sup class="fnref"><a href="#src-17">[17]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>労働条件</td><td>「2025年6月から原則週5日出社と伺っておりますが、関西オフィス勤務の場合、週あたりのクライアント先常駐と自社オフィス出社の比率はどのようになっていますか？」</td><td>在宅勤務が事実上不可かどうか確認が必要</td></tr><tr><td>2</td><td>配属</td><td>「アプリケーション系とインフラ系の2ポジションに配属されると伺いましたが、配属はどのように決まりますか？希望や適性はどの程度反映されますか？」</td><td>入社後のミスマッチ防止</td></tr><tr><td>3</td><td>職務・成長</td><td>「IT未経験から入社した方が、独力でプロジェクトをリードできるようになるまでには、平均的にどのくらいの期間がかかりますか？」</td><td>研修の実効性と成長スピードの把握</td></tr><tr><td>4</td><td>組織・カルチャー</td><td>「関西オフィスの規模や雰囲気は東京と比べてどのような特徴がありますか？チームの人数や年齢層も教えていただけますか？」</td><td>大阪勤務特有の環境確認</td></tr><tr><td>5</td><td>評価制度</td><td>「アナリスト職の評価では、どのような成果やアウトプットが特に重視されますか？具体的な評価指標があれば教えてください。」</td><td>成果主義の具体的基準を把握</td></tr><tr><td>6</td><td>キャリア</td><td>「入社後にアナリストからコンサルタントへ昇格するために、最短で2年と伺いましたが、実際に昇格した方の典型的な経緯を教えていただけますか？」</td><td>キャリアパスのリアルな情報収集</td></tr><tr><td>7</td><td>残業</td><td>「月平均30時間程度の残業と理解していますが、プロジェクトの繁忙期や配属先によって大きく変わることはありますか？関西オフィスの実態を教えてください。」</td><td>残業時間のばらつきリスク確認</td></tr><tr><td>8</td><td>副業</td><td>「副業・兼業について、会社のポリシーはどのようになっていますか？」</td><td>公式情報が見つからないため直接確認</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="求人票との整合性チェック">求人票との整合性チェック</h2>
+
+<table class="data-table"><thead><tr><th>求人票の記載</th><th>調査で確認できた実態</th><th>整合性</th><th>備考</th></tr></thead><tbody><tr><td>年俸480万〜600万円</td><td>アナリスト市場相場480〜750万円。同水準</td><td><span class="badge badge-green">✅</span></td><td>入社後の昇格で大幅増が見込める</td></tr><tr><td>フレックスタイム制</td><td>フレックスタイム制導入を確認</td><td><span class="badge badge-green">✅</span></td><td>コアタイム有無は要確認</td></tr><tr><td>完全週休2日（土日）、年休120日以上</td><td>週休2日・有給取得100%推進を確認</td><td><span class="badge badge-green">✅</span></td><td>Project PRIDEで有給推奨</td></tr><tr><td>24,000超のオンライントレーニング</td><td>年間$1B+の研修投資・40M時間のトレーニングを確認</td><td><span class="badge badge-green">✅</span></td><td>業界最高水準の研修体制</td></tr><tr><td>残業手当：実施分の支給</td><td>アナリスト・コンサルタントは残業代全額支給を確認</td><td><span class="badge badge-green">✅</span></td><td>マネジャー以上は裁量労働制に変わる</td></tr><tr><td>住宅手当あり</td><td>月額3万円（全員一律）を確認</td><td><span class="badge badge-green">✅</span></td><td>全員一律で確実</td></tr><tr><td>育児休業・ベビーシッター補助</td><td>ベビーシッター補助制度（初期100%、利用費50%上限2万円/月）を確認</td><td><span class="badge badge-green">✅</span></td><td>業界内でも手厚い水準</td></tr><tr><td>IT未経験者歓迎</td><td>研修・OJT体制は充実。ただし成果主義で早期成果が求められる可能性</td><td><span class="badge badge-yellow">⚠️</span></td><td>学ぶ意欲だけでなく成果発揮も求められる</td></tr><tr><td>勤務地：大阪市北区中之島（関西オフィス）</td><td>関西オフィスの存在は確認。ただし2025年6月から週5日出社義務化</td><td><span class="badge badge-yellow">⚠️</span></td><td>クライアント常駐を含む週5出社が求められる可能性大</td></tr><tr><td>試用期間6ヶ月（本採用と同条件）</td><td>本採用と同条件を求人票で確認</td><td><span class="badge badge-green">✅</span></td><td>試用期間中の不合理な待遇変更リスクは低い</td></tr></tbody></table>
+
+<h2 id="追加留意事項-求人票に書かれていないが要確認">追加留意事項（求人票に書かれていないが要確認）</h2>
+<ul>
+<li><strong>出社方針の変化</strong>: 2025年6月から「原則週5日出社」へ転換。フルリモートはほぼ不可能に</li>
+<li><strong>オフショア協働の頻度</strong>: 海外チームとの協働が「活躍例」に記載されており、英語力・時差対応が実質必要な可能性</li>
+<li><strong>プロジェクトアサインの透明性</strong>: 配属決定プロセスが不明確で「配属ガチャ」リスクあり</li>
+<li><strong>マネジャー以上の労働負荷</strong>: 若手は改善されているが、マネジャー層へのしわ寄せが指摘されている</li>
+<li><strong>試用期間の実質的意味</strong>: 6ヶ月間の研修・OJTを兼ねており、この期間中の評価が最初のキャリア分岐点</li>
+</ul>
+
+<hr>
+
+<h2 id="出典一覧">出典一覧</h2>
+<table class="data-table"><thead><tr><th>#</th><th>タイトル</th><th>URL</th><th>取得日</th></tr></thead><tbody><tr><td>1</td><td>アクセンチュア会社概要</td><td><a href="https://www.accenture.com/us-en/about/company-index" target="_blank" rel="noopener noreferrer">https://www.accenture.com/us-en/about/company-index</a></td><td>2026-04-18</td></tr><tr><td>2</td><td>ワンキャリア 社風・働き方</td><td><a href="https://plus.onecareer.jp/articles/750" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/750</a></td><td>2026-04-18</td></tr><tr><td>3</td><td>TalentSquare 役職・年収</td><td><a href="https://talentsquare.co.jp/career/accenture-salary/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/accenture-salary/</a></td><td>2026-04-18</td></tr><tr><td>4</td><td>ワンキャリア 役職体系</td><td><a href="https://plus.onecareer.jp/articles/1222" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1222</a></td><td>2026-04-18</td></tr><tr><td>5</td><td>PORT CAREER 激務・離職率</td><td><a href="https://www.theport.jp/portcareer/article/243580/" target="_blank" rel="noopener noreferrer">https://www.theport.jp/portcareer/article/243580/</a></td><td>2026-04-18</td></tr><tr><td>6</td><td>ACNOLD 離職率解説</td><td><a href="https://acnold.com/accenture-turnover/" target="_blank" rel="noopener noreferrer">https://acnold.com/accenture-turnover/</a></td><td>2026-04-18</td></tr><tr><td>7</td><td>アクセンチュア GenAIサービス</td><td><a href="https://www.accenture.com/jp-ja/services/applied-intelligence/generative-ai" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/services/applied-intelligence/generative-ai</a></td><td>2026-04-18</td></tr><tr><td>8</td><td>note Accenture Tech</td><td><a href="https://note.com/accenture_tech/n/n8a5b2b405d8a" target="_blank" rel="noopener noreferrer">https://note.com/accenture_tech/n/n8a5b2b405d8a</a></td><td>2026-04-18</td></tr><tr><td>9</td><td>アクセンチュア研修ページ</td><td><a href="https://www.accenture.com/jp-ja/careers/life-at-accenture/training-counseling" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/careers/life-at-accenture/training-counseling</a></td><td>2026-04-18</td></tr><tr><td>10</td><td>ワンキャリア 残業記事</td><td><a href="https://plus.onecareer.jp/articles/1294" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1294</a></td><td>2026-04-18</td></tr><tr><td>11</td><td>日経XTECH フル出社</td><td><a href="https://xtech.nikkei.com/atcl/nxt/news/24/02414/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/news/24/02414/</a></td><td>2026-04-18</td></tr><tr><td>12</td><td>citruth リモート実態</td><td><a href="https://citruth.co.jp/industry/accenture-remote-work/" target="_blank" rel="noopener noreferrer">https://citruth.co.jp/industry/accenture-remote-work/</a></td><td>2026-04-18</td></tr><tr><td>13</td><td>ワンキャリア 福利厚生</td><td><a href="https://plus.onecareer.jp/articles/1220" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1220</a></td><td>2026-04-18</td></tr><tr><td>14</td><td>よりそい転職 年収解説</td><td><a href="https://migi-nanameue.co.jp/column/accenture-salary-2026-guide/" target="_blank" rel="noopener noreferrer">https://migi-nanameue.co.jp/column/accenture-salary-2026-guide/</a></td><td>2026-04-18</td></tr><tr><td>15</td><td>日本経済新聞 違法残業</td><td><a href="https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUE08A490Y2A300C2000000/</a></td><td>2026-04-18</td></tr><tr><td>16</td><td>日経XTECH デジタル庁</td><td><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/column/18/00001/11150/</a></td><td>2026-04-18</td></tr><tr><td>17</td><td>OpenWork 社員クチコミ</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000G33n" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000G33n</a></td><td>2026-04-18</td></tr></tbody></table><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">アクセンチュア会社概要</td><td class="src-url"><a href="https://www.accenture.com/us-en/about/company-index" target="_blank" rel="noopener noreferrer">https://www.accenture.com/us-en/about/company-index</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">ワンキャリア転職 社風記事</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/750" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/750</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">TalentSquare 役職体系</td><td class="src-url"><a href="https://talentsquare.co.jp/career/accenture-salary/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/accenture-salary/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">ワンキャリア 役職解説</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/1222" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1222</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">PORT CAREER 激務記事</td><td class="src-url"><a href="https://www.theport.jp/portcareer/article/243580/" target="_blank" rel="noopener noreferrer">https://www.theport.jp/portcareer/article/243580/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">ACNOLD 離職率解説</td><td class="src-url"><a href="https://acnold.com/accenture-turnover/" target="_blank" rel="noopener noreferrer">https://acnold.com/accenture-turnover/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">アクセンチュア GenAIサービス</td><td class="src-url"><a href="https://www.accenture.com/jp-ja/services/applied-intelligence/generative-ai" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/services/applied-intelligence/generative-ai</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">note Accenture Tech</td><td class="src-url"><a href="https://note.com/accenture_tech/n/n8a5b2b405d8a" target="_blank" rel="noopener noreferrer">https://note.com/accenture_tech/n/n8a5b2b405d8a</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">アクセンチュア採用研修ページ</td><td class="src-url"><a href="https://www.accenture.com/jp-ja/careers/life-at-accenture/training-counseling" target="_blank" rel="noopener noreferrer">https://www.accenture.com/jp-ja/careers/life-at-accenture/training-counseling</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">PRESIDENT Online</td><td class="src-url"><a href="https://president.jp/articles/-/2066" target="_blank" rel="noopener noreferrer">https://president.jp/articles/-/2066</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">ワンキャリア 残業記事</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/1294" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1294</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">エン カイシャ</td><td class="src-url"><a href="https://en-hyouban.com/company/00001449462/18/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00001449462/18/</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">日経XTECH フル出社要求記事</td><td class="src-url"><a href="https://xtech.nikkei.com/atcl/nxt/news/24/02414/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/news/24/02414/</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">citruth.co.jp リモート実態</td><td class="src-url"><a href="https://citruth.co.jp/industry/accenture-remote-work/" target="_blank" rel="noopener noreferrer">https://citruth.co.jp/industry/accenture-remote-work/</a></td></tr><tr id="src-15"><td class="src-num">[15]</td><td class="src-title">ワンキャリア 福利厚生記事</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/1220" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/1220</a></td></tr><tr id="src-16"><td class="src-num">[16]</td><td class="src-title">転職picks Big4比較</td><td class="src-url"><a href="https://tenshokupicks.jp/companies/accenture/1657/" target="_blank" rel="noopener noreferrer">https://tenshokupicks.jp/companies/accenture/1657/</a></td></tr><tr id="src-17"><td class="src-num">[17]</td><td class="src-title">よりそい転職</td><td class="src-url"><a href="https://migi-nanameue.co.jp/column/accenture-salary-2026-guide/" target="_blank" rel="noopener noreferrer">https://migi-nanameue.co.jp/column/accenture-salary-2026-guide/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code> • ローカル表示用（外部送信されません）</p>
+    <p class="footer-cta">
+      <a href="http://127.0.0.1:8765/" class="cta-link" id="newResearchCta">
+        + 新しい調査を開始
+      </a>
+    </p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

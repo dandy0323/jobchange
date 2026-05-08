@@ -1,0 +1,213 @@
+{
+  "company": "アヤベックス株式会社",
+  "surveyed_at": "2026-04-16",
+  "model": "claude-sonnet-4-6",
+  "screening": [
+    {
+      "axis": "事業・経済基盤",
+      "badge": "🟡",
+      "level_label": "要確認",
+      "summary": "インバウンドDMCとして成長市場に参入しているが、2023年買収時点で営業赤字(△1,600万円)・債務超過(△1.38億円)。東証上場のアドベンチャー（6030）の子会社化により財務的下支えはあるが、単体業績の回復状況は非公開で要確認。"
+    },
+    {
+      "axis": "社会的リスク",
+      "badge": "🟢",
+      "level_label": "懸念なし",
+      "summary": "過去10年で不祥事・行政処分・労基法違反に関する報道は確認されず。京都府知事登録旅行業者（第2-680号）として適正に事業継続。"
+    },
+    {
+      "axis": "社員評価",
+      "badge": "🔴",
+      "level_label": "懸念点が多数",
+      "summary": "OpenWork総合スコア1.9/5.0（元社員・3〜5年勤務）と業界平均を大幅に下回る。入社前後のギャップ・職場環境への不満を指摘する口コミが複数確認されており、離職率や労働負荷に懸念あり。"
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "会社概要 | アヤベックス株式会社",
+      "url": "https://ayabex.com/company/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 2,
+      "title": "京都企業紹介 – アヤベックス | 京都府",
+      "url": "https://www.pref.kyoto.jp/sangyo-sien/company/ayabex.html",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 3,
+      "title": "アヤベックス株式会社 | gBizINFO",
+      "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5130001051561",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 4,
+      "title": "アヤベックス株式会社 – initial.inc",
+      "url": "https://initial.inc/investors/V13708",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 5,
+      "title": "アヤベックス株式会社 | NIKKEI COMPASS",
+      "url": "https://www.nikkei.com/compass/company/4sjRFp87UeQfjaCCLEMoNY",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 6,
+      "title": "アドベンチャー – アヤベックス M&A 開示（日経）",
+      "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20231027572692/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 7,
+      "title": "アドベンチャーがアヤベックスを子会社化",
+      "url": "https://www.nihon-ma.co.jp/news/20231027_6030-16/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 8,
+      "title": "M&Aニュース 9600 – M&Aベストパートナーズ",
+      "url": "https://mabp.co.jp/manews/9600/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 9,
+      "title": "アヤベックス口コミ | OpenWork",
+      "url": "https://www.openwork.jp/company_answer.php?m_id=a0C2x00000alR9h",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 10,
+      "title": "アヤベックス口コミ | エン カイシャの評判",
+      "url": "https://en-hyouban.com/company/10200772917/kuchikomi/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 11,
+      "title": "アヤベックス株式会社 | Indeed Japan",
+      "url": "https://jp.indeed.com/cmp/%E3%82%A2%E3%83%A4%E3%83%99%E3%83%83%E3%82%AF%E3%82%B9%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 12,
+      "title": "アヤベックス口コミ | Yahoo! しごとカタログ",
+      "url": "https://jobcatalog.yahoo.co.jp/company/1500370441/review/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 13,
+      "title": "アヤベックス株式会社 転職情報 | doda",
+      "url": "https://doda.jp/DodaFront/View/Company/j_id__10136253622/",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 6,
+      "title": "インバウンド旅行手配 求人票 | Indeed",
+      "url": "https://jp.indeed.com/viewjob?jk=47e603e2aa14ae93",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 8,
+      "title": "アヤベックス | キャリアクロス",
+      "url": "https://www.careercross.com/company/detail-567906",
+      "fetched_at": "2026-04-16"
+    },
+    {
+      "id": 12,
+      "title": "ランドオペレーターになるには？| 旅行業界コラム",
+      "url": "https://www.tir.ac.jp/contents/industry/column/land_operator/",
+      "fetched_at": "2026-04-16"
+    }
+  ],
+  "interview_questions": [
+    {
+      "category": "財務・業績",
+      "question": "2023年の子会社化以降、売上・利益の改善状況はいかがでしょうか。現在の業績トレンドについて教えてください。",
+      "rationale": "買収時点で営業赤字・債務超過だったため、現在の回復状況を確認する必要がある。"
+    },
+    {
+      "category": "親会社連携",
+      "question": "アドベンチャーグループとの具体的な連携（集客チャネル、システム、資金面等）はどのように進んでいますか？",
+      "rationale": "子会社化の戦略的意義と実態を把握し、事業の安定性を評価するため。"
+    },
+    {
+      "category": "労働環境",
+      "question": "実際の残業時間の平均と、有給休暇の取得率について教えていただけますか？",
+      "rationale": "OpenWorkスコアが1.9と低く、小規模組織での業務負荷集中が懸念されるため。"
+    },
+    {
+      "category": "離職率・定着",
+      "question": "直近3年間の社員の定着率や、離職の主な理由についてお聞きできますか？",
+      "rationale": "口コミに「入社前後のギャップ」が指摘されており、離職傾向を確認する必要がある。"
+    },
+    {
+      "category": "成長戦略",
+      "question": "今後3〜5年の中期的な事業規模・従業員数の目標はどのようにお考えですか？",
+      "rationale": "中期経営計画が非公開のため、ビジョンの明確さと成長可能性を確認するため。"
+    },
+    {
+      "category": "雇用条件",
+      "question": "正社員・契約社員・業務委託の比率と、それぞれの主な担当業務を教えてください。",
+      "rationale": "旅行業界では非正規比率が高い場合があり、雇用の安定性を確認するため。"
+    },
+    {
+      "category": "インバウンド市場",
+      "question": "コロナ後のインバウンド需要回復に対し、具体的にどのような新規顧客・新規市場の開拓に取り組んでいますか？",
+      "rationale": "ポストコロナの業績回復の実態と今後の競争力を評価するため。"
+    },
+    {
+      "category": "組織・カルチャー",
+      "question": "口コミサイトで「入社前後のギャップがある」という声を拝見しましたが、具体的にどのような点で改善に取り組まれていますか？",
+      "rationale": "最大の懸念点であるOpenWorkスコアの低さと「ギャップ」指摘を率直に確認し、組織の誠実さと改善姿勢を見極めるため"
+    },
+    {
+      "category": "組織・カルチャー",
+      "question": "直近2〜3年の社員数の推移と、平均在籍年数を教えていただけますか？",
+      "rationale": "OpenWorkスコアが低く離職率が懸念されるため、定着率を数字で確認したい"
+    },
+    {
+      "category": "組織・カルチャー",
+      "question": "アドベンチャーグループの子会社になってから、組織の意思決定プロセスや現場の働き方に変化はありましたか？",
+      "rationale": "子会社化が現場にどう影響しているかを把握し、独立性と管理体制のバランスを確認するため"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "ランドオペレーター業務で一人が担当する工程の範囲と、繁忙期における対応件数の目安を教えてください。",
+      "rationale": "約20名という小規模組織での一人当たり業務負荷と属人化リスクを把握するため"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "英語に加えて中国語・韓国語は実務上どの程度必要ですか。入社後の語学研修や支援制度はありますか？",
+      "rationale": "スキルマッチングの確認と、入社後の語学成長支援の有無を把握するため"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "入社後のキャリアパスとして、マネジメント志向とスペシャリスト志向のルートはそれぞれどのように設けられていますか？",
+      "rationale": "公開情報ではキャリアラダーが不明のため、中長期的な成長イメージを確認するため"
+    },
+    {
+      "category": "職務・スキル",
+      "question": "旅行業務取扱管理者等の資格取得支援や、外部研修・書籍購入補助の制度はありますか？",
+      "rationale": "自己投資支援の有無が長期的なスキル形成と会社への信頼感に影響するため"
+    },
+    {
+      "category": "労働条件",
+      "question": "求人票に月20時間以内とありますが、インバウンドのハイシーズン（春・秋）における残業の実態はいかがですか？",
+      "rationale": "求人票の残業時間は平均値の場合があり、最大値とピーク時の負荷を把握したい"
+    },
+    {
+      "category": "労働条件",
+      "question": "在宅勤務は週何日程度が標準ですか。ツアー手配など対面・電話対応が必要な業務との使い分けはどうされていますか？",
+      "rationale": "制度の存在と実際の活用頻度・制約条件のギャップを確認するため"
+    },
+    {
+      "category": "労働条件",
+      "question": "給与の固定残業代の有無と、副業・兼業に関するポリシーを教えてください。",
+      "rationale": "給与の実質水準の把握と、将来的な複業・スキルアップ活動の自由度を確認するため"
+    }
+  ],
+  "additional_notes": [],
+  "job_fit": [],
+  "additional_considerations": []
+}

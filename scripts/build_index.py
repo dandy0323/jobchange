@@ -117,7 +117,7 @@ def build(output_path: Path = _INDEX) -> Path:
 <tbody>
 {rows}</tbody>
 </table>
-<a class="fab" href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" title="新規調査を開始">✏️</a>
+<a class="fab" href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" target="_blank" rel="noopener noreferrer" title="新規調査を開始">✏️</a>
 <div class="fab-tooltip">新規調査を開始</div>
 </body>
 </html>

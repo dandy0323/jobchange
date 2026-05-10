@@ -107,6 +107,46 @@ _jobs: dict[str, JobState] = {}
 _jobs_lock = threading.Lock()
 
 
+def _git_push_output(job: JobState, output_dir: Path) -> None:
+    """調査完了後にレポートを GitHub へ push（GITHUB_TOKEN が設定されている場合のみ）."""
+    import os
+    import subprocess
+
+    token = os.getenv("GITHUB_TOKEN")
+    repo = os.getenv("GITHUB_REPO")        # 例: dandy0323/jobchange
+    branch = os.getenv("GITHUB_BRANCH", "claude/company-research-skill-ZRmF0")
+    if not token or not repo:
+        return
+
+    try:
+        git_env = {**os.environ, "GIT_AUTHOR_NAME": "railway-bot", "GIT_AUTHOR_EMAIL": "bot@railway.app",
+                   "GIT_COMMITTER_NAME": "railway-bot", "GIT_COMMITTER_EMAIL": "bot@railway.app"}
+        root = PROJECT_ROOT
+
+        # remote を TOKEN 付き URL に設定（既存があれば上書き）
+        remote_url = f"https://x-access-token:{token}@github.com/{repo}.git"
+        subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=root, check=True, env=git_env)
+
+        # index.html 再生成
+        try:
+            import sys
+            sys.path.insert(0, str(root / "scripts"))
+            import build_index
+            build_index.build()
+        except Exception:
+            pass
+
+        subprocess.run(["git", "add", str(output_dir), str(root / "index.html")], cwd=root, check=True, env=git_env)
+        subprocess.run(
+            ["git", "commit", "-m", f"調査レポート追加: {job.company}（Railway自動コミット）"],
+            cwd=root, check=True, env=git_env,
+        )
+        subprocess.run(["git", "push", "origin", f"HEAD:{branch}"], cwd=root, check=True, env=git_env)
+        job.logs.append("[git] GitHub へ push 完了")
+    except Exception as exc:
+        job.logs.append(f"[git warn] push 失敗（閲覧は引き続き可能）: {exc}")
+
+
 def _run_job(job: JobState) -> None:
     """別スレッドで run_pipeline を実行."""
     # NOTE: Console 初期化も try の中に入れる（初期化失敗時も status=failed にする）
@@ -129,6 +169,8 @@ def _run_job(job: JobState) -> None:
             rel = Path(result.dashboard_path.name)
         job.dashboard_url = "/outputs/" + rel.as_posix()
         job.status = "succeeded"
+        # GitHub へ自動 push（GITHUB_TOKEN があれば）
+        _git_push_output(job, result.output_dir)
     except Exception as exc:
         job.status = "failed"
         job.error = f"{type(exc).__name__}: {exc}"

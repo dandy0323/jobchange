@@ -47,6 +47,14 @@ def main() -> None:
     )
     print(f"[OK] 生成完了: {dashboard_path}")
 
+    # index.html を再生成
+    try:
+        import build_index  # noqa: PLC0415
+        index_path = build_index.build()
+        print(f"[OK] index.html を更新しました: {index_path}")
+    except Exception as exc:
+        print(f"[warn] index.html の更新に失敗しました: {exc}", file=sys.stderr)
+
     if not args.no_open:
         try:
             if sys.platform == "win32":

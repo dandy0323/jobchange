@@ -608,6 +608,34 @@ html, body {
   word-break: break-all;
 }
 
+@media (max-width: 600px) {
+  .sources-table thead { display: none; }
+  .sources-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    padding: 0.65rem 0.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sources-table td {
+    border: none;
+    padding: 0.1rem 0;
+  }
+  .src-num {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    width: auto;
+  }
+  .src-title {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .src-url a {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+}
+
 /* ============== Compact Mode ============== */
 
 .markdown-body.compact p {
@@ -648,6 +676,26 @@ html, body {
   font-size: 0.9em;
 }
 
+.footer-cta {
+  margin-top: 0.8rem;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, var(--primary), #818cf8);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.cta-link:hover {
+  opacity: 0.85;
+}
+
 .empty-state {
   text-align: center;
   padding: 4rem 2rem;
@@ -658,6 +706,269 @@ html, body {
 }
 
 /* ============== Responsive ============== */
+
+/* ============================================================
+ * 求人票整合性タブ (Phase 4)
+ * ============================================================ */
+.job-fit { max-width: 100%; }
+.jfit-intro {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+}
+.jfit-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+.jfit-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.jfit-summary-ok { border-left: 4px solid #10b981; }
+.jfit-summary-warn { border-left: 4px solid #f59e0b; }
+.jfit-summary-unknown { border-left: 4px solid #9ca3af; }
+.jfit-summary-icon { font-size: 1.5rem; line-height: 1; }
+.jfit-summary-num {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1;
+}
+.jfit-summary-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.jfit-table-wrapper { overflow-x: auto; margin-bottom: 2rem; }
+.jfit-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0.92rem;
+}
+.jfit-table thead th {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+.jfit-table td {
+  padding: 0.8rem 0.9rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.jfit-table tr:last-child td { border-bottom: none; }
+.jfit-row-ok { background: rgba(16, 185, 129, 0.03); }
+.jfit-row-warn { background: rgba(245, 158, 11, 0.04); }
+.jfit-row-unknown { background: rgba(156, 163, 175, 0.03); }
+
+.jfit-claim { font-weight: 600; color: #0f172a; min-width: 12rem; }
+.jfit-finding { color: #334155; min-width: 14rem; }
+.jfit-integrity { white-space: nowrap; }
+.jfit-note { color: #64748b; font-size: 0.875rem; }
+
+.jfit-badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.jfit-badge-ok {
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.jfit-badge-warn {
+  background: rgba(245, 158, 11, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+.jfit-badge-unknown {
+  background: rgba(156, 163, 175, 0.12);
+  color: #475569;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+}
+
+.jfit-notes {
+  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  border: 1px solid #fcd34d;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.jfit-notes-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: #92400e;
+  font-weight: 700;
+}
+.jfit-notes-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #78350f;
+  line-height: 1.7;
+}
+.jfit-notes-list li { margin-bottom: 0.4rem; }
+.jfit-notes-list li:last-child { margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .jfit-summary { grid-template-columns: 1fr; }
+  .jfit-table { font-size: 0.85rem; }
+  .jfit-table td, .jfit-table th { padding: 0.55rem 0.6rem; }
+}
+
+/* ============================================================
+ * 面接質問タブ (Phase 3)
+ * ============================================================ */
+.interview-questions { max-width: 100%; }
+.interview-questions .q-intro {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+}
+.q-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.q-filter-chip {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.q-filter-chip:hover {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+.q-filter-chip.active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+.q-card-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+.q-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.q-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+.q-card.hidden { display: none; }
+.q-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.q-num {
+  background: #1e293b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+.q-category-badge {
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+}
+.q-copy-btn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.q-copy-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+.q-copy-btn.copied {
+  background: #10b981;
+  color: #fff;
+  border-color: #10b981;
+}
+.q-text {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #0f172a;
+  margin: 0;
+}
+.q-rationale {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+  padding: 0.55rem 0.75rem;
+  background: #f8fafc;
+  border-left: 3px solid #cbd5e1;
+  border-radius: 4px;
+}
+.empty-questions {
+  padding: 2rem;
+  text-align: center;
+  color: #94a3b8;
+  background: #f8fafc;
+  border-radius: 8px;
+}
 
 @media (max-width: 1024px) {
   .content-wrapper {

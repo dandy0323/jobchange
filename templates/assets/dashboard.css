@@ -608,6 +608,34 @@ html, body {
   word-break: break-all;
 }
 
+@media (max-width: 600px) {
+  .sources-table thead { display: none; }
+  .sources-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    padding: 0.65rem 0.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .sources-table td {
+    border: none;
+    padding: 0.1rem 0;
+  }
+  .src-num {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    width: auto;
+  }
+  .src-title {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .src-url a {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+}
+
 /* ============== Compact Mode ============== */
 
 .markdown-body.compact p {

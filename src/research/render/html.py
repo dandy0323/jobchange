@@ -493,8 +493,25 @@ def _render_sources_block(sources: list[Source]) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _strip_sources_section(md: str) -> str:
+    """Markdown末尾の `## 出典一覧` セクションを除去（_render_sources_block で再生成するため）."""
+    lines = md.splitlines()
+    heading_idx = -1
+    for i, line in enumerate(lines):
+        if re.match(r"^#{1,3}\s+.*出典", line):
+            heading_idx = i
+            break
+    if heading_idx == -1:
+        return md
+    start = heading_idx
+    if start > 0 and lines[start - 1].strip() == "---":
+        start -= 1
+    return "\n".join(lines[:start]).rstrip()
+
+
 def _process_markdown(md: str, *, extract_screening: bool) -> ProcessedSection:
     md = _strip_agent_preamble(md)
+    md = _strip_sources_section(md)
     screening: list[ScreeningCard] = []
     if extract_screening:
         md, screening = _extract_screening(md)

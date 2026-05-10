@@ -15,12 +15,22 @@
     });
 
     // ---------------- TOC 生成 ----------------
+    const tocSidebar = document.querySelector(".toc-sidebar");
+    const contentWrapper = document.querySelector(".content-wrapper");
     function buildToc(panel) {
       if (!tocList) return;
       tocList.innerHTML = "";
       if (!panel) return;
 
       const headings = panel.querySelectorAll(".markdown-body h2, .markdown-body h3");
+      // 見出しが無いタブ（面接質問など）はサイドバーを非表示に
+      if (tocSidebar) {
+        const show = headings.length > 0;
+        tocSidebar.style.display = show ? "" : "none";
+        if (contentWrapper) {
+          contentWrapper.style.gridTemplateColumns = show ? "" : "1fr";
+        }
+      }
       headings.forEach(function (h) {
         if (!h.id) return;
         const li = document.createElement("li");
@@ -119,6 +129,61 @@
     document.querySelectorAll(".fnref a").forEach(function (a) {
       a.addEventListener("click", function () {
         // デフォルト動作（アンカースクロール）でCSSの :target が発火
+      });
+    });
+
+    // ---------------- 面接質問: カテゴリフィルタ ----------------
+    document.querySelectorAll(".q-filter-chip").forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        const bar = chip.closest(".q-filter-bar");
+        if (!bar) return;
+        bar.querySelectorAll(".q-filter-chip").forEach(function (c) {
+          c.classList.remove("active");
+        });
+        chip.classList.add("active");
+        const filter = chip.getAttribute("data-filter");
+        const list = bar.parentElement.querySelector(".q-card-list");
+        if (!list) return;
+        list.querySelectorAll(".q-card").forEach(function (card) {
+          const category = card.getAttribute("data-category");
+          if (filter === "__all__" || filter === category) {
+            card.classList.remove("hidden");
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+
+    // ---------------- 面接質問: ワンクリックコピー ----------------
+    document.querySelectorAll(".q-copy-btn").forEach(function (btn) {
+      btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        const payload = btn.getAttribute("data-copy") || "";
+        const originalText = btn.textContent;
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(payload);
+          } else {
+            const ta = document.createElement("textarea");
+            ta.value = payload;
+            ta.style.position = "fixed";
+            ta.style.opacity = "0";
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand("copy");
+            document.body.removeChild(ta);
+          }
+          btn.classList.add("copied");
+          btn.textContent = "✓ コピー済";
+          setTimeout(function () {
+            btn.classList.remove("copied");
+            btn.textContent = originalText;
+          }, 1400);
+        } catch (err) {
+          btn.textContent = "⚠ 失敗";
+          setTimeout(function () { btn.textContent = originalText; }, 1400);
+        }
       });
     });
   });

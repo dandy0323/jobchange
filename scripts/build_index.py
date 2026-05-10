@@ -70,6 +70,43 @@ def build(output_path: Path = _INDEX) -> Path:
   tr:last-child td {{ border-bottom: none; }}
   a {{ color: #2d7dd2; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
+  .fab {{
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #1d9bf0;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 56px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    cursor: pointer;
+    border: none;
+    transition: background .15s, transform .15s, box-shadow .15s;
+    z-index: 100;
+    text-decoration: none;
+    display: block;
+  }}
+  .fab:hover {{ background: #1a8cd8; transform: scale(1.08); box-shadow: 0 6px 20px rgba(0,0,0,.3); }}
+  .fab:active {{ transform: scale(0.95); }}
+  .fab-tooltip {{
+    position: fixed;
+    bottom: 90px;
+    right: 24px;
+    background: rgba(0,0,0,.75);
+    color: #fff;
+    font-size: 0.78rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+  }}
+  .fab:hover + .fab-tooltip {{ opacity: 1; }}
 </style>
 </head>
 <body>
@@ -80,6 +117,8 @@ def build(output_path: Path = _INDEX) -> Path:
 <tbody>
 {rows}</tbody>
 </table>
+<a class="fab" href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" title="新規調査を開始">✏️</a>
+<div class="fab-tooltip">新規調査を開始</div>
 </body>
 </html>
 """

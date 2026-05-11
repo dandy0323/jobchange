@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import re
-import sys
 from datetime import date
 from pathlib import Path
 
@@ -13,6 +12,26 @@ _OUTPUT = _ROOT / "output"
 _INDEX = _ROOT / "index.html"
 
 _DIR_PATTERN = re.compile(r"^(\d{4}-\d{2}-\d{2})_(.+?)(_v\d+)?$")
+
+# SVG アイコン定義
+_TRASH_SVG = (
+    '<svg viewBox="0 0 22 24" width="18" height="18" fill="none" '
+    'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<rect x="2" y="7" width="18" height="15" rx="3"/>'
+    '<path d="M1 7h20"/>'
+    '<path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/>'
+    '<line x1="9" y1="12" x2="9" y2="18"/>'
+    '<line x1="13" y1="12" x2="13" y2="18"/>'
+    '</svg>'
+)
+
+_RESTORE_SVG = (
+    '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" '
+    'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+    '<path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/>'
+    '<path d="M3 3v5h5"/>'
+    '</svg>'
+)
 
 
 def _collect_reports() -> list[dict]:
@@ -51,7 +70,10 @@ def build(output_path: Path = _INDEX) -> Path:
             f'  <td class="col-date">{r["date"]}</td>\n'
             f'  <td class="col-company"><a href="{r["path"]}">{r["company"]}</a></td>\n'
             f'  <td class="col-action">'
-            f'<button class="del-btn" onclick="deleteReport(\'{r["dir"]}\')" title="削除">🗑</button>'
+            f'<button class="del-btn action-btn" data-dir="{r["dir"]}" '
+            f'onclick="deleteReport(this.dataset.dir)" title="削除">{_TRASH_SVG}</button>'
+            f'<button class="restore-btn action-btn" data-dir="{r["dir"]}" '
+            f'onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none">{_RESTORE_SVG}</button>'
             f'</td>\n'
             f'</tr>\n'
         )
@@ -75,7 +97,6 @@ def build(output_path: Path = _INDEX) -> Path:
   h1 {{ font-size: 1.3rem; color: #333; margin-bottom: 4px; }}
   .updated {{ font-size: 0.8rem; color: #999; margin-bottom: 14px; }}
 
-  /* 検索・絞り込みパネル */
   .controls {{
     background: #fff;
     border-radius: 10px;
@@ -125,7 +146,6 @@ def build(output_path: Path = _INDEX) -> Path:
   }}
   .btn-show-deleted:hover {{ color: #666; border-color: #bbb; }}
 
-  /* テーブル */
   table {{
     width: 100%;
     border-collapse: collapse;
@@ -142,38 +162,39 @@ def build(output_path: Path = _INDEX) -> Path:
     font-size: 0.85rem;
     user-select: none;
   }}
-  th.sortable {{
-    cursor: pointer;
-    white-space: nowrap;
-  }}
+  th.sortable {{ cursor: pointer; white-space: nowrap; }}
   th.sortable:hover {{ background: #2570c0; }}
   .sort-icon {{ margin-left: 4px; font-size: 0.75rem; }}
   td {{
     padding: 10px 14px;
     border-bottom: 1px solid #eee;
     font-size: 0.95rem;
+    vertical-align: middle;
   }}
   tr:last-child td {{ border-bottom: none; }}
   tr.hidden-row {{ display: none; }}
-  tr.deleted-row {{
-    opacity: 0.4;
-    background: #fafafa;
-  }}
+  tr.deleted-row {{ opacity: 0.38; background: #fafafa; }}
   .col-date {{ white-space: nowrap; width: 110px; }}
   .col-action {{ width: 44px; text-align: center; }}
   a {{ color: #2d7dd2; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
-  .del-btn {{
+
+  .action-btn {{
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
-    padding: 2px 4px;
-    opacity: 0.45;
-    transition: opacity .15s, transform .1s;
-    border-radius: 4px;
+    padding: 4px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s, transform .1s;
   }}
-  .del-btn:hover {{ opacity: 1; transform: scale(1.15); }}
+  .del-btn {{ color: #bbb; }}
+  .del-btn:hover {{ color: #e55; background: #fff0f0; transform: scale(1.15); }}
+  .restore-btn {{ color: #6cb; }}
+  .restore-btn:hover {{ color: #2a9; background: #f0fff8; transform: scale(1.15); }}
+
   .no-results {{
     text-align: center;
     padding: 28px;
@@ -182,7 +203,6 @@ def build(output_path: Path = _INDEX) -> Path:
     display: none;
   }}
 
-  /* FAB */
   .fab {{
     position: fixed;
     bottom: 24px;
@@ -246,7 +266,7 @@ def build(output_path: Path = _INDEX) -> Path:
 <table id="report-table">
 <thead>
   <tr>
-    <th class="sortable col-date" id="th-date" onclick="toggleSort()">
+    <th class="sortable col-date" onclick="toggleSort()">
       調査日<span class="sort-icon" id="sort-icon">▼</span>
     </th>
     <th>企業名</th>
@@ -269,16 +289,22 @@ let showDeleted = false;
 function getDeleted() {{
   return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
 }}
-
 function saveDeleted(set) {{
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
 }}
 
 function deleteReport(dir) {{
-  if (!confirm('この調査結果を一覧から削除しますか？\\n（レポート自体は保持されます）')) return;
-  const deleted = getDeleted();
-  deleted.add(dir);
-  saveDeleted(deleted);
+  if (!confirm('この調査結果を一覧から非表示にしますか？')) return;
+  const del = getDeleted();
+  del.add(dir);
+  saveDeleted(del);
+  applyFilter();
+}}
+
+function restoreReport(dir) {{
+  const del = getDeleted();
+  del.delete(dir);
+  saveDeleted(del);
   applyFilter();
 }}
 
@@ -306,7 +332,7 @@ function applyFilter() {{
   const q = document.getElementById('search-company').value.trim().toLowerCase();
   const from = document.getElementById('from-date').value;
   const to = document.getElementById('to-date').value;
-  const deleted = getDeleted();
+  const del = getDeleted();
   const rows = document.querySelectorAll('#tbody tr');
   let visible = 0;
 
@@ -314,31 +340,39 @@ function applyFilter() {{
     const dir = row.dataset.dir;
     const company = row.dataset.company.toLowerCase();
     const d = row.dataset.date;
-    const isDel = deleted.has(dir);
+    const isDel = del.has(dir);
 
-    const matchQ = !q || company.includes(q);
+    const matchQ  = !q    || company.includes(q);
     const matchFrom = !from || d >= from;
-    const matchTo = !to || d <= to;
-    const matchDel = showDeleted || !isDel;
+    const matchTo   = !to   || d <= to;
+    const show = matchQ && matchFrom && matchTo && (showDeleted || !isDel);
 
-    const show = matchQ && matchFrom && matchTo && matchDel;
-    row.classList.toggle('hidden-row', !show);
-    row.classList.toggle('deleted-row', isDel && show);
+    row.classList.toggle('hidden-row',   !show);
+    row.classList.toggle('deleted-row',  isDel && show);
     if (show) visible++;
+
+    // ボタン切り替え
+    const delBtn     = row.querySelector('.del-btn');
+    const restoreBtn = row.querySelector('.restore-btn');
+    if (isDel) {{
+      delBtn.style.display     = 'none';
+      restoreBtn.style.display = '';
+    }} else {{
+      delBtn.style.display     = '';
+      restoreBtn.style.display = 'none';
+    }}
   }});
 
-  updateCount(visible);
+  document.getElementById('count-label').textContent = visible + ' 件';
   document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
 }}
 
-function updateCount(n) {{
-  const rows = document.querySelectorAll('#tbody tr');
-  const visible = n !== undefined ? n :
-    [...rows].filter(r => !r.classList.contains('hidden-row')).length;
+function updateCount() {{
+  const visible = [...document.querySelectorAll('#tbody tr')]
+    .filter(r => !r.classList.contains('hidden-row')).length;
   document.getElementById('count-label').textContent = visible + ' 件';
 }}
 
-// 初期化
 applyFilter();
 </script>
 </body>

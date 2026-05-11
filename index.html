@@ -17,7 +17,6 @@
   h1 { font-size: 1.3rem; color: #333; margin-bottom: 4px; }
   .updated { font-size: 0.8rem; color: #999; margin-bottom: 14px; }
 
-  /* 検索・絞り込みパネル */
   .controls {
     background: #fff;
     border-radius: 10px;
@@ -67,7 +66,6 @@
   }
   .btn-show-deleted:hover { color: #666; border-color: #bbb; }
 
-  /* テーブル */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -84,38 +82,39 @@
     font-size: 0.85rem;
     user-select: none;
   }
-  th.sortable {
-    cursor: pointer;
-    white-space: nowrap;
-  }
+  th.sortable { cursor: pointer; white-space: nowrap; }
   th.sortable:hover { background: #2570c0; }
   .sort-icon { margin-left: 4px; font-size: 0.75rem; }
   td {
     padding: 10px 14px;
     border-bottom: 1px solid #eee;
     font-size: 0.95rem;
+    vertical-align: middle;
   }
   tr:last-child td { border-bottom: none; }
   tr.hidden-row { display: none; }
-  tr.deleted-row {
-    opacity: 0.4;
-    background: #fafafa;
-  }
+  tr.deleted-row { opacity: 0.38; background: #fafafa; }
   .col-date { white-space: nowrap; width: 110px; }
   .col-action { width: 44px; text-align: center; }
   a { color: #2d7dd2; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .del-btn {
+
+  .action-btn {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.1rem;
-    padding: 2px 4px;
-    opacity: 0.45;
-    transition: opacity .15s, transform .1s;
-    border-radius: 4px;
+    padding: 4px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .15s, transform .1s;
   }
-  .del-btn:hover { opacity: 1; transform: scale(1.15); }
+  .del-btn { color: #bbb; }
+  .del-btn:hover { color: #e55; background: #fff0f0; transform: scale(1.15); }
+  .restore-btn { color: #6cb; }
+  .restore-btn:hover { color: #2a9; background: #f0fff8; transform: scale(1.15); }
+
   .no-results {
     text-align: center;
     padding: 28px;
@@ -124,7 +123,6 @@
     display: none;
   }
 
-  /* FAB */
   .fab {
     position: fixed;
     bottom: 24px;
@@ -188,7 +186,7 @@
 <table id="report-table">
 <thead>
   <tr>
-    <th class="sortable col-date" id="th-date" onclick="toggleSort()">
+    <th class="sortable col-date" onclick="toggleSort()">
       調査日<span class="sort-icon" id="sort-icon">▼</span>
     </th>
     <th>企業名</th>
@@ -199,72 +197,72 @@
 <tr data-date="2026-05-10" data-company="株式会社ロカオプいろは" data-dir="2026-05-10_株式会社ロカオプいろは">
   <td class="col-date">2026-05-10</td>
   <td class="col-company"><a href="output/2026-05-10_株式会社ロカオプいろは/dashboard.html">株式会社ロカオプいろは</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-05-10_株式会社ロカオプいろは')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-05-10_株式会社ロカオプいろは" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-05-10_株式会社ロカオプいろは" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-05-08" data-company="Hiクラテス株式会社" data-dir="2026-05-08_Hiクラテス株式会社">
   <td class="col-date">2026-05-08</td>
   <td class="col-company"><a href="output/2026-05-08_Hiクラテス株式会社/dashboard.html">Hiクラテス株式会社</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-05-08_Hiクラテス株式会社')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-05-08_Hiクラテス株式会社" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-05-08_Hiクラテス株式会社" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-05-02" data-company="株式会社ダイフク" data-dir="2026-05-02_株式会社ダイフク">
   <td class="col-date">2026-05-02</td>
   <td class="col-company"><a href="output/2026-05-02_株式会社ダイフク/dashboard.html">株式会社ダイフク</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-05-02_株式会社ダイフク')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-05-02_株式会社ダイフク" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-05-02_株式会社ダイフク" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-30" data-company="弁理士法人北斗特許事務所" data-dir="2026-04-30_弁理士法人北斗特許事務所">
   <td class="col-date">2026-04-30</td>
   <td class="col-company"><a href="output/2026-04-30_弁理士法人北斗特許事務所/dashboard.html">弁理士法人北斗特許事務所</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-30_弁理士法人北斗特許事務所')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-30_弁理士法人北斗特許事務所" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-30_弁理士法人北斗特許事務所" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-27" data-company="株式会社ウィズテクノロジー" data-dir="2026-04-27_株式会社ウィズテクノロジー">
   <td class="col-date">2026-04-27</td>
   <td class="col-company"><a href="output/2026-04-27_株式会社ウィズテクノロジー/dashboard.html">株式会社ウィズテクノロジー</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-27_株式会社ウィズテクノロジー')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-27_株式会社ウィズテクノロジー" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-27_株式会社ウィズテクノロジー" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-27" data-company="株式会社Y Agency" data-dir="2026-04-27_株式会社Y Agency">
   <td class="col-date">2026-04-27</td>
   <td class="col-company"><a href="output/2026-04-27_株式会社Y Agency/dashboard.html">株式会社Y Agency</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-27_株式会社Y Agency')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-27_株式会社Y Agency" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-27_株式会社Y Agency" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-23" data-company="株式会社エフ・シー・シー" data-dir="2026-04-23_株式会社エフ・シー・シー">
   <td class="col-date">2026-04-23</td>
   <td class="col-company"><a href="output/2026-04-23_株式会社エフ・シー・シー/dashboard.html">株式会社エフ・シー・シー</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-23_株式会社エフ・シー・シー')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-23_株式会社エフ・シー・シー" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-23_株式会社エフ・シー・シー" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-23" data-company="Trash Lens株式会社" data-dir="2026-04-23_Trash Lens株式会社">
   <td class="col-date">2026-04-23</td>
   <td class="col-company"><a href="output/2026-04-23_Trash Lens株式会社/dashboard.html">Trash Lens株式会社</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-23_Trash Lens株式会社')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-23_Trash Lens株式会社" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-23_Trash Lens株式会社" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-18" data-company="アクセンチュア株式会社" data-dir="2026-04-18_アクセンチュア株式会社">
   <td class="col-date">2026-04-18</td>
   <td class="col-company"><a href="output/2026-04-18_アクセンチュア株式会社/dashboard.html">アクセンチュア株式会社</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-18_アクセンチュア株式会社')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-18_アクセンチュア株式会社" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-18_アクセンチュア株式会社" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-16" data-company="アヤベックス株式会社" data-dir="2026-04-16_アヤベックス株式会社">
   <td class="col-date">2026-04-16</td>
   <td class="col-company"><a href="output/2026-04-16_アヤベックス株式会社/dashboard.html">アヤベックス株式会社</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-16_アヤベックス株式会社')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-16_アヤベックス株式会社" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-16_アヤベックス株式会社" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-15" data-company="株式会社千里眼_v2" data-dir="2026-04-15_株式会社千里眼_v2">
   <td class="col-date">2026-04-15</td>
   <td class="col-company"><a href="output/2026-04-15_株式会社千里眼_v2/dashboard.html">株式会社千里眼_v2</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-15_株式会社千里眼_v2')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-15_株式会社千里眼_v2" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-15_株式会社千里眼_v2" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-15" data-company="株式会社ナノコネクト_v2" data-dir="2026-04-15_株式会社ナノコネクト_v2">
   <td class="col-date">2026-04-15</td>
   <td class="col-company"><a href="output/2026-04-15_株式会社ナノコネクト_v2/dashboard.html">株式会社ナノコネクト_v2</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-15_株式会社ナノコネクト_v2')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-15_株式会社ナノコネクト_v2" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-15_株式会社ナノコネクト_v2" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-15" data-company="株式会社ナノコネクト" data-dir="2026-04-15_株式会社ナノコネクト">
   <td class="col-date">2026-04-15</td>
   <td class="col-company"><a href="output/2026-04-15_株式会社ナノコネクト/dashboard.html">株式会社ナノコネクト</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-15_株式会社ナノコネクト')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-15_株式会社ナノコネクト" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-15_株式会社ナノコネクト" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 <tr data-date="2026-04-15" data-company="株式会社スペースシャワーネットワーク_v2" data-dir="2026-04-15_株式会社スペースシャワーネットワーク_v2">
   <td class="col-date">2026-04-15</td>
   <td class="col-company"><a href="output/2026-04-15_株式会社スペースシャワーネットワーク_v2/dashboard.html">株式会社スペースシャワーネットワーク_v2</a></td>
-  <td class="col-action"><button class="del-btn" onclick="deleteReport('2026-04-15_株式会社スペースシャワーネットワーク_v2')" title="削除">🗑</button></td>
+  <td class="col-action"><button class="del-btn action-btn" data-dir="2026-04-15_株式会社スペースシャワーネットワーク_v2" onclick="deleteReport(this.dataset.dir)" title="削除"><svg viewBox="0 0 22 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="18" height="15" rx="3"/><path d="M1 7h20"/><path d="M8 7V4.5A1.5 1.5 0 0 1 9.5 3h3A1.5 1.5 0 0 1 14 4.5V7"/><line x1="9" y1="12" x2="9" y2="18"/><line x1="13" y1="12" x2="13" y2="18"/></svg></button><button class="restore-btn action-btn" data-dir="2026-04-15_株式会社スペースシャワーネットワーク_v2" onclick="restoreReport(this.dataset.dir)" title="復元" style="display:none"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"/><path d="M3 3v5h5"/></svg></button></td>
 </tr>
 </tbody>
 </table>
@@ -281,16 +279,22 @@ let showDeleted = false;
 function getDeleted() {
   return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
 }
-
 function saveDeleted(set) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
 }
 
 function deleteReport(dir) {
-  if (!confirm('この調査結果を一覧から削除しますか？\n（レポート自体は保持されます）')) return;
-  const deleted = getDeleted();
-  deleted.add(dir);
-  saveDeleted(deleted);
+  if (!confirm('この調査結果を一覧から非表示にしますか？')) return;
+  const del = getDeleted();
+  del.add(dir);
+  saveDeleted(del);
+  applyFilter();
+}
+
+function restoreReport(dir) {
+  const del = getDeleted();
+  del.delete(dir);
+  saveDeleted(del);
   applyFilter();
 }
 
@@ -318,7 +322,7 @@ function applyFilter() {
   const q = document.getElementById('search-company').value.trim().toLowerCase();
   const from = document.getElementById('from-date').value;
   const to = document.getElementById('to-date').value;
-  const deleted = getDeleted();
+  const del = getDeleted();
   const rows = document.querySelectorAll('#tbody tr');
   let visible = 0;
 
@@ -326,31 +330,39 @@ function applyFilter() {
     const dir = row.dataset.dir;
     const company = row.dataset.company.toLowerCase();
     const d = row.dataset.date;
-    const isDel = deleted.has(dir);
+    const isDel = del.has(dir);
 
-    const matchQ = !q || company.includes(q);
+    const matchQ  = !q    || company.includes(q);
     const matchFrom = !from || d >= from;
-    const matchTo = !to || d <= to;
-    const matchDel = showDeleted || !isDel;
+    const matchTo   = !to   || d <= to;
+    const show = matchQ && matchFrom && matchTo && (showDeleted || !isDel);
 
-    const show = matchQ && matchFrom && matchTo && matchDel;
-    row.classList.toggle('hidden-row', !show);
-    row.classList.toggle('deleted-row', isDel && show);
+    row.classList.toggle('hidden-row',   !show);
+    row.classList.toggle('deleted-row',  isDel && show);
     if (show) visible++;
+
+    // ボタン切り替え
+    const delBtn     = row.querySelector('.del-btn');
+    const restoreBtn = row.querySelector('.restore-btn');
+    if (isDel) {
+      delBtn.style.display     = 'none';
+      restoreBtn.style.display = '';
+    } else {
+      delBtn.style.display     = '';
+      restoreBtn.style.display = 'none';
+    }
   });
 
-  updateCount(visible);
+  document.getElementById('count-label').textContent = visible + ' 件';
   document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
 }
 
-function updateCount(n) {
-  const rows = document.querySelectorAll('#tbody tr');
-  const visible = n !== undefined ? n :
-    [...rows].filter(r => !r.classList.contains('hidden-row')).length;
+function updateCount() {
+  const visible = [...document.querySelectorAll('#tbody tr')]
+    .filter(r => !r.classList.contains('hidden-row')).length;
   document.getElementById('count-label').textContent = visible + ' 件';
 }
 
-// 初期化
 applyFilter();
 </script>
 </body>

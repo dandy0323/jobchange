@@ -1,0 +1,14 @@
+# src/research/ パッケージと名前衝突するため除外
+research.py
+
+# 不要ファイル
+.git/
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+uploads/
+.DS_Store

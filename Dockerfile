@@ -19,11 +19,8 @@ RUN pip install --no-cache-dir \
     pymupdf pillow pillow-heif python-dotenv \
     "claude-agent-sdk>=0.1.0"
 
-# ソースコードをコピー
+# ソースコードをコピー（research.py は .dockerignore で除外済み）
 COPY . .
-
-# research.py は src/research/ パッケージと名前衝突するため退避
-RUN mv research.py _research_cli.py
 
 # 実行時に必要なディレクトリ
 RUN mkdir -p output uploads

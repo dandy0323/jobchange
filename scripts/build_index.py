@@ -34,6 +34,7 @@ def _collect_reports() -> list[dict]:
         reports.append({
             "date": date_str,
             "company": company + version,
+            "dir": d.name,
             "path": f"output/{d.name}/dashboard.html",
         })
     return reports
@@ -46,9 +47,12 @@ def build(output_path: Path = _INDEX) -> Path:
     rows = ""
     for r in reports:
         rows += (
-            f'<tr>'
-            f'<td>{r["date"]}</td>'
-            f'<td><a href="{r["path"]}">{r["company"]}</a></td>'
+            f'<tr data-date="{r["date"]}" data-company="{r["company"]}" data-dir="{r["dir"]}">\n'
+            f'  <td class="col-date">{r["date"]}</td>\n'
+            f'  <td class="col-company"><a href="{r["path"]}">{r["company"]}</a></td>\n'
+            f'  <td class="col-action">'
+            f'<button class="del-btn" onclick="deleteReport(\'{r["dir"]}\')" title="削除">🗑</button>'
+            f'</td>\n'
             f'</tr>\n'
         )
 
@@ -59,17 +63,126 @@ def build(output_path: Path = _INDEX) -> Path:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>企業調査レポート一覧</title>
 <style>
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
-         max-width: 720px; margin: 0 auto; padding: 16px; background: #f5f5f5; }}
-  h1 {{ font-size: 1.3rem; color: #333; }}
-  p.updated {{ font-size: 0.8rem; color: #999; margin-top: -8px; }}
-  table {{ width: 100%; border-collapse: collapse; background: #fff;
-           border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.1); }}
-  th {{ background: #2d7dd2; color: #fff; padding: 10px 14px; text-align: left; font-size: 0.85rem; }}
-  td {{ padding: 10px 14px; border-bottom: 1px solid #eee; font-size: 0.95rem; }}
+  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+  body {{
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #f5f5f5;
+    color: #333;
+  }}
+  h1 {{ font-size: 1.3rem; color: #333; margin-bottom: 4px; }}
+  .updated {{ font-size: 0.8rem; color: #999; margin-bottom: 14px; }}
+
+  /* 検索・絞り込みパネル */
+  .controls {{
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }}
+  .controls input[type="text"] {{
+    flex: 1 1 160px;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    outline: none;
+  }}
+  .controls input[type="text"]:focus {{ border-color: #2d7dd2; }}
+  .date-range {{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }}
+  .date-range input[type="date"] {{
+    padding: 7px 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    outline: none;
+    color: #333;
+  }}
+  .date-range input[type="date"]:focus {{ border-color: #2d7dd2; }}
+  .date-range span {{ font-size: 0.85rem; color: #888; }}
+  .count {{ font-size: 0.82rem; color: #888; white-space: nowrap; }}
+  .btn-show-deleted {{
+    font-size: 0.78rem;
+    color: #aaa;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+  }}
+  .btn-show-deleted:hover {{ color: #666; border-color: #bbb; }}
+
+  /* テーブル */
+  table {{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  }}
+  th {{
+    background: #2d7dd2;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 0.85rem;
+    user-select: none;
+  }}
+  th.sortable {{
+    cursor: pointer;
+    white-space: nowrap;
+  }}
+  th.sortable:hover {{ background: #2570c0; }}
+  .sort-icon {{ margin-left: 4px; font-size: 0.75rem; }}
+  td {{
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+  }}
   tr:last-child td {{ border-bottom: none; }}
+  tr.hidden-row {{ display: none; }}
+  tr.deleted-row {{
+    opacity: 0.4;
+    background: #fafafa;
+  }}
+  .col-date {{ white-space: nowrap; width: 110px; }}
+  .col-action {{ width: 44px; text-align: center; }}
   a {{ color: #2d7dd2; text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
+  .del-btn {{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 2px 4px;
+    opacity: 0.45;
+    transition: opacity .15s, transform .1s;
+    border-radius: 4px;
+  }}
+  .del-btn:hover {{ opacity: 1; transform: scale(1.15); }}
+  .no-results {{
+    text-align: center;
+    padding: 28px;
+    color: #aaa;
+    font-size: 0.9rem;
+    display: none;
+  }}
+
+  /* FAB */
   .fab {{
     position: fixed;
     bottom: 24px;
@@ -107,18 +220,127 @@ def build(output_path: Path = _INDEX) -> Path:
     transition: opacity .2s;
   }}
   .fab:hover + .fab-tooltip {{ opacity: 1; }}
+
+  @media (max-width: 500px) {{
+    .controls {{ gap: 8px; }}
+    .date-range {{ width: 100%; }}
+    .date-range input[type="date"] {{ flex: 1; min-width: 0; }}
+  }}
 </style>
 </head>
 <body>
 <h1>📋 企業調査レポート一覧</h1>
 <p class="updated">最終更新: {today}</p>
-<table>
-<thead><tr><th>調査日</th><th>企業名</th></tr></thead>
-<tbody>
+
+<div class="controls">
+  <input type="text" id="search-company" placeholder="企業名で検索..." oninput="applyFilter()">
+  <div class="date-range">
+    <input type="date" id="from-date" oninput="applyFilter()">
+    <span>〜</span>
+    <input type="date" id="to-date" oninput="applyFilter()">
+  </div>
+  <span class="count" id="count-label"></span>
+  <button class="btn-show-deleted" id="toggle-deleted" onclick="toggleDeleted()">削除済みを表示</button>
+</div>
+
+<table id="report-table">
+<thead>
+  <tr>
+    <th class="sortable col-date" id="th-date" onclick="toggleSort()">
+      調査日<span class="sort-icon" id="sort-icon">▼</span>
+    </th>
+    <th>企業名</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody id="tbody">
 {rows}</tbody>
 </table>
+<p class="no-results" id="no-results">該当する調査結果がありません</p>
+
 <a class="fab" href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" target="_blank" rel="noopener noreferrer" title="新規調査を開始">✏️</a>
 <div class="fab-tooltip">新規調査を開始</div>
+
+<script>
+const STORAGE_KEY = 'deleted_reports';
+let sortDesc = true;
+let showDeleted = false;
+
+function getDeleted() {{
+  return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+}}
+
+function saveDeleted(set) {{
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
+}}
+
+function deleteReport(dir) {{
+  if (!confirm('この調査結果を一覧から削除しますか？\\n（レポート自体は保持されます）')) return;
+  const deleted = getDeleted();
+  deleted.add(dir);
+  saveDeleted(deleted);
+  applyFilter();
+}}
+
+function toggleDeleted() {{
+  showDeleted = !showDeleted;
+  document.getElementById('toggle-deleted').textContent =
+    showDeleted ? '削除済みを隠す' : '削除済みを表示';
+  applyFilter();
+}}
+
+function toggleSort() {{
+  sortDesc = !sortDesc;
+  document.getElementById('sort-icon').textContent = sortDesc ? '▼' : '▲';
+  const tbody = document.getElementById('tbody');
+  const rows = [...tbody.querySelectorAll('tr')];
+  rows.sort((a, b) => {{
+    const da = a.dataset.date, db = b.dataset.date;
+    return sortDesc ? db.localeCompare(da) : da.localeCompare(db);
+  }});
+  rows.forEach(r => tbody.appendChild(r));
+  updateCount();
+}}
+
+function applyFilter() {{
+  const q = document.getElementById('search-company').value.trim().toLowerCase();
+  const from = document.getElementById('from-date').value;
+  const to = document.getElementById('to-date').value;
+  const deleted = getDeleted();
+  const rows = document.querySelectorAll('#tbody tr');
+  let visible = 0;
+
+  rows.forEach(row => {{
+    const dir = row.dataset.dir;
+    const company = row.dataset.company.toLowerCase();
+    const d = row.dataset.date;
+    const isDel = deleted.has(dir);
+
+    const matchQ = !q || company.includes(q);
+    const matchFrom = !from || d >= from;
+    const matchTo = !to || d <= to;
+    const matchDel = showDeleted || !isDel;
+
+    const show = matchQ && matchFrom && matchTo && matchDel;
+    row.classList.toggle('hidden-row', !show);
+    row.classList.toggle('deleted-row', isDel && show);
+    if (show) visible++;
+  }});
+
+  updateCount(visible);
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+}}
+
+function updateCount(n) {{
+  const rows = document.querySelectorAll('#tbody tr');
+  const visible = n !== undefined ? n :
+    [...rows].filter(r => !r.classList.contains('hidden-row')).length;
+  document.getElementById('count-label').textContent = visible + ' 件';
+}}
+
+// 初期化
+applyFilter();
+</script>
 </body>
 </html>
 """

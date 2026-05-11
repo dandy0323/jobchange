@@ -329,21 +329,37 @@ Write ツールを使い以下の2ファイルを保存する:
 
 ---
 
-## STEP 5: ダッシュボードHTML生成＆ブラウザで開く
+## STEP 5: ダッシュボードHTML生成
 
 Bash ツールで以下を実行する（`output_dir` と `company` の部分を実際の値に置き換えること）:
 
 ```bash
-cd "C:\Users\dandy\ドキュメント\学習\AI研究\Claude\転職" && \
-  "C:\Users\dandy\company-research-venv\Scripts\python.exe" \
-  scripts/render_dashboard.py \
+cd /home/user/jobchange && python scripts/render_dashboard.py \
   --output-dir "output/YYYY-MM-DD_{企業名}" \
   --company "{企業名}" \
-  --model "claude-code-chat"
+  --model "claude-code-chat" \
+  --no-open
 ```
 
-成功すると `output/YYYY-MM-DD_{企業名}/dashboard.html` が生成され、
-Brave（既定ブラウザ）で自動的に開く。
+成功すると `output/YYYY-MM-DD_{企業名}/dashboard.html` が生成される。
+
+---
+
+## STEP 6: GitHub へ push（Cloudflare Pages に自動デプロイ）
+
+Bash ツールで以下を実行する（output_dir の部分を実際の値に置き換えること）:
+
+```bash
+cd /home/user/jobchange && \
+  python scripts/build_index.py && \
+  git add output/YYYY-MM-DD_{企業名} index.html && \
+  git commit -m "調査レポート追加: {企業名}" && \
+  git push origin claude/company-research-skill-ZRmF0
+```
+
+成功すると Cloudflare Pages が自動デプロイし、
+1〜2分後に `https://jobchange.pages.dev/outputs/YYYY-MM-DD_{企業名}/dashboard.html` で閲覧可能になる。
+チャットにそのURLを表示すること。
 
 ---
 

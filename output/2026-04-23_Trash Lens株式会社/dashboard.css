@@ -581,7 +581,8 @@ html, body {
   color: var(--text-soft);
 }
 
-.sources-table tr:target {
+.sources-table tr:target,
+.sources-table tr.src-highlight {
   background: var(--primary-soft);
   animation: flash 1.4s ease;
 }

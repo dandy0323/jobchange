@@ -125,10 +125,20 @@
       });
     });
 
-    // ---------------- 脚注クリックでハイライト ----------------
+    // ---------------- 脚注クリックでスクロール＆ハイライト ----------------
     document.querySelectorAll(".fnref a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        // デフォルト動作（アンカースクロール）でCSSの :target が発火
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var targetId = a.getAttribute("href").slice(1); // "#src-3" → "src-3"
+        // 同一タブパネル内を優先検索（重複IDの問題を回避）
+        var panel = a.closest(".tab-panel");
+        var target = panel
+          ? panel.querySelector("#" + targetId)
+          : document.getElementById(targetId);
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "center" });
+        target.classList.add("src-highlight");
+        setTimeout(function () { target.classList.remove("src-highlight"); }, 2000);
       });
     });
 

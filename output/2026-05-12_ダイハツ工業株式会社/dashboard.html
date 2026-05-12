@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — ダイハツ工業株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>ダイハツ工業株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-05-12</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2024年度から生産・販売を段階的に再開。2025年10月に軽自動車首位返り咲きも財務回復は途上</p>
+        </article>
+        <article class="hero-card hero-red">
+          <div class="hero-card-top">
+            <span class="hero-badge">🔴</span>
+            <span class="hero-level">重大懸念</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">2023年に174件の認証試験不正が発覚。国交省の行政処分・型式取消を受け社長・会長が引責辞任</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork総合スコア2.89〜3.54。福利厚生・WLBは高評価。認証不正後の将来不安・年功体質に懸念</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: ダイハツ工業株式会社</h1>
+
+<blockquote>調査日: 2026-05-12</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 国内軽自動車ユーザー、アセアン小型車市場、トヨタ・マツダ・スバル（OEM供給先）</li>
+<li><strong>提供価値</strong>: 「シンプル・スリム・コンパクト（SSC）」製造による低コスト・良品廉価なスモールカー</li>
+<li><strong>収益モデル</strong>: フロー型（車両販売）。トヨタグループ完全子会社（2016年〜）</li>
+<li><strong>2024年4月方針転換</strong>: 海外向け小型車開発をトヨタへ移管し、軽自動車専業メーカーへ回帰</li>
+<li><strong>出典</strong>: ダイハツ公式・事業概要<sup class="fnref"><a href="#src-1">[1]</a></sup>、ダイハツ公式・今後の事業の方向性（2024年4月）<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 国内軽自動車市場シェア26.6%（2位）。認証不正前は17年連続首位</li>
+<li><strong>主要競合</strong>: スズキ（首位・35.9%） / ホンダ（N-BOX等・約20%） / 日産</li>
+<li><strong>回復状況</strong>: 2025年10月に22ヶ月ぶりに軽自動車メーカー首位に返り咲き（新型ムーヴが牽引）</li>
+<li><strong>出典</strong>: 日経新聞・軽自動車首位陥落<sup class="fnref"><a href="#src-3">[3]</a></sup>、Car Watch 2025年10月販売ランキング<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>2023年3月期</th><th>2024年3月期</th><th>2025年3月期</th></tr></thead><tbody><tr><td>売上高</td><td>1兆4,930億円</td><td>1兆1,810億円</td><td>1兆2,720億円</td></tr><tr><td>営業利益</td><td>380億円</td><td>△54億円（赤字）</td><td>250億円（黒字回復）</td></tr><tr><td>最終損益</td><td>黒字</td><td>+157億円</td><td>△40億円（特別損失1,110億円計上）</td></tr></tbody></table>
+
+<ul>
+<li>2024年3月期：認証不正・出荷停止により31年ぶり営業赤字</li>
+<li>2025年3月期：営業黒字回復も認証不正関連特別損失1,110億円により32年ぶり最終赤字</li>
+<li><strong>出典</strong>: 日経新聞・31年ぶり営業赤字<sup class="fnref"><a href="#src-5">[5]</a></sup>、日経新聞・32年ぶり最終赤字<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li>軽自動車専業への回帰（2024年4月正式発表）</li>
+<li>開発・認証機能をトヨタコンパクトカーカンパニー配下に移行</li>
+<li>2027年度までにDX人材3,000人育成（2025年度末の1,000人目標を早期達成）</li>
+<li>電動化：2030年までに国内全商品を電動車化</li>
+<li><strong>出典</strong>: ダイハツ公式・今後の方向性（2024年4月）<sup class="fnref"><a href="#src-2">[2]</a></sup>、プレスリリース DX人材3,000人育成<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<p><strong>認証試験不正問題（2023〜2024年）</strong>
+<ul>
+<li>2023年4月に内部通報で発覚。第三者委員会調査により<strong>25試験項目・174件の不正</strong>が判明</li>
+<li>対象：<strong>64車種・3エンジン</strong>（最長30年以上の不正期間の可能性）</li>
+<li>不正内容：エアバッグ作動タイマーの不正操作、排ガス試験直前の触媒新品交換等</li>
+<li><strong>国交省行政処分（2024年1月26日）</strong>：グランマックストラック等3車種の型式指定取消・是正命令</li>
+<li><strong>経営責任</strong>：奥平総一郎社長・松林淳会長が2024年3月1日付で引責辞任</li>
+<li><strong>真因（第三者委員会）</strong>：「短期開発を優先した経営判断」「物言えぬ組織風土」</li>
+<li><strong>出典</strong>: 第三者委員会報告（2023年12月）<sup class="fnref"><a href="#src-8">[8]</a></sup>、行政処分（2024年1月）<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul></p>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li>「ダイハツグループ環境戦略2035」：2035年に生産カーボンニュートラル達成目標</li>
+<li>2030年までに国内全商品の電動車化</li>
+<li>ISO 14001認証：国内全生産子会社が取得・更新済み</li>
+<li>DAIHATSU Sustainability Report 2025を発行</li>
+<li><strong>出典</strong>: ダイハツ公式・サステナビリティ<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li>認証不正による出荷停止で多数の納車遅延・キャンセルが発生。顧客信頼を大きく棄損</li>
+<li>2024年1月：キャスト・ピクシスジョイ 計32万2,740台のリコール</li>
+<li>2025年6月発売の新型ムーヴは先行予約で目標の2倍以上の受注、顧客信頼の回復に向かっている</li>
+<li><strong>出典</strong>: ダイハツ公式・認証不正対応<sup class="fnref"><a href="#src-11">[11]</a></sup>、ベストカー ムーヴ販売首位<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+
+<table class="data-table"><thead><tr><th>サイト</th><th>スコア</th><th>備考</th></tr></thead><tbody><tr><td>OpenWork</td><td>2.89〜3.54</td><td>月平均残業27.3h、有給消化率88.9%</td></tr><tr><td>エン カイシャの評判</td><td>3.1（269人）</td><td>正社員回答</td></tr><tr><td>就活会議</td><td>3点台（推定）</td><td>1,651件の口コミ</td></tr></tbody></table>
+
+<ul>
+<li><strong>良い点</strong>: 福利厚生充実（退職金・保養施設等）、有給取得しやすい（消化率88.9%）、育児支援が手厚い、残業代1分単位支給</li>
+<li><strong>懸念点</strong>: 認証不正後の将来性不安、年功序列色が強く昇格が遅い、組織外スキルが身につきにくい</li>
+<li><strong>出典</strong>: OpenWork・ダイハツ工業<sup class="fnref"><a href="#src-13">[13]</a></sup>、転職会議・ダイハツ工業<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] 認証不正問題の再発防止策の現場での実効性（形骸化していないか）</li>
+<li>[ ] 「物言えぬ文化」の実際の改善度（第三者委員会指摘の根本課題）</li>
+<li>[ ] 志望部門と認証不正問題の関連度・影響範囲</li>
+<li>[ ] 2026年3月期の業績回復の見通し（特別損失の残余影響）</li>
+<li>[ ] 軽EV・電動化の具体的ロードマップと開発体制</li>
+<li>[ ] 中途入社者の職場への溶け込みやすさ（社風が古いという口コミとの整合性）</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">ダイハツ公式・事業概要</td><td class="src-url"><a href="https://www.daihatsu.com/jp/company/business/index.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/company/business/index.html</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">ダイハツ公式・今後の事業の方向性（2024年4月）</td><td class="src-url"><a href="https://www.daihatsu.com/jp/news/2024/20240408-1.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/news/2024/20240408-1.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">日経新聞・軽自動車首位陥落</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOUC28CWY0Y4A320C2000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUC28CWY0Y4A320C2000000/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Car Watch 2025年10月販売ランキング</td><td class="src-url"><a href="https://car.watch.impress.co.jp/docs/news/2061491.html" target="_blank" rel="noopener noreferrer">https://car.watch.impress.co.jp/docs/news/2061491.html</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">日経新聞・31年ぶり営業赤字</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOUF070ZG0X00C24A6000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUF070ZG0X00C24A6000000/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">日経新聞・32年ぶり最終赤字</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOUF063NQ0W5A600C2000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOUF063NQ0W5A600C2000000/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">プレスリリース DX人材3,000人育成</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000359.000016361.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000359.000016361.html</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">第三者委員会報告（2023年12月）</td><td class="src-url"><a href="https://www.daihatsu.com/jp/news/2023/20231220-3.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/news/2023/20231220-3.html</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">行政処分（2024年1月）</td><td class="src-url"><a href="https://www.daihatsu.com/jp/news/2024/20240126-1.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/news/2024/20240126-1.html</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">ダイハツ公式・サステナビリティ</td><td class="src-url"><a href="https://www.daihatsu.com/jp/csr/sustainability/index.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/csr/sustainability/index.html</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">ダイハツ公式・認証不正対応</td><td class="src-url"><a href="https://www.daihatsu.com/jp/news/2024/20240209-1.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/news/2024/20240209-1.html</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">ベストカー ムーヴ販売首位</td><td class="src-url"><a href="https://bestcarweb.jp/news/1368317" target="_blank" rel="noopener noreferrer">https://bestcarweb.jp/news/1368317</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">OpenWork・ダイハツ工業</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0910000000FrWD" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000FrWD</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">転職会議・ダイハツ工業</td><td class="src-url"><a href="https://jobtalk.jp/companies/2558/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/2558/answers</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: ダイハツ工業株式会社</h1>
+
+<blockquote>調査日: 2026-05-12  対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>温かく助け合う関西企業文化だが年功序列・トップダウン色が強く、認証不正の遠因とも指摘された「物言えぬ風土」の改革が継続中</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>DX人材育成に積極的でOJT・研修体系は整備済み。ただし「会社ありきのスキル」になりやすくキャリア市場価値は育ちにくい</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>有給消化率88.9%・フレックス・リモートワーク・育休取得しやすい等WLBは業界水準以上。残業代は1分単位支給</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>スローガン</strong>: 「Light you up」（2017年、創立110周年に刷新）</li>
+<li><strong>ブランドビジョン</strong>: 「世界中の一人ひとりが自分らしく、軽やかに輝くモビリティライフを広げる」</li>
+<li><strong>経営理念の5本柱</strong>: 顧客の笑顔と感動 / 相互の個性尊重と公平 / 地球と社会との共生 / スピード・ブレークスルー・率先垂範 / 世界一のスモールカーづくり</li>
+<li><strong>出典</strong>: 企業理念｜ダイハツ工業<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: トヨタ完全子会社。2024年4月から開発・認証機能をトヨタコンパクトカーカンパニー傘下に移行</li>
+<li><strong>スタイル</strong>: トップダウン傾向。「年功序列の大企業文化が根強い」との口コミ多数</li>
+<li>一方で「管理職の面倒見が良く話しかけやすい」「困ったとき助けを求めると聞いてくれる」という声も</li>
+<li>認証不正の根本原因として第三者委員会が「物言えぬ文化」を指摘。現在改革途上</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li><strong>基本方針</strong>: 機会均等（職種・学歴・年齢に関係なくチャレンジできる）＋実力主義</li>
+<li>理念・ビジョン・方針の達成に向けた行動と成果を評価</li>
+<li>評価者教育（上司向け）と本人・上司によるフィードバック面談を実施</li>
+<li><strong>実態</strong>: 年功序列の要素が強く勤続年数で基本給が上昇。「仕事のレベルは上がるが昇格しない」との声</li>
+<li><strong>出典</strong>: 人事制度｜ダイハツ キャリア採用<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員数（単体）</strong>: 約11,154〜12,470人</li>
+<li><strong>グループ全体</strong>: 約46,191人（2023年3月時点）</li>
+<li><strong>平均年齢</strong>: 38.3〜41.2歳（情報源により差異あり）</li>
+<li><strong>平均勤続年数</strong>: 17.1年（男性19.5年、女性15.9年）→定着率の高さを示す</li>
+<li><strong>出典</strong>: 年収ガイド ダイハツ工業<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li>軽自動車の設計・開発・製造・品質管理が中核</li>
+<li>中途採用の主な募集職種：開発技術者、品質問題解析、メカ設計エンジニア、人事・企画・DX推進等</li>
+<li>DX推進チームを各部署に6〜9人配置することが目標</li>
+<li><strong>出典</strong>: ダイハツ キャリア採用 募集職種<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>製造</strong>: SSC（シンプル・スリム・コンパクト）製造方式</li>
+<li><strong>デジタル</strong>: 2022年から生成AI活用開始、2023年に独自生成AIを運用開始</li>
+<li><strong>開発インフラ</strong>: 認証不正後に開発・認証プロセスの全面見直しを実施</li>
+<li>AI活用: 将来目標「社員の9割以上が日常的に生成AIを活用」</li>
+<li><strong>出典</strong>: MONOist ダイハツ全社デジタル改革<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li><strong>体系</strong>: OJT中心に実習・研修プログラムを組み合わせ。100講座以上の部門別スキルアップ研修</li>
+<li><strong>新入社員</strong>: 会社基礎・社会人基礎力・安全基礎・製造工程・基本訓練・実車組付けなど</li>
+<li><strong>DX人材育成</strong>: 2025年度末目標1,000人を早期達成。次フェーズは2027年度までに3,000人</li>
+<li><strong>出典</strong>: 人材育成｜ダイハツ新卒採用<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li>資格キャリア制度あり。職種間異動（営業→企画、サービス→営業等）が可能</li>
+<li><strong>懸念</strong>: 「会社ありきのスキルしか身につかない」「外に出たら何もできない」という口コミも</li>
+<li>「仕事のレベルは上がるが昇格しない」という年功序列的な評価への不満もあり</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 標準的な8時間（年間休日120日以上）</li>
+<li><strong>残業</strong>: 月平均26.4〜27.3時間。部署により差が大きく30〜40時間/月の部署も</li>
+<li><strong>フレックス</strong>: 取得しやすい環境との評価。年休も遠慮なく取れる</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li>2020年2月から導入。スタッフ職（約6,400人・国内従業員の約半数）が対象</li>
+<li>開発職はリモートワークを取り入れやすい環境</li>
+<li>副業・兼業人材は「週1回程度勤務でリモートワーク想定、月1回程度出社」体制</li>
+</ul>
+
+<h3 id="4-3-福利厚生-育休-副業">4-3. 福利厚生・育休・副業</h3>
+<ul>
+<li><strong>福利厚生</strong>: 退職金・確定拠出型年金、家族手当、保養施設（ラコンテ有馬）、社内クラブ・グラウンド</li>
+<li><strong>有給休暇</strong>: 消化率88.9%（業界平均70.9%を大幅上回る）</li>
+<li><strong>育休</strong>: 取得しやすい環境との口コミ多数。男性育休も広まりつつある。育休後復帰率高い</li>
+<li><strong>副業</strong>: 解禁を検討・推進（自動車メーカーとして先進的。外部副業・兼業人材の受け入れ制度も整備）</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>平均年収</strong>: 651万円（有価証券報告書ベース）。業界平均629万円より約22万円高い</li>
+<li><strong>年代別</strong>: 20代478万円 / 30代573万円 / 40代669万円 / 50代720万円（推定）</li>
+<li><strong>賞与</strong>: 年2回（7月・12月）。年間約5〜6ヶ月分</li>
+<li><strong>残業代</strong>: 1分単位で支給（サービス残業はほぼなし）</li>
+<li><strong>出典</strong>: 年収ガイド・ダイハツ工業<sup class="fnref"><a href="#src-3">[3]</a></sup>、CareerMine・ダイハツ工業年収<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>認証不正問題を受けた「物言える文化」への転換について、現場レベルでどのような変化がありましたか？</td><td>第三者委員会が指摘した根本課題の改善実態を確認</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>中途入社の方が多い職場でしょうか？入社後のオンボーディング体制を教えてください</td><td>年功序列・古い文化への適応可否を確認</td></tr><tr><td>3</td><td>職務・スキル</td><td>志望部門の業務内容と認証不正問題との関わりはありましたか？現在の再発防止策はどのように機能していますか？</td><td>直接的なリスク範囲の確認</td></tr><tr><td>4</td><td>職務・スキル</td><td>DX人材育成3,000人計画に向けて、現場ではどのような取り組みが進んでいますか？</td><td>デジタル化の実態・スキルアップ機会を確認</td></tr><tr><td>5</td><td>職務・スキル</td><td>軽自動車専業への回帰後、開発エンジニアのキャリアパスにはどのような変化がありましたか？</td><td>事業方針転換後の職域変化を確認</td></tr><tr><td>6</td><td>労働条件</td><td>フレックスやリモートワークの実際の利用率・利用しやすさを教えてください</td><td>制度と実態の乖離を確認</td></tr><tr><td>7</td><td>労働条件</td><td>2026年3月期の業績回復見通しと、社員への賞与・待遇への影響はありますか？</td><td>財務的影響の継続有無を確認</td></tr><tr><td>8</td><td>将来性</td><td>軽EV・電動化の具体的なロードマップと、それに向けた開発・投資計画を教えてください</td><td>中長期的な事業の見通しを確認</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">企業理念｜ダイハツ工業</td><td class="src-url"><a href="https://www.daihatsu.com/jp/company/philosophy/index.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/company/philosophy/index.html</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">人事制度｜ダイハツ キャリア採用</td><td class="src-url"><a href="https://www.daihatsu.com/jp/recruit/career/info/human.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/recruit/career/info/human.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">年収ガイド ダイハツ工業</td><td class="src-url"><a href="https://www.nenshuu.net/corporation/contents/corporations.php?security_code=7262" target="_blank" rel="noopener noreferrer">https://www.nenshuu.net/corporation/contents/corporations.php?security_code=7262</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">ダイハツ キャリア採用 募集職種</td><td class="src-url"><a href="https://jsd.jposting.net/daihatsu/" target="_blank" rel="noopener noreferrer">https://jsd.jposting.net/daihatsu/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">MONOist ダイハツ全社デジタル改革</td><td class="src-url"><a href="https://monoist.itmedia.co.jp/mn/articles/2511/10/news047.html" target="_blank" rel="noopener noreferrer">https://monoist.itmedia.co.jp/mn/articles/2511/10/news047.html</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">人材育成｜ダイハツ新卒採用</td><td class="src-url"><a href="https://www.daihatsu.com/jp/recruit/gradu/education/index.html" target="_blank" rel="noopener noreferrer">https://www.daihatsu.com/jp/recruit/gradu/education/index.html</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">CareerMine・ダイハツ工業年収</td><td class="src-url"><a href="https://www.careermine.jp/companies/daihatsu-kougyou/salary-19" target="_blank" rel="noopener noreferrer">https://www.careermine.jp/companies/daihatsu-kougyou/salary-19</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u30c0\u30a4\u30cf\u30c4\u5de5\u696d\u682a\u5f0f\u4f1a\u793e";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

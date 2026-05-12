@@ -137,8 +137,8 @@
           : document.getElementById(targetId);
         if (!target) return;
         target.scrollIntoView({ behavior: "smooth", block: "center" });
+        document.querySelectorAll(".src-highlight").forEach(function (el) { el.classList.remove("src-highlight"); });
         target.classList.add("src-highlight");
-        setTimeout(function () { target.classList.remove("src-highlight"); }, 2000);
       });
     });
 

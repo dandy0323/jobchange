@@ -678,6 +678,10 @@ html, body {
 
 .footer-cta {
   margin-top: 0.8rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cta-link {
@@ -690,6 +694,9 @@ html, body {
   border-radius: 8px;
   text-decoration: none;
   transition: opacity 0.2s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .cta-link:hover {

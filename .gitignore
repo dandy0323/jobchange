@@ -16,6 +16,9 @@ venv/
 C:Users*/
 *.tmp
 *.log
+# ルートに誤配置された調査中間ファイル
+*_基本調査.md
+*_詳細調査.md
 
 # 仮想環境（プロジェクト外にあるため不要）
 company-research-venv/

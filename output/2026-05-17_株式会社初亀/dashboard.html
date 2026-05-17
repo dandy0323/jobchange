@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 初亀醸造株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>初亀醸造株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-05-17</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">1636年創業の老舗酒蔵。IWCトロフィー・全国新酒鑑評会金賞受賞と高いブランド力。ただし非上場で財務非公開、業界全体はコスト高騰で厳しい環境</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">不祥事・行政処分の情報なし。製品評判は良好。環境意識・地域農業との共生に積極的</p>
+        </article>
+        <article class="hero-card hero-gray">
+          <div class="hero-card-top">
+            <span class="hero-badge">⚪</span>
+            <span class="hero-level">情報なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">小規模蔵元のため信頼できる口コミ情報が実質存在しない。給与・労働時間等の具体的データは要直接確認</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 初亀醸造株式会社</h1>
+
+<blockquote>調査日: 2026-05-17</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客</strong>: 日本酒愛好家・飲食店・酒販店・海外輸出先</li>
+<li><strong>提供価値</strong>: 1636年創業の老舗ブランド。静岡吟醸の代表格として高品質・プレミアム路線</li>
+<li><strong>収益モデル</strong>: フロー型（清酒製造・販売）。直販（オンラインショップ・蔵元直売）＋卸売＋輸出</li>
+<li><strong>主力商品</strong>: 純米大吟醸「亀」（16,500円/1800ml）、純米吟醸 山田錦、ちびまる子ちゃんコラボ「父ヒロシ」等</li>
+<li><strong>出典</strong>: 初亀醸造公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>、IMADEYA ONLINE<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: SAKETIME評価で静岡県4位（3.92）。静岡県最古の酒蔵（全国18番目の古さ）</li>
+<li><strong>主要競合</strong>: 磯自慢（焼津・4.14）/ 臥龍梅（三和酒造・4.10）/ 開運（土井酒造・4.01）</li>
+<li><strong>強み</strong>: 吟醸酒市場のパイオニア（1977年に当時日本最高価格1万円の純米大吟醸「亀」を発売）</li>
+<li><strong>出典</strong>: SAKETIME<sup class="fnref"><a href="#src-3">[3]</a></sup>、しずおか賢人<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>内容</th></tr></thead><tbody><tr><td>売上高</td><td>非公開（非上場企業）</td></tr><tr><td>営業利益</td><td>非公開</td></tr><tr><td>自己資本比率</td><td>非公開</td></tr></tbody></table>
+
+<ul>
+<li><strong>業界環境（2024年度）</strong>: 帝国データバンクによると日本酒製造業全体で業績悪化が6割超。酒米・エネルギー・人件費のコスト高騰が業界全体を圧迫。輸出市場は434.7億円（前年比+5.8%）と成長中</li>
+<li><strong>出典</strong>: 帝国データバンク 日本酒製造業界動向2024年度<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li><strong>NFT活用（2025年）</strong>: 静岡フィナンシャルグループと連携。茶室ディナーイベント参加権NFTチケットを販売し、限定酒の優先購入権も付与。ファンエンゲージメント深化を狙う</li>
+<li><strong>スパークリング日本酒</strong>: シャンパン製法（瓶内二次発酵）による新ジャンルで国内外市場に展開</li>
+<li><strong>産地連携強化</strong>: 静岡県産「誉富士」の朝比奈地区での栽培拡大を地元農家と推進</li>
+<li><strong>アニメコラボ</strong>: ちびまる子ちゃん×初亀「父ヒロシ」（2021年〜、2025年で5周年）</li>
+<li><strong>出典</strong>: 日本経済新聞 NFT記事<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li>複数の検索クエリで調査したが、初亀醸造株式会社に関する不祥事・行政処分・訴訟・リコール等の情報は<strong>一切確認されなかった</strong></li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li>橋本社長：「酒造りは良い米・良い水がなければ成り立たない。温暖化は酒造会社にとって死活問題」と環境意識を明言</li>
+<li>兵庫県東条町（山田錦特A産地）の生産者と連携して環境保全活動に参加</li>
+<li>朝比奈地区農家と「誉富士」栽培拡大で地域農業を維持・支援</li>
+<li><strong>出典</strong>: ヴィノスやまざき訪問レポート<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li>SHAKETIMEで「上品で柔らかい酸と爽やかな香り」「コストパフォーマンスが高い」等、好意的評価が多数</li>
+<li>IWC2022純米大吟醸トロフィー受賞・2025年全国新酒鑑評会金賞受賞と品質信頼性は高い</li>
+<li>ふるさと納税でも大吟醸「愛」の口コミは好評</li>
+<li><strong>出典</strong>: SAKETIME<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-gray" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>総合スコア</strong>: 情報なし（酒造業「初亀醸造」としての口コミは実質不在）</li>
+<li>※ 転職サイト等に存在する「初亀」の口コミのほとんどは、大阪府枚方市の飲食業「株式会社初亀」（別法人）のものと考えられる</li>
+<li><strong>良い点</strong>: 情報なし</li>
+<li><strong>懸念点</strong>: 情報なし</li>
+<li>醸造業の特性上、酒造りシーズン（10〜翌3月）は集中的な労働が一般的</li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接-直接確認で要確認">📋 未確認項目（面接・直接確認で要確認）</h2>
+<ul>
+<li>[ ] 従業員数・平均年齢・平均勤続年数</li>
+<li>[ ] 給与水準・賞与額（酒造業界相場：月給20〜30万円、賞与2〜4ヶ月が目安）</li>
+<li>[ ] 酒造シーズンの残業・泊まり込み実態</li>
+<li>[ ] フレックス・リモートワークの可否（現場業務中心のため限定的と推測）</li>
+<li>[ ] 福利厚生・育休取得実績</li>
+<li>[ ] 評価制度・昇給基準</li>
+<li>[ ] オフシーズン（4〜9月）の業務内容と働き方</li>
+<li>[ ] 中途採用者のキャリアパス（蔵人・製造職・営業・企画等の区分）</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">初亀醸造公式サイト</td><td class="src-url"><a href="https://www.hatsukame.jp/" target="_blank" rel="noopener noreferrer">https://www.hatsukame.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">IMADEYA ONLINE</td><td class="src-url"><a href="https://imadeya.co.jp/blogs/brewery/hatsukame" target="_blank" rel="noopener noreferrer">https://imadeya.co.jp/blogs/brewery/hatsukame</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">SAKETIME</td><td class="src-url"><a href="https://www.saketime.jp/brands/1101/" target="_blank" rel="noopener noreferrer">https://www.saketime.jp/brands/1101/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">しずおか賢人</td><td class="src-url"><a href="https://kenzine.jp/shizuoka/static/special/2017012.php" target="_blank" rel="noopener noreferrer">https://kenzine.jp/shizuoka/static/special/2017012.php</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">帝国データバンク 日本酒製造業界動向2024年度</td><td class="src-url"><a href="https://www.tdb.co.jp/report/industry/20251213-sake24fy/" target="_blank" rel="noopener noreferrer">https://www.tdb.co.jp/report/industry/20251213-sake24fy/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">日本経済新聞 NFT記事</td><td class="src-url"><a href="https://www.nikkei.com/article/DGXZQOCC179R40X10C25A7000000/" target="_blank" rel="noopener noreferrer">https://www.nikkei.com/article/DGXZQOCC179R40X10C25A7000000/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">ヴィノスやまざき訪問レポート</td><td class="src-url"><a href="https://www.v-yamazaki.co.jp/blogs/column/20200902" target="_blank" rel="noopener noreferrer">https://www.v-yamazaki.co.jp/blogs/column/20200902</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 初亀醸造株式会社</h1>
+
+<blockquote>調査日: 2026-05-17  対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>16代続く家族経営の老舗。「本物の人作り」を掲げた職人文化。革新と伝統を両立する経営姿勢は明確だが、規模・制度面の情報は不足</td></tr><tr><td>職務・スキル</td><td>★☆☆</td><td><span class="badge badge-gray">⚪</span></td><td>醸造技術・ブランド・営業等の職種は存在するが、具体的な業務内容・スキル要件は公開情報から確認困難</td></tr><tr><td>労働条件・環境</td><td>★☆☆</td><td><span class="badge badge-gray">⚪</span></td><td>醸造業特有の季節集中労働（秋冬）は確実。給与・福利厚生・残業等の具体的数値は公開情報なし</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>ブランド名の由来</strong>: 「初日のように光り輝き、亀のように末永く栄える」</li>
+<li><strong>経営哲学</strong>: 「造り酒屋としての本質の追求」——物の時代から心の時代への転換期に&quot;本物の酒造り・本物の人作り&quot;を考える酒蔵を目指す</li>
+<li><strong>代表の言葉</strong>: 「酒は造るのではなく、生まれるまで育てるもの」（橋本謹嗣社長）</li>
+<li><strong>人材育成方針</strong>: 「すべての事を自己鍛錬と捉え、感謝できる会社づくりを目指し、家族・社員とともに人間的な成長の場を提供する」</li>
+<li><strong>出典</strong>: しずおか賢人 代表インタビュー<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 橋本家16代にわたる同族経営。社長（橋本謹嗣）・専務（橋本康弘・次期後継者候補）・杜氏（八重樫次幸・南部杜氏）の三者が経営の中核</li>
+<li><strong>スタイル</strong>: トップダウン傾向。社長・専務が現場にも近い距離感で経営する小規模蔵元</li>
+<li><strong>革新姿勢</strong>: 「伝統を守るためには変化し続けなければならない」という哲学のもと、NFT・アニメコラボ・スパークリング日本酒と積極的に新領域に挑戦</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li>公開情報なし。小規模の同族経営企業のため、体系的な人事評価制度の整備状況は不明</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li>従業員数・平均年齢とも非公開。製造量・蔵の規模から十数名〜数十名規模と推察</li>
+<li>蔵人（製造）・杜氏・営業・事務・直売所・オンラインショップ担当等で構成</li>
+<li>専務の橋本康弘氏は中国・上海の大学卒業後、婿養子として入社した中途入社者</li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲">3-1. 業務範囲</h3>
+<ul>
+<li><strong>製造部門（蔵人）</strong>: 洗米・蒸米・製麹・醪管理等。蒸米を手で麹室へ運ぶ等、手仕事中心の酒造り</li>
+<li><strong>営業・販売部門</strong>: 酒販店・飲食店への卸営業、直売所・オンラインショップ運営</li>
+<li><strong>企画・ブランディング</strong>: コラボ企画（ちびまる子ちゃん）、NFT・SNS・イベント企画</li>
+<li>採用サイト（hatsukame-recruit.com）では先輩インタビューを掲載し、複数職種で採用中</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>醸造技術</strong>: 南部杜氏・八重樫次幸氏に代表される伝統的手仕事醸造</li>
+<li><strong>原料</strong>: 兵庫県東条町産山田錦（特A地区）、静岡県産誉富士、南アルプス伏流水、静岡酵母</li>
+<li><strong>デジタル</strong>: NFT発行（GMO「Adam byGMO」）、SNS（X・Instagram）、オンラインショップ（shop.hatsukame.jp）</li>
+<li><strong>出典</strong>: PR TIMES NFT記事<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li>公開情報なし。醸造技術は杜氏・先輩蔵人からのOJTによる職人的技術継承が中心と推察</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li>蔵人として入社後、麹・醪等の各工程を習得し、将来的に杜氏を目指すルートが酒造業界の典型</li>
+<li>営業・企画職は中途採用での即戦力採用が中心と考えられる</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定</strong>: 不明（醸造業標準的な就業規則と推察）</li>
+<li><strong>酒造シーズン（10〜翌3月）</strong>: 蔵人は泊まり込みを含む集中的な労働が業界的に一般的</li>
+<li><strong>オフシーズン（4〜9月）</strong>: 比較的ゆとりのある季節労働型の働き方</li>
+<li>フレックス制度の有無：不明</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li>醸造・直売所・蔵見学対応等、現場業務が中心のためリモートワーク適用は限定的と推察</li>
+<li>企画・SNS担当職はリモート一部可能性あり（要確認）</li>
+</ul>
+
+<h3 id="4-3-福利厚生-育休-副業">4-3. 福利厚生・育休・副業</h3>
+<ul>
+<li><strong>法定</strong>: 雇用保険・社会保険等は中小企業として整備されているとみられる</li>
+<li><strong>任意</strong>: 詳細不明。育休取得実績・副業可否等は公開情報なし</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li>初亀醸造固有のデータは公開情報で確認できず</li>
+<li><strong>業界参考値</strong>: 静岡県の醸造・食品製造業の相場として月給20〜30万円程度、賞与2〜4ヶ月分が一般的な目安</li>
+<li><strong>出典</strong>: 業界一般情報（初亀醸造固有データなし）</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>中途入社の方はどのくらいいますか？どのような経緯で入社されていますか？</td><td>同族経営・職人文化への中途入社者の適応状況を把握するため</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>酒造りのシーズンとオフシーズンで、働き方はどのように変わりますか？</td><td>季節労働の実態と年間の働き方のリズムを把握するため</td></tr><tr><td>3</td><td>職務・スキル</td><td>入社後はどのような業務からスタートし、どのようなキャリアを歩む方が多いですか？</td><td>職人的OJTの実態とキャリアパスを事前に把握するため</td></tr><tr><td>4</td><td>職務・スキル</td><td>今後のDX・海外輸出・コラボ等の新しい取り組みで、社員が関われる機会はありますか？</td><td>革新的取り組みへの関与可能性を確認するため</td></tr><tr><td>5</td><td>労働条件</td><td>酒造りシーズン中の残業・泊まり込みの頻度と、その手当はどのようになっていますか？</td><td>最も不明な労働条件の実態を確認するため</td></tr><tr><td>6</td><td>労働条件</td><td>給与・賞与の具体的な水準と、昇給・評価の仕組みを教えてください</td><td>給与水準・評価体系が公開されていないため直接確認必須</td></tr><tr><td>7</td><td>組織・カルチャー</td><td>橋本社長が掲げる「本物の人作り」とは、現場ではどのような形で実践されていますか？</td><td>理念と現場の一致度を確認するため</td></tr><tr><td>8</td><td>将来性</td><td>スパークリング日本酒や海外輸出の現状と、今後の展開について教えてください</td><td>中長期的な事業成長の方向性と自分が貢献できる可能性を確認するため</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">しずおか賢人 代表インタビュー</td><td class="src-url"><a href="https://kenzine.jp/shizuoka/static/special/2017012.php" target="_blank" rel="noopener noreferrer">https://kenzine.jp/shizuoka/static/special/2017012.php</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">PR TIMES NFT記事</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000798.000030257.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000798.000030257.html</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u521d\u4e80\u91b8\u9020\u682a\u5f0f\u4f1a\u793e";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社PKSHAInfinity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社PKSHAInfinity</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-06-03</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">PKSHA Technologyグループの子会社（持分83%）。YOMELは導入2,000社突破と成長中だが、独立財務情報は非公開。グループ親会社は増収増益（売上217億・前年比+29%）</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">不祥事・行政処分・炎上の報道なし。福岡発スタートアップとして社会的評判は良好</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork 3.4/5.0（口コミ件数少）、Indeed 4.3/5.0。月残業10時間・有給消化率100%との声あり。トップダウン経営・情報少なく要確認</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社PKSHA Infinity</h1>
+
+<blockquote>調査日: 2026-06-03</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>顧客</strong>: 企業（コールセンター、会議を行う一般企業）</li>
+<li><strong>提供価値</strong>: 音声認識AI「Olaris」を基盤とした議事録・コールセンター業務効率化SaaS「YOMEL」の提供</li>
+<li><strong>収益モデル</strong>: SaaSサブスクリプション型（ストック型）</li>
+<li><strong>主力製品</strong>:</li>
+<li>`YOMEL`（議事録AI）: 月間20万件以上の会議で利用、2026年3月時点で累計導入2,000社突破</li>
+<li>`YOMEL for コールセンター`: 2022年8月リリース</li>
+<li>`Olaris`: 日本語特化型音声認識エンジン（企業別専用モデル提供も可能）</li>
+<li>`Batoner`: チームコミュニケーションツール（情報限定）</li>
+<li><strong>出典</strong>: AI議事録ツール「YOMEL」導入社数2,000社を突破 - PR TIMES<sup class="fnref"><a href="#src-1">[1]</a></sup>、アーニーMLG社名変更 - aismiley.co.jp<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<ul>
+<li><strong>業界</strong>: 国内AI議事録・音声認識SaaS市場（30社以上が参入、急速拡大中）</li>
+<li><strong>主要競合</strong>: Notta、ScribeAssist、AutoMemo、AI議事録取れる君など多数</li>
+<li><strong>業界内ポジション</strong>: 日本語特化音声認識エンジン「Olaris」を自社開発している点が差別化要因。コールセンター向けという特化領域でも展開。</li>
+<li><strong>市場トレンド</strong>: 単なる文字起こしからAIエージェント化へ移行中。PKSHA Infinityもその方向性を戦略に掲げる。</li>
+<li><strong>出典</strong>: 議事録作成ツール比較 - LISKUL<sup class="fnref"><a href="#src-3">[3]</a></sup>、アーニーMLG社名変更 - aismiley.co.jp<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>PKSHA Infinity（直近）</th><th>PKSHA Technologyグループ（FY2025/9期）</th></tr></thead><tbody><tr><td>売上高</td><td>非公開（未上場）</td><td>217.71億円（前年比+28.9%）</td></tr><tr><td>営業利益率</td><td>非公開</td><td>事業利益39.22億円（前年比+25.6%）</td></tr><tr><td>資本金</td><td>5,182万円</td><td>非開示</td></tr><tr><td>累計調達額</td><td>約2億200万円</td><td>—</td></tr><tr><td>従業員数</td><td>約62名</td><td>グループ計 非開示</td></tr></tbody></table>
+
+<ul>
+<li><strong>備考</strong>: PKSHA Infinityは非上場・独立財務開示なし。2024年12月にPKSHA Technologyが追加取得（持分83%）で子会社化。</li>
+<li><strong>出典</strong>: PKSHA Technology業績 - minkabu<sup class="fnref"><a href="#src-4">[4]</a></sup>、PKSHA Infinity - SalesNow<sup class="fnref"><a href="#src-5">[5]</a></sup>、PKSHA Infinity - STARTUP DB<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li>単なる議事録書き起こしを超えた<strong>会議AIエージェント化</strong>を推進（遅刻参加者への即時要約、専門用語リアルタイム検索など）</li>
+<li>グループ内でPKSHA Technologyとの連携強化により音声認識技術をAIソリューション・SaaS全体に横展開</li>
+<li><strong>社名変更（2025年5月）</strong>: 旧社名「アーニーMLG株式会社」から「PKSHA Infinity」へ変更し、PKSHAグループとの一体感を強化</li>
+<li><strong>出典</strong>: PKSHA Infinity社名変更プレスリリース - PR TIMES<sup class="fnref"><a href="#src-7">[7]</a></sup>、PKSHA Technology ニュース<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<ul>
+<li><strong>主要な報道なし</strong>: PKSHA Infinity（旧アーニーMLG）に関する不祥事・行政処分・労働基準法違反・炎上の報道は調査時点では確認できなかった。</li>
+<li>出典: 一般検索（該当なし）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li>個別のESG・サステナビリティ報告書の発行は確認できず（非上場・小規模のため）。</li>
+<li>親会社PKSHA Technologyは東証プライム上場企業として、グループ全体のガバナンス・コンプライアンス体制を有する。</li>
+<li><strong>出典</strong>: PKSHA Technology 会社情報<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>YOMEL のITreviewには30件以上のレビューが掲載されており、積極的な導入企業の口コミが存在する。</li>
+<li>2026年3月時点で累計導入2,000社を突破。月間20万件以上の会議で利用。</li>
+<li><strong>出典</strong>: YOMEL by PKSHAのレビュー - ITreview<sup class="fnref"><a href="#src-10">[10]</a></sup>、YOMELプレスリリース - PR TIMES<sup class="fnref"><a href="#src-1">[1]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+
+<ul>
+<li><strong>OpenWork総合スコア</strong>: 3.4/5.0（口コミ件数は少なく、統計的信頼性は低い）</li>
+<li>エンジニア口コミ: 「技術開発に集中できる環境で、音声認識技術を活かせる」（良好）</li>
+<li>別の口コミ: 「技術ベンチャー企業。トップのワンマン経営で、資金調達を実行できている企業への技術提供・サービスを提供」（要注意）</li>
+<li>退職理由として「事業開発のキャリアを選択したため。活躍の幅はエンジニアとしてのみ」との声</li>
+</ul>
+
+<ul>
+<li><strong>Indeed評価</strong>: 4.3/5.0</li>
+<li>労働時間・残業: 4.7/5.0</li>
+<li>給与・福利厚生: 3.7/5.0</li>
+</ul>
+
+<ul>
+<li><strong>転職会議口コミ（全7件）</strong>:</li>
+<li>月間残業10時間、有給消化率100%との報告</li>
+<li>福利厚生・オフィス環境は比較的整っている（フリードリンク・フリースナック）</li>
+<li>面接対応に関してネガティブな口コミあり（1件）：「面接担当者の態度が悪い、嫌な雰囲気」</li>
+<li>女性でも働きやすい環境（突発休み・中抜け取得しやすい）との声</li>
+</ul>
+
+<ul>
+<li><strong>良い点</strong>: 技術環境良好、残業少なめ、フレックス・リモート対応、職場環境の整備</li>
+<li><strong>懸念点</strong>: トップダウン色が強い可能性、エンジニア以外のキャリアパスが不透明、口コミ件数が少なく判断材料が限定的</li>
+</ul>
+
+<ul>
+<li><strong>出典</strong>:</li>
+<li>OpenWork - PKSHA Infinity<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+<li>Indeed - PKSHA Infinity<sup class="fnref"><a href="#src-12">[12]</a></sup></li>
+<li>転職会議 - PKSHA Infinity<sup class="fnref"><a href="#src-13">[13]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] PKSHA Infinity単体の売上・ARR・成長率</li>
+<li>[ ] 離職率（公式データ）</li>
+<li>[ ] 平均年齢・年収（Infinity社単体）</li>
+<li>[ ] 評価制度の詳細（グレード体系、昇給頻度）</li>
+<li>[ ] PKSHA Technologyとの業務上の連携度合い・意思決定の独立性</li>
+<li>[ ] 将来的なグループ完全吸収合併の可能性</li>
+<li>[ ] エンジニア以外（営業・PM等）のキャリアパス</li>
+<li>[ ] リモートワーク比率の部署別実態</li>
+<li>[ ] OpenWorkに見られる「ワンマン経営」という指摘の実態</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">AI議事録ツール「YOMEL」導入社数2,000社を突破 - PR TIMES</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000028.000066814.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000028.000066814.html</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">アーニーMLG社名変更 - aismiley.co.jp</td><td class="src-url"><a href="https://aismiley.co.jp/ai_news/mlg-pksha-infinity-ai/" target="_blank" rel="noopener noreferrer">https://aismiley.co.jp/ai_news/mlg-pksha-infinity-ai/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">議事録作成ツール比較 - LISKUL</td><td class="src-url"><a href="https://liskul.com/comparison-of-minutes-creation-116051" target="_blank" rel="noopener noreferrer">https://liskul.com/comparison-of-minutes-creation-116051</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">PKSHA Technology業績 - minkabu</td><td class="src-url"><a href="https://minkabu.jp/stock/3993/settlement" target="_blank" rel="noopener noreferrer">https://minkabu.jp/stock/3993/settlement</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">PKSHA Infinity - SalesNow</td><td class="src-url"><a href="https://salesnow.jp/db/companies/jcb2purv474gx0w3" target="_blank" rel="noopener noreferrer">https://salesnow.jp/db/companies/jcb2purv474gx0w3</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">PKSHA Infinity - STARTUP DB</td><td class="src-url"><a href="https://startup-db.com/companies/2lO6prvUOq8pg5wB" target="_blank" rel="noopener noreferrer">https://startup-db.com/companies/2lO6prvUOq8pg5wB</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">PKSHA Infinity社名変更プレスリリース - PR TIMES</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000019.000066814.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000019.000066814.html</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">PKSHA Technology ニュース</td><td class="src-url"><a href="https://www.pkshatech.com/news/20250318/" target="_blank" rel="noopener noreferrer">https://www.pkshatech.com/news/20250318/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">PKSHA Technology 会社情報</td><td class="src-url"><a href="https://www.pkshatech.com/company/about/" target="_blank" rel="noopener noreferrer">https://www.pkshatech.com/company/about/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">YOMEL by PKSHAのレビュー - ITreview</td><td class="src-url"><a href="https://www.itreview.jp/products/yomel/reviews" target="_blank" rel="noopener noreferrer">https://www.itreview.jp/products/yomel/reviews</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">OpenWork - PKSHA Infinity</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C2x00000WkLE9" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C2x00000WkLE9</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">Indeed - PKSHA Infinity</td><td class="src-url"><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEpksha-Infinity-1/reviews" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEpksha-Infinity-1/reviews</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">転職会議 - PKSHA Infinity</td><td class="src-url"><a href="https://jobtalk.jp/companies/10153223" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/10153223</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社PKSHA Infinity</h1>
+
+<blockquote>調査日: 2026-06-03  対象職種: 未指定（複数職種の求人情報を参照）</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>ミッション・ビジョンは明確。「とにかくやってみる」文化。トップダウン色が強いとの口コミあり。62〜75名の小規模スタートアップ。</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>技術スタックが詳細に公開。AI駆動開発・AIエージェント協働を積極的に導入。エンジニアには成長機会大きい。</td></tr><tr><td>労働条件・環境</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>フレックス制・リモートOK・月残業10時間・有給消化100%との口コミあり。給与はポジション次第で幅広い（340〜850万円）。</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+
+<ul>
+<li><strong>ミッション</strong>: 「とにかくやってみる、から世界を変える」</li>
+<li><strong>ビジョン</strong>: 「ワクワクするしごと。」</li>
+<li><strong>理念</strong>: 失敗を恐れずに挑戦し、失敗経験をナレッジとして蓄積・共有する文化。「失敗をフロー化して全員が学べる仕組み」を重視。</li>
+<li>親会社PKSHA Technologyのグループ理念: 「人と共進化する未来のソフトウエアを社会に実装していく」</li>
+<li><strong>出典</strong>: PKSHA Infinity ミッション・ビジョンページ<sup class="fnref"><a href="#src-1">[1]</a></sup>、PKSHA Technology ニュース<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 小規模スタートアップ（62〜75名）。従来の技術領域別組織からプロダクト単位の機能ごとに責任を持つ「プロダクトエンジニア構造」へ移行中。</li>
+<li><strong>スタイル</strong>: OpenWorkの口コミに「トップのワンマン経営」との指摘あり。一方でAI駆動開発や裁量度の高い働き方も推進しており、実態は確認要。</li>
+<li><strong>出典</strong>: OpenWork - PKSHA Infinity口コミ<sup class="fnref"><a href="#src-3">[3]</a></sup>、Green Japan - プロダクトエンジニア求人<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li>PKSHA Technologyグループ全体として、360度評価（上司・同僚・部下が評価者）を採用。</li>
+<li>目標設定・評価は半年ごとに実施（グレード制）。</li>
+<li>PKSHA Infinity単体での評価制度の詳細は公開情報から確認できず。</li>
+<li><strong>出典</strong>: PKSHA Infinity採用FAQ<sup class="fnref"><a href="#src-5">[5]</a></sup>、PKSHAグループ採用情報<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+
+<ul>
+<li><strong>従業員数</strong>: 約62〜75名（直近半年で約20名採用し75名に拡大との情報あり）</li>
+<li><strong>設立</strong>: 2019年10月23日</li>
+<li><strong>代表者</strong>: 森 慎吾</li>
+<li><strong>本社所在地</strong>: 福岡県福岡市博多区博多駅東1-12-6 花村ビル7F</li>
+<li><strong>平均年齢</strong>: 情報なし（面接で要確認）</li>
+<li><strong>離職率</strong>: 情報なし（面接で要確認）</li>
+<li><strong>出典</strong>: PKSHA Infinity - SalesNow<sup class="fnref"><a href="#src-7">[7]</a></sup>、Green Japan - AI駆動開発エンジニア求人<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+
+<ul>
+<li>主力プロダクト「YOMEL」の機能別開発チームで活動（プロダクトエンジニア構造）</li>
+<li>エンジニアはAIエージェント（Claude Code等）との協働を前提とし、設計判断・品質保証・成果責任に集中</li>
+<li>主な業務領域:</li>
+<li>要件整理・仕様定義</li>
+<li>AIエージェントへの指示（プロンプト・コンテキスト提供）</li>
+<li>設計判断・コードレビュー（AIと協働）</li>
+<li>リリース判断・本番環境モニタリング</li>
+<li>ユーザーフィードバックに基づく改善サイクル推進</li>
+<li><strong>出典</strong>: Green Japan - プロダクトエンジニア求人<sup class="fnref"><a href="#src-4">[4]</a></sup>、Green Japan - AI駆動開発エンジニア求人<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+
+<table class="data-table"><thead><tr><th>カテゴリ</th><th>内容</th></tr></thead><tbody><tr><td>言語</td><td>Python、TypeScript、JavaScript、HTML/CSS</td></tr><tr><td>フロントエンド</td><td>Vue 3、Nuxt</td></tr><tr><td>バックエンド</td><td>Django、Django REST Framework（DRF）</td></tr><tr><td>DB</td><td>MySQL、PostgreSQL</td></tr><tr><td>ミドルウェア</td><td>Redis</td></tr><tr><td>インフラ</td><td>AWS（EKS、RDS 他）、オンプレ（データセンター）</td></tr><tr><td>IaC</td><td>Terraform</td></tr><tr><td>CI/CD</td><td>GitHub Actions、ArgoCD</td></tr><tr><td>モニタリング</td><td>Datadog</td></tr><tr><td>API仕様</td><td>OpenAPI</td></tr><tr><td>AI開発ツール</td><td>Claude Code、Cursor、Codex CLI</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: Findy - PKSHA Infinityエンジニア求人<sup class="fnref"><a href="#src-9">[9]</a></sup>、Green Japan - プロダクトエンジニア求人<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+
+<ul>
+<li>PKSHA Technologyグループとして隔週エンジニア勉強会、学習カリキュラム、海外カンファレンス参加支援あり（グループ全体施策）</li>
+<li>PKSHA Infinity単体での研修制度の詳細は確認できず</li>
+<li>AI駆動開発（Claude Code/Cursor活用）を業務の中心に据えているため、最先端AI開発手法を習得できる環境</li>
+<li><strong>出典</strong>: PKSHAグループ採用情報<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li>エンジニアとしての成長は技術と事業の両面で支援される可能性（小規模ゆえに幅広い経験）</li>
+<li>OpenWorkの退職理由に「事業開発のキャリアを選択したが、活躍の幅はエンジニアとしてのみ」との声あり → 非エンジニア職へのキャリアチェンジは難しい可能性</li>
+<li>グレード制で半年ごとに昇給・昇格機会あり（グループ基準）</li>
+<li>将来的にPKSHAグループ他社への異動・連携の可能性も（グループ子会社）</li>
+<li><strong>出典</strong>: OpenWork - 退職理由口コミ<sup class="fnref"><a href="#src-10">[10]</a></sup>、PKSHAグループ採用情報<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<ul>
+<li><strong>所定労働時間</strong>: 8時間/日（40時間/週）</li>
+<li><strong>フレックスタイム制</strong>: あり。コアタイム 13:00〜17:00。中抜け制度あり。</li>
+<li><strong>残業</strong>: 月平均約10時間（転職会議口コミより）。Indeed評価で労働時間・残業項目4.7/5.0と高評価。</li>
+<li><strong>年間休日</strong>: 120日以上</li>
+<li><strong>有給消化率</strong>: 100%との口コミあり</li>
+<li><strong>出典</strong>: 転職会議 - PKSHA Infinity<sup class="fnref"><a href="#src-12">[12]</a></sup>、Indeed - PKSHA Infinity<sup class="fnref"><a href="#src-13">[13]</a></sup>、タウンワーク - PKSHA Infinity<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li>リモートワーク可（フルリモートOKのポジションあり）</li>
+<li>部署・職種によって異なる（一部はオフィス主体、一部はほぼフルリモート）</li>
+<li>スクラムマスター求人にはフルリモートOKの記載あり</li>
+<li><strong>出典</strong>: Green Japan - スクラムマスター求人<sup class="fnref"><a href="#src-15">[15]</a></sup>、Green Japan - AI駆動開発エンジニア求人<sup class="fnref"><a href="#src-16">[16]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<ul>
+<li><strong>社会保険</strong>: 完備（健康・厚生年金・雇用・労災）</li>
+<li><strong>機器支給</strong>: PC・機材支給</li>
+<li><strong>服装</strong>: 服装自由（髪色・ネイルも自由）</li>
+<li><strong>飲食</strong>: フリードリンク・フリースナック制度</li>
+<li><strong>学習支援</strong>: 資格取得支援、海外カンファレンス参加費補助（グループ施策）</li>
+<li><strong>コミュニケーション補助</strong>: 社内交流補助（飲み会等）</li>
+<li><strong>育休・産休</strong>: 取得実績あり（転職会議口コミで子育て中の方も働きやすい言及）。詳細条件は要確認。</li>
+<li><strong>副業</strong>: 情報なし（面接で要確認）</li>
+<li><strong>出典</strong>: 転職会議 - 福利厚生口コミ<sup class="fnref"><a href="#src-17">[17]</a></sup>、PKSHA採用情報ページ<sup class="fnref"><a href="#src-18">[18]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>職種</th><th>想定年収</th></tr></thead><tbody><tr><td>フロントエンドエンジニア</td><td>500〜700万円</td></tr><tr><td>インフラエンジニア</td><td>470〜740万円</td></tr><tr><td>情報システム職（一般）</td><td>340〜600万円</td></tr><tr><td>情報システム職（上位）</td><td>600〜850万円</td></tr><tr><td>スクラムマスター</td><td>500〜800万円</td></tr><tr><td>AI駆動開発エンジニア</td><td>情報なし（求人票に記載なし）</td></tr></tbody></table>
+
+<ul>
+<li><strong>給与構成</strong>: 月給制。固定残業代（月20時間相当38,000円含む）、超過分は別途支給。</li>
+<li><strong>賞与</strong>: 情報なし（面接で要確認）</li>
+<li><strong>昇給</strong>: 半年ごとの評価に基づく（グループ基準）</li>
+<li><strong>出典</strong>: タウンワーク - PKSHA Infinity正社員求人<sup class="fnref"><a href="#src-14">[14]</a></sup>、Green Japan - 各種求人<sup class="fnref"><a href="#src-19">[19]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>「意思決定のプロセスについて教えてください。現場エンジニアが機能の方向性や仕様を提案する機会はどのくらいありますか？」</td><td>OpenWorkに「ワンマン経営」との指摘があり、現場の裁量度を確認したい</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>「PKSHA Technologyグループとの関係について、業務上どの程度の連携・影響がありますか？またグループへの完全吸収合併の可能性はありますか？」</td><td>持分83%の子会社として、将来的な組織変更リスクを把握したい</td></tr><tr><td>3</td><td>職務・スキル</td><td>「AIエージェント協働開発（Claude Code等）は実際にどの程度業務に浸透していますか？エンジニアの1日の業務の中でAIが担う割合はどのくらいですか？」</td><td>AI駆動開発の実態を把握し、自分のスキルとのフィット感を確認したい</td></tr><tr><td>4</td><td>職務・スキル</td><td>「プロダクトエンジニア構造への移行について、現在の進捗状況と、入社後に担当できる機能領域はどのように決まりますか？」</td><td>業務範囲と責任の実態を確認したい</td></tr><tr><td>5</td><td>労働条件</td><td>「リモートワークの実態について教えてください。当該職種でのリモート比率や、オフィス出社が必要になるシーン（ミーティング等）はどの程度ありますか？」</td><td>福岡本社に対して勤務地・リモート比率の実態を確認したい</td></tr><tr><td>6</td><td>労働条件</td><td>「賞与・インセンティブの仕組みと、過去の支給実績（平均的な支給額・回数）を教えていただけますか？」</td><td>求人票に賞与情報がなく、総合的な年収見通しを立てたい</td></tr><tr><td>7</td><td>評価制度</td><td>「評価制度の詳細（グレード体系、目標設定の方法、昇給の頻度・幅の実績）を教えてください。」</td><td>キャリアアップの実現可能性を具体的に確認したい</td></tr><tr><td>8</td><td>成長・キャリア</td><td>「エンジニア以外（PM・事業開発・営業等）へのキャリアチェンジを目指す場合、社内での転換は可能ですか？過去の事例はありますか？」</td><td>OpenWorkの退職理由から、エンジニア以外のキャリアパスが限定的と示唆されているため確認</td></tr><tr><td>9</td><td>財務・事業</td><td>「YOMEL事業の現在の売上ARRや成長率について、開示できる範囲で教えていただけますか？また競合との差別化戦略について詳しく聞かせてください。」</td><td>非上場で財務情報が非公開なため、事業の持続可能性・成長性を確認したい</td></tr><tr><td>10</td><td>組織文化</td><td>「入社から半年〜1年間のオンボーディングはどのように行われますか？具体的なサポート体制を教えてください。」</td><td>62〜75名の小規模組織での立ち上がりの実態を把握したい</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="求人票との整合性チェック">求人票との整合性チェック</h2>
+
+<table class="data-table"><thead><tr><th>求人票の記載</th><th>調査で確認できた実態</th><th>整合性</th><th>備考</th></tr></thead><tbody><tr><td>フルリモートOK</td><td>スクラムマスター等一部職種でフルリモート記載。職種によって異なる。</td><td><span class="badge badge-yellow">⚠️</span></td><td>応募職種に応じて確認必要</td></tr><tr><td>フレックスタイム制（コアタイム13-17時）</td><td>複数求人・口コミで確認済み</td><td><span class="badge badge-green">✅</span></td><td>—</td></tr><tr><td>月残業少なめ</td><td>転職会議口コミで月10時間の報告。Indeed労働時間評価4.7/5.0</td><td><span class="badge badge-green">✅</span></td><td>統計的母数が少ない点に注意</td></tr><tr><td>年間休日120日以上</td><td>Green Japan求人等で確認</td><td><span class="badge badge-green">✅</span></td><td>—</td></tr><tr><td>YOMELの導入実績（2,000社突破）</td><td>PR TIMESプレスリリースで確認（2026年3月）</td><td><span class="badge badge-green">✅</span></td><td>—</td></tr><tr><td>AIエージェント協働開発（Claude Code等）</td><td>Green Japan求人・Green Japan求人票で明記</td><td><span class="badge badge-green">✅</span></td><td>—</td></tr><tr><td>技術スタック（Python/TypeScript/Vue/Django/AWS）</td><td>Findy・Green Japan求人で確認</td><td><span class="badge badge-green">✅</span></td><td>—</td></tr><tr><td>売上成長率300% 2期連続</td><td>Green Japan求人の会社紹介文で言及</td><td><span class="badge badge-green">✅</span></td><td>Infinity単体の売上データとして未検証。面接で確認推奨</td></tr></tbody></table>
+
+<h2 id="追加留意事項-求人票に書かれていないが要確認">追加留意事項（求人票に書かれていないが要確認）</h2>
+
+<ul>
+<li>PKSHA Technology（上場親会社）への完全吸収合併の可能性（PKSHA WorkplaceとPKSHA Communicationは2025年7月に吸収合併されており、同様のリスクがある）</li>
+<li>エンジニア職以外へのキャリアパスの限定性（OpenWork退職理由より）</li>
+<li>代表者のマネジメントスタイル（「ワンマン経営」という口コミ）</li>
+<li>本社が福岡であることへの対応（フルリモートか要確認）</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">PKSHA Infinity ミッション・ビジョンページ</td><td class="src-url"><a href="https://infinity.pkshatech.com/mission" target="_blank" rel="noopener noreferrer">https://infinity.pkshatech.com/mission</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">PKSHA Technology ニュース</td><td class="src-url"><a href="https://www.pkshatech.com/news/20250318/" target="_blank" rel="noopener noreferrer">https://www.pkshatech.com/news/20250318/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">OpenWork - PKSHA Infinity口コミ</td><td class="src-url"><a href="https://www.openwork.jp/one_answer.php?vid=a0A2x00000AzGuX&amp;qco=1" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/one_answer.php?vid=a0A2x00000AzGuX&amp;qco=1</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Green Japan - プロダクトエンジニア求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7355/job/317126" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7355/job/317126</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">PKSHA Infinity採用FAQ</td><td class="src-url"><a href="https://infinity.pkshatech.com/recruit/faq" target="_blank" rel="noopener noreferrer">https://infinity.pkshatech.com/recruit/faq</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">PKSHAグループ採用情報</td><td class="src-url"><a href="https://www.pkshatech.com/recruitment/" target="_blank" rel="noopener noreferrer">https://www.pkshatech.com/recruitment/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">PKSHA Infinity - SalesNow</td><td class="src-url"><a href="https://salesnow.jp/db/companies/jcb2purv474gx0w3" target="_blank" rel="noopener noreferrer">https://salesnow.jp/db/companies/jcb2purv474gx0w3</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Green Japan - AI駆動開発エンジニア求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7355/job/295983" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7355/job/295983</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">Findy - PKSHA Infinityエンジニア求人</td><td class="src-url"><a href="https://findy-code.io/companies/2608/jobs" target="_blank" rel="noopener noreferrer">https://findy-code.io/companies/2608/jobs</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">OpenWork - 退職理由口コミ</td><td class="src-url"><a href="https://www.openwork.jp/one_answer.php?vid=a0A2x00000AzGuX&amp;qco=8" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/one_answer.php?vid=a0A2x00000AzGuX&amp;qco=8</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">PKSHAグループ採用情報</td><td class="src-url"><a href="https://www.pkshatech.com/recruitment/fabric/" target="_blank" rel="noopener noreferrer">https://www.pkshatech.com/recruitment/fabric/</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">転職会議 - PKSHA Infinity</td><td class="src-url"><a href="https://jobtalk.jp/companies/10153223" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/10153223</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">Indeed - PKSHA Infinity</td><td class="src-url"><a href="https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEpksha-Infinity-1/reviews" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEpksha-Infinity-1/reviews</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">タウンワーク - PKSHA Infinity</td><td class="src-url"><a href="https://townwork.net/viewjob/jobid_a6d486c3b3654296/" target="_blank" rel="noopener noreferrer">https://townwork.net/viewjob/jobid_a6d486c3b3654296/</a></td></tr><tr id="src-15"><td class="src-num">[15]</td><td class="src-title">Green Japan - スクラムマスター求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7355/job/300218" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7355/job/300218</a></td></tr><tr id="src-16"><td class="src-num">[16]</td><td class="src-title">Green Japan - AI駆動開発エンジニア求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7355/job/291995" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7355/job/291995</a></td></tr><tr id="src-17"><td class="src-num">[17]</td><td class="src-title">転職会議 - 福利厚生口コミ</td><td class="src-url"><a href="https://jobtalk.jp/companies/10153223/answers/8506520" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/10153223/answers/8506520</a></td></tr><tr id="src-18"><td class="src-num">[18]</td><td class="src-title">PKSHA採用情報ページ</td><td class="src-url"><a href="https://infinity.pkshatech.com/recruit" target="_blank" rel="noopener noreferrer">https://infinity.pkshatech.com/recruit</a></td></tr><tr id="src-19"><td class="src-num">[19]</td><td class="src-title">Green Japan - 各種求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7355" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7355</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u682a\u5f0f\u4f1a\u793ePKSHAInfinity";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — akippa株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>akippa株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-06-03</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2期連続黒字化を達成（第15期純利益8,597万円・第16期純利益4,056万円）だが累積損失約17億円が残存。成長性は確認できるが財務基盤はまだ脆弱</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">主要な不祥事・行政処分・炎上報道の情報なし。駐車場シェアという社会課題解決型ビジネスで顧客評判も概ね良好</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork掲載あり（スコア詳細は会員限定）。口コミからは「フレックス・リモート充実」「育休取得率良好」の一方、「評価制度未成熟」「教育体制が弱い」との声も</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: akippa株式会社</h1>
+
+<blockquote>調査日: 2026-06-03</blockquote>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+<ul>
+<li><strong>顧客（貸し手）</strong>: 月極駐車場オーナー、マンション管理組合、個人宅・空き地所有者</li>
+<li><strong>顧客（借り手）</strong>: 一般ドライバー（イベント・通院・旅行・日常利用）</li>
+<li><strong>提供価値</strong>: 未稼働の駐車スペースとドライバーをマッチング。15分単位のネット予約で利便性を提供</li>
+<li><strong>収益モデル</strong>: マーケットプレイス型（成果報酬）。駐車料金の40%を手数料として徴収、60%をオーナーに還元。初期費用・月額費用はオーナー負担ゼロ</li>
+<li><strong>出典</strong>: akippaのビジネスモデルを図解で分かりやすく解説<sup class="fnref"><a href="#src-1">[1]</a></sup>、駐車場予約サービス「akippa」低価格のカラクリ<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+<ul>
+<li><strong>業界内ポジション</strong>: 駐車場シェアリング市場で最大手。楽天・リクルート・NTTドコモ・ソフトバンクなど大手が参入したが多数が撤退。残存競合は特P、タイムズのBなど</li>
+<li><strong>主要競合</strong>: 特P（ナビパーク系）/ タイムズのB（タイムズ24）</li>
+<li><strong>市場規模</strong>: 大都市圏（東京・神奈川・埼玉）だけで約3,500億円の市場規模とされる</li>
+<li><strong>強み</strong>: 累計会員数350万人以上（2023年9月時点）、常時掲載駐車場45,000件超（2025年3月時点）。自治体・スポーツクラブ・イベント施設との提携にも展開</li>
+<li><strong>出典</strong>: 楽天、ドコモも撤退の駐車場シェア akippaはなぜ生き残った？<sup class="fnref"><a href="#src-3">[3]</a></sup>、駐車場シェアリングサービス比較<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+<table class="data-table"><thead><tr><th>指標</th><th>第16期（2024年12月期）</th><th>第15期（2023年12月期）</th><th>参考：第10期</th></tr></thead><tbody><tr><td>純利益</td><td>4,056万円（黒字）</td><td>8,597万円（黒字）</td><td>▲4.6億円（赤字）</td></tr><tr><td>利益剰余金</td><td>▲16億9,871万円</td><td>▲17億3,927万円</td><td>-</td></tr><tr><td>総資産</td><td>情報なし</td><td>7億7,930万円</td><td>-</td></tr><tr><td>累積資金調達</td><td>約35億円（2019年時点）</td><td>-</td><td>-</td></tr></tbody></table>
+
+<ul>
+<li><strong>注記</strong>: 2023年12月期（第15期）に通期黒字化を達成。2024年12月期（第16期）は成長投資継続しながら黒字維持。累積赤字は約17億円残存</li>
+<li><strong>出典</strong>: akippa CEO X（2024年12月期）<sup class="fnref"><a href="#src-5">[5]</a></sup>、官報決算データベース<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+<ul>
+<li>C2C駐車場マーケットプレイス事業に完全ピボット後、「クオリティグロース（成長も利益も両立）」を標榜</li>
+<li>エンジニア比率を7%から25%超へ引き上げる「プロダクト主導の事業成長」体制へ移行中</li>
+<li>自治体・スポーツクラブ・イベント施設との提携によるB2B2C拡大も推進</li>
+<li>ミッション「人々がリアルで会うときの困りごとを、世界中で解決する」に基づきモビリティ領域全般への事業拡張を視野</li>
+<li><strong>出典</strong>: akippaのビジョンと経営戦略（akipedia）<sup class="fnref"><a href="#src-7">[7]</a></sup>、採用情報（career.akippa.co.jp）<sup class="fnref"><a href="#src-8">[8]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+<ul>
+<li>公開情報の範囲では、akippa株式会社に対する行政処分・労基違反・重大な不祥事・炎上報道は確認できなかった</li>
+<li>過去に業績赤字が長期化したことは業界メディアで報じられたが、法令違反や不正には該当しない</li>
+<li><strong>出典</strong>: WebSearch調査（2026-06-03）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+<ul>
+<li>未稼働駐車スペースの有効活用というシェアリングエコノミー事業自体が社会課題解決型</li>
+<li>渋滞緩和・空きスペース削減への貢献をうたうが、公式ESGレポート等の開示は確認できなかった</li>
+<li><strong>出典</strong>: akippaとは？仕組み・手数料<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+<ul>
+<li>ドライバー側：事前予約で確実に駐車できる安心感が好評。イベント時の利用事例多数</li>
+<li>オーナー側：投資不要・成果報酬型で気軽に試せる点が好評。収益性への不満の口コミも一部あり</li>
+<li><strong>出典</strong>: 駐車場オーナー向け評価（parking-news.com）<sup class="fnref"><a href="#src-10">[10]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+<ul>
+<li><strong>OpenWork</strong>: 掲載あり。「20代成長環境」2.9点、「長期的人材育成」2.5点（OpenMoney経由の情報）。詳細スコアは会員限定</li>
+<li><strong>転職会議</strong>: 16件の口コミ掲載</li>
+<li><strong>就活会議</strong>: 50件の口コミ掲載</li>
+<li><strong>良い点</strong>:</li>
+<li>スーパーフレックス（コアタイムなし、5:00〜22:00の範囲で自由）</li>
+<li>育休取得率：女性100%、男性75%（2024年〜2025年3月実績）</li>
+<li>有休取得率73.6%（厚生労働省平均65.3%を上回る）</li>
+<li>若手に裁量が与えられる、実力主義的な面がある</li>
+<li><strong>懸念点</strong>:</li>
+<li>教育・研修制度が未整備との指摘あり</li>
+<li>評価制度が「まだ運用開始期」とされる</li>
+<li>古い開発ツールへの不満</li>
+<li>過去には残業過多の声もあったが近年はホワイト化傾向</li>
+<li><strong>残業時間</strong>: 平均約14時間/月（転職会議データ）</li>
+<li><strong>出典</strong>: OpenWork<sup class="fnref"><a href="#src-11">[11]</a></sup>、転職会議<sup class="fnref"><a href="#src-12">[12]</a></sup>、OpenMoney 残業実態<sup class="fnref"><a href="#src-13">[13]</a></sup>、Wantedly 2025年版数字でわかるakippa<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+<ul>
+<li>[ ] OpenWork・転職会議の最新の総合スコア（会員登録して確認推奨）</li>
+<li>[ ] 現在の総社員数・具体的な離職率</li>
+<li>[ ] 直近（第16期）の売上高・売上総利益の具体的な数値</li>
+<li>[ ] 評価制度の具体的な運用状況（目標設定・査定サイクル・昇給条件）</li>
+<li>[ ] 中途入社後のオンボーディング体制</li>
+<li>[ ] 部門別のリモートワーク実態（営業職はどの程度出社が求められるか）</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">akippaのビジネスモデルを図解で分かりやすく解説</td><td class="src-url"><a href="https://business-method-illustration.com/2024/10/30/akippa/" target="_blank" rel="noopener noreferrer">https://business-method-illustration.com/2024/10/30/akippa/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">駐車場予約サービス「akippa」低価格のカラクリ</td><td class="src-url"><a href="https://industry-co-creation.com/catapult/20308" target="_blank" rel="noopener noreferrer">https://industry-co-creation.com/catapult/20308</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">楽天、ドコモも撤退の駐車場シェア akippaはなぜ生き残った？</td><td class="src-url"><a href="https://xtrend.nikkei.com/atcl/contents/18/00589/00114/" target="_blank" rel="noopener noreferrer">https://xtrend.nikkei.com/atcl/contents/18/00589/00114/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">駐車場シェアリングサービス比較</td><td class="src-url"><a href="https://tomap.jp/parking-share-comparison/490/" target="_blank" rel="noopener noreferrer">https://tomap.jp/parking-share-comparison/490/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">akippa CEO X（2024年12月期）</td><td class="src-url"><a href="https://x.com/genki_kanaya/status/1905953820976480450" target="_blank" rel="noopener noreferrer">https://x.com/genki_kanaya/status/1905953820976480450</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">官報決算データベース</td><td class="src-url"><a href="https://catr.jp/companies/4caad/2543" target="_blank" rel="noopener noreferrer">https://catr.jp/companies/4caad/2543</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">akippaのビジョンと経営戦略（akipedia）</td><td class="src-url"><a href="https://akipedia.akippa.co.jp/person/post-3278" target="_blank" rel="noopener noreferrer">https://akipedia.akippa.co.jp/person/post-3278</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">採用情報（career.akippa.co.jp）</td><td class="src-url"><a href="https://career.akippa.co.jp/" target="_blank" rel="noopener noreferrer">https://career.akippa.co.jp/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">akippaとは？仕組み・手数料</td><td class="src-url"><a href="https://info-parking.com/akippa/" target="_blank" rel="noopener noreferrer">https://info-parking.com/akippa/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">駐車場オーナー向け評価（parking-news.com）</td><td class="src-url"><a href="https://parking-news.com/column/akippa-evaluation/" target="_blank" rel="noopener noreferrer">https://parking-news.com/column/akippa-evaluation/</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000vBCHn" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000vBCHn</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/70402/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/70402/answers</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">OpenMoney 残業実態</td><td class="src-url"><a href="https://openmoney.jp/corporations/9741/reports/overtime" target="_blank" rel="noopener noreferrer">https://openmoney.jp/corporations/9741/reports/overtime</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">Wantedly 2025年版数字でわかるakippa</td><td class="src-url"><a href="https://sg.wantedly.com/companies/akippa/post_articles/1001932" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/akippa/post_articles/1001932</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: akippa株式会社</h1>
+
+<blockquote>調査日: 2026-06-03  対象職種: 未指定（Green Japan 求人ID: 317606 を参照）</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>ミッション・バリューが明確。ホスピタリティ文化を標榜。10周年を機にバリューを再整備済み</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>エンジニア比率引き上げ中でプロダクト組織強化を推進。一方で教育体制・キャリアパスは未成熟との口コミあり</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>スーパーフレックス・リモート可・育休取得率良好。残業は平均14時間/月でホワイト水準</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+<ul>
+<li><strong>ミッション</strong>: 「人々がリアルで会うときの困りごとを、世界中で解決する。」</li>
+<li><strong>ビジョン</strong>: 「あなたの『あいたい』をつなぐ」（中長期的にミッションを実現するためのビジョン）</li>
+<li><strong>バリュー（3つ）</strong>:</li>
+</ul>
+  1. Think and Rush（考えて素早く動く）
+  2. Done with Pride（誇りを持ってやり遂げる）
+  3. Win by Team（チームで勝つ）
+<ul>
+<li><strong>カルチャー</strong>: 「ホスピタリティ・カルチャー」を独自文化として定義。相互尊敬・謙虚さ・性善説の3要素で構成</li>
+<li><strong>出典</strong>: akippa Mission/Vision/Value（公式）<sup class="fnref"><a href="#src-1">[1]</a></sup>、設立10周年のバリュー再整備（note）<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+<ul>
+<li><strong>組織構造</strong>: 情報なし（スタートアップ規模のフラットな組織と推測されるが確認できず）</li>
+<li><strong>スタイル</strong>: 採用情報・口コミから「ボトムアップの要素がある」との記述が散見されるが、詳細は確認できず</li>
+<li><strong>出典</strong>: 社歴が異なるメンバー同士の「信頼関係」をどう作る？（seleck.cc）<sup class="fnref"><a href="#src-3">[3]</a></sup></li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+<ul>
+<li>バリュー（3つ）に基づく行動評価と業績評価を組み合わせた制度と公開情報から示唆される</li>
+<li>「評価制度はまだ運用開始期」との社員口コミあり。制度の成熟度はまだ途上の可能性</li>
+<li>OpenWorkスコア「長期的人材育成」2.5点（5点満点）は業界平均を下回ることが多い水準</li>
+<li><strong>出典</strong>: OpenWork<sup class="fnref"><a href="#src-4">[4]</a></sup>、設立10周年バリュー再整備（note）<sup class="fnref"><a href="#src-2">[2]</a></sup></li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+<ul>
+<li><strong>従業員構成</strong>: 男性64%・女性36%</li>
+<li><strong>年代構成</strong>: 30代が約7割（最多）</li>
+<li><strong>育休実績（2024〜2025年3月）</strong>: 女性取得率100%、男性取得率75%</li>
+<li><strong>有休取得率（同期間）</strong>: 73.6%（厚生労働省平均65.3%を上回る）</li>
+<li><strong>採用実績</strong>: 2024年度に正社員10名入社、2025年度も9月時点で10名入社（増員中）</li>
+<li><strong>社員数</strong>: 公開情報では具体的な総数は確認できず（スタートアップDB等では「50〜100名規模」とされる情報あり）</li>
+<li><strong>出典</strong>: Wantedly【2025年版】数字でわかるakippa<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+<ul>
+<li><strong>事業体制</strong>: プロダクト（PM・エンジニア・デザイナー）・セールス（フィールドセールス・インサイドセールス）・マーケティング・カスタマーサポート・コーポレートの各部門が確認できる</li>
+<li><strong>エンジニア組織</strong>: エンジニア比率を現状7%から25%超に引き上げる方針を公表。プロダクト主導の事業成長に向けてエンジニア組織を再構築中</li>
+<li><strong>フィールドセールス</strong>: 駐車場オーナー（法人・個人）へのコンサルティング営業。月次目標KPIをもとに活動</li>
+<li><strong>出典</strong>: 採用情報（career.akippa.co.jp）<sup class="fnref"><a href="#src-6">[6]</a></sup>、HERP Careers フィールドセールス求人<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+<ul>
+<li><strong>サーバーサイド</strong>: Ruby on Rails（主要言語）</li>
+<li><strong>フロントエンド</strong>: React、Vue.js</li>
+<li><strong>その他</strong>: Python</li>
+<li><strong>モバイル</strong>: iOS（Swift）、Android（Kotlin推定）</li>
+<li><strong>インフラ</strong>: 情報なし</li>
+<li><strong>開発手法</strong>: スクラム・アジャイル（推定）。「古い開発ツール」への不満の口コミあり</li>
+<li><strong>AI活用</strong>: 情報なし</li>
+<li><strong>出典</strong>: Levtech Direct エンジニア求人（Rails/Swift）<sup class="fnref"><a href="#src-8">[8]</a></sup>、採用情報（career.akippa.co.jp）<sup class="fnref"><a href="#src-6">[6]</a></sup></li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+<ul>
+<li>公式的な体系的研修制度の記載は公開情報に見当たらない</li>
+<li>社員口コミでは「教育体制・研修が整備されていない」との指摘複数あり</li>
+<li>エンジニア向けには「マネージャーとの定期ミーティング（キャリア面談）」が設けられているとの記述あり</li>
+<li>「入社前後のギャップ」として教育・成長支援の不足を挙げる口コミが一定数あり</li>
+<li><strong>出典</strong>: OpenWork 入社理由と入社後ギャップ<sup class="fnref"><a href="#src-9">[9]</a></sup></li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+<ul>
+<li>エンジニアはスペシャリスト（技術専門職）とマネジメント（チームマネージャー）の2トラック選択可能</li>
+<li>スタートアップのため、若手でも裁量・責任を持ちやすい環境</li>
+<li>口コミでは「実力があれば若くてもマネジメントに就ける」一方、「体系的なキャリアパスが描きにくい」との声もある</li>
+<li><strong>出典</strong>: Levtech Direct エンジニア求人<sup class="fnref"><a href="#src-8">[8]</a></sup>、OpenWork<sup class="fnref"><a href="#src-4">[4]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+<ul>
+<li><strong>所定労働時間</strong>: 8時間/日</li>
+<li><strong>フレックスタイム</strong>: スーパーフレックス制（コアタイムなし）。フレキシブルタイム5:00〜22:00</li>
+<li><strong>残業</strong>: 平均14時間/月（転職会議データ）。「サービス残業なし」との口コミ</li>
+<li><strong>休日</strong>: 完全週休2日制（土日）、祝日、年末年始、夏季特別休暇、有給休暇（入社時付与あり）</li>
+<li><strong>年間休日</strong>: 125日（求人票情報から）</li>
+<li><strong>出典</strong>: OpenMoney 残業実態<sup class="fnref"><a href="#src-10">[10]</a></sup>、転職会議 akippa<sup class="fnref"><a href="#src-11">[11]</a></sup></li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+<ul>
+<li><strong>全社方針</strong>: リモートワーク可（部門による）</li>
+<li><strong>プロダクト部門（PM・エンジニア・デザイナー）</strong>: 全国フルリモート可。月1回程度の全社出社日（コミュニケーション日）あり</li>
+<li><strong>営業職</strong>: 週4日リモート可（残り1日は出社またはフィールド活動）との求人記載あり</li>
+<li><strong>本社所在地</strong>: 大阪なんばパークス（東京オフィスも保有）</li>
+<li><strong>出典</strong>: Wantedly akippa記事<sup class="fnref"><a href="#src-5">[5]</a></sup>、HERP Careers フィールドセールス求人<sup class="fnref"><a href="#src-7">[7]</a></sup></li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+<ul>
+<li><strong>育休</strong>: 女性取得率100%・男性取得率75%（2024〜2025年3月実績）</li>
+<li><strong>育休後復職</strong>: 復帰タイミングについて柔軟な対応実績あり</li>
+<li><strong>副業</strong>: 公開情報では明示されていないが確認推奨</li>
+<li><strong>有休</strong>: 入社時付与あり、取得率73.6%</li>
+<li><strong>その他</strong>: 具体的な手当・保険等の詳細は公開情報に詳細記載なし</li>
+<li><strong>出典</strong>: パパ・ママ社員座談会（Wantedly）<sup class="fnref"><a href="#src-12">[12]</a></sup>、Wantedly 数字でわかるakippa<sup class="fnref"><a href="#src-5">[5]</a></sup></li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+<ul>
+<li><strong>想定年収帯（Indeed/doda参考）</strong>: 約400万円〜800万円（職種・経験により幅広い）</li>
+<li><strong>転職ドラフト（エンジニア向け）</strong>: 最高提示1,200万円、最低450万円、平均提示749万円（スカウト型のため市場価値高めの層が対象）</li>
+<li><strong>構成</strong>: 月給制+賞与（詳細不明）</li>
+<li><strong>注記</strong>: 営業職・カスタマーサポート職の給与帯は確認できた職種別データでは約397万円〜938万円の幅がある</li>
+<li><strong>出典</strong>: 転職ドラフト akippa<sup class="fnref"><a href="#src-13">[13]</a></sup>、Indeed 大阪府での給与<sup class="fnref"><a href="#src-14">[14]</a></sup></li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>バリュー「Win by Team」を体現した具体的なエピソードを教えてください</td><td>バリューが形骸化していないか、組織文化の浸透度を確認するため</td></tr><tr><td>2</td><td>組織・カルチャー</td><td>評価制度の仕組みと査定サイクルを具体的に教えてください。目標設定はどのように行っていますか？</td><td>「評価制度未成熟」との口コミを踏まえ、実際の運用状況を把握するため</td></tr><tr><td>3</td><td>職務・スキル</td><td>エンジニア比率25%超を目指す中で、入社後に携わる具体的なプロダクト課題や技術的負債の状況を教えてください</td><td>「古い開発ツール」への不満口コミを踏まえ、技術環境の現状を確認するため</td></tr><tr><td>4</td><td>職務・スキル</td><td>中途入社後のオンボーディングはどのように行われますか？メンター制度はありますか？</td><td>「教育体制が弱い」との口コミを踏まえ、実際の立ち上がりサポートを確認するため</td></tr><tr><td>5</td><td>労働条件</td><td>営業職の場合、週に何日程度の出社・フィールド活動が期待されていますか？</td><td>リモートワーク可の実態を職種別に確認するため</td></tr><tr><td>6</td><td>労働条件</td><td>副業・兼業は認められていますか？</td><td>公開情報に記載がなく確認が必要なため</td></tr><tr><td>7</td><td>事業・成長</td><td>2024年12月期（第16期）に成長投資を積極化した具体的な施策と、その成果の手応えを教えてください</td><td>黒字化の持続性と事業の勢いを確認するため</td></tr><tr><td>8</td><td>事業・成長</td><td>累積赤字約17億円の解消に向けた計画はありますか？</td><td>財務基盤の安定性・IPO等の将来計画を確認するため</td></tr><tr><td>9</td><td>キャリア</td><td>本ポジションで活躍した場合、3〜5年後にどのようなキャリアパスが考えられますか？</td><td>スタートアップゆえのキャリア展望を現実的に把握するため</td></tr><tr><td>10</td><td>組織・カルチャー</td><td>現在の組織が抱える最大の課題は何ですか？その課題に対してどう取り組んでいますか？</td><td>入社後に直面するリアルな組織課題を事前に把握するため</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="求人票との整合性チェック">求人票との整合性チェック</h2>
+
+<blockquote>注記: Green Japan 求人ID 317606 の詳細ページへのアクセスは確認できず、求人票の全文は取得できなかった。以下は検索結果から得られた断片的な情報と公開調査結果の照合。</blockquote>
+
+<table class="data-table"><thead><tr><th>求人票の記載</th><th>調査で確認できた実態</th><th>整合性</th><th>備考</th></tr></thead><tbody><tr><td>リモートワーク可</td><td>プロダクト職は全国フルリモート可を確認。営業職は週4日リモート可との情報あり</td><td><span class="badge badge-green">✅</span></td><td>職種により条件が異なる可能性あり</td></tr><tr><td>スーパーフレックス（コアタイムなし）</td><td>複数の採用情報・口コミで確認済み</td><td><span class="badge badge-green">✅</span></td><td>実態として機能していることを複数ソースで確認</td></tr><tr><td>育休・産休取得実績</td><td>女性100%・男性75%の取得実績を公式データで確認</td><td><span class="badge badge-green">✅</span></td><td>実績数値は業界水準を上回る</td></tr><tr><td>年収・給与帯</td><td>求人票詳細は未取得のため照合不可</td><td><span class="badge badge-gray">❓</span></td><td>面接時に詳細確認推奨</td></tr><tr><td>残業・労働時間</td><td>平均14時間/月（転職会議）。ホワイト企業との評価も複数確認</td><td><span class="badge badge-green">✅</span></td><td>過去の過多残業から改善されたとの口コミあり</td></tr></tbody></table>
+
+<h2 id="追加留意事項-求人票に書かれていないが要確認">追加留意事項（求人票に書かれていないが要確認）</h2>
+<ul>
+<li>累積赤字約17億円が残存しており、財務体力はまだ脆弱。IPO計画・増資予定の有無を確認すべき</li>
+<li>評価制度の成熟度が低い可能性があるため、直近の査定実績（昇給率等）を確認推奨</li>
+<li>エンジニア比率引き上げ中の過渡期にあり、プロダクト組織の完成度・意思決定プロセスは変化が激しい可能性あり</li>
+<li>大阪本社・東京オフィスの二拠点体制のため、勤務地とリモート条件の実態を職種別に要確認</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">akippa Mission/Vision/Value（公式）</td><td class="src-url"><a href="https://akippa.co.jp/corporate/value/" target="_blank" rel="noopener noreferrer">https://akippa.co.jp/corporate/value/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">設立10周年のバリュー再整備（note）</td><td class="src-url"><a href="https://note.com/akippa_parking/n/ne5793004dd0f" target="_blank" rel="noopener noreferrer">https://note.com/akippa_parking/n/ne5793004dd0f</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">社歴が異なるメンバー同士の「信頼関係」をどう作る？（seleck.cc）</td><td class="src-url"><a href="https://seleck.cc/1319" target="_blank" rel="noopener noreferrer">https://seleck.cc/1319</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">OpenWork</td><td class="src-url"><a href="https://www.openwork.jp/company.php?m_id=a0C1000000vBCHn" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000vBCHn</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">Wantedly【2025年版】数字でわかるakippa</td><td class="src-url"><a href="https://sg.wantedly.com/companies/akippa/post_articles/1001932" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/akippa/post_articles/1001932</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">採用情報（career.akippa.co.jp）</td><td class="src-url"><a href="https://career.akippa.co.jp/" target="_blank" rel="noopener noreferrer">https://career.akippa.co.jp/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">HERP Careers フィールドセールス求人</td><td class="src-url"><a href="https://herp.careers/careers/companies/akippainc/jobs/0193f87b-c04f-788a-ba87-0a9612d67f98" target="_blank" rel="noopener noreferrer">https://herp.careers/careers/companies/akippainc/jobs/0193f87b-c04f-788a-ba87-0a9612d67f98</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Levtech Direct エンジニア求人（Rails/Swift）</td><td class="src-url"><a href="https://levtech-direct.jp/job/11869" target="_blank" rel="noopener noreferrer">https://levtech-direct.jp/job/11869</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">OpenWork 入社理由と入社後ギャップ</td><td class="src-url"><a href="https://www.openwork.jp/company_answer.php?m_id=a0C1000000vBCHn&amp;q_no=3" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company_answer.php?m_id=a0C1000000vBCHn&amp;q_no=3</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">OpenMoney 残業実態</td><td class="src-url"><a href="https://openmoney.jp/corporations/9741/reports/overtime" target="_blank" rel="noopener noreferrer">https://openmoney.jp/corporations/9741/reports/overtime</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">転職会議 akippa</td><td class="src-url"><a href="https://jobtalk.jp/companies/70402/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/70402/answers</a></td></tr><tr id="src-12"><td class="src-num">[12]</td><td class="src-title">パパ・ママ社員座談会（Wantedly）</td><td class="src-url"><a href="https://sg.wantedly.com/companies/akippa/post_articles/1018817" target="_blank" rel="noopener noreferrer">https://sg.wantedly.com/companies/akippa/post_articles/1018817</a></td></tr><tr id="src-13"><td class="src-num">[13]</td><td class="src-title">転職ドラフト akippa</td><td class="src-url"><a href="https://job-draft.jp/companies/70" target="_blank" rel="noopener noreferrer">https://job-draft.jp/companies/70</a></td></tr><tr id="src-14"><td class="src-num">[14]</td><td class="src-title">Indeed 大阪府での給与</td><td class="src-url"><a href="https://jp.indeed.com/cmp/Akippa%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/salaries?location=JP/J27" target="_blank" rel="noopener noreferrer">https://jp.indeed.com/cmp/Akippa%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/salaries?location=JP/J27</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "akippa\u682a\u5f0f\u4f1a\u793e";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

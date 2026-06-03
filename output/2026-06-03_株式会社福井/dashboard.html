@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社福井</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社福井</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-06-03</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">1912年創業・14年連続増収・売上高47億円（2024年12月）・未上場安定経営</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">不祥事・行政処分・労基違反の公表事案なし</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">転職会議に25件の口コミ（総合評価3.13/5）、詳細内容は有料壁で未確認</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社福井</h1>
+
+<blockquote>調査日: 2026-06-03</blockquote>
+
+<h2 class="accent-green" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<p>株式会社福井は1912年（明治45年）創業・1950年5月法人設立の、大阪府堺市を本拠とするDIYツール総合卸売商社（兼製造）。事業の核は堺の伝統産業「堺打刃物」の卸売・製造であり、取扱カテゴリは下記の通り幅広い：</p>
+
+<ul>
+<li>刃物類（包丁・農業用はさみなど）</li>
+<li>農業・園芸・ガーデニング用品</li>
+<li>工具・金物・DIY用品</li>
+<li>キッチン用品・水回り・塗料・接着剤</li>
+<li>アウトドア・フィッシング用品</li>
+</ul>
+
+<p><strong>収益モデルの特徴</strong>:
+1. <strong>卸売（BtoB）</strong>: ホームセンター等量販店・工具専門店向けに売場展開提案を行う受注型卸売が主軸
+2. <strong>EC（BtoC）</strong>: 2020年以降急拡大中。大手ECモール・自社ショップで月間優秀店賞を複数回受賞
+3. <strong>自社ブランド製造・販売</strong>: プライベートブランド「OWL（オウル）」「HADO（刃道）」を展開。HADOは海外20カ国以上に輸出しヨーロッパ・北米・オーストラリア中心に6カ月待ちの人気ブランドに成長</p>
+
+<p><strong>規模感</strong>:
+<ul>
+<li>物流在庫SKU：約2万アイテム</li>
+<li>商品DBマスター：40万行</li>
+<li>登録商品数：約18万アイテム</li>
+</ul></p>
+
+<p><strong>拠点構成</strong>: 本社（大阪府堺市）・本社物流センター（堺）・新潟支店（三条市）・三木支店（兵庫県三木市）の3拠点体制</p>
+
+<p>出典: Green Japan 会社ページ<sup class="fnref"><a href="#src-1">[1]</a></sup> / sakai-fukui.co.jp<sup class="fnref"><a href="#src-2">[2]</a></sup></p>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<p>三木市は「金物のシリコンバレー」とも称され、半径5km圏内に数百社の得意先が集中する金物卸の一大産地。堺は和包丁の世界的産地として知名度を持ち、海外需要も高い。競合は同地域の打刃物卸商社や、OEM生産を行う大手金物メーカーなど。自社ブランド化・EC展開は差別化要素として機能している。</p>
+
+<p>出典: Green Japan 三木支店総合職求人<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>数値</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>47億円（2024年12月期）</td><td>前期44億円から増収</td></tr><tr><td>増収年数</td><td>14年連続増収（直近情報時点）</td><td>Green Japan求人記載</td></tr><tr><td>資本金</td><td>1,000万円</td><td>Baseconnect・Green Japan情報</td></tr><tr><td>従業員数</td><td>148名</td><td>Baseconnect・Green Japan情報</td></tr><tr><td>上場区分</td><td>未上場</td><td>—</td></tr></tbody></table>
+
+<p>詳細な決算書・BS/PL・借入金等の財務情報は非公開のため確認不可。未上場のため外部開示義務なし。</p>
+
+<p>出典: Green Japan 会社ページ<sup class="fnref"><a href="#src-1">[1]</a></sup> / Baseconnect<sup class="fnref"><a href="#src-4">[4]</a></sup></p>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>自社ブランド強化</strong>: HADOブランドをインスタグラム起点で海外展開（2021年春ブランド開始、現在20カ国以上）</li>
+<li><strong>EC事業拡大</strong>: 2020年以降BtoCのEC事業が高伸長。大手ECモールで複数回月間優秀店受賞</li>
+<li><strong>組織デジタル化</strong>: サイボウズOffice・Wevox等のツール導入で拠点をまたいだ情報共有体制を整備</li>
+<li><strong>製造機能内製化</strong>: 2019年に自社工房を設立し、職人を社内育成する製造ラインを構築</li>
+<li><strong>海外輸出拡大</strong>: ヨーロッパ・北米・オーストラリアへの輸出継続・拡大中</li>
+</ul>
+
+<p>出典: PR TIMES プレスリリース（2021）<sup class="fnref"><a href="#src-5">[5]</a></sup> / HADO公式サイト<sup class="fnref"><a href="#src-6">[6]</a></sup> / Wevoxイベントページ<sup class="fnref"><a href="#src-7">[7]</a></sup></p>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<p>厚生労働省の「労働基準関係法令違反に係る公表事案」（大阪労働局管轄）および一般検索において、株式会社福井（大阪府堺市）に該当する公表事案は確認されなかった。</p>
+
+<p>行政処分、訴訟、不正競争・品質偽装等のネガティブ報道も検索上は確認されなかった。</p>
+
+<p><strong>判定: 懸念なし（情報が見つからないことが根拠）</strong></p>
+
+<p>出典: 厚生労働省公表事案リスト（検索確認）/ Google検索</p>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li>堺伝統産業（堺打刃物）の製造・普及を通じた地域産業振興に貢献</li>
+<li>鍛冶職人の減少に対して自社工房での職人育成を実施</li>
+<li>堺市地域産業課の「堺市内ものづくり見学・体験スポット」に登録（地域産業PRへの協力）</li>
+<li>体系的なESGレポートや第三者認証（ISO等）は確認されていない</li>
+</ul>
+
+<p>出典: 堺市ものづくりスポット<sup class="fnref"><a href="#src-8">[8]</a></sup> / 堺刃物商工業協同組合 企業紹介<sup class="fnref"><a href="#src-9">[9]</a></sup></p>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>HADOブランドは海外インスタグラム経由で受注が殺到し、6カ月待ち状態になったことが報告されている</li>
+<li>大手ECモールで月間優秀店賞を複数回受賞</li>
+<li>B2B（ホームセンター・工具店）については直接評判情報は非公開</li>
+</ul>
+
+<p>出典: Green Japan 求人概要<sup class="fnref"><a href="#src-1">[1]</a></sup> / HADO公式<sup class="fnref"><a href="#src-6">[6]</a></sup></p>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報">口コミ・評価サイト情報</h3>
+
+<p><strong>転職会議（jobtalk.jp）</strong>
+<ul>
+<li>口コミ件数: 25件</li>
+<li>総合評価: 3.13 / 5.0</li>
+<li>口コミカテゴリ（件数内訳）: 年収・評価制度 5件、退職理由・離職検討理由 2件、仕事のやりがい・面白み 2件、事業の成長性や将来性 3件、女性の働きやすさやキャリア 3件 他</li>
+<li><strong>詳細内容は有料会員登録が必要なため未確認</strong></li>
+</ul></p>
+
+<p><strong>OpenWork</strong>: 口コミ登録の有無は確認できず（登録なしの可能性あり）</p>
+
+<p><strong>採用情報で確認できた待遇情報（公式情報）</strong>:
+<ul>
+<li>年間休日: 121日</li>
+<li>完全週休2日制</li>
+<li>賞与: 年2回</li>
+<li>昇給: 年1回（1月・入社1年後から）</li>
+<li>社会保険: 完備</li>
+<li>通勤手当: 上限25,000円/月</li>
+<li>退職金制度: あり（勤続5年以上）</li>
+<li>定年: 60歳（65歳まで継続雇用）</li>
+<li>選考: 書類→一次面接（オンライン可）→最終面接（対面）＋一般常識・適性検査</li>
+</ul></p>
+
+<p>出典: 転職会議<sup class="fnref"><a href="#src-10">[10]</a></sup> / 採用情報ページ<sup class="fnref"><a href="#src-11">[11]</a></sup></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<p>1. <strong>具体的な年収水準</strong>: 求人票・公式サイトに給与レンジ記載なし。三木支店総合職の月給・年収を確認すること
+2. <strong>残業時間の実態</strong>: 公開情報なし。月平均残業時間を確認
+3. <strong>リモートワーク可否</strong>: 営業・物流業務のため現地対応が基本と推定されるが要確認
+4. <strong>評価制度の詳細</strong>: 昇給の基準・目標管理制度の有無を確認
+5. <strong>転職会議口コミの詳細</strong>: 有料壁のため未確認。入社後のギャップを把握するため面接で社風を確認
+6. <strong>三木支店の今後の採用計画</strong>: 少人数（4名）体制の強化方針を確認
+7. <strong>EC事業の組織体制</strong>: EC拡大に伴う三木支店の役割変化を確認</p>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Green Japan 会社ページ</td><td class="src-url"><a href="https://www.green-japan.com/company/7559" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7559</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">sakai-fukui.co.jp</td><td class="src-url"><a href="https://sakai-fukui.co.jp/" target="_blank" rel="noopener noreferrer">https://sakai-fukui.co.jp/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">Green Japan 三木支店総合職求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7559/job/202217" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7559/job/202217</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Baseconnect</td><td class="src-url"><a href="https://baseconnect.in/companies/2ee05ead-508d-4b17-954d-f99c5bf78e76" target="_blank" rel="noopener noreferrer">https://baseconnect.in/companies/2ee05ead-508d-4b17-954d-f99c5bf78e76</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">PR TIMES プレスリリース（2021）</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000001.000078878.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000001.000078878.html</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">HADO公式サイト</td><td class="src-url"><a href="https://hado-knife.jp/" target="_blank" rel="noopener noreferrer">https://hado-knife.jp/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">Wevoxイベントページ</td><td class="src-url"><a href="https://get.wevox.io/event/teamworksession-fukui" target="_blank" rel="noopener noreferrer">https://get.wevox.io/event/teamworksession-fukui</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">堺市ものづくりスポット</td><td class="src-url"><a href="https://sakai-openfactory.jp/sakai-fukui/" target="_blank" rel="noopener noreferrer">https://sakai-openfactory.jp/sakai-fukui/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">堺刃物商工業協同組合 企業紹介</td><td class="src-url"><a href="https://www.sakaihamono.or.jp/kigyou/fukui.html" target="_blank" rel="noopener noreferrer">https://www.sakaihamono.or.jp/kigyou/fukui.html</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/5869140" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/5869140</a></td></tr><tr id="src-11"><td class="src-num">[11]</td><td class="src-title">採用情報ページ</td><td class="src-url"><a href="https://sakai-fukui.co.jp/recruit/" target="_blank" rel="noopener noreferrer">https://sakai-fukui.co.jp/recruit/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社福井</h1>
+
+<blockquote>調査日: 2026-06-03</blockquote>
+<blockquote>対象求人: 三木支店 総合職（Green Japan 求人ID: 202217）</blockquote>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-経営体制-経営陣">2-1. 経営体制・経営陣</h3>
+
+<ul>
+<li>代表取締役: 福井基成（6代目、2019年就任）</li>
+<li>創業家系の同族経営。2019年の代表交代以降、デジタル化・組織改革・自社ブランド戦略に積極的に取り組む</li>
+<li>Wevox（エンゲージメントサーベイ）を早期導入し、社員との対話・ワークエンゲージメント向上を経営の重点課題として位置付けている</li>
+<li>2014年頃から顧客の業種ごとに担当課を設けるなど、機能分化・組織体制整備に着手</li>
+</ul>
+
+<p>出典: Wevox イベントページ<sup class="fnref"><a href="#src-1">[1]</a></sup> / サイボウズ Office 導入事例<sup class="fnref"><a href="#src-2">[2]</a></sup></p>
+
+<h3 id="2-2-組織文化-社風">2-2. 組織文化・社風</h3>
+
+<ul>
+<li>経営理念: 「共に喜ぶ」 ─ 社員・取引先・顧客と共に喜びを共有することを基本姿勢とする</li>
+<li>サイボウズ Office 導入前は「個の集まり」だった組織が、ツール活用により拠点も含めた「一体の組織」へ変革したとされる（サイボウズ導入事例による）</li>
+<li>社員エンゲージメントを重視し、Wevoxを活用した社員対話・改善サイクルを実践</li>
+<li>離職率低下に取り組んでいることを社長自ら外部イベントで発信（Wevoxチームワークセッション登壇）</li>
+</ul>
+
+<p>出典: Wevox チームワークセッション（福井基成氏登壇）<sup class="fnref"><a href="#src-1">[1]</a></sup> / サイボウズ Office 導入事例<sup class="fnref"><a href="#src-2">[2]</a></sup></p>
+
+<h3 id="2-3-組織規模-体制">2-3. 組織規模・体制</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>従業員数</td><td>148名</td></tr><tr><td>拠点</td><td>本社・本社物流センター（堺市）、新潟支店（三条市）、三木支店（三木市）</td></tr><tr><td>三木支店規模</td><td>4名（少人数体制）</td></tr></tbody></table>
+
+<p>三木支店は4名という少人数組織で、幅広い業務（営業・物流）をカバー。ベテランの定年退職による補充採用が今回の求人の背景とされている。</p>
+
+<p>出典: Green Japan 三木支店総合職求人<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<h3 id="2-4-多様性-女性活躍">2-4. 多様性・女性活躍</h3>
+
+<ul>
+<li>転職会議に「女性の働きやすさやキャリア」カテゴリの口コミが3件存在（詳細は有料壁）</li>
+<li>採用サイトに産休・育休の記載は確認できていない（情報なし）</li>
+<li>リモートワーク対応の記載も確認できていない（物流・営業業務のため現地勤務が基本と推測）</li>
+</ul>
+
+<p>出典: 転職会議<sup class="fnref"><a href="#src-4">[4]</a></sup> / 採用情報<sup class="fnref"><a href="#src-5">[5]</a></sup></p>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-対象求人の職務内容-三木支店-総合職">3-1. 対象求人の職務内容（三木支店 総合職）</h3>
+
+<p><strong>主な業務</strong>:
+1. <strong>営業業務</strong>: 三木市・小野市内の得意先（ホームセンター、工具専門店など）への定期訪問営業・提案
+2. <strong>物流業務</strong>: 支店内での入出荷業務を中心とした在庫管理・物流オペレーション</p>
+
+<p><strong>特記事項</strong>:
+<ul>
+<li>三木市は「金物のシリコンバレー」で半径5km圏内に数百社の得意先が集中</li>
+<li>少人数体制のため幅広く業務を経験し「将来の幹部候補」として期待される</li>
+<li>倉庫内は全館空調完備</li>
+<li>独自構築の自社システムを使用した業務（PC操作あり）</li>
+<li>PCスキルに不安がある場合も研修・OJTでフォロー</li>
+</ul></p>
+
+<p>出典: Green Japan 三木支店総合職求人（202217）<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<h3 id="3-2-求められるスキル-経験">3-2. 求められるスキル・経験</h3>
+
+<p>公開情報から確認できた条件:
+<ul>
+<li>未経験歓迎（PCスキル研修あり）</li>
+<li>幹部候補として成長意欲のある人材を求める</li>
+<li>物流・商社・卸売経験者は歓迎と推測（詳細は求人票要確認）</li>
+</ul></p>
+
+<p>出典: Green Japan 三木支店総合職求人（202217）<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<h3 id="3-3-キャリアパス-成長機会">3-3. キャリアパス・成長機会</h3>
+
+<ul>
+<li>幹部候補としての期待が明示されており、支店マネジャーや本社部門へのキャリアアップの可能性あり</li>
+<li>自社ブランド（HADO・OWL）・EC事業・海外展開など新規事業領域への関与機会も将来的に存在しうる</li>
+<li>ジョブローテーションの有無は不明（詳細情報なし）</li>
+</ul>
+
+<p>出典: Green Japan 三木支店総合職求人（202217）<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<h3 id="3-4-社内研修-教育制度">3-4. 社内研修・教育制度</h3>
+
+<ul>
+<li>独自の研修・OJT制度あり（PC操作含む）</li>
+<li>詳細な研修プログラム（外部研修・資格取得支援等）は公開情報なし</li>
+</ul>
+
+<p>出典: 採用情報<sup class="fnref"><a href="#src-5">[5]</a></sup></p>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-給与-報酬">4-1. 給与・報酬</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>給与（具体額）</td><td>公開情報なし（求人票要確認）</td></tr><tr><td>昇給</td><td>年1回（1月。入社1年後から）</td></tr><tr><td>賞与</td><td>年2回</td></tr><tr><td>各種手当</td><td>通勤手当（上限25,000円/月）・その他各種手当あり（詳細不明）</td></tr><tr><td>退職金</td><td>あり（勤続5年以上が条件）</td></tr></tbody></table>
+
+<p>具体的な月給・年収レンジは公開情報では確認できなかった。面接または書類選考後に確認要。</p>
+
+<p>出典: 採用情報<sup class="fnref"><a href="#src-5">[5]</a></sup> / Green Japan 各求人ページ（記載なし）<sup class="fnref"><a href="#src-6">[6]</a></sup></p>
+
+<h3 id="4-2-労働時間-休暇">4-2. 労働時間・休暇</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>年間休日</td><td>121日</td></tr><tr><td>週休</td><td>完全週休2日制</td></tr><tr><td>残業</td><td>実態の公開データなし</td></tr><tr><td>有給休暇</td><td>法定有給休暇あり。入社後6カ月以内または傷病時に早期付与の制度あり</td></tr><tr><td>特別休暇</td><td>就業規則に基づく特別休暇あり</td></tr><tr><td>定年</td><td>60歳（65歳まで継続雇用制度あり）</td></tr></tbody></table>
+
+<p>年間121日は業界水準（製造・卸売業）としてやや高め。残業の実態は不明。</p>
+
+<p>出典: 採用情報<sup class="fnref"><a href="#src-5">[5]</a></sup></p>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>社会保険</td><td>完備（健康・厚生・雇用・労災）</td></tr><tr><td>通勤手当</td><td>上限25,000円/月</td></tr><tr><td>昼食補助</td><td>昼食費補助あり</td></tr><tr><td>社販制度</td><td>社員向け自社商品購入制度あり</td></tr><tr><td>社員会</td><td>従業員親睦会あり</td></tr><tr><td>退職金</td><td>あり（勤続5年以上）</td></tr><tr><td>リモートワーク</td><td>公開情報なし（物流・営業業務のため現地勤務が基本と推測）</td></tr><tr><td>フレックス</td><td>公開情報なし</td></tr></tbody></table>
+
+<p>出典: 採用情報<sup class="fnref"><a href="#src-5">[5]</a></sup> / Green Japan 会社ページ<sup class="fnref"><a href="#src-6">[6]</a></sup></p>
+
+<h3 id="4-4-勤務地-アクセス">4-4. 勤務地・アクセス</h3>
+
+<ul>
+<li>三木支店: 兵庫県三木市（詳細住所は非公開）</li>
+<li>三木市は神戸市中心部から車で約30〜40分、神戸電鉄三木駅周辺</li>
+<li>倉庫内は全館空調完備（夏冬の温度管理あり）</li>
+</ul>
+
+<p>出典: Green Japan 三木支店総合職求人<sup class="fnref"><a href="#src-3">[3]</a></sup></p>
+
+<hr>
+
+<h2 id="面接用質問リスト">面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問</th><th>質問の意図</th></tr></thead><tbody><tr><td>1</td><td>給与・評価</td><td>三木支店総合職の具体的な月給レンジと、入社後の昇給基準・評価制度についてお聞かせいただけますか？</td><td>年収水準と公正な評価の仕組みを確認する</td></tr><tr><td>2</td><td>労働時間</td><td>三木支店の繁忙期・閑散期における月平均残業時間の実態を教えてください</td><td>残業の実態を把握しギャップを防ぐ</td></tr><tr><td>3</td><td>キャリアパス</td><td>幹部候補とのことですが、入社後どのようなステップを経て責任ある役割を担うイメージでしょうか？</td><td>キャリアアップの具体的な道筋を確認する</td></tr><tr><td>4</td><td>組織文化</td><td>社長がWevoxを活用した社員エンゲージメント向上に取り組んでいることを知りましたが、三木支店でも本社と同様の取り組みがありますか？</td><td>地方拠点での組織文化の実態を確認する</td></tr><tr><td>5</td><td>業務内容</td><td>営業と物流の比率は入社当初どのくらいを想定していますか？また、独自システムの習得にはどのくらいの期間がかかりますか？</td><td>業務の実態と立ち上がりのサポート体制を確認する</td></tr><tr><td>6</td><td>採用背景</td><td>ベテランの定年退職補充とのことですが、前任者の業務ノウハウの引き継ぎはどのように行われる予定ですか？</td><td>業務引き継ぎリスクを確認する</td></tr><tr><td>7</td><td>将来展望</td><td>EC事業や海外展開（HADOブランド）が急拡大している中で、三木支店の役割や規模はどのように変化していく予想をお持ちですか？</td><td>自分のキャリアが会社成長と連動できるかを確認する</td></tr><tr><td>8</td><td>働き方</td><td>テレワーク・フレックスなど柔軟な働き方の制度は三木支店でも利用できますか？</td><td>ライフバランスに関わる制度の有無を確認する</td></tr><tr><td>9</td><td>社員評価</td><td>転職口コミサイト（転職会議等）に「総合評価3.13」と表示されていますが、改善中の課題点や近年の変化についてご説明いただけますか？</td><td>懸念点を率直に確認し、改善意欲を測る</td></tr><tr><td>10</td><td>定着率</td><td>三木支店の直近3〜5年間の定着率や離職の傾向を教えていただけますか？</td><td>職場環境の安定性を確認する</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="求人票との整合性チェック">求人票との整合性チェック</h2>
+
+<p>Green Japan 求人番号202217（三木支店 総合職）について、公開情報と調査結果を照合した。</p>
+
+<table class="data-table"><thead><tr><th>求人票の記載内容</th><th>調査で確認できた実態</th><th>整合性</th><th>備考</th></tr></thead><tbody><tr><td>14年連続増収・売上44億円</td><td>2024年12月期売上47億円（複数ソースで確認）</td><td><span class="badge badge-green">✅</span></td><td>求人記載より実績が上回っており整合</td></tr><tr><td>三木市は金物のシリコンバレー</td><td>三木市が日本有数の金物産地であることは業界的事実</td><td><span class="badge badge-green">✅</span></td><td>事実として確認</td></tr><tr><td>幹部候補として採用</td><td>少人数（4名）拠点での幅広い業務経験が育成機会であることは自然</td><td><span class="badge badge-green">✅</span></td><td>組織規模から合理的</td></tr><tr><td>倉庫内全館空調完備</td><td>求人票の記載のみ（独立した確認ソースなし）</td><td><span class="badge badge-gray">❓</span></td><td>面接時に確認推奨</td></tr><tr><td>PCスキル研修・OJTあり</td><td>採用情報にも研修体制の記載あり（詳細不明）</td><td><span class="badge badge-green">✅</span></td><td>採用ページでも確認</td></tr><tr><td>給与（具体額）</td><td>公開情報なし。求人票記載額の確認が必要</td><td><span class="badge badge-gray">❓</span></td><td>選考プロセス中に確認必須</td></tr><tr><td>社風・ワークエンゲージメント重視</td><td>Wevox導入・社長登壇実績から経営方針として確認</td><td><span class="badge badge-green">✅</span></td><td>複数ソースで裏付け</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">Wevox イベントページ</td><td class="src-url"><a href="https://get.wevox.io/event/teamworksession-fukui" target="_blank" rel="noopener noreferrer">https://get.wevox.io/event/teamworksession-fukui</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">サイボウズ Office 導入事例</td><td class="src-url"><a href="https://office.cybozu.co.jp/cases/fukui/index.html" target="_blank" rel="noopener noreferrer">https://office.cybozu.co.jp/cases/fukui/index.html</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">Green Japan 三木支店総合職求人</td><td class="src-url"><a href="https://www.green-japan.com/company/7559/job/202217" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7559/job/202217</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">転職会議</td><td class="src-url"><a href="https://jobtalk.jp/companies/5869140" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/5869140</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">採用情報</td><td class="src-url"><a href="https://sakai-fukui.co.jp/recruit/" target="_blank" rel="noopener noreferrer">https://sakai-fukui.co.jp/recruit/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">Green Japan 各求人ページ（記載なし）</td><td class="src-url"><a href="https://www.green-japan.com/company/7559" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/company/7559</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u682a\u5f0f\u4f1a\u793e\u798f\u4e95";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

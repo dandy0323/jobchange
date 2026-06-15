@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 日本ウェブサービス株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>日本ウェブサービス株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-06-15</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">設立2010年・資本金1億円・従業員360名のSES中心のIT企業。売上非公開だが増収増益継続を標榜。SES依存ゆえ景気変動リスクあり。2026年大企業化目標を掲げるが実態は要確認</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">厚生労働省 安全衛生優良企業（ホワイトマーク）をIT業界全国初・3期連続取得（2016・2020・2023年）。不祥事・行政処分の公開情報なし</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">エン評判3.6（32名）、転職会議77件・就活会議62件。「現場次第で環境が大きく異なる」「評価制度が不明確」との指摘あり。一方で残業平均月8時間・福利厚生充実との口コミも</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 日本ウェブサービス株式会社</h1>
+
+<blockquote>調査日: 2026-06-15</blockquote>
+<blockquote>対象: 日本ウェブサービス株式会社（大阪市北区梅田・SES/SIer/ITソリューション）</blockquote>
+
+<hr>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>顧客</strong>: 上場企業・メーカー・エンドユーザー（法人）</li>
+<li><strong>提供価値</strong>: ICT・AIを活用した企業・社会課題の解決。SESを軸に、コンサルから自社プロダクトまでの幅広いIT支援</li>
+<li><strong>収益モデル</strong>: SES（人月型フロー）が主軸。自社プロダクト「Qchan」によるストック型収益も一部あり</li>
+<li><strong>4事業部門</strong>:</li>
+</ul>
+  1. <strong>コンサルティング事業</strong>: IT戦略設計・DX推進・業務プロセス最適化・データドリブン支援
+  2. <strong>ITソリューション事業</strong>: システム開発・インフラ構築・PMO・データ分析・Web制作
+  3. <strong>ビジネス・パートナー事業</strong>: 協業・アライアンス・人材ソリューション（SES）
+  4. <strong>プロダクト・サービス事業</strong>: AIソリューション提案・プロジェクト管理ツール「Qchan」販売
+<ul>
+<li><strong>出典</strong>: JWS 事業内容<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-06-15）、Green Japan インタビュー<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<ul>
+<li><strong>業界</strong>: SES（システムエンジニアリングサービス）・SIer・IT受託開発</li>
+<li><strong>業界内ポジション</strong>: 大阪梅田を本拠に関東〜関西に展開する中堅SES企業。ホワイトマーク3期連続取得を差別化軸に、「働きやすいSES企業」ポジションを訴求</li>
+<li><strong>主要競合</strong>: テクノプロ・アウトソーシングテクノロジー・パーソルテクノロジースタッフ（大手SES）、地場中小SIer各社</li>
+<li><strong>強み</strong>: ホワイトマーク認定・少ない残業（月平均8時間）・老後資産形成支援など、SES業界では差別化された待遇</li>
+<li><strong>出典</strong>: PRTimes プレスリリース<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>非公開</td><td>未上場のため非開示</td></tr><tr><td>資本金</td><td>1億円</td><td>doda・マイナビ転職参照</td></tr><tr><td>従業員数</td><td>約360名</td><td>レバテックダイレクト参照</td></tr><tr><td>設立</td><td>2010年7月</td><td>—</td></tr><tr><td>上場区分</td><td>未上場</td><td>—</td></tr></tbody></table>
+
+<ul>
+<li><strong>財務コメント</strong>: 「増収増益を継続」と各媒体に記載があるが、具体的な売上高・利益は未開示。2026年大企業化目標（キャリアパス拡充・新支店開設・福利厚生拡充）を掲げており、成長フェーズにある</li>
+<li><strong>出典</strong>: doda 企業概要<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-06-15）、レバテックダイレクト<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>2026年大企業化計画</strong>: キャリアパス構築・新人事評価制度・新支店開設・福利厚生拡充を並行推進中</li>
+<li><strong>自社プロダクト展開</strong>: プロジェクト管理ツール「Qchan」の提供。AIソリューション提案にも注力（SES依存からの脱却志向）</li>
+<li><strong>4事業化</strong>: 創業時のシステム開発1事業から現在の4事業へ拡大。上場企業・エンドユーザー直接契約比率向上を目指す</li>
+<li><strong>出典</strong>: Green Japan インタビュー<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-15）、マイナビ転職<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-06-15）</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<ul>
+<li><strong>主要な報道なし</strong>。2026-06-15時点の公開情報において、労基違反・行政処分・炎上・不正等の記録は確認できない</li>
+<li>安全衛生委員会が毎月会議を開催し、社員全員の勤務時間を確認・是正対策を組織的に実施</li>
+<li><strong>出典</strong>: PRTimes ストーリー<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li><strong>安全衛生優良企業（ホワイトマーク）</strong>: 厚生労働省認定。IT業界全国初・3期連続（2016年・2020年・2023年）</li>
+<li>認定基準：労働者の安全・健康確保や職場環境改善に継続して積極的に取り組む企業</li>
+<li>ワークライフバランスを「当たり前に実践する」と明文化</li>
+<li><strong>出典</strong>: PRTimes プレスリリース<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>B2B（法人向けSES・SIer）のため消費者向け口コミは少ない</li>
+<li>上場企業・エンドユーザーとの長期業務契約が主体であり、顧客からの評判に関する公開情報は確認できず</li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報-2026-06-15時点">口コミ・評価サイト情報（2026-06-15時点）</h3>
+
+<table class="data-table"><thead><tr><th>サイト</th><th>スコア / 件数</th><th>URL</th></tr></thead><tbody><tr><td>エン カイシャの評判</td><td>総合3.6（正社員32名）</td><td><a href="https://en-hyouban.com/company/10105828949/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10105828949/</a></td></tr><tr><td>転職会議</td><td>口コミ77件</td><td><a href="https://jobtalk.jp/companies/162542/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/162542/answers</a></td></tr><tr><td>就活会議</td><td>口コミ62件</td><td><a href="https://syukatsu-kaigi.jp/companies/34427/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/34427/word_mouths</a></td></tr><tr><td>OpenWork</td><td>クチコミあり（スコア詳細不明）</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000000aBeIC" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000000aBeIC</a></td></tr><tr><td>OpenMoney</td><td>平均年収481〜539万円</td><td><a href="https://openmoney.jp/corporations/11117/salaries" target="_blank" rel="noopener noreferrer">https://openmoney.jp/corporations/11117/salaries</a></td></tr></tbody></table>
+
+<p><strong>良い点（口コミから集計）:</strong>
+<ul>
+<li>残業平均月8.11時間（公式数値）と少なめ</li>
+<li>厚生労働省ホワイトマーク3期連続認定（業界の信頼性）</li>
+<li>確定拠出年金・財形貯蓄・職場つみたてNISA・養老保険など老後資産形成支援が手厚い</li>
+<li>リモートワーク補助あり</li>
+<li>社員交流を重視（SES企業ながら飲み会・社内活動あり）</li>
+<li>管理職が「できる人ばかり・相談しやすい」という声</li>
+</ul></p>
+
+<p><strong>懸念点（口コミから集計）:</strong>
+<ul>
+<li><strong>現場（客先）次第で環境が大きく異なる</strong>: ホワイトマーク認定でも客先の残業が多ければ実残業は増加。「20時間と聞いて入社したが現実は違った」との口コミあり</li>
+<li><strong>評価制度が不明確</strong>: 評価者と同じ客先でない場合、仕事ぶりを十分把握されないまま評価される構造的問題</li>
+<li><strong>スキルアップは自己責任</strong>: SES主体でチーム開発が少なく、技術成長は個人努力依存</li>
+<li>賞与算定の計算ルールが不透明との指摘</li>
+</ul></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] 売上高・営業利益（非公開のため成長の実態把握が必要）</li>
+<li>[ ] 2026年大企業化計画の具体的進捗（新支店・評価制度の現状）</li>
+<li>[ ] 客先常駐先の残業実態（「平均8時間」とのギャップがあるか）</li>
+<li>[ ] 評価制度の具体的な仕組みと改善状況</li>
+<li>[ ] リモートワーク・フレックスの適用条件（客先依存か社内判断か）</li>
+<li>[ ] 育児休業の取得実績</li>
+<li>[ ] 副業・兼業の可否</li>
+<li>[ ] 平均勤続年数・離職率</li>
+<li>[ ] 客先常駐の現場選定プロセス（本人の希望はどこまで通るか）</li>
+<li>[ ] 自社開発（Qchan等）へのキャリアチェンジの実績</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">JWS 事業内容</td><td class="src-url"><a href="https://jpn-web.co.jp/business/" target="_blank" rel="noopener noreferrer">https://jpn-web.co.jp/business/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Green Japan インタビュー</td><td class="src-url"><a href="https://www.green-japan.com/interview/6016" target="_blank" rel="noopener noreferrer">https://www.green-japan.com/interview/6016</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">PRTimes プレスリリース</td><td class="src-url"><a href="https://prtimes.jp/main/html/rd/p/000000004.000029778.html" target="_blank" rel="noopener noreferrer">https://prtimes.jp/main/html/rd/p/000000004.000029778.html</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">doda 企業概要</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10108766006/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10108766006/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">レバテックダイレクト</td><td class="src-url"><a href="https://levtech-direct.jp/company/527" target="_blank" rel="noopener noreferrer">https://levtech-direct.jp/company/527</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">マイナビ転職</td><td class="src-url"><a href="https://tenshoku.mynavi.jp/company/352791/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/352791/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">PRTimes ストーリー</td><td class="src-url"><a href="https://prtimes.jp/story/detail/GbyyMDiMqkb" target="_blank" rel="noopener noreferrer">https://prtimes.jp/story/detail/GbyyMDiMqkb</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 日本ウェブサービス株式会社</h1>
+
+<blockquote>調査日: 2026-06-15　対象職種: 未指定（SE・PG 中心のSES求人が主）</blockquote>
+
+<hr>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>「パートナーシップ重視」「社員交流を大切に」を掲げるが、SES主体のため社内文化の浸透は現場次第。評価制度の公正性に課題あり</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-yellow">🟡</span></td><td>SE・PGの客先常駐が中心。現場による技術・難易度の差が大きく、スキルアップは自己責任。自社開発比率は低い</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>ホワイトマーク3期連続・残業平均月8時間・充実した老後資産形成支援。ただし客先残業は現場依存</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+
+<ul>
+<li><strong>ミッション</strong>: 「ICT/AIを通じて企業や社会の課題解決に取り組む」「パートナーシップを何よりも大切に」</li>
+<li><strong>ビジョン</strong>: 2026年に大企業へステップアップ。「安定性と柔軟性の確保、行動力を兼ね備えた未来型の大企業」</li>
+<li><strong>価値観</strong>: 「失敗を咎めず、チャレンジすることを大切にする」「ワークライフバランスと健康経営を当たり前に実践する」</li>
+<li><strong>出典</strong>: JWS 公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 大阪本社（梅田）＋関東営業所の2拠点体制（新支店開設計画あり）</li>
+<li><strong>スタイル</strong>: 代表・岩井伸夫氏が主導する創業者経営。口コミからは「トップの意思が強い」という印象が一部あるが、現場への権限委譲の度合いは不明</li>
+<li>SES企業の特性上、各エンジニアが客先でほぼ独立して稼働するフラットな構造</li>
+<li><strong>出典</strong>: 転職会議・OpenWork 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li>新人事評価制度を2026年大企業化計画の一環として構築中（現時点では未完成の可能性）</li>
+<li><strong>構造的課題</strong>: SES評価の難しさ——評価者（上司）と被評価者（エンジニア）が異なる客先に常駐する場合、仕事ぶりを十分把握できないまま評価が下される</li>
+<li>賞与の計算ルールが不明確との口コミあり</li>
+<li>毎年昇給するという報告はあり（ベースアップの存在は確認）</li>
+<li><strong>出典</strong>: 転職会議 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>従業員数</td><td>約360名</td></tr><tr><td>平均年齢</td><td>不明</td></tr><tr><td>平均年収</td><td>481〜539万円（口コミサイト参照）</td></tr><tr><td>離職率</td><td>不明（公式非開示）</td></tr><tr><td>エンジニア比率</td><td>高（主力はSE・PG）</td></tr></tbody></table>
+
+<ul>
+<li><strong>出典</strong>: レバテックダイレクト<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-15）、OpenMoney（2026-06-15）</li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+
+<ul>
+<li><strong>主体</strong>: SE・PGとして客先（上場企業・メーカー・エンドユーザー）に常駐</li>
+<li><strong>対象領域</strong>: Web系システム開発・家電/産業機器の組込み開発・サーバー/ネットワーク構築・データ分析</li>
+<li><strong>チーム</strong>: 基本的に客先のチームに組み込まれる形。JWS社員同士が同じ現場に入るケースもあるが、個別常駐が多い</li>
+<li><strong>プロジェクト選定</strong>: 「本人の希望を最大限に考慮して決定」と公式に明示</li>
+<li><strong>出典</strong>: JWS 事業内容<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-06-15）、レバテックダイレクト<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+
+<ul>
+<li>Web系・組込み系・インフラ系と幅広い。現場によって使用技術は大きく異なる</li>
+<li>自社プロダクト「Qchan」（プロジェクト管理ツール）開発での技術スタックは非公開</li>
+<li>AIソリューション提案にも注力（2024年以降のトレンド対応）</li>
+<li><strong>出典</strong>: doda<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-06-15）</li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+
+<ul>
+<li>入社時の技術研修あり</li>
+<li>役職別研修プログラムあり（階層別）</li>
+<li><strong>課題</strong>: SES主体のためチーム開発が少なく、「スキルアップは社員各自で行う必要がある」との口コミ複数あり</li>
+<li><strong>出典</strong>: OpenWork 口コミ、転職会議 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li>SE・PG → プロジェクトリーダー → マネージャー等の一般的なITキャリアパスを採用サイトで提示</li>
+<li>2026年の新キャリアパス構築に向けて制度整備中（現時点では過渡期）</li>
+<li>将来のビジョンは「一人ひとりが自由に描いていく」と表現</li>
+<li>自社プロダクト（Qchan・AIソリューション）側へのシフトは現時点では事例が少ない</li>
+<li><strong>出典</strong>: マイナビ転職<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-06-15）</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<ul>
+<li><strong>残業</strong>: 平均月8.11時間（公式公表値）</li>
+<li><strong>注意</strong>: ホワイトマーク認定・社内管理は徹底されているが、客先の業務繁閑によっては実際の拘束時間が増える。口コミでは「現場次第で残業が多い」「入社時に聞いた話と違った」との指摘もあり</li>
+<li><strong>フレックスタイム</strong>: 一部ポジション（AIエンジニア等）で適用あり。全職種対応かは要確認</li>
+<li>安全衛生委員会が月次で全社員の勤務時間を監視・是正対策を実施</li>
+<li><strong>出典</strong>: PRTimes ストーリー<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-06-15）、転職会議 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li>リモートワーク導入後の補助あり（通信費等）</li>
+<li>ただし、SES主体のため客先の方針次第でリモート可否が決まる。JWS単独での制御は難しい</li>
+<li><strong>出典</strong>: 転職会議 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>年金・資産形成</td><td>確定拠出年金・職場つみたてNISA・財形貯蓄・養老保険</td></tr><tr><td>住宅手当</td><td>あり</td></tr><tr><td>リモートワーク補助</td><td>あり</td></tr><tr><td>育児補助</td><td>あり（詳細不明）</td></tr><tr><td>医療補助</td><td>独自の医療補助制度</td></tr><tr><td>海外移住サポート</td><td>引退後の海外移住サポート制度（ユニーク）</td></tr><tr><td>賞与</td><td>年3回＋α（マイナビ転職求人より）</td></tr><tr><td>社員交流</td><td>飲み会・社内活動（SES企業ながら意識的に実施）</td></tr></tbody></table>
+
+<ul>
+<li><strong>特徴</strong>: 老後資産形成支援の充実がSES業界では異色。「引退後の海外移住サポート」は独自性が高い</li>
+<li><strong>出典</strong>: マイナビ転職 求人<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-06-15）、転職会議 口コミ（2026-06-15）</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>平均年収</td><td>481〜539万円（口コミサイト複数参照）</td></tr><tr><td>年収レンジ</td><td>350〜680万円</td></tr><tr><td>昇給</td><td>毎年昇給あり（口コミ確認）</td></tr><tr><td>賞与</td><td>年3回＋α（マイナビ転職記載）、ただし算定基準不明との指摘あり</td></tr></tbody></table>
+
+<ul>
+<li><strong>注意</strong>: 賞与の計算ルールについて「不明確」との口コミ複数あり。面接で詳細確認を推奨</li>
+<li><strong>出典</strong>: OpenMoney（2026-06-15）、エン カイシャの評判（2026-06-15）</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>職務・スキル</td><td>配属される客先常駐先の選定プロセスを教えてください。本人の希望（技術分野・業種・残業時間）はどの程度考慮されますか？</td><td>「希望を最大限考慮」の実態を確認</td></tr><tr><td>2</td><td>労働条件</td><td>客先の繁忙期でも月8時間程度の残業が維持されている理由・仕組みを教えてください。是正対策の具体例は？</td><td>「現場次第で多い」口コミとのギャップを確認</td></tr><tr><td>3</td><td>組織・カルチャー</td><td>評価制度の仕組みを教えてください。評価者と別の客先に常駐している場合はどのように評価されますか？</td><td>構造的な評価課題の解決状況を確認</td></tr><tr><td>4</td><td>組織・カルチャー</td><td>賞与（年3回＋α）の算定基準と、過去3年の標準的な賞与額の目安を教えていただけますか？</td><td>算定ルール不明との口コミに対する確認</td></tr><tr><td>5</td><td>職務・スキル</td><td>2026年の新キャリアパス・新人事評価制度の構築はどのような段階にありますか？</td><td>成長計画の具体的な進捗を把握</td></tr><tr><td>6</td><td>職務・スキル</td><td>自社プロダクト（Qchan・AIソリューション）の開発に携わるキャリアパスはありますか？実際にSESから自社開発にシフトした社員の事例はありますか？</td><td>SES依存からの脱却可能性を確認</td></tr><tr><td>7</td><td>労働条件</td><td>リモートワーク・フレックスタイムは客先の承認が必要ですか？JWSとして適用できる条件はどのようなものですか？</td><td>リモート・フレックスの実適用範囲を確認</td></tr><tr><td>8</td><td>組織・カルチャー</td><td>社員の平均勤続年数と直近の離職率を教えていただけますか？</td><td>定着率の実態把握</td></tr><tr><td>9</td><td>労働条件</td><td>育児休業の男女別取得実績と、復職後の配属（客先）への影響について教えてください</td><td>ライフプランへの影響を確認</td></tr><tr><td>10</td><td>組織・カルチャー</td><td>売上高・利益の推移を差し支えない範囲で教えていただけますか？「増収増益継続」の規模感を把握したいと思っています</td><td>財務健全性の確認</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">JWS 公式サイト</td><td class="src-url"><a href="https://jpn-web.co.jp/" target="_blank" rel="noopener noreferrer">https://jpn-web.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">レバテックダイレクト</td><td class="src-url"><a href="https://levtech-direct.jp/company/527" target="_blank" rel="noopener noreferrer">https://levtech-direct.jp/company/527</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">JWS 事業内容</td><td class="src-url"><a href="https://jpn-web.co.jp/business/" target="_blank" rel="noopener noreferrer">https://jpn-web.co.jp/business/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">doda</td><td class="src-url"><a href="https://doda.jp/DodaFront/View/Company/j_id__10108766006/" target="_blank" rel="noopener noreferrer">https://doda.jp/DodaFront/View/Company/j_id__10108766006/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">マイナビ転職</td><td class="src-url"><a href="https://tenshoku.mynavi.jp/company/352791/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/company/352791/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">PRTimes ストーリー</td><td class="src-url"><a href="https://prtimes.jp/story/detail/GbyyMDiMqkb" target="_blank" rel="noopener noreferrer">https://prtimes.jp/story/detail/GbyyMDiMqkb</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">マイナビ転職 求人</td><td class="src-url"><a href="https://tenshoku.mynavi.jp/jobinfo-352791-5-1-1/" target="_blank" rel="noopener noreferrer">https://tenshoku.mynavi.jp/jobinfo-352791-5-1-1/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u65e5\u672c\u30a6\u30a7\u30d6\u30b5\u30fc\u30d3\u30b9\u682a\u5f0f\u4f1a\u793e";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

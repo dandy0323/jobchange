@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 本田技研工業株式会社</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>本田技研工業株式会社</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-06-21</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2026年3月期はEV戦略見直しに伴う関連損失1兆4536億円の計上により営業利益が4143億円の赤字（調整後は1兆393億円・利益率4.8%）。二輪事業は高収益だが四輪事業の構造転換期にあり、日産との経営統合も2025年2月に破談</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">過去にタカタ製エアバッグ問題で米国和解金100億円を支払った経緯あり。直近もシビック・アコード等のリコール届出が継続。重大な行政処分・労基違反の報道は確認できないが、リコールの頻度はやや多い</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">エン評判3.4（644名）、OpenWork総合3.0〜3.5（部門差大）。平均年収896万円・離職率4.8%と待遇は良好だが、副業基本禁止・リモートワークは育児等特別理由がない限り原則不可という保守的な労働環境</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 本田技研工業株式会社</h1>
+
+<blockquote>調査日: 2026-06-21</blockquote>
+<blockquote>対象: 本田技研工業株式会社（東京都港区・輸送用機器／二輪・四輪・金融サービス）</blockquote>
+
+<hr>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>顧客</strong>: 一般消費者（二輪・四輪・パワープロダクツ）＋ディーラー・金融契約者（金融サービス）</li>
+<li><strong>提供価値</strong>: 「How we move you.」をスローガンに、移動の自由と喜びを提供。「需要のあるところで生産する」現地生産モデル</li>
+<li><strong>収益モデル</strong>: フロー型（車両・バイク販売）＋ストック型（金融サービス・残価設定ローン等）の複合型</li>
+<li><strong>4事業セグメント</strong>（2025年3月期実績）:</li>
+</ul>
+  1. <strong>二輪事業</strong>: 売上収益3兆6,266億円・営業利益6,634億円。世界年間販売台数2,000万台超、「スーパーカブ」等で世界トップシェア
+  2. <strong>四輪事業</strong>: 売上収益14兆1,692億円・営業利益2,438億円。連結売上の最大セグメントだが利益率は二輪に劣る
+  3. <strong>金融サービス事業</strong>: 売上収益3兆5,077億円・営業利益3,156億円。高い利益率で全体を補完
+  4. <strong>パワープロダクツ事業及びその他</strong>: 汎用製品（耕耘機・芝刈機・除雪機・発電機・船外機）、HondaJet、ロボティクス、風力発電等
+<ul>
+<li><strong>出典</strong>: セグメント別実績<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-06-21）、Hondaグループキャリア採用 事業領域<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<ul>
+<li><strong>業界</strong>: 輸送用機器（自動車・二輪車）製造業</li>
+<li><strong>業界内ポジション</strong>: 二輪では世界トップクラスのシェア。四輪は世界販売台数で上位グループに属するが、EV化の遅れが課題視されている</li>
+<li><strong>主要競合</strong>: トヨタ自動車・日産自動車・スズキ（四輪・国内）、ヤマハ発動機（二輪・国内）、テスラ・BYD（EV・グローバル）</li>
+<li><strong>強み</strong>: 二輪事業の圧倒的な収益力と世界シェア、ハイブリッド技術、HondaJetなど多角化した技術ポートフォリオ</li>
+<li><strong>出典</strong>: 本田技研工業企業情報 バフェット・コード<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>2026年3月期</th><th>2025年3月期</th><th>備考</th></tr></thead><tbody><tr><td>売上収益</td><td>21兆7,966億円</td><td>21兆6,887億円</td><td>前年比0.5%減（2026年3月期）</td></tr><tr><td>営業利益</td><td>▲4,143億円（赤字）</td><td>1兆2,134億円</td><td>EV関連損失1兆4,536億円計上のため赤字化</td></tr><tr><td>調整後営業利益（EV損失除く）</td><td>1兆393億円</td><td>—</td><td>調整後営業利益率4.8%</td></tr><tr><td>純利益</td><td>—</td><td>8,358億円</td><td>前年比24.5%減</td></tr><tr><td>平均年収（社員）</td><td>896万円</td><td>—</td><td>2025年3月期有価証券報告書</td></tr></tbody></table>
+
+<ul>
+<li><strong>財務コメント</strong>: 北米向けEV3車種（Honda 0 SUV／Saloon、Acura RSX）の開発・発売中止に伴う巨額損失で一時的に赤字化。今後3年間を四輪事業再構築期間とし、2029年3月期に営業利益1兆4,000億円以上（過去最高水準）への回復を目標としている</li>
+<li><strong>出典</strong>: Car Watch 2026年3月期決算<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-06-21）、BSRweb 四輪再構築ロードマップ<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>四輪電動化戦略の見直し</strong>: バッテリー完全自前化を見送り、L-H Battery設備を活用。カナダの包括的バリューチェーン構築プロジェクトは無期限凍結</li>
+<li><strong>ハイブリッド車への経営資源シフト</strong>: 北米全工場でハイブリッド車生産可能化、米国オハイオ工場の余剰能力はICE・HEVに充当</li>
+<li><strong>日産との経営統合は破談（2025年2月）</strong>: ホンダの完全子会社化提案に日産経営陣が反発し、基本合意書を解約</li>
+<li><strong>カーボンニュートラル</strong>: 2050年に全製品・企業活動でカーボンニュートラル実現を目標。2030年に電動製品比率を四輪30%・二輪15%に</li>
+<li><strong>出典</strong>: レスポンス 三部社長EV戦略見直し<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-06-21）、global.nissannews 経営統合解約<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-06-21）</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<ul>
+<li><strong>タカタ製エアバッグ問題（過去）</strong>: 2000年代後半に発覚した異常破裂事故。ホンダ車での発生が最初に確認され、世界で少なくとも18人の死者。ホンダは米国で和解金100億円を支払い</li>
+<li><strong>リコールの頻度</strong>: 2023年12月に燃料ポンプ不具合で世界約450万台のリコールを実施。2025年9月（シビック）・11月（アコード）にも国土交通省へリコール届出</li>
+<li><strong>重大な行政処分・労基違反の報道</strong>: 2026-06-21時点で確認できず</li>
+<li><strong>出典</strong>: 国土交通省 シビックリコール<sup class="fnref"><a href="#src-8">[8]</a></sup>（2026-06-21）、Arab News タカタ和解金<sup class="fnref"><a href="#src-9">[9]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li><strong>「Triple Action to ZERO」</strong>: カーボンニュートラル・クリーンエネルギー・リソースサーキュレーションの3本柱</li>
+<li><strong>2050年目標</strong>: 全製品・企業活動でCO2排出実質ゼロ、再生可能エネルギー活用率100%、サステナブルマテリアル利用率100%</li>
+<li><strong>2030年中間目標</strong>: 電動製品販売比率（四輪30%・二輪15%・パワープロダクツ36%）、企業活動CO2排出を2019年比46%減</li>
+<li><strong>出典</strong>: Honda カーボンニュートラル<sup class="fnref"><a href="#src-10">[10]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>二輪車では「スーパーカブ」等のロングセラーモデルで高い信頼性評価</li>
+<li>四輪車ではハイブリッド技術への評価が高い一方、EV戦略の度重なる見直しが消費者の購買判断に影響を与えている可能性</li>
+<li>リコール件数の多さ（過去から継続的）は品質面での要確認材料</li>
+</ul>
+
+<hr>
+
+<h2 class="accent-yellow" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報-2026-06-21時点">口コミ・評価サイト情報（2026-06-21時点）</h3>
+
+<table class="data-table"><thead><tr><th>サイト</th><th>スコア / 件数</th><th>URL</th></tr></thead><tbody><tr><td>エン カイシャの評判</td><td>総合3.4（正社員644名）</td><td><a href="https://en-hyouban.com/company/00001216046/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/00001216046/</a></td></tr><tr><td>OpenWork</td><td>総合3.0〜3.5（部門・回答者により差あり）</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000FrWI" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000FrWI</a></td></tr><tr><td>転職会議</td><td>口コミ多数</td><td><a href="https://jobtalk.jp/companies/2563/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/2563/answers</a></td></tr><tr><td>就活会議</td><td>口コミ3,916件</td><td><a href="https://syukatsu-kaigi.jp/companies/123963/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/123963/word_mouths</a></td></tr></tbody></table>
+
+<p><strong>良い点（口コミから集計）:</strong>
+<ul>
+<li>平均年収896万円（2025年3月期有報）。30歳目安年収950万円という情報もあり待遇は良好</li>
+<li>離職率4.8%（男性4.9%・女性3.4%）と低く、長期安定的に働ける環境</li>
+<li>平均勤続年数21.3年と長期雇用が一般的</li>
+<li>月平均残業23.7時間（2024年度）で過度な長時間労働ではない</li>
+<li>カフェテリアプラン（育児用品・ベビーシッター・家事代行等に使える年間ポイント）あり</li>
+<li>「自立」「個性の尊重」を重視するHondaフィロソフィーへの共感の声</li>
+</ul></p>
+
+<p><strong>懸念点（口コミから集計）:</strong>
+<ul>
+<li>「一見自由でフラットに見えるが、実はあらゆる面で自由ではない」という口コミあり（年功序列的な側面の指摘）</li>
+<li><strong>副業は基本的に禁止</strong></li>
+<li><strong>リモートワークは育児・介護等の特別な理由がない限り原則不可</strong>。コロナ後の出社重視姿勢が継続</li>
+<li>部門・職種によって評価のばらつきが大きい（人事部門で4.9点 vs 一部回答で1.9点など）</li>
+<li>一部口コミで「低い働きがいと評価制度の課題」を指摘する声あり</li>
+</ul></p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] 2025年6月開始の新人事制度（トランスフォーメーション職／イノベーション職）の具体的な適用範囲と評価基準</li>
+<li>[ ] EV戦略見直し後の研究開発部門・関連部署への人員配置・異動の実態</li>
+<li>[ ] 日産との統合破談後の今後のアライアンス戦略・組織への影響</li>
+<li>[ ] リモートワークの具体的な承認プロセスと部署による差異</li>
+<li>[ ] 副業禁止の例外規定（あるかどうか）</li>
+<li>[ ] 部門別の評価スコアの差が大きい理由（管理職と現場での評価制度運用の違い）</li>
+<li>[ ] 65歳以降の定年延長制度の対象範囲（「高技能人材」の具体的定義）</li>
+<li>[ ] EV関連損失計上が今後のボーナス・業績連動報酬に与える影響</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">セグメント別実績</td><td class="src-url"><a href="https://s.srdb.jp/7267/content-3-2.html" target="_blank" rel="noopener noreferrer">https://s.srdb.jp/7267/content-3-2.html</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">Hondaグループキャリア採用 事業領域</td><td class="src-url"><a href="https://www.honda-jobs.com/about/business/" target="_blank" rel="noopener noreferrer">https://www.honda-jobs.com/about/business/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">本田技研工業企業情報 バフェット・コード</td><td class="src-url"><a href="https://www.buffett-code.com/company/7267/" target="_blank" rel="noopener noreferrer">https://www.buffett-code.com/company/7267/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Car Watch 2026年3月期決算</td><td class="src-url"><a href="https://car.watch.impress.co.jp/docs/news/2108657.html" target="_blank" rel="noopener noreferrer">https://car.watch.impress.co.jp/docs/news/2108657.html</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">BSRweb 四輪再構築ロードマップ</td><td class="src-url"><a href="https://bsrweb.jp/article/688072" target="_blank" rel="noopener noreferrer">https://bsrweb.jp/article/688072</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">レスポンス 三部社長EV戦略見直し</td><td class="src-url"><a href="https://response.jp/article/2026/03/13/408610.html" target="_blank" rel="noopener noreferrer">https://response.jp/article/2026/03/13/408610.html</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">global.nissannews 経営統合解約</td><td class="src-url"><a href="https://global.nissannews.com/ja-JP/releases/250213-00-j" target="_blank" rel="noopener noreferrer">https://global.nissannews.com/ja-JP/releases/250213-00-j</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">国土交通省 シビックリコール</td><td class="src-url"><a href="https://www.mlit.go.jp/report/press/jidosha08_hh_005562.html" target="_blank" rel="noopener noreferrer">https://www.mlit.go.jp/report/press/jidosha08_hh_005562.html</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">Arab News タカタ和解金</td><td class="src-url"><a href="https://www.arabnews.jp/article/business/article_21139/" target="_blank" rel="noopener noreferrer">https://www.arabnews.jp/article/business/article_21139/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">Honda カーボンニュートラル</td><td class="src-url"><a href="https://global.honda/jp/environment/initiatives/carbon_neutrality/" target="_blank" rel="noopener noreferrer">https://global.honda/jp/environment/initiatives/carbon_neutrality/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 本田技研工業株式会社</h1>
+
+<blockquote>調査日: 2026-06-21　対象職種: 未指定</blockquote>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★★</td><td><span class="badge badge-yellow">🟡</span></td><td>Hondaフィロソフィー（人間尊重・三つの喜び）が浸透。2025年6月から新人事制度（トランスフォーメーション職／イノベーション職）を導入し変革期にあるが、口コミでは「実は自由ではない」との指摘も</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-gray">⚪</span></td><td>職種未指定のため詳細は確認できず。研究開発・製造・営業など職種により業務内容は大きく異なる</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-yellow">🟡</span></td><td>年収896万円・残業23.7時間・離職率4.8%など待遇は良好。一方でリモートワークは原則不可、副業基本禁止という保守的な制度設計</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+
+<ul>
+<li><strong>Hondaフィロソフィー</strong>: 「人間尊重」「三つの喜び（買う喜び・売る喜び・創る喜び）」から成る基本理念と、社是・運営方針で構成</li>
+<li><strong>社是</strong>: 「わたしたちは、世界的視野に立ち、世界中の顧客の満足のために、質の高い商品を適正な価格で供給することに全力を尽くします」</li>
+<li><strong>人間尊重の柱</strong>: 「自立」（既成概念にとらわれず自由に発想し、自らの信念に基づき主体性をもって行動し責任を持つ）、「平等」（個人の違いを認め合い尊重する）</li>
+<li><strong>出典</strong>: visionguide 本田技研工業ビジョン<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 二輪・四輪・金融・パワープロダクツの事業セグメント別組織。研究開発は本田技術研究所として独立運営</li>
+<li><strong>スタイル</strong>: 創業者・本田宗一郎の「個性・自由な発想・意思を尊重する」精神が継承され、年功序列だけでなく個人にフォーカスする価値観を標榜。ただし口コミでは「一見自由でフラットに見えるが、実はあらゆる面で自由ではない」との指摘もあり、実態には部署差がある</li>
+<li><strong>変革方針</strong>: 「企業変革を加速させるヒト・カルチャーへの進化」をビジョンに掲げ、「変化を楽しむ」風土への進化を推進中</li>
+<li><strong>出典</strong>: PORTキャリア 実態解説<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li><strong>2025年6月から新人事制度を導入</strong>:</li>
+<li><strong>トランスフォーメーション職</strong>: 役割と報酬がダイレクトに連動。完全な脱年功・脱一律</li>
+<li><strong>イノベーション職</strong>: 能力・専門性の発揮を直接処遇に反映</li>
+<li>役職者の一部に株式報酬も導入</li>
+<li><strong>定年制度の変更</strong>: 高い技術・技能を持つ一部従業員について定年制度を廃止し、65歳以降も働けるようにする方針（2025年6月から）</li>
+<li><strong>背景</strong>: EV・自動運転など自動車業界の構造変革に対応した人材採用・活用強化が狙い</li>
+<li><strong>出典</strong>: 日経ビジネス 人事制度刷新<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-06-21）、Bloomberg 定年廃止<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+
+<ul>
+<li><strong>平均年齢</strong>: 44.5歳（2025年3月期有価証券報告書）</li>
+<li><strong>平均勤続年数</strong>: 21.3年</li>
+<li><strong>離職率</strong>: 4.8%（男性4.9%・女性3.4%）（2025年3月期）</li>
+<li><strong>平均年収</strong>: 896万円</li>
+<li><strong>出典</strong>: tleon 平均年収解説（有報データ）<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-06-21）</li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+
+<ul>
+<li>職種未指定のため一般情報のみ。事業セグメント（二輪・四輪・金融・パワープロダクツ）ごとに開発・製造・販売・管理部門が編成される大企業型組織</li>
+<li>研究開発機能は本田技術研究所が独立して担う体制</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+
+<ul>
+<li>自動車・二輪車のハードウェア技術（エンジン・ハイブリッド・EV）に加え、ロボティクス・航空機（HondaJet）・再生可能エネルギー（風力発電）など多角的な技術ポートフォリオ</li>
+<li>AI活用・自動運転技術への投資も進行中（具体的な開発体制は職種ごとに異なるため要確認）</li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+
+<ul>
+<li>詳細な検索情報は確認できず。新人事制度導入に伴い、専門性強化のための研修体系も見直しが進んでいる可能性（要確認）</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li>2025年6月の新人事制度により「トランスフォーメーション職」と「イノベーション職」の2系統でキャリアが分岐</li>
+<li>65歳以降も働ける制度（高技能人材向け）により、長期的なキャリア形成が可能な設計</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<ul>
+<li><strong>月平均残業時間</strong>: 23.7時間（2024年度）。過度な長時間労働ではない水準</li>
+<li><strong>離職率の低さ</strong>（4.8%）から、労働環境の安定性は一定程度確認できる</li>
+<li><strong>出典</strong>: talentsquare 評判解説<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li><strong>原則不可</strong>: リモートワークは育児・介護等の特別な理由がない限り基本的に認められない</li>
+<li>育児中の社員は上司との相談を経てリモートワークを利用できるケースがある</li>
+<li>コロナ後も出社重視の方針を継続している模様</li>
+<li><strong>出典</strong>: Honda公式 育児・介護と仕事の両立支援<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<ul>
+<li><strong>カフェテリアプラン</strong>: 年間ポイント制で育児用品・ベビーシッター・家事代行サービス等に利用可能</li>
+<li>在宅勤務用品購入支援、書籍購入支援等の補助あり</li>
+<li>栃木・埼玉県に育児支援施設（保育所等）を設置し、育休からの早期復帰を支援</li>
+<li><strong>副業は基本的に禁止</strong></li>
+<li><strong>出典</strong>: Honda公式 多様な働き方<sup class="fnref"><a href="#src-8">[8]</a></sup>（2026-06-21）、厚労省 働き方・休み方改善事例<sup class="fnref"><a href="#src-9">[9]</a></sup>（2026-06-21）</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<ul>
+<li><strong>平均年収</strong>: 896万円（2025年3月期有価証券報告書）</li>
+<li><strong>30歳目安年収</strong>: 950万円（ONE CAREER PLUS調査）</li>
+<li>2025年6月以降、トランスフォーメーション職では役割・成果と報酬がより直接的に連動する設計に変更</li>
+<li>役職者の一部には株式報酬制度も導入</li>
+<li><strong>出典</strong>: ONE CAREER PLUS 役職・年代別年収<sup class="fnref"><a href="#src-10">[10]</a></sup>（2026-06-21）</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>組織・カルチャー</td><td>2025年6月から導入された新人事制度（トランスフォーメーション職／イノベーション職）は、募集職種にどのように適用されますか？</td><td>評価制度が自分のキャリアにどう影響するか把握するため</td></tr><tr><td>2</td><td>労働条件</td><td>リモートワークの承認はどのようなプロセスで、育児・介護以外の理由でも認められる可能性はありますか？</td><td>働き方の柔軟性の実態を確認するため</td></tr><tr><td>3</td><td>労働条件</td><td>副業の禁止に例外規定はありますか？（例：執筆・講演など）</td><td>制度の厳格さの実態を確認するため</td></tr><tr><td>4</td><td>事業・経済基盤</td><td>EV戦略見直しに伴う四輪事業再構築の中で、募集部署の人員体制や今後の投資方針はどう変わりますか？</td><td>配属部署の事業継続性・成長性を確認するため</td></tr><tr><td>5</td><td>組織・カルチャー</td><td>日産との経営統合破談後、今後のアライアンス戦略や開発リソースの再配分について教えてください</td><td>組織再編リスクの有無を把握するため</td></tr><tr><td>6</td><td>職務・スキル</td><td>募集職種の業務内容と、配属後の具体的なチーム構成・上司との1on1の頻度を教えてください</td><td>職務未指定の求人の場合、実際の業務イメージを掴むため</td></tr><tr><td>7</td><td>労働条件</td><td>月平均残業23.7時間という有報データは、部署・職種によってどの程度差がありますか？</td><td>全社平均と実際の配属先の差を確認するため</td></tr><tr><td>8</td><td>組織・カルチャー</td><td>65歳までの定年延長（高技能人材向け）の対象範囲はどのように定義されていますか？</td><td>長期キャリア設計の前提を確認するため</td></tr><tr><td>9</td><td>労働条件</td><td>EV関連損失の計上が、今後のボーナス・業績連動報酬にどう影響する見込みですか？</td><td>待遇への影響を事前に把握するため</td></tr><tr><td>10</td><td>組織・カルチャー</td><td>「自立」を重視する企業文化の一方で、口コミにある『実は自由ではない』という声についてどう捉えていますか？</td><td>実態とのギャップを確認するため</td></tr></tbody></table>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">visionguide 本田技研工業ビジョン</td><td class="src-url"><a href="https://visionguide.jp/corp/honda/" target="_blank" rel="noopener noreferrer">https://visionguide.jp/corp/honda/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">PORTキャリア 実態解説</td><td class="src-url"><a href="https://www.theport.jp/portcareer/article/257676/" target="_blank" rel="noopener noreferrer">https://www.theport.jp/portcareer/article/257676/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">日経ビジネス 人事制度刷新</td><td class="src-url"><a href="https://project.nikkeibp.co.jp/HumanCapital/atcl/column/00056/050700026/" target="_blank" rel="noopener noreferrer">https://project.nikkeibp.co.jp/HumanCapital/atcl/column/00056/050700026/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">Bloomberg 定年廃止</td><td class="src-url"><a href="https://www.bloomberg.co.jp/news/articles/2025-01-17/SQ7TNWT1UM0W00" target="_blank" rel="noopener noreferrer">https://www.bloomberg.co.jp/news/articles/2025-01-17/SQ7TNWT1UM0W00</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">tleon 平均年収解説（有報データ）</td><td class="src-url"><a href="https://tleon.co.jp/media/honda-salary/" target="_blank" rel="noopener noreferrer">https://tleon.co.jp/media/honda-salary/</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">talentsquare 評判解説</td><td class="src-url"><a href="https://talentsquare.co.jp/career/honda-review/" target="_blank" rel="noopener noreferrer">https://talentsquare.co.jp/career/honda-review/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">Honda公式 育児・介護と仕事の両立支援</td><td class="src-url"><a href="https://global.honda/jp/diversity/balancework/" target="_blank" rel="noopener noreferrer">https://global.honda/jp/diversity/balancework/</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">Honda公式 多様な働き方</td><td class="src-url"><a href="https://www.honda-jobs.com/environment/workstyle/" target="_blank" rel="noopener noreferrer">https://www.honda-jobs.com/environment/workstyle/</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">厚労省 働き方・休み方改善事例</td><td class="src-url"><a href="https://work-holiday.mhlw.go.jp/detail/0413.html" target="_blank" rel="noopener noreferrer">https://work-holiday.mhlw.go.jp/detail/0413.html</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">ONE CAREER PLUS 役職・年代別年収</td><td class="src-url"><a href="https://plus.onecareer.jp/articles/453" target="_blank" rel="noopener noreferrer">https://plus.onecareer.jp/articles/453</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u672c\u7530\u6280\u7814\u5de5\u696d\u682a\u5f0f\u4f1a\u793e";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

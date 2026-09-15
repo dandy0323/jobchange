@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社神戸デジタル・ラボ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社神戸デジタル・ラボ</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-09-15</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">1995年創業の独立系地場IT。売上20.6億円・従業員176名（2025年9月期）。Web/アプリ開発＋情報セキュリティ＋データ/AIの多角展開、東芝・ホンダ・博報堂等の取引実績あり。ただし未上場で財務詳細非開示、規模が小さく単一案件の影響を受けやすい</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">2025年10月の兵庫県「はばタンPay＋」個人情報漏えい事案で、システム対応（開発支援・サーバー運用・セキュリティ）の委託先として県が社名を公表。行政処分・指名停止は確認できず、原因の責任所在も未公表だが、情報セキュリティを主力とする企業として看過できない事案</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">OpenWork・エン等で総合3.5〜3.9水準。会社公表値で月平均所定外労働19.2時間・有給平均12.7日・育休取得率男女とも100%。フレックス／ハイブリッド勤務／副業可。一方「組織体制・部署名が頻繁に変わる」との指摘あり</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社神戸デジタル・ラボ</h1>
+
+<blockquote>調査日: 2026-09-15</blockquote>
+<blockquote>対象: 株式会社神戸デジタル・ラボ（兵庫県神戸市中央区・独立系ITソリューション／情報セキュリティ）</blockquote>
+<blockquote>※通称: KDL（Kobe Digital Labo）</blockquote>
+
+<hr>
+
+<h2 class="accent-yellow" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>顧客</strong>: 法人向けBtoB（大手企業・自治体・地場企業）。東芝、ホンダ、博報堂などの取引実績を公表</li>
+<li><strong>提供価値</strong>: 「デジタルで未来を創る」を掲げ、上流のITコンサルから開発・運用・セキュリティまで一気通貫で提供</li>
+<li><strong>主な事業領域</strong>:</li>
+<li><strong>Web／アプリ開発</strong>: Webシステム・アプリケーション開発、CMS導入、スマートデバイスアプリ</li>
+<li><strong>情報セキュリティ</strong>: 総合サービス「Proactive Defense」、脆弱性診断、不正アクセス対応、デジタルフォレンジック調査（2008年から展開）</li>
+<li><strong>データ活用／AI</strong>: データ活用プラットフォーム構築、データエンジニアリング</li>
+<li><strong>IoT／先端技術</strong>: IoT開発支援（SORACOM SPS認定パートナー）</li>
+<li><strong>DX支援・新規事業創出支援</strong>、自社サービス開発</li>
+<li><strong>収益モデル</strong>: 受託開発（フロー型）＋運用保守・セキュリティ監視・自社サービス（ストック型）の複合</li>
+<li><strong>出典</strong>: KDL 公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-09-15）、会社情報<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-09-15）</li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<ul>
+<li><strong>業界</strong>: 独立系SIer／システム受託開発／情報セキュリティサービス</li>
+<li><strong>業界内ポジション</strong>: 兵庫県・神戸に本社を置く独立系の中堅IT。大手SIerの下請けに留まらず、セキュリティ・データ活用など付加価値領域を自社の強みとして打ち出している</li>
+<li><strong>主要競合</strong>: 地場・独立系SIer各社、セキュリティ専業ベンダー（脆弱性診断・フォレンジック領域）、大手SIerの関西拠点</li>
+<li><strong>強み</strong>: 開発とセキュリティを併せ持つ「セキュア開発」の複合提案力、震災を起点とする地域密着のブランド、SORACOM等のパートナー認定</li>
+<li><strong>出典</strong>: アイミツ 企業情報<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-09-15）、SORACOM 認定パートナー<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-09-15）</li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>売上高</td><td>2,063百万円（約20.6億円）</td><td>2025年9月期</td></tr><tr><td>営業利益率</td><td>非公開</td><td>未上場のため未開示</td></tr><tr><td>自己資本比率</td><td>非公開</td><td>未上場のため未開示</td></tr><tr><td>資本金</td><td>5,000万円</td><td>—</td></tr><tr><td>従業員数</td><td>176名（男110／女66）</td><td>2025年10月1日時点。別ソースで180名（2025年9月期）</td></tr><tr><td>設立</td><td>1995年10月1日</td><td>阪神・淡路大震災の年に創業</td></tr><tr><td>上場区分</td><td>未上場</td><td>親会社・グループ関係は確認できず（独立系）</td></tr></tbody></table>
+
+<ul>
+<li><strong>財務コメント</strong>: 売上20.6億円・従業員176名の中堅規模。未上場のため利益率・自己資本比率などの詳細は非開示で、成長率の推移も公開情報からは追えない。大手企業との取引実績があり事業基盤は一定程度安定していると見られるが、規模が小さく、特定の大型案件やトラブルの業績インパクトを受けやすい構造にある点は留意が必要</li>
+<li><strong>出典</strong>: 官報決算データベース<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-09-15）、会社概要<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-09-15）</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li>Web／アプリ開発の受託から、情報セキュリティ・データ活用／AI・IoTといった高付加価値領域への事業ポートフォリオ拡大</li>
+<li>自社サービス開発による受託依存からの脱却</li>
+<li>「セキュア開発」（開発とセキュリティの複合提供）を差別化軸として訴求</li>
+<li>中期経営計画の公表資料は確認できず（未上場のため非開示と見られる）</li>
+<li><strong>出典</strong>: KDL 公式サイト<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-09-15）、paiza 企業情報<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-09-15）</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<blockquote><span class="badge badge-yellow">⚠️</span> 要確認事案: 兵庫県「はばタンPay＋」個人情報漏えい（2025年10月）</blockquote>
+
+<ul>
+<li><strong>事案概要</strong>: 兵庫県のプレミアム付デジタル券「はばタンPay＋（プラス）」の購入申込受付において、申込者の個人情報が他者に閲覧される漏えいが発生。2025年10月23日の受付開始から約1時間半でシステムを停止</li>
+<li><strong>漏えい規模</strong>: 兵庫県の最終発表で15件・30人分（当初発表は17件・34人分）。うち1件でマイナンバーが漏えい</li>
+<li><strong>漏えい情報</strong>: 氏名、住所、生年月日、電話番号、マイナンバーカード画像、子ども医療費受給者証、母子健康手帳の画像等</li>
+<li><strong>原因（県の調査）</strong>: 「申込完了情報を格納するサーバーと、無効申込情報を格納するサーバーの接続不具合」</li>
+<li><strong>委託構造</strong>: 兵庫県 → 株式会社日本旅行 神戸支店（全体受託・運営事務局／コールセンター管理／申込統括）→ 株式会社神戸デジタル・ラボ（<strong>システム対応：開発支援・サーバー運用・セキュリティ</strong>）／フェリカポケットマーケティング株式会社（アプリ開発・提供、決済システム基盤）</li>
+<li><strong>経過</strong>: 2025年10月27日に受付再開（4日間停止）、申込期限を11月17日→11月21日に延長。同年10月29日の記者会見で斎藤知事が委託業者名を公表し、再発防止策としてシステム監査の強化を表明</li>
+<li><strong>留意点</strong>: 本事案でKDLに対する行政処分・指名停止・契約解除は公開情報上確認できず、また不具合の直接的な責任所在（KDL・フェリカポケット・県のいずれに帰するか）も公表されていない。ただし、情報セキュリティを主力事業に掲げる企業が関与した公共案件でマイナンバーを含む漏えいが発生した点は、事業信頼性の観点で重い</li>
+<li><strong>上記以外</strong>: 労働基準監督署による是正勧告・送検、その他の行政処分の公開記録は確認できず</li>
+<li><strong>出典</strong>: 神戸新聞NEXT はばタンPay情報漏えい<sup class="fnref"><a href="#src-8">[8]</a></sup>（2026-09-15）、神戸新聞NEXT 漏えい15件30人分<sup class="fnref"><a href="#src-9">[9]</a></sup>（2026-09-15）、神戸新聞NEXT 受付再開<sup class="fnref"><a href="#src-10">[10]</a></sup>（2026-09-15）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li>阪神・淡路大震災（1995年）の経験を創業の原点とし、「人々が助け合い復興する神戸とともに成長」を企業の物語として掲げる</li>
+<li>育児休業取得率は男性100%（4人/4人）、女性100%（2人/2人）と公表</li>
+<li>女性比率 約37.5%（176名中66名）</li>
+<li>未上場のためESGレポート・サステナビリティ報告書の発行は確認できず</li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>東芝、ホンダ、博報堂など大手企業との取引実績を公表しており、一定の品質評価は得ていると見られる</li>
+<li>SORACOM SPS認定パートナーなど、技術パートナー認定を取得</li>
+<li>一方で、前述の「はばタンPay＋」事案は公共案件での信頼性に関する直近のマイナス材料</li>
+<li><strong>出典</strong>: アイミツ<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-09-15）</li>
+</ul>
+
+<hr>
+
+<h2 class="accent-green" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報-2026-09-15時点">口コミ・評価サイト情報（2026-09-15時点）</h3>
+
+<table class="data-table"><thead><tr><th>サイト</th><th>スコア / 件数</th><th>URL</th></tr></thead><tbody><tr><td>OpenWork</td><td>総合3.9/5.0 水準（件数未確認）</td><td><a href="https://www.openwork.jp/company.php?m_id=a0910000000G155" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0910000000G155</a></td></tr><tr><td>エン カイシャの評判</td><td>総合3.5（正社員10人回答）</td><td><a href="https://en-hyouban.com/company/10006943979/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10006943979/</a></td></tr><tr><td>就活会議</td><td>口コミ81件</td><td><a href="https://syukatsu-kaigi.jp/companies/11851/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/11851/word_mouths</a></td></tr><tr><td>転職会議</td><td>口コミあり（年収9件等）</td><td><a href="https://jobtalk.jp/companies/24086" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/24086</a></td></tr></tbody></table>
+
+<p><strong>会社公表の労働データ:</strong>
+<ul>
+<li>月平均所定外労働時間: 19.2時間（口コミ集計では17.7時間）</li>
+<li>前事業年度の有給休暇平均取得日数: 12.7日</li>
+<li>育児休業取得率: 男性100%（4/4）、女性100%（2/2）</li>
+<li>平均年齢: 37.9歳</li>
+</ul></p>
+
+<p><strong>良い点（口コミより）:</strong>
+<ul>
+<li>役員と社員の距離が近く、風通しが良い</li>
+<li>若手がチャレンジしたいことに挑戦しやすい環境</li>
+<li>コアタイムありのフレックス制度で生活スタイルに合わせて働ける</li>
+<li>有給申請が通りやすく、プライベート時間を確保しやすい</li>
+<li>社員発信の勉強会・社内コンペ・サークル活動が日常的にある</li>
+</ul></p>
+
+<p><strong>懸念点（口コミより）:</strong>
+<ul>
+<li>組織体制・部署名が頻繁に変わる</li>
+<li>年収データがソースにより444万円〜718万円と大きく振れており、実態が読みにくい</li>
+</ul></p>
+
+<p><strong>判断の限界:</strong> 口コミ母数が少なく（エンは10人回答）、OpenWorkの総合スコアも検索結果からの推定値。実額・実態は選考過程での確認が必要</p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] 「はばタンPay＋」漏えい事案におけるKDLの役割範囲と、原因究明・再発防止策の具体的内容</li>
+<li>[ ] 同事案の受注・売上・公共案件獲得への影響（兵庫県との継続取引の有無）</li>
+<li>[ ] 情報セキュリティ事業の社内品質管理体制（自社が診断する側とされる側で乖離がないか）</li>
+<li>[ ] 売上の事業別構成比（受託開発／セキュリティ／データ活用／自社サービス）と成長率</li>
+<li>[ ] 特定顧客への売上依存度（東芝・ホンダ等の大口比率）</li>
+<li>[ ] 実際の年収レンジ（公開データが444万〜718万と乖離しているため）</li>
+<li>[ ] 離職率・平均勤続年数（公開情報なし）</li>
+<li>[ ] 「組織体制・部署名が頻繁に変わる」背景と、配属の安定性</li>
+<li>[ ] ハイブリッド勤務の実際の出社頻度（職種・案件による差）</li>
+<li>[ ] 評価制度の具体的な仕組みと昇給・昇格基準</li>
+<li>[ ] 2023年の社長交代（永吉一郎氏→玉置慎一氏）後の経営方針の変化</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">KDL 公式サイト</td><td class="src-url"><a href="https://www.kdl.co.jp/" target="_blank" rel="noopener noreferrer">https://www.kdl.co.jp/</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">会社情報</td><td class="src-url"><a href="https://www.kdl.co.jp/company/" target="_blank" rel="noopener noreferrer">https://www.kdl.co.jp/company/</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">アイミツ 企業情報</td><td class="src-url"><a href="https://imitsu.jp/service/98004/" target="_blank" rel="noopener noreferrer">https://imitsu.jp/service/98004/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">SORACOM 認定パートナー</td><td class="src-url"><a href="https://soracom.jp/support_partners/certified/kobedigitallab/" target="_blank" rel="noopener noreferrer">https://soracom.jp/support_partners/certified/kobedigitallab/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">官報決算データベース</td><td class="src-url"><a href="https://catr.jp/companies/df28b/36619" target="_blank" rel="noopener noreferrer">https://catr.jp/companies/df28b/36619</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">会社概要</td><td class="src-url"><a href="https://www.kdl.co.jp/company/overview/" target="_blank" rel="noopener noreferrer">https://www.kdl.co.jp/company/overview/</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">paiza 企業情報</td><td class="src-url"><a href="https://paiza.jp/recruiters/6322" target="_blank" rel="noopener noreferrer">https://paiza.jp/recruiters/6322</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">神戸新聞NEXT はばタンPay情報漏えい</td><td class="src-url"><a href="https://www.kobe-np.co.jp/news/society/202510/0019627832.shtml" target="_blank" rel="noopener noreferrer">https://www.kobe-np.co.jp/news/society/202510/0019627832.shtml</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">神戸新聞NEXT 漏えい15件30人分</td><td class="src-url"><a href="https://kobe-np.co.jp/news/society/202511/0019669101.shtml" target="_blank" rel="noopener noreferrer">https://kobe-np.co.jp/news/society/202511/0019669101.shtml</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">神戸新聞NEXT 受付再開</td><td class="src-url"><a href="https://www.kobe-np.co.jp/news/society/202510/0019637749.shtml" target="_blank" rel="noopener noreferrer">https://www.kobe-np.co.jp/news/society/202510/0019637749.shtml</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社神戸デジタル・ラボ</h1>
+
+<blockquote>調査日: 2026-09-15　対象職種: 未指定</blockquote>
+
+<hr>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>「とりあえずやってみたら」と挑戦を後押しする風土。役員と社員の距離が近く風通しが良いとの口コミ。社員発信の勉強会・社内コンペ・サークル活動が活発。一方で組織体制・部署名の変更頻度が高い点は要確認</td></tr><tr><td>職務・スキル</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>Web/アプリ開発、情報セキュリティ（脆弱性診断・フォレンジック）、データ活用/AI、IoTと領域が広く、受託でも幅広い技術に触れられる。資格取得奨励金・教育強化費・図書購入支援など学習支援制度あり</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>月平均所定外労働19.2時間、有給平均取得12.7日、育休取得率男女とも100%。フレックス（コアタイムあり）、ハイブリッド勤務、1時間単位有給、副業可、在宅手当。年収レンジは公開データのばらつきが大きく要確認</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+
+<ul>
+<li>理念体系は <strong>「KDL WAY」</strong> として整備・公開</li>
+<li>「デジタルで未来を創る」を掲げ、Webサイト構築・最適化、アプリ開発、先端技術導入支援、情報セキュリティサービスを展開</li>
+<li>1995年（阪神・淡路大震災の年）の創業を原点とし、「人々が助け合い復興する神戸とともに成長してきた」ことを企業の物語として位置づけている</li>
+<li>社員の「ワクワク」する気持ちを重視し、「とりあえずやってみたら」と後押しする風土を自社で明文化</li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 176名規模の独立系企業。部門＋プロジェクト型と推測されるが、詳細な組織図は非公開</li>
+<li><strong>スタイル</strong>: ボトムアップ寄り。「社員の主体的な挑戦や取り組みにイヤな顔をせず、むしろ会社が背中を押してくれる風土」を自社で訴求。口コミでも「役員と社員の距離は近く、風通しが良い」との指摘</li>
+<li>フレックス制度・ハイブリッド勤務・副業OKといった制度が「社員の声を基に近年導入された」とされ、現場起点の制度化が機能している様子がうかがえる</li>
+<li>一方、口コミでは「組織体制が頻繁に変わる」「部署名が頻繁に変わる」との指摘が複数あり、変化のスピードが速い反面、所属の安定性には疑問符が付く</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li>評価制度の具体的な仕組み（等級・考課方法）は公開情報から確認できず</li>
+<li>スキルアップ支援として <strong>教育強化費制度・図書購入支援・資格取得奨励金制度</strong> を整備。資格は社内規定に基づき奨励金が付与される</li>
+<li>年収データがソースにより大きく乖離しており（後述）、評価・報酬の分布が読みにくい</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>従業員数</td><td>176名（男性110名・女性66名）</td><td>2025年10月1日時点</td></tr><tr><td>女性比率</td><td>約37.5%</td><td>IT企業としては高めの水準</td></tr><tr><td>平均年齢</td><td>37.9歳</td><td>—</td></tr><tr><td>代表取締役社長</td><td>玉置 慎一</td><td>1976年生／1999年入社／2023年社長就任</td></tr><tr><td>創業者</td><td>永吉 一郎</td><td>1995年に神戸市東灘区で設立</td></tr><tr><td>資本金</td><td>5,000万円</td><td>—</td></tr><tr><td>本社</td><td>兵庫県神戸市中央区京町72番地 新クレセントビル5F</td><td>—</td></tr><tr><td>離職率</td><td>非公開</td><td>公開情報なし</td></tr><tr><td>平均勤続年数</td><td>非公開</td><td>公開情報なし</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+
+<ul>
+<li><strong>Web／アプリ開発</strong>: Webシステム・アプリケーション開発、CMS導入、スマートデバイスアプリ開発</li>
+<li><strong>情報セキュリティ</strong>: 総合サービス「Proactive Defense」、脆弱性診断、不正アクセス対応、デジタルフォレンジック調査（2008年から展開）</li>
+<li><strong>データ活用／AI</strong>: データ活用プラットフォーム構築、データエンジニアリング</li>
+<li><strong>IoT／先端技術</strong>: IoT開発支援（SORACOM SPS認定パートナー）</li>
+<li><strong>DX支援・新規事業創出支援</strong>、自社サービス開発</li>
+<li><strong>顧客</strong>: 東芝、ホンダ、博報堂などの大手企業に加え、自治体案件（兵庫県「はばタンPay＋」等）</li>
+<li><strong>募集職種</strong>: アプリ開発エンジニア、DX案件担当プロジェクトマネージャー、ITセールス等</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+
+<ul>
+<li>使用言語・フレームワークの詳細は公開情報から確認できず（案件により多様と推測）</li>
+<li><strong>セキュリティ</strong>: 脆弱性診断、デジタルフォレンジック、セキュア開発</li>
+<li><strong>IoT</strong>: SORACOM プラットフォーム（SPS認定パートナー）</li>
+<li><strong>データ／AI</strong>: データ活用プラットフォーム構築、データエンジニアリング</li>
+<li><strong>開発形態</strong>: 受託開発が主体。開発とセキュリティを組み合わせた「セキュア開発」を差別化軸に据える</li>
+<li>開発手法（アジャイル／ウォーターフォール）の公開情報はなし</li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+
+<ul>
+<li><strong>資格取得奨励金制度</strong>: 社内規定に基づき取得資格へ奨励金を付与。自発的に資格取得を進める社員が多いとされる</li>
+<li><strong>教育強化費制度</strong>、<strong>図書購入支援</strong></li>
+<li>有志による勉強会が日常的に開催されており、社員発信の学習文化がある</li>
+<li>新卒向けにアプリ開発エンジニア体験インターンシップを実施</li>
+<li>体系的な階層別研修の有無は公開情報から確認できず</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li>領域が Web／アプリ／セキュリティ／データ・AI／IoT と広く、社内で専門領域を横断しながらキャリアを築ける可能性がある</li>
+<li>エンジニア → プロジェクトマネージャー、ITセールスなど職種転換の募集も存在</li>
+<li>一方、組織体制の変更頻度が高いとの口コミがあり、中長期のキャリアパスが計画的に描けるかは要確認</li>
+<li>未上場・独立系のため、大手グループのような広域異動やグループ会社出向の選択肢は限定的と推測</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<ul>
+<li><strong>月平均所定外労働時間</strong>: 19.2時間（会社公表）／17.7時間（口コミ集計）— IT業界平均比で短め</li>
+<li><strong>有給休暇平均取得日数</strong>: 12.7日（前事業年度、会社公表）</li>
+<li><strong>フレックスタイム制</strong>: コアタイムありのフレックス制度を導入。「個人の生活スタイルに合わせて働ける」との口コミ</li>
+<li><strong>時間単位有給</strong>: 1時間単位で取得可能</li>
+<li>口コミでは「有給申請が通りやすく、プライベート時間を確保しやすい」との評価</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li><strong>ハイブリッド勤務</strong>を採用（オフィス出社／リモートワークを選択可能）</li>
+<li>在宅勤務時に1日500円の手当が支給されるとの口コミあり</li>
+<li>職種・案件別の出社頻度の実態は公開情報から確認できず（セキュリティ案件・顧客常駐案件では制約の可能性）</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<ul>
+<li>育児休業取得率: <strong>男性100%（4人/4人）、女性100%（2人/2人）</strong>（会社公表）</li>
+<li><strong>副業OK</strong>（社員の声を基に近年導入）</li>
+<li>在宅勤務手当（1日500円）</li>
+<li>教育強化費制度・図書購入支援・資格取得奨励金制度</li>
+<li>社内コンペ、サークル活動などの社内コミュニティ活動</li>
+<li>※ 口コミの一部に「NTT系列の会社であり福利厚生も充実」との記述が見られたが、KDLは独立系であり親会社・グループ関係は確認できなかった。他社の口コミ混入の可能性が高く、本レポートでは採用しない</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>ソース</th><th>平均年収</th><th>備考</th></tr></thead><tbody><tr><td>転職会議（正社員13人回答）</td><td>718万円</td><td>年収範囲300〜3,600万円と幅が極端に広く、外れ値の影響が大きい可能性</td></tr><tr><td>doda</td><td>506万円</td><td>—</td></tr><tr><td>doda（別集計）</td><td>444万円</td><td>—</td></tr></tbody></table>
+
+<ul>
+<li>公開データの乖離が大きく（444万〜718万円）、実態の把握は困難</li>
+<li>平均年齢37.9歳を踏まえると、実勢は500万円前後が中心帯と推測されるが、あくまで推測の域を出ない</li>
+<li>賞与・昇給の仕組みは公開情報から確認できず</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>コンプライアンス</td><td>2025年10月の兵庫県「はばタンPay＋」個人情報漏えい事案について、御社が担った役割と、その後の原因究明・再発防止策を教えてください</td><td><strong>最重要</strong>。セキュリティを主力とする企業の品質管理体制の実態を確認するため</td></tr><tr><td>2</td><td>コンプライアンス</td><td>同事案の後、公共案件の受注や兵庫県との取引にどのような影響がありましたか</td><td>業績・受注パイプラインへの影響と、事業リスクの現状把握</td></tr><tr><td>3</td><td>事業戦略</td><td>売上の事業別構成比（受託開発／情報セキュリティ／データ活用・AI／自社サービス）と、今後伸ばしたい領域を教えてください</td><td>成長領域の見極めと、配属先の将来性の確認</td></tr><tr><td>4</td><td>事業戦略</td><td>特定顧客への売上依存度はどの程度でしょうか。大口顧客の構成を教えてください</td><td>176名規模での単一顧客依存リスクの把握</td></tr><tr><td>5</td><td>組織・カルチャー</td><td>口コミで「組織体制や部署名が頻繁に変わる」との指摘がありますが、背景と現在の組織の安定度を教えてください</td><td>配属の安定性とキャリア計画への影響を確認</td></tr><tr><td>6</td><td>組織・カルチャー</td><td>2023年の社長交代（永吉一郎氏→玉置慎一氏）以降、経営方針や組織運営でどのような変化がありましたか</td><td>現経営体制の方向性と、創業期の風土が維持されているかの確認</td></tr><tr><td>7</td><td>評価制度</td><td>等級制度と評価の仕組み、昇給・昇格の基準を具体的に教えてください</td><td>公開情報がなく、中途入社時の処遇決定ロジックを把握するため</td></tr><tr><td>8</td><td>労働条件</td><td>想定年収レンジを教えてください。公開データが444万〜718万円と大きく乖離しています</td><td>実勢水準の確認（本人の等級・職種前提での具体値）</td></tr><tr><td>9</td><td>労働条件</td><td>ハイブリッド勤務の実際の出社頻度は、職種や案件でどの程度差がありますか</td><td>顧客常駐・セキュリティ案件での制約の有無を確認</td></tr><tr><td>10</td><td>スキル・成長</td><td>離職率と平均勤続年数を教えてください。また直近3年の推移はいかがですか</td><td>公開情報がなく、定着率が判断できないため</td></tr></tbody></table>
+
+<hr>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "株式会社神戸デジタル・ラボ";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

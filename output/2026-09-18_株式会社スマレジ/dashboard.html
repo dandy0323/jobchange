@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企業調査ダッシュボード — 株式会社スマレジ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <p class="eyebrow">企業調査ダッシュボード</p>
+        <h1>株式会社スマレジ</h1>
+      </div>
+      <div class="header-meta">
+        <div><span class="label">調査日</span><span class="value">2026-09-18</span></div>
+        <div><span class="label">モデル</span><span class="value">claude-code-chat</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-screening" aria-label="総合スクリーニング結果">
+      <h2 class="hero-title">総合スクリーニング</h2>
+      <div class="hero-grid">
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">事業・経済基盤</h3>
+          <p class="hero-card-summary">2026年4月期 売上133.45億円（+20.6%）、営業利益32.16億円（+35.2%）、営業利益率24.1%とSaaSとして極めて高収益。ARR110.55億円（+27.4%）でストック型。2027年4月期も増収増益予想。タブレットPOS国内2位</p>
+        </article>
+        <article class="hero-card hero-yellow">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟡</span>
+            <span class="hero-level">要確認</span>
+          </div>
+          <h3 class="hero-card-axis">社会的リスク</h3>
+          <p class="hero-card-summary">2026年1〜3月、自社運営「スマレジ・アプリマーケット」の外部連携アプリ（提供元: 合同会社coastline）から氏名11万359件・電話番号10万293件が流出。自社サーバーへの侵害は確認されずだが、プラットフォーム運営者としての審査・監督責任は論点</p>
+        </article>
+        <article class="hero-card hero-green">
+          <div class="hero-card-top">
+            <span class="hero-badge">🟢</span>
+            <span class="hero-level">懸念なし</span>
+          </div>
+          <h3 class="hero-card-axis">社員評価</h3>
+          <p class="hero-card-summary">口コミ総合3.5前後。男性育休取得率73.3%・有給取得率81%・残業を推奨しない社風・副業解禁と労働環境は良好。風通しの良さも評価される。一方、平均勤続年数2.5年と短く、年収水準（469〜544万円）は要確認</p>
+        </article>
+      </div>
+      <p class="hero-legend">🟢 懸念なし / 🟡 要確認 / 🔴 重大懸念 / ⚪ 情報なし</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="tabs" role="tablist">
+        <button
+          type="button"
+          role="tab"
+          class="tab-button active"
+          data-tab="basic"
+        >基本調査</button>
+        <button
+          type="button"
+          role="tab"
+          class="tab-button "
+          data-tab="detail"
+        >詳細調査</button>
+      </nav>
+      <div class="display-toggle" role="group" aria-label="表示密度">
+        <button type="button" class="toggle-btn active" data-mode="full">全文</button>
+        <button type="button" class="toggle-btn" data-mode="compact">要点のみ</button>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="content-main">
+        <section
+          id="tab-basic"
+          class="tab-panel active"
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（基本）: 株式会社スマレジ</h1>
+
+<blockquote>調査日: 2026-09-18</blockquote>
+<blockquote>対象: 株式会社スマレジ（大阪市・クラウドPOSレジ「スマレジ」を中核とする店舗DX SaaS）</blockquote>
+<blockquote>上場区分: 東証グロース（証券コード 4431）</blockquote>
+<blockquote>※旧社名: 株式会社プラグラム</blockquote>
+
+<hr>
+
+<h2 class="accent-green" id="1-事業-経済基盤">1. 事業・経済基盤</h2>
+
+<h3 id="1-1-ビジネスモデル">1-1. ビジネスモデル</h3>
+
+<ul>
+<li><strong>顧客</strong>: 小売・飲食・サービス業などの店舗事業者。中規模以上の店舗にも対応する設計</li>
+<li><strong>提供価値</strong>: クラウドPOSレジ「スマレジ」を起点に、店舗運営に必要な業務をワンストップで提供する「オールインワン店舗DX」</li>
+<li><strong>主なサービス群</strong>:</li>
+<li><strong>クラウドPOSレジ「スマレジ」</strong>: タブレットにダウンロードして無料から利用可能。高度な分析機能・在庫管理機能を備える</li>
+<li><strong>決済サービス</strong>（POSとの併売が成長を牽引）</li>
+<li><strong>タイムカード・勤怠管理</strong></li>
+<li><strong>スマレジ・アプリマーケット</strong>（外部ベンダーの連携アプリを提供するプラットフォーム）</li>
+<li><strong>EC在庫連携</strong></li>
+<li><strong>収益モデル</strong>: <strong>ストック型</strong>（月額利用料等）が中核。POSを起点に決済・勤怠・EC在庫連携をクロスセルし、顧客単価と解約しにくさ（粘着性）を同時に高める構造</li>
+<li><strong>成長ドライバー</strong>: 2026年4月期は「POS×決済」の併売率上昇により月額利用料等のストック収入が成長を牽引</li>
+<li><strong>出典</strong>: FastGrow スマレジ特集<sup class="fnref"><a href="#src-1">[1]</a></sup>（2026-09-18）、2026年4月期 決算短信<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-09-18）</li>
+</ul>
+
+<h3 id="1-2-市場-競合">1-2. 市場・競合</h3>
+
+<ul>
+<li><strong>業界</strong>: クラウドPOSレジ／店舗向けSaaS（店舗DX）</li>
+<li><strong>業界内ポジション</strong>: <strong>タブレットPOSレジ国内第2位</strong>。ベンチャー発のクラウドPOSレジとしては図抜けた存在</li>
+<li><strong>規模比較</strong>: Airレジ（リクルート）904,000アカウント（2024年9月時点）に対し、スマレジ56,000店舗（2025年4月時点）</li>
+<li><strong>主要競合</strong>: Airレジ（リクルート／ヘアサロン中心に幅広く展開）、USENレジ（USEN／飲食店中心）、ユビレジ、ポスタス</li>
+<li><strong>強み</strong>: 中規模以上の店舗が必要とする高度な分析・在庫管理機能への対応、POSデータを起点としたエコシステム拡張（決済・勤怠・アプリマーケット・EC連携のクロスセル）</li>
+<li><strong>留意点</strong>: アカウント数ではAirレジと大きな開きがある。ただしスマレジは無料プラン中心のAirレジと異なり、有料・中規模顧客中心のため単純比較はできない</li>
+<li><strong>出典</strong>: POSレジのシェア率ランキング<sup class="fnref"><a href="#src-3">[3]</a></sup>（2026-09-18）、スマレジと競合を徹底比較<sup class="fnref"><a href="#src-4">[4]</a></sup>（2026-09-18）</li>
+</ul>
+
+<h3 id="1-3-財務状況">1-3. 財務状況</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>2026年4月期（実績）</th><th>2025年4月期（実績）</th><th>2027年4月期（会社予想）</th></tr></thead><tbody><tr><td>売上高</td><td><strong>133.45億円（+20.6%）</strong></td><td>111億円（+32%）</td><td>153.87億円（+15.3%）</td></tr><tr><td>営業利益</td><td><strong>32.16億円（+35.2%）</strong></td><td>未取得</td><td>40.04億円（+24.5%）</td></tr><tr><td>経常利益</td><td>31.86億円（+34.9%）</td><td>未取得</td><td>40.04億円（+25.7%）</td></tr><tr><td>純利益</td><td>22.28億円（+35.5%）</td><td>未取得</td><td>27.81億円（+24.8%）</td></tr><tr><td>営業利益率</td><td><strong>24.1%</strong></td><td>未取得</td><td>26.0%（予想値より算出）</td></tr><tr><td>ARR（年間経常収益）</td><td><strong>110.55億円（+27.4%）</strong></td><td>86.7億円</td><td>未取得</td></tr><tr><td>自己資本比率</td><td>未取得</td><td>未取得</td><td>未取得</td></tr></tbody></table>
+
+<ul>
+<li><strong>財務コメント</strong>: 売上・利益ともに高い伸びを維持しながら、<strong>営業利益率24.1%</strong>という SaaS としても極めて高い収益性を実現している点が最大の特徴。ARRが110.55億円（+27.4%）と売上の伸び（+20.6%）を上回っており、ストック基盤の積み上がりが先行している。2027年4月期は増収率が+15.3%に減速する予想だが、営業利益は+24.5%と利益成長が続く見通し。売上成長と高収益を両立できている稀有なプロファイル</li>
+<li><strong>決算発表</strong>: 2026年4月期通期決算は2026年6月12日に発表</li>
+<li><strong>出典</strong>: 2026年4月期 決算短信<sup class="fnref"><a href="#src-2">[2]</a></sup>（2026-09-18）、Yahoo!ファイナンス 4431 決算情報<sup class="fnref"><a href="#src-5">[5]</a></sup>（2026-09-18）</li>
+</ul>
+
+<h3 id="1-4-成長戦略">1-4. 成長戦略</h3>
+
+<ul>
+<li><strong>長期ビジョン「VISION2031」</strong> を掲げ、第3次中期経営計画を公表</li>
+<li>長期目標を「<strong>アクティブ30万店舗</strong>」から「<strong>ARR300億円</strong>」へ変更（売上規模ではなくストック収益を主指標に転換）</li>
+<li>POSデータを起点としたエコシステム拡張が競争力の核心。決済サービス、タイムカード・勤怠管理、アプリマーケット、EC在庫連携を次々とクロスセルし顧客単価を引き上げる</li>
+<li>2026年4月期は「POS×決済」の併売率上昇が成長を牽引しており、戦略が実際に数字へ結びついている</li>
+<li><strong>出典</strong>: 長期ビジョン・中期経営計画<sup class="fnref"><a href="#src-6">[6]</a></sup>（2026-09-18）、事業計画及び成長可能性に関する事項<sup class="fnref"><a href="#src-7">[7]</a></sup>（2026-09-18）</li>
+</ul>
+
+<hr>
+
+<h2 id="5-社会的インパクト-リスク">5. 社会的インパクト・リスク</h2>
+
+<h3 id="5-1-不祥事-法令違反の履歴">5-1. 不祥事・法令違反の履歴</h3>
+
+<blockquote><span class="badge badge-yellow">⚠️</span> 要確認事案: 外部連携アプリ経由の個人情報流出（2026年1月〜3月）</blockquote>
+
+<ul>
+<li><strong>事案概要</strong>: 自社が運営する「<strong>スマレジ・アプリマーケット</strong>」で提供されていた外部アプリ「<strong>書類上手／見積・請求書、＋invoice</strong>」（提供元: <strong>合同会社coastline</strong>）において、アプリ提供元が管理する会員データが第三者に不正取得・公開された</li>
+<li><strong>経緯</strong>:</li>
+<li>2026年1月6日: ハッカーがスマレジへの不正アクセスによるサイバー攻撃の犯行声明（SNS上の投稿から発覚）</li>
+<li>2026年1月8日: 外部アプリベンダー側から「会員データが第三者により不正取得・公開された」との報告</li>
+<li>2026年1月13日: スマレジが続報を公表</li>
+<li>2026年3月5日: coastlineが最終報を公表</li>
+<li>2026年3月9日: スマレジが本件の最終報を公開</li>
+<li><strong>流出規模</strong>:</li>
+<li>当初発表: 連携していた<strong>8社の店舗</strong>に属する顧客情報のうち、氏名13万6,346件・電話番号11万4,951件が流出の可能性</li>
+<li><strong>最終報（確認された流出）: 氏名11万359件、電話番号10万293件</strong></li>
+<li><strong>原因</strong>: 提供元coastline側の<strong>設定不備</strong></li>
+<li><strong>スマレジ本体への影響</strong>: 「当社が運営するサーバーへの不正アクセスや、当社システムからの情報流出は確認されておりません」と公式に明記</li>
+<li><strong>対応</strong>: 当該アプリをアプリマーケット上で非公開化、当該アプリからスマレジサービスへのアクセスを遮断、外部ベンダーと連携して原因究明。二次被害への注意を呼びかけ</li>
+<li><strong>評価上の論点</strong>: 自社システムの侵害ではなく直接的な過失は認定されていない。ただし、<strong>自社が運営するプラットフォーム（アプリマーケット）のエコシステム経由で10万件規模の個人情報が流出</strong>した事実は残り、外部ベンダーの審査・監督体制という観点では無関係とは言えない</li>
+<li><strong>上記以外</strong>: 行政処分・労働基準監督署による是正勧告／送検の公開記録は確認できず</li>
+<li><strong>出典</strong>: スマレジ 外部アプリにおける個人情報流出について（続報）<sup class="fnref"><a href="#src-8">[8]</a></sup>（2026-09-18）、日経xTECH 13万件以上の個人情報流出、8社に影響<sup class="fnref"><a href="#src-9">[9]</a></sup>（2026-09-18）、セキュリティ対策Lab 最終報<sup class="fnref"><a href="#src-10">[10]</a></sup>（2026-09-18）</li>
+</ul>
+
+<h3 id="5-2-ESG-サステナビリティ">5-2. ESG・サステナビリティ</h3>
+
+<ul>
+<li>男性育児休業取得率 <strong>73.3%</strong>、有給休暇取得率 <strong>81%</strong> と、働き方に関する指標を公表</li>
+<li>東証グロース上場企業としてIR情報を開示。サステナビリティ関連の個別開示内容は本調査では未取得</li>
+<li>店舗事業者のDX推進という事業自体が、中小事業者の生産性向上に寄与する性格を持つ</li>
+</ul>
+
+<h3 id="5-3-顧客評判">5-3. 顧客評判</h3>
+
+<ul>
+<li>タブレットPOSレジ国内第2位、56,000店舗（2025年4月時点）の導入実績</li>
+<li>中規模以上の店舗が必要とする高度な分析・在庫管理機能が評価されている</li>
+<li>一方で、前述の外部連携アプリ経由の情報流出は、連携していた8社の店舗とその顧客に直接的な影響を与えており、プラットフォームの信頼性に関する直近のマイナス材料</li>
+</ul>
+
+<hr>
+
+<h2 class="accent-green" id="社員評価">社員評価</h2>
+
+<h3 id="口コミ-評価サイト情報-2026-09-18時点">口コミ・評価サイト情報（2026-09-18時点）</h3>
+
+<table class="data-table"><thead><tr><th>サイト</th><th>スコア / 件数</th><th>URL</th></tr></thead><tbody><tr><td>OpenWork</td><td>年収データ34人分ほか、多数のクチコミを掲載</td><td><a href="https://www.openwork.jp/company.php?m_id=a0C1000001260nF" target="_blank" rel="noopener noreferrer">https://www.openwork.jp/company.php?m_id=a0C1000001260nF</a></td></tr><tr><td>エン カイシャの評判</td><td>口コミ掲載あり</td><td><a href="https://en-hyouban.com/company/10200855269/" target="_blank" rel="noopener noreferrer">https://en-hyouban.com/company/10200855269/</a></td></tr><tr><td>転職会議（旧: プラグラム）</td><td>口コミ53件</td><td><a href="https://jobtalk.jp/companies/228205/answers" target="_blank" rel="noopener noreferrer">https://jobtalk.jp/companies/228205/answers</a></td></tr><tr><td>就活会議</td><td>口コミ31件</td><td><a href="https://syukatsu-kaigi.jp/companies/22297/word_mouths" target="_blank" rel="noopener noreferrer">https://syukatsu-kaigi.jp/companies/22297/word_mouths</a></td></tr></tbody></table>
+
+<p><strong>総合スコア:</strong> 総合3.5点（正社員14人の回答）。※本調査の検索結果では、この数値がOpenWork・エンのどちらの集計かを特定できなかった</p>
+
+<p><strong>客観データ（有価証券報告書・会社公表）:</strong>
+<ul>
+<li>従業員数: <strong>435名</strong>（2025年4月時点）／262名（2023年4月30日現在、有報）</li>
+<li>平均年齢: <strong>34.0歳</strong>（直近）／34.5歳（2023年有報）</li>
+<li>平均勤続年数: <strong>2.5年</strong>（2023年有報）</li>
+<li>平均年間給与: <strong>543.7万円</strong>（直近）／505.6万円（2023年有報）／538万円（2024年度有報）</li>
+<li>男性育児休業取得率: 73.3%</li>
+<li>有給休暇取得率: 81%</li>
+<li>離職率: 公開情報なし</li>
+</ul></p>
+
+<p><strong>年収データ（ソース別）:</strong></p>
+
+<table class="data-table"><thead><tr><th>ソース</th><th>平均年収</th></tr></thead><tbody><tr><td>有価証券報告書ベース（日経）</td><td>544万円</td></tr><tr><td>有価証券報告書（2024年度）</td><td>538万円</td></tr><tr><td>OpenWork（34人回答）</td><td>469万円（営業485万円／エンジニア496万円）</td></tr><tr><td>年収ガイド</td><td>481万円</td></tr><tr><td>年収マスター</td><td>482万円</td></tr></tbody></table>
+
+<p><strong>良い点（口コミより）:</strong>
+<ul>
+<li>比較的風通しが良く、意見がしやすい社風</li>
+<li>非論理的な言動や指示がほとんどなく、方針がハッキリしている</li>
+<li>全体的にフレキシブルな働き方があり、高い生産性を維持する雰囲気</li>
+<li>休みは取りやすく、育休・病院休暇も用意されている</li>
+<li>基本的に<strong>残業は推奨されない社風</strong></li>
+<li>副業解禁（本業に支障がない範囲で可能）</li>
+<li>リモートワークは部署によっては可能</li>
+</ul></p>
+
+<p><strong>懸念点:</strong>
+<ul>
+<li><strong>平均勤続年数2.5年</strong>と短い（ただし従業員数が262名→435名と急増しており、新規入社者の比率が高いことが要因の可能性）</li>
+<li>年収データがソースにより469万〜544万円と幅があり、有報ベース（管理職含む全社平均）と口コミベース（若手偏重）の差と推測される</li>
+<li>口コミの母数が少なく（総合スコアは14人回答）、統計的な安定性に欠ける</li>
+</ul></p>
+
+<p><strong>判断の限界:</strong> 口コミ母数が少ないため、総合スコアの信頼区間は広い。離職率も非公開のため、平均勤続2.5年が「急成長による希薄化」なのか「定着率の問題」なのかは公開情報からは判別できない</p>
+
+<hr>
+
+<h2 id="未確認項目-面接で要確認">📋 未確認項目（面接で要確認）</h2>
+
+<ul>
+<li>[ ] 2026年1〜3月の外部連携アプリ経由の個人情報流出を受けた、アプリマーケットの審査基準・ベンダー監督体制の見直し内容</li>
+<li>[ ] 同事案による解約・受注への影響と、信頼回復に向けた具体策</li>
+<li>[ ] 離職率と平均勤続年数の内訳（平均勤続2.5年が急成長による希薄化か、定着率の問題か）</li>
+<li>[ ] 想定年収レンジ（有報544万円と口コミ469万円の乖離の説明）</li>
+<li>[ ] 2027年4月期の増収率が+15.3%に減速する予想の背景（市場飽和／戦略的な投資判断／その他）</li>
+<li>[ ] ARR300億円という長期目標に対する現在地（110.55億円）と、到達のための主要施策</li>
+<li>[ ] Airレジ等の大手競合に対する差別化の持続性と、価格競争リスク</li>
+<li>[ ] リモートワークの適用範囲（「部署によっては可能」「月の半分程度」の具体的な運用）</li>
+<li>[ ] 決算賞与の実績水準と、評価から賞与への反映ロジック</li>
+<li>[ ] 自己資本比率など財務健全性指標（本調査では未取得）</li>
+</ul>
+
+<hr><section class="sources-section"><h2 class="sources-title">📚 出典一覧</h2><table class="sources-table"><thead><tr><th>No.</th><th>タイトル</th><th>URL</th></tr></thead><tbody><tr id="src-1"><td class="src-num">[1]</td><td class="src-title">FastGrow スマレジ特集</td><td class="src-url"><a href="https://www.fastgrow.jp/articles/highgrowth-smaregi" target="_blank" rel="noopener noreferrer">https://www.fastgrow.jp/articles/highgrowth-smaregi</a></td></tr><tr id="src-2"><td class="src-num">[2]</td><td class="src-title">2026年4月期 決算短信</td><td class="src-url"><a href="https://www.release.tdnet.info/inbs/140120260612569270.pdf" target="_blank" rel="noopener noreferrer">https://www.release.tdnet.info/inbs/140120260612569270.pdf</a></td></tr><tr id="src-3"><td class="src-num">[3]</td><td class="src-title">POSレジのシェア率ランキング</td><td class="src-url"><a href="https://bizcan.jp/column/posregi-share/" target="_blank" rel="noopener noreferrer">https://bizcan.jp/column/posregi-share/</a></td></tr><tr id="src-4"><td class="src-num">[4]</td><td class="src-title">スマレジと競合を徹底比較</td><td class="src-url"><a href="https://store.cloudil.jp/smaregi-competition/" target="_blank" rel="noopener noreferrer">https://store.cloudil.jp/smaregi-competition/</a></td></tr><tr id="src-5"><td class="src-num">[5]</td><td class="src-title">Yahoo!ファイナンス 4431 決算情報</td><td class="src-url"><a href="https://finance.yahoo.co.jp/quote/4431.T/financials" target="_blank" rel="noopener noreferrer">https://finance.yahoo.co.jp/quote/4431.T/financials</a></td></tr><tr id="src-6"><td class="src-num">[6]</td><td class="src-title">長期ビジョン・中期経営計画</td><td class="src-url"><a href="https://corp.smaregi.jp/ir/management/vision2031.php" target="_blank" rel="noopener noreferrer">https://corp.smaregi.jp/ir/management/vision2031.php</a></td></tr><tr id="src-7"><td class="src-num">[7]</td><td class="src-title">事業計画及び成長可能性に関する事項</td><td class="src-url"><a href="https://corp.smaregi.jp/ir/library/FY2025_Business_Plan_and_Growth_Potential.pdf" target="_blank" rel="noopener noreferrer">https://corp.smaregi.jp/ir/library/FY2025_Business_Plan_and_Growth_Potential.pdf</a></td></tr><tr id="src-8"><td class="src-num">[8]</td><td class="src-title">スマレジ 外部アプリにおける個人情報流出について（続報）</td><td class="src-url"><a href="https://corp.smaregi.jp/news/press/20260113.php" target="_blank" rel="noopener noreferrer">https://corp.smaregi.jp/news/press/20260113.php</a></td></tr><tr id="src-9"><td class="src-num">[9]</td><td class="src-title">日経xTECH 13万件以上の個人情報流出、8社に影響</td><td class="src-url"><a href="https://xtech.nikkei.com/atcl/nxt/column/18/00598/010900348/" target="_blank" rel="noopener noreferrer">https://xtech.nikkei.com/atcl/nxt/column/18/00598/010900348/</a></td></tr><tr id="src-10"><td class="src-num">[10]</td><td class="src-title">セキュリティ対策Lab 最終報</td><td class="src-url"><a href="https://rocket-boys.co.jp/security-measures-lab/smaregi-linked-app-breach-110k-names-102k-phones-coastline-misconfig/" target="_blank" rel="noopener noreferrer">https://rocket-boys.co.jp/security-measures-lab/smaregi-linked-app-breach-110k-names-102k-phones-coastline-misconfig/</a></td></tr></tbody></table></section>
+          </div>
+        </section>
+        <section
+          id="tab-detail"
+          class="tab-panel "
+          role="tabpanel"
+        >
+          <div class="markdown-body">
+            <h1>企業調査レポート（詳細）: 株式会社スマレジ</h1>
+
+<blockquote>調査日: 2026-09-18　対象職種: 未指定</blockquote>
+
+<hr>
+
+<h2 id="総合評価">■ 総合評価</h2>
+
+<table class="data-table"><thead><tr><th>観点</th><th>確認度</th><th>判定</th><th>概要</th></tr></thead><tbody><tr><td>組織・カルチャー</td><td>★★☆</td><td><span class="badge badge-green">🟢</span></td><td>「風通しが良く意見がしやすい」「非論理的な言動や指示がほとんどなく方針が明確」との口コミ。半期ごとの目標設定と面談による評価制度を公開。平均年齢34.0歳・平均勤続2.5年と若く流動的な組織</td></tr><tr><td>職務・スキル</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>PHP/TypeScript＋Laravel/Vue.js/React、AWS、Docker、GitLab CIとモダンな構成。3〜5名の少人数チームで2週間〜1ヶ月のリリースサイクル。案件ごとに開発手法を選択できる裁量あり</td></tr><tr><td>労働条件・環境</td><td>★★★</td><td><span class="badge badge-green">🟢</span></td><td>男性育休取得率73.3%、有給取得率81%、残業を推奨しない社風、副業解禁、リモート併用可。年収は有報544万円／口コミ469万円と幅があり要確認</td></tr></tbody></table>
+
+<hr>
+
+<h2 id="2-組織-カルチャー">2. 組織・カルチャー</h2>
+
+<h3 id="2-1-企業理念">2-1. 企業理念</h3>
+
+<ul>
+<li>長期ビジョンとして <strong>「VISION2031」</strong> を掲げ、第3次中期経営計画で長期目標を「アクティブ30万店舗」から <strong>「ARR300億円」</strong> へ変更。店舗数という規模指標から、ストック収益という質の指標へ経営の軸足を移している</li>
+<li>事業としては、クラウドPOSを起点に店舗の業務システム全体を支える「オールインワン店舗DX」を志向</li>
+<li>経営スタンスとして「調子に乗らない経営」が外部メディアで紹介されており、急成長SaaSでありながら規律を重視する姿勢がうかがえる</li>
+<li>理念・ミッションの正式な文言は本調査では取得できず</li>
+</ul>
+
+<h3 id="2-2-意思決定スタイル">2-2. 意思決定スタイル</h3>
+
+<ul>
+<li><strong>組織構造</strong>: 従業員435名（2025年4月時点）の東証グロース上場企業。2023年4月時点の262名から2年で約1.7倍に増加</li>
+<li><strong>スタイル</strong>: ボトムアップ寄りと推測。口コミでは「<strong>比較的風通しが良く、比較的意見がしやすい社風</strong>」「<strong>非論理的な言動や指示はほとんどないため、方針がハッキリしている</strong>」との評価</li>
+<li>「全体的にフレキシブルな働き方があり、高い生産性を維持しながら業務を遂行する雰囲気」との記述もあり、裁量と成果の両立を志向する文化と見られる</li>
+<li>OpenWork上に「大企業病には絶対かからないでください」という社員の声が掲載されており、組織拡大に伴う官僚化への警戒が社内で共有されている様子がうかがえる</li>
+</ul>
+
+<h3 id="2-3-評価制度">2-3. 評価制度</h3>
+
+<ul>
+<li><strong>半期ごと（4月・10月）に目標設定</strong>を実施</li>
+<li>設定した目標に対する <strong>振り返り面談</strong> を実施し、一人ひとりの成長をサポート</li>
+<li><strong>通期の評価結果は年度末のフィードバック面談で伝達</strong>され、<strong>翌月からの給与および決算賞与に反映</strong>される</li>
+<li>評価制度を採用サイト上で公開している点は、制度の透明性という観点でプラス</li>
+<li>等級制度の詳細、評価者の構成、決算賞与の実績水準は公開情報から確認できず</li>
+</ul>
+
+<h3 id="2-4-人的構成">2-4. 人的構成</h3>
+
+<table class="data-table"><thead><tr><th>指標</th><th>内容</th><th>備考</th></tr></thead><tbody><tr><td>従業員数</td><td><strong>435名</strong></td><td>2025年4月時点</td></tr><tr><td>従業員数（過去）</td><td>262名</td><td>2023年4月30日現在（有価証券報告書）</td></tr><tr><td>平均年齢</td><td><strong>34.0歳</strong></td><td>直近。2023年有報では34.5歳</td></tr><tr><td>平均勤続年数</td><td><strong>2.5年</strong></td><td>2023年4月30日現在（有価証券報告書）</td></tr><tr><td>平均年間給与</td><td>543.7万円</td><td>直近。2023年有報505.6万円／2024年度有報538万円</td></tr><tr><td>男性育児休業取得率</td><td><strong>73.3%</strong></td><td>会社公表</td></tr><tr><td>有給休暇取得率</td><td><strong>81%</strong></td><td>会社公表</td></tr><tr><td>離職率</td><td>非公開</td><td>公開情報なし</td></tr><tr><td>上場区分</td><td>東証グロース（証券コード4431）</td><td></td></tr><tr><td>本社</td><td>大阪市</td><td></td></tr></tbody></table>
+
+<ul>
+<li><strong>人的構成の読み解き</strong>: 平均年齢34.0歳・平均勤続2.5年という組み合わせは、2年で従業員数が1.7倍に増えた急成長企業として自然な姿。中途入社者が多数を占めると推測され、<strong>中途でも馴染みやすく、社歴の長短がハンデになりにくい</strong>環境である可能性が高い。一方で、組織・制度が固まりきっていない流動性も同時に意味する</li>
+</ul>
+
+<hr>
+
+<h2 id="3-職務-スキル">3. 職務・スキル</h2>
+
+<h3 id="3-1-業務範囲-チーム">3-1. 業務範囲・チーム</h3>
+
+<ul>
+<li><strong>プロダクト領域</strong>: クラウドPOSレジ「スマレジ」、決済サービス、タイムカード・勤怠管理、スマレジ・アプリマーケット、EC在庫連携</li>
+<li><strong>開発体制</strong>: <strong>3〜5名程度の少人数チーム</strong>を構成し、<strong>2週間〜1ヶ月のサイクルでリリース</strong></li>
+<li><strong>エンジニアの関与範囲</strong>: 「エンジニアが開発の全てに携わる」とされ、設計から実装・リリースまで一気通貫で関わる体制</li>
+<li><strong>開発手法</strong>: アジャイル、スクラム、ウォーターフォール等、<strong>チーム内で案件ごとに最適な開発サイクルを採用</strong>。手法を上から一律に強制されない裁量がある</li>
+<li>募集職種にはインフラエンジニア／PM等も存在し、他社システム開発におけるPL業務から将来的に自社開発へ移る道も示されている</li>
+</ul>
+
+<h3 id="3-2-技術スタック">3-2. 技術スタック</h3>
+
+<ul>
+<li><strong>言語</strong>: PHP、JavaScript、TypeScript</li>
+<li><strong>フレームワーク</strong>: Laravel、CakePHP、Vue.js、React、jQuery</li>
+<li><strong>インフラ</strong>: <strong>AWS</strong></li>
+<li><strong>コンテナ</strong>: Docker</li>
+<li><strong>CI/CD</strong>: GitLab CI</li>
+<li><strong>エディタ／IDE</strong>: VSCode、PhpStorm</li>
+<li><strong>評価</strong>: PHP＋Laravel／TypeScript＋Vue.js・React という構成はモダンかつ実務需要の大きい組み合わせ。AWS・Docker・CI/CDまで一通り揃っており、<strong>技術的な陳腐化リスクは低い</strong>。CakePHPやjQueryも併存しており、レガシー部分の保守も一定量あると見られる</li>
+<li>AI活用に関する公開情報は本調査では確認できず</li>
+</ul>
+
+<h3 id="3-3-教育-研修">3-3. 教育・研修</h3>
+
+<ul>
+<li><strong>開発部に書籍購入制度</strong>あり</li>
+<li>半期ごとの目標設定と振り返り面談を通じた育成サポートを制度として公開</li>
+<li>体系的な階層別研修・技術研修の有無は公開情報から確認できず</li>
+<li>平均勤続2.5年・平均年齢34.0歳という構成から、即戦力の中途採用が中心で、OJT主体と推測されるが確証はない</li>
+</ul>
+
+<h3 id="3-4-キャリアパス">3-4. キャリアパス</h3>
+
+<ul>
+<li>少人数チームで開発の全工程に関わるため、<strong>フルスタックに近い経験</strong>を積みやすい</li>
+<li>エンジニア → PL → PM、他社システム開発から自社プロダクト開発へ、といった職種・領域の移動機会が募集情報から確認できる</li>
+<li>急成長フェーズ（従業員2年で1.7倍）のため、<strong>ポストが新設されやすく、若手・中途でも役割を得やすい</strong>可能性が高い</li>
+<li>一方、組織が固まりきっていないぶん、キャリアパスが制度として明文化されているかは要確認</li>
+</ul>
+
+<hr>
+
+<h2 id="4-労働条件-環境">4. 労働条件・環境</h2>
+
+<h3 id="4-1-労働時間">4-1. 労働時間</h3>
+
+<ul>
+<li><strong>残業</strong>: 「基本的に<strong>残業は推奨されない社風</strong>」との口コミ。具体的な月平均残業時間は公開情報から確認できず</li>
+<li><strong>有給休暇取得率</strong>: <strong>81%</strong>（会社公表）</li>
+<li>「休みは取りやすい」との口コミ評価</li>
+<li>フレックスタイム制の有無は公開情報から確認できず</li>
+</ul>
+
+<h3 id="4-2-リモートワーク">4-2. リモートワーク</h3>
+
+<ul>
+<li><strong>月の半分程度はリモートワークが可能</strong>。<strong>フルリモートではなく、オフィスと併用する制度</strong></li>
+<li>部署によって適用可否が異なるとの記述あり</li>
+<li>大阪本社への出社が前提となるため、勤務地の制約は残る</li>
+</ul>
+
+<h3 id="4-3-福利厚生">4-3. 福利厚生</h3>
+
+<ul>
+<li><strong>住宅手当</strong>、<strong>通勤手当</strong></li>
+<li><strong>開発部の書籍購入制度</strong></li>
+<li>オフィス出社時の<strong>フリードリンク</strong></li>
+<li><strong>副業解禁</strong>（本業に支障がない範囲で可能）</li>
+<li><strong>育児休業</strong>（男性取得率73.3%）、<strong>病院休暇</strong></li>
+<li>決算賞与あり（評価結果が反映される）</li>
+</ul>
+
+<h3 id="4-4-給与">4-4. 給与</h3>
+
+<table class="data-table"><thead><tr><th>ソース</th><th>平均年収</th><th>備考</th></tr></thead><tbody><tr><td><strong>有価証券報告書ベース（日経）</strong></td><td><strong>544万円</strong></td><td>管理職を含む全社平均</td></tr><tr><td>有価証券報告書（2024年度）</td><td>538万円</td><td>—</td></tr><tr><td>有価証券報告書（2023年4月期）</td><td>505.6万円</td><td>平均年齢34.5歳時点</td></tr><tr><td>OpenWork（34人回答）</td><td>469万円</td><td>営業485万円／エンジニア496万円</td></tr><tr><td>年収ガイド</td><td>481万円</td><td>—</td></tr><tr><td>年収マスター</td><td>482万円</td><td>—</td></tr></tbody></table>
+
+<ul>
+<li>有報ベースは505.6万円（2023年）→538万円（2024年度）→544万円（直近）と<strong>着実に上昇</strong>しており、業績成長が給与に反映されている</li>
+<li>口コミ集計（469万円）との差は、有報が管理職を含む全社平均であるのに対し口コミが若手・非管理職に偏るためと推測されるが、確証はない</li>
+<li>平均年齢34.0歳で544万円という水準は、東証グロースのSaaS企業として突出して高くはないが極端に低くもない中位帯</li>
+<li>給与は年度末のフィードバック面談を経て翌月から改定され、決算賞与にも反映される</li>
+</ul>
+
+<hr>
+
+<h2 id="面接用質問リスト">📋 面接用質問リスト</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>カテゴリ</th><th>質問案</th><th>なぜ聞くか</th></tr></thead><tbody><tr><td>1</td><td>コンプライアンス</td><td>2026年1〜3月の外部連携アプリ経由の個人情報流出を受けて、アプリマーケットのベンダー審査基準や監督体制をどのように見直されましたか</td><td><strong>最重要</strong>。自社システムの侵害ではないものの、プラットフォーム運営者としての責任範囲をどう捉えているかで経営の誠実さが測れる</td></tr><tr><td>2</td><td>コンプライアンス</td><td>同事案による解約・受注への実際の影響と、信頼回復に向けた取り組みを教えてください</td><td>事業へのダメージの実態と、リスク対応力を把握するため</td></tr><tr><td>3</td><td>事業戦略</td><td>2027年4月期の増収率が+15.3%と前期の+20.6%から減速する予想の背景を教えてください</td><td>市場の飽和なのか、意図的な投資判断なのかで成長ステージの見方が変わるため</td></tr><tr><td>4</td><td>事業戦略</td><td>長期目標ARR300億円に対し現在110.55億円ですが、到達に向けた主要施策と時間軸を教えてください</td><td>長期ビジョンの実現可能性と、自分が担う役割の位置づけを理解するため</td></tr><tr><td>5</td><td>事業戦略</td><td>Airレジ等の大手競合に対する差別化の持続性と、価格競争が起きた場合の戦略を教えてください</td><td>アカウント数で大きく劣る中での競争優位の源泉を確認するため</td></tr><tr><td>6</td><td>組織・カルチャー</td><td>従業員数が2年で262名から435名へ増える中、「大企業病にかからない」ために具体的にどのような工夫をされていますか</td><td>社員の声にある問題意識に対し、経営が実際に手を打っているかを確認するため</td></tr><tr><td>7</td><td>組織・カルチャー</td><td>平均勤続年数2.5年という数字の内訳（急成長による希薄化か、定着率の課題か）と、直近の離職率を教えてください</td><td>公開情報がなく、定着状況が判断できないため</td></tr><tr><td>8</td><td>職務・スキル</td><td>配属予定チームの技術構成と、Laravel/Vue.js等のモダン領域とCakePHP/jQuery等のレガシー保守の業務比率を教えてください</td><td>技術的な成長機会がどの程度あるかを具体的に見極めるため</td></tr><tr><td>9</td><td>労働条件</td><td>月平均残業時間の実績と、繁忙期（決算期・大型リリース前など）の状況を教えてください</td><td>「残業は推奨されない社風」の実態を数字で確認するため</td></tr><tr><td>10</td><td>労働条件</td><td>想定年収レンジと決算賞与の実績水準を教えてください。有報544万円と口コミ469万円に開きがあります</td><td>年齢・等級別の実勢水準を本人の条件で確認するため</td></tr></tbody></table>
+
+<hr>
+          </div>
+        </section>
+      </div>
+      <aside class="toc-sidebar" aria-label="目次">
+        <h4 class="toc-title">目次</h4>
+        <ol class="toc-list"></ol>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated by <code>company-research</code></p>
+    <p class="footer-cta">
+      <button class="cta-link" onclick="reResearch()">🔄 この企業を再調査</button>
+      <a href="https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY" class="cta-link" target="_blank" rel="noopener noreferrer">+ 新しい調査を開始</a>
+    </p>
+  </footer>
+  <div id="copy-toast" style="
+    display:none; position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+    background:rgba(0,0,0,.78); color:#fff; font-size:.85rem; padding:8px 18px;
+    border-radius:20px; white-space:nowrap; z-index:200; pointer-events:none;">
+    コマンドをコピーしました ✓
+  </div>
+  <script>
+  function reResearch() {
+    const company = "\u682a\u5f0f\u4f1a\u793e\u30b9\u30de\u30ec\u30b8";
+    const cmd = '/企業調査-フル ' + company;
+    navigator.clipboard.writeText(cmd).then(() => {
+      const toast = document.getElementById('copy-toast');
+      toast.textContent = '「' + cmd + '」をコピーしました ✓';
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }).catch(() => {
+      prompt('以下のコマンドをコピーしてチャットに貼り付けてください:', cmd);
+    });
+    window.open('https://claude.ai/code/session_01LHb1wK4NT9R2obTLpc5LRY', '_blank');
+  }
+  </script>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
